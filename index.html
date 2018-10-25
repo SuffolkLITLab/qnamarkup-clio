@@ -1,0 +1,1243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<HEAD>
+	<title>Untitled QnA</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="apple-mobile-web-app-capable" content="no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content=""/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="apple-touch-icon" href="https://www.qnamarkup.org/images/QnA_300.png"/>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="" MARGINWIDTH="0" MARGINHEIGHT="0" onLoad="startAT('1');"><style>	
+
+	body {
+
+		font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+
+	}
+
+
+
+	#rawmarkup{
+
+		display:none;
+
+	}
+
+	
+
+	#QandA img{
+
+		width:100%;
+
+	}
+
+
+
+	div.main{
+
+		min-width:300px;
+
+		max-width:650px;
+
+		margin: 0 auto;
+
+	padding:0 5px 0 5px;
+
+		}
+
+	div.frame{
+
+		float:left;
+
+		width:100%;
+
+		margin:5px 0 5px 0;
+
+	}
+
+	div.full{
+
+		float:left;
+
+		width:100%;
+
+	}
+
+	.button{
+
+		padding:8px;
+
+		margin:8px 0 0px 0;
+
+		width:100%;
+
+	}
+
+	div.question_text{
+
+		float:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		color:#ffffff;
+
+		min-width:30px;
+
+		background:#5489eb;
+
+		border-radius: 15px;
+
+		padding:10px 15px 14px 15px;
+
+		margin-right:45px;
+
+	}
+
+
+
+	div.question_text a:link, div.question_text a:hover, div.question_text a:active, div.question_text a:visited{ color:#e3fbfc; } 
+
+
+
+	div.question_arrow{
+
+		float:left; 
+
+		width: 0; 
+
+		height: 0; 
+
+		border-left: 5px solid transparent; 
+
+		border-right: 10px solid transparent; 
+
+		border-top: 15px solid #5489eb;
+
+		margin:0 20px;
+
+	}
+
+	div.ans_text{
+
+		float:right;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		color:#000000;
+
+		min-width:30px;
+
+		background:#eeeeee;
+
+		border-radius: 15px;
+
+		padding:10px 15px 14px 15px;
+
+		margin-left:45px;
+
+	}
+
+	div.ans_arrow{
+
+		float:right; 
+
+		width: 0; 
+
+		height: 0; 
+
+		border-left: 10px solid transparent; 
+
+		border-right: 5px solid transparent; 
+
+		border-top: 15px solid #eeeeee;
+
+		margin:0 20px;
+
+	}
+
+	div.choices{
+
+		float:left;
+
+		width:100%;
+
+		margin:15px 0 0 0;
+
+	}
+
+	div.standard_buttons{
+
+		float:left;
+
+		width:100%;
+
+		margin-top:5px;
+
+		border-top: 1px solid #ddd; 
+
+		padding-top:12px;		
+
+	}
+
+	div.credits{
+
+		float:left;
+
+		dispaly:none;
+
+		width:100%;
+
+		background:#eee;
+
+		margin:0px 0 15px 0;
+
+	}
+
+	div.credit_text{
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		padding:4px 15px 10px 15px;
+
+	}
+
+	li.error{
+
+		list-style-type: none;
+
+		background:#ffdddd;
+
+		margin: 10px 0 0 0;
+
+		padding: 5px;
+
+	}
+
+
+
+	.qpad {
+
+		float:left;
+
+		padding:0 15px;
+
+	}
+
+	
+
+	a.sbutton {
+
+		float:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		width:48%;
+
+		background: #eee;
+
+		border-radius: 8px;
+
+		padding:10px 0px 12px 0;
+
+		margin: 0 0 3px 0;
+
+		border: solid 1px #888;
+
+		text-align:center;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+
+
+	a.sbutton:hover, a.sbutton:active {
+
+		float:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		width:48%;
+
+		background: #ddd;
+
+		border-radius: 8px;
+
+		padding:10px 0px 12px 0;
+
+		margin: 0 0 3px 0;
+
+		border: solid 1px #888;
+
+		text-align:center;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+
+
+	a.qabutton {
+
+		float:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		width:100%;
+
+		background: #eee;
+
+		border-radius: 8px;
+
+		padding:10px 0px 12px 0;
+
+		margin: 0 0 8px 0;
+
+		border: solid 1px #888;
+
+		text-align:left;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+
+
+	a.qabutton:hover, a.qabutton:active {
+
+		float:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		width:100%;
+
+		background: #ddd;
+
+		border-radius: 8px;
+
+		padding:10px 0px 12px 0;
+
+		margin: 0 0 8px 0;
+
+		border: solid 1px #888;
+
+		text-align:left;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+	
+
+
+
+	div.xdiv {
+
+		float:left;
+
+		width:100%;
+
+		margin: 0 0 8px 0;
+
+		background: #eee;
+
+		border: solid 1px #888;
+
+		border-radius: 8px;
+
+	}	
+
+
+
+	input.xinput {
+
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */ 
+
+		box-sizing: border-box;         /* Opera/IE 8+ */
+
+		float:left;
+
+		width:100%;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		background: #fff;
+
+		border-top-left-radius: 8px;
+
+		border-top-right-radius: 8px;
+
+		padding:10px 10px 12px 10px;
+
+		border: solid 0px #888;
+
+		border-bottom: solid 1px #888;
+
+		text-align:left;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+	
+
+	a.xbutton {
+
+		float:left;
+
+		width:100%;
+
+		text-align:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		background: #eee;
+
+		border-radius: 8px;
+
+		padding:10px 0px 12px 0px;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+	
+
+	a.xbutton:hover, a.xbutton:active {
+
+		border-top-left-radius: 0px;
+
+		border-top-right-radius: 0px;
+
+		background: #ddd;
+
+	}
+
+</style>
+<FORM name="FORM" id="FORM"><div id="conversation" style="margin:15px auto 0 auto;padding:0 15px;max-width:500px"><div id='QandA' class='QandA'><div style='padding:15px;background:#ddffdd;text-align:center;'>Loading QnA...</div></div><div id='Choices' class='choices'></div><div id="rawmarkup" style="display:none;">%3Chtml%3E%0D%0A%3Chead%3E%0D%0A++%09%3Cscript+src%3D%22https%3A%2F%2Fcode.jquery.com%2Fjquery-1.10.2.js%22%3E%3C%2Fscript%3E%0D%0A++%09%3Cscript+src%3D%22https%3A%2F%2Fcode.jquery.com%2Fui%2F1.11.1%2Fjquery-ui.js%22%3E%3C%2Fscript%3E%0D%0A%3C%2Fhead%3E%0D%0A%3Cbody+style%3D%22padding%3A0px%3Bmargin%3A0px%3B%22%3E%0D%0A%0D%0A%3Cdiv+id%3D%22clio%22+style%3D%22position%3Aabsolute%3Bleft%3A0px%3Bright%3A375px%3Btop%3A0%3Bbottom%3A0%3B%22%3E%0D%0A%3Ciframe+height%3D%22100%25%22+width%3D%22100%25%22+frameBorder%3D%220%22+src%3D%22http%3A%2F%2Fwww.clio.com%22%3E%3C%2Fiframe%3E%0D%0A%3C%2Fdiv%3E%0D%0A%0D%0A%3Cdiv+id%3D%22hideme%22+style%3D%22position%3Aabsolute%3Bright%3A0%3Bwidth%3A375px%3Btop%3A0%3Bheight%3A20px%3Bbackground%3A%23ccc%3Btext-align%3Acenter%3Bcolor%3Awhite%3Bfont-size%3A10px%3Bfont-family%3Aarial%3Bline-height%3A20px%22%3E%0D%0A%3Ca+href%3D%22javascript%3A%24%28%27%23show%27%29.show%28%29%3B%24%28%27%23hideme%27%29.hide%28%29%3B%24%28%27%23qna%27%29.hide%28%29%3B%24%28%27%23clio%27%29.css%28%7B%27right%27%3A%270px%27%7D%29%3B%22+style%3D%22color%3Awhite%22%3EHIDE+HELP%3C%2Fa%3E%0D%0A%3C%2Fdiv%3E%0D%0A%0D%0A%3Cdiv+id%3D%22qna%22+style%3D%22position%3Aabsolute%3Bright%3A0%3Bwidth%3A375px%3Btop%3A20%3Bbottom%3A0%3B%22%3E%0D%0A%3Ciframe+width%3D%22100%25%22+height%3D%22100%25%22+frameBorder%3D%220%22+src%3D%22%3Ciframe+width%3D%22100%25%22+height%3D%22200px%22+src%3D%22https%3A%2F%2Fwww.qnamarkup.net%2Fi%2F%3Fmarkup%3DQ%25281%2529%253A%2BWhat%2Bwould%2Byou%2Blike%2Bto%2Bdo%253F%250D%250AA%253AOpen%2Ba%2Bnew%2Bcase%252Fmatter%250D%250A%2509Q%25281.1%2529%253AGo%2Bto%2Bthe%2Btop%2Bright%2Bcorner%252C%2Bwhere%2Bthere%2Bis%2Ba%2Bgreen%2Bbutton%2Bthat%2Bsays%2B%2522Create%2BNew%2522%250D%250A%2509A%253ANext%2Bstep%250D%250A%2509%2509Q%25281.1.1%2529%253AClick%2Bon%2Bthe%2Bdrop%2Bdown%2Bbutton%2Band%2Bthe%2Bclick%2B%2522Matter%2522%2B%2528pic%2529%2B%253Cbr%253E%253Cbr%253EThis%2Bwill%2Btake%2Byou%2Bto%2Bthe%2Bfollowing%2Bscreen%2B%2528pic%2529%250D%250A%2509%2509A%253ANext%2Bstep%250D%250A%2509%2509%2509Q%25281.1.1.1%2529%253AFor%2Bthe%2Bclient%252C%2Byou%2Bwill%2Bhave%2Bto%2Bcreate%2Ba%2Bnew%2Bcontact%2Bfor%2Bthem%2Bby%2Bclicking%2Bon%2Bthe%2Bdrop%2Bdown%2Bbox%2Bunder%2B%25E2%2580%259CClient%25E2%2580%259D%2Band%2Bclicking%2B%25E2%2580%259CCreate%2Bnew%2Bcontact%25E2%2580%259D%2B%2528pic%2529%250D%250A%2509%2509%2509A%253ANext%2Bstep%250D%250A%2509%2509%2509%2509Q%25281.1.1.1.1%2529%253AThere%2Bwill%2Bbe%2Ba%2Bpop%2Bup%2Bthat%2Bwill%2Bask%2Bfor%2Badditional%2Binformation%2Babout%2Byour%2Bclient%253A%2B%2528pic%2529%250D%250A%2509%2509%2509%2509A%253ANext%2Bstep%250D%250A%2509%2509%2509%2509%2509Q%25281.1.1.1.1.1%2529%253AOnce%2Byou%25E2%2580%2599ve%2Bfilled%2Bout%2Ball%2Bthat%2Binformation%252C%2Bclick%2B%25E2%2580%259Csave%2Bcontact%25E2%2580%259D%2Band%2Bit%2Bwill%2Breturn%2Bto%2Bthe%2Bpage%2Byou%2Bwere%2Bon%2Bbefore.%250D%250A%2509%2509%2509%2509%2509A%253ANext%2Bstep%250D%250A%2509%2509%2509%2509%2509%2509Q%25281.1.1.1.1.1.1%2529%253AUnder%2B%25E2%2580%259CMatter%2Bdescription%252C%25E2%2580%259D%2Bonly%2Btype%2Byour%2Bclient%25E2%2580%2599s%2Bfull%2Bfirst%2Band%2Blast%2Bname%2Bin%2Ball%2BCAPS%2B-%2Bthis%2Bis%2Bhow%2Byou%2Bwill%2Bfind%2Byour%2Bclient%2Bon%2Bthe%2Bsearch%2Bbar%2Bin%2Bthe%2Bfuture.%253Cbr%253E%253Cbr%253EUnder%2B%25E2%2580%259CPermissions%25E2%2580%259D%2Band%2B%25E2%2580%259CPractice%2Barea%252C%25E2%2580%259D%2Bclick%2Bon%2Bthe%2Bdrop%2Bdown%2Bbutton%2Band%2Bselect%2Byour%2Bclinic.%253Cbr%253E%253Cbr%253EUnder%2B%25E2%2580%259CResponsible%2Battorney%252C%25E2%2580%259D%2Btype%2Bthe%2Bname%2Bof%2Bthe%2Bstudent%2Battorney%2Bassigned%2Bto%2Bthis%2Bcase.%250D%250A%2509%2509%2509%2509%2509%2509A%253ANext%2Bstep%250D%250A%2509%2509%2509%2509%2509%2509%2509Q%25281.1.1.1.1.1.1.1%2529%253AIf%2Banother%2Battorney%2Bwithin%2Byour%2Bclinic%2Bhas%2Bworked%2Bon%2Bthis%2Bcase%2Bbefore%252C%2Btype%2Btheir%2Bname%2Binto%2B%25E2%2580%259COriginating%2Battorney%252C%25E2%2580%259D%2Botherwise%2Bthis%2Bmay%2Bbe%2Bleft%2Bblank%250D%250A%2509%2509%2509%2509%2509%2509%2509A%253ANext%2Bstep%250D%250A%2509%2509%2509%2509%2509%2509%2509%2509Q%25281.1.1.1.1.1.1.1.1%2529%253AClient%2Breference%2Bnumber%2Band%2Blocation%2Bmay%2Bbe%2Bleft%2Bblank%2Bunless%2Bdirected%2Bto%2Bdo%2Botherwise%2Bby%2Ba%2Bsupervisor.%250D%250A%2509%2509%2509%2509%2509%2509%2509%2509A%253ANext%2Bstep%250D%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509Q%25281.1.1.1.1.1.1.1.1.1%2529%253ANext%252C%2Bscroll%2Bdown%2Band%2Bexpand%2Bthe%2B%25E2%2580%259CRelated%2Bcontacts%25E2%2580%259D%2Bsection%2Bif%2Byou%2Bhave%2Bother%2Bcontacts%2Brelating%2Bto%2Byour%2Bclient.%250D%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509A%253ANext%2Bstep%250D%250AA%253ACreate%2Ba%2Btask%2Blist%250D%250AA%253AOpen%2Ba%2Bdocument%2Bfrom%2Ba%2Btemplate%250D%250AA%253ASend%2Ba%2Bmessage%252Fcommunication%250D%250AA%253AAdd%2Ban%2Bevent%2Bto%2Bthe%2Bcalendar%250D%250A%26font_family%3DVerdana%252C%2BGeneva%252C%2Bsans-serif%26font_size%3D14%26line_height%3D20%26col_width%3D500%26frame_pad%3D15%26radius%3D15%26comp_bg%3D5489eb%26comp_txt%3Dffffff%26comp_link%3De3fbfc%26usr_bg%3Deeeeee%26usr_txt%3D000000%26usr_link%3D0000ff%26sharing%3D1%22%3E%3C%2Fiframe%3E%0D%0A%3C%2Fdiv%3E%0D%0A%0D%0A%3Cdiv+id%3D%22show%22+style%3D%22display%3Anone%3Bposition%3Aabsolute%3Bz-index%3A100%3Bright%3A0%3Bwidth%3A100px%3Bbottom%3A0%3Bheight%3A25px%3Bbackground%3A%23ccc%3Btext-align%3Acenter%3Bcolor%3Awhite%3Bfont-size%3A10px%3Bfont-family%3Aarial%3Bline-height%3A25px%22%3E%0D%0A%3Ca+href%3D%22javascript%3A%24%28%27%23show%27%29.hide%28%29%3B%24%28%27%23hideme%27%29.show%28%29%3B%24%28%27%23qna%27%29.show%28%29%3B%24%28%27%23clio%27%29.css%28%7B%27right%27%3A%27375px%27%7D%29%3B%22+style%3D%22color%3Awhite%22%3ESHOW+HELP%3C%2Fa%3E%0D%0A%3C%2Fdiv%3E%0D%0A%0D%0A%0D%0A%3C%2Ftd%3E%3C%2Ftr%3E%3C%2Ftable%3E%0D%0A%3C%2Fbody%3E%0D%0A%3C%2Fhtml%3E%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AQ%281%29%3A+What+would+you+like+to+do%3F%0D%0AA%3AOpen+a+new+case%2Fmatter%0D%0A%09Q%281.1%29%3AGo+to+the+top+right+corner%2C+where+there+is+a+green+button+that+says+%22Create+New%22%0D%0A%09A%3ANext+step%0D%0A%09%09Q%281.1.1%29%3AClick+on+the+drop+down+button+and+the+click+%22Matter%22+%28pic%29+%3Cbr%3E%3Cbr%3EThis+will+take+you+to+the+following+screen+%28pic%29%0D%0A%09%09A%3ANext+step%0D%0A%09%09%09Q%281.1.1.1%29%3AFor+the+client%2C+you+will+have+to+create+a+new+contact+for+them+by+clicking+on+the+drop+down+box+under+%E2%80%9CClient%E2%80%9D+and+clicking+%E2%80%9CCreate+new+contact%E2%80%9D+%28pic%29%0D%0A%09%09%09A%3ANext+step%0D%0A%09%09%09%09Q%281.1.1.1.1%29%3AThere+will+be+a+pop+up+that+will+ask+for+additional+information+about+your+client%3A+%28pic%29%0D%0A%09%09%09%09A%3ANext+step%0D%0A%09%09%09%09%09Q%281.1.1.1.1.1%29%3AOnce+you%E2%80%99ve+filled+out+all+that+information%2C+click+%E2%80%9Csave+contact%E2%80%9D+and+it+will+return+to+the+page+you+were+on+before.%0D%0A%09%09%09%09%09A%3ANext+step%0D%0A%09%09%09%09%09%09Q%281.1.1.1.1.1.1%29%3AUnder+%E2%80%9CMatter+description%2C%E2%80%9D+only+type+your+client%E2%80%99s+full+first+and+last+name+in+all+CAPS+-+this+is+how+you+will+find+your+client+on+the+search+bar+in+the+future.%3Cbr%3E%3Cbr%3EUnder+%E2%80%9CPermissions%E2%80%9D+and+%E2%80%9CPractice+area%2C%E2%80%9D+click+on+the+drop+down+button+and+select+your+clinic.%3Cbr%3E%3Cbr%3EUnder+%E2%80%9CResponsible+attorney%2C%E2%80%9D+type+the+name+of+the+student+attorney+assigned+to+this+case.%0D%0A%09%09%09%09%09%09A%3ANext+step%0D%0A%09%09%09%09%09%09%09Q%281.1.1.1.1.1.1.1%29%3AIf+another+attorney+within+your+clinic+has+worked+on+this+case+before%2C+type+their+name+into+%E2%80%9COriginating+attorney%2C%E2%80%9D+otherwise+this+may+be+left+blank%0D%0A%09%09%09%09%09%09%09A%3ANext+step%0D%0A%09%09%09%09%09%09%09%09Q%281.1.1.1.1.1.1.1.1%29%3AClient+reference+number+and+location+may+be+left+blank+unless+directed+to+do+otherwise+by+a+supervisor.%0D%0A%09%09%09%09%09%09%09%09A%3ANext+step%0D%0A%09%09%09%09%09%09%09%09%09Q%281.1.1.1.1.1.1.1.1.1%29%3ANext%2C+scroll+down+and+expand+the+%E2%80%9CRelated+contacts%E2%80%9D+section+if+you+have+other+contacts+relating+to+your+client.%0D%0A%09%09%09%09%09%09%09%09%09A%3ANext+step%0D%0AA%3ACreate+a+new+contact%0D%0A%09Q%281.2%29%3AGo+to+top+right+corner%2C+where+there+is+a+green+button+stating+%E2%80%9CCreate+New%E2%80%9D%0D%0A%09A%3ANext+step%0D%0A%09%09Q%281.2.1%29%3AClick+on+the+drop+down+button+and+click+either+%E2%80%9CPerson%E2%80%9D+or+%E2%80%9CCompany%2C%E2%80%9D+depending+on+what+type+of+contact+you+want+to+create.+This+will+take+you+to+another+page+to+type+in+the+information+you+have+for+that+contact.+%28pic%29%0D%0A%09%09A%3ACreate+a+new+Company%0D%0A%09%09%09Q%281.2.1.1%29%3AFor+a+new+company%2C+type+in+the+company+name%2C+add+their+email%2C+phone+number%2C+website%2C+and+address+and+click+on+%E2%80%9CSave+New+Company%E2%80%9D+%3Cbr%3E%3Cbr%3EIf+you+need+to+add+any+comments+or+notes%2C+add+it+to+the+%E2%80%9CCustom+Fields%E2%80%9D+section.+%3Cbr%3E%3Cbr%3EIf+you+would+like+to+add+other+information+that+doesn%E2%80%99t+fit+the+above+categories%2C+you+can+click+on+%E2%80%9CSelect+to+add+a+custom+field%E2%80%9D+and+add+additional+fields+through+there.%0D%0A%09%09A%3ACreate+a+new+Person%0D%0A%09%09%09Q%281.2.1.2%29%3AFor+a+new+person%2C+type+in+their+first+and+last+name%2C+choose+the+company+they+belong+to+from+the+drop+down+box+%28if+applicable%29%2C+and+enter+that+person%E2%80%99s+title+%28if+applicable%29%0D%0A%09%09%09A%3ANext+step%0D%0A%09%09%09%09Q%281.2.1.2.1%29%3AScroll+down+a+little+and+you+will+see+a+%E2%80%9CCustom+Fields%E2%80%9D+section+with+comments%2Fnotes+underneath.+Under+the+comments%2Fnotes+section%2C+click+the+drop+down+box+stating+%E2%80%9CSelect+to+add+a+custom+field%E2%80%9D+%28pic%29%0D%0A%09%09%09%09A%3ANext+step%0D%0A%09%09%09%09%09Q%281.2.1.2.1.1%29%3AThis+drop+down+list+adds+new+fields+to+add+information+about+your+new+contact.+If+your+new+contact+is+a+new+client+or+opposing+counsel%2C+you+can+click+on+those+labels+underneath+%E2%80%9CCustom+Field+Sets%E2%80%9D+and+it+will+generate+several+new+fields+that+the+clinic+recommends+you+use+for+that+type+of+contact.+%3Cbr%3E%3Cbr%3E+If+your+new+contact+is+not+a+new+client+or+opposing+counsel%2C+you+can+scroll+down+the+list+to+add+any+new+fields+that+you+might+find+useful%3B+keep+in+mind+that+email%2C+phone+number%2C+website%2C+and+address+fields+are+just+below+this+section.%0D%0A%09%09%09%09%09A%3ANext+step%0D%0A%09%09%09%09%09%09Q%281.2.1.2.1.1.1%29%3AOnce+you%E2%80%99re+done+adding+your+information+to+each+field%2C+scroll+to+the+bottom+of+the+page+and+hit+%E2%80%9CSave+New+Person%E2%80%9D%0D%0A%09%09%09%09%09%09A%3ANext+step%0D%0A%09%09%09%09%09%09%09Q%281.2.1.2.1.1.1.1%29%3AOnce+you%E2%80%99ve+created+a+new+contact%2C+you+can+attach+that+contact+to+a+matter+by+going+to+the+dashboard+of+your+matter+and+clicking+%E2%80%9CAdd+related+contact%2C%E2%80%9D+as+you+can+see+below%3A+%28pic%29%0D%0A%09%09%09%09%09%09%09A%3ANext+step%0D%0A%09%09%09%09%09%09%09%09Q%281.2.1.2.1.1.1.1.1%29%3AThis+will+take+you+to+edit+the+matter.+Then%2C+scroll+down+to+where+it+says+%E2%80%9CRelated+contacts%2C%E2%80%9D+type+in+the+contact%E2%80%99s+relationship+to+the+matter+and+find+the+contact+you+created+either+by+typing+it+in+or+finding+them+on+the+drop+down+bar+underneath+%E2%80%9CContact%E2%80%9D+%0D%0A%09%09%09%09%09%09%09%09A%3ANext+step%0D%0A%09%09%09%09%09%09%09%09%09Q%281.2.1.2.1.1.1.1.1.1%29%3AOnce+you%E2%80%99ve+added+all+your+contacts+to+this+matter%2C+click+%E2%80%9CSave+matter%E2%80%9D+at+the+bottom+of+your+screen+%28See+screenshot+below%29+and+those+contacts+will+be+visible+from+your+matter%E2%80%99s+dashboard.%0D%0A%0D%0AA%3ACreate+a+task+list%0D%0AA%3AOpen+a+document+from+a+template%0D%0AA%3ASend+a+message%2Fcommunication%0D%0AA%3AAdd+an+event+to+the+calendar%0D%0A</div><div id="ondeck" name="ondeck"><div id='Q-1' name='Q-1' style='display:none;'> What would you like to do?
+</div><div id='Q-1.1' name='Q-1.1' style='display:none;'>Go to the top right corner, where there is a green button that says "Create New"
+</div><div id='Q-1.1.1' name='Q-1.1.1' style='display:none;'>Click on the drop down button and the click "Matter" (pic) <br><br>This will take you to the following screen (pic)
+</div><div id='Q-1.1.1.1' name='Q-1.1.1.1' style='display:none;'>For the client, you will have to create a new contact for them by clicking on the drop down box under “Client” and clicking “Create new contact” (pic)
+</div><div id='Q-1.1.1.1.1' name='Q-1.1.1.1.1' style='display:none;'>There will be a pop up that will ask for additional information about your client: (pic)
+</div><div id='Q-1.1.1.1.1.1' name='Q-1.1.1.1.1.1' style='display:none;'>Once you’ve filled out all that information, click “save contact” and it will return to the page you were on before.
+</div><div id='Q-1.1.1.1.1.1.1' name='Q-1.1.1.1.1.1.1' style='display:none;'>Under “Matter description,” only type your client’s full first and last name in all CAPS - this is how you will find your client on the search bar in the future.<br><br>Under “Permissions” and “Practice area,” click on the drop down button and select your clinic.<br><br>Under “Responsible attorney,” type the name of the student attorney assigned to this case.
+</div><div id='Q-1.1.1.1.1.1.1.1' name='Q-1.1.1.1.1.1.1.1' style='display:none;'>If another attorney within your clinic has worked on this case before, type their name into “Originating attorney,” otherwise this may be left blank
+</div><div id='Q-1.1.1.1.1.1.1.1.1' name='Q-1.1.1.1.1.1.1.1.1' style='display:none;'>Client reference number and location may be left blank unless directed to do otherwise by a supervisor.
+</div><div id='Q-1.1.1.1.1.1.1.1.1.1' name='Q-1.1.1.1.1.1.1.1.1.1' style='display:none;'>Next, scroll down and expand the “Related contacts” section if you have other contacts relating to your client.
+</div><div id='Q-1.2' name='Q-1.2' style='display:none;'>Go to top right corner, where there is a green button stating “Create New”
+</div><div id='Q-1.2.1' name='Q-1.2.1' style='display:none;'>Click on the drop down button and click either “Person” or “Company,” depending on what type of contact you want to create. This will take you to another page to type in the information you have for that contact. (pic)
+</div><div id='Q-1.2.1.1' name='Q-1.2.1.1' style='display:none;'>For a new company, type in the company name, add their email, phone number, website, and address and click on “Save New Company” <br><br>If you need to add any comments or notes, add it to the “Custom Fields” section. <br><br>If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there.
+</div><div id='Q-1.2.1.2' name='Q-1.2.1.2' style='display:none;'>For a new person, type in their first and last name, choose the company they belong to from the drop down box (if applicable), and enter that person’s title (if applicable)
+</div><div id='Q-1.2.1.2.1' name='Q-1.2.1.2.1' style='display:none;'>Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” (pic)
+</div><div id='Q-1.2.1.2.1.1' name='Q-1.2.1.2.1.1' style='display:none;'>This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath “Custom Field Sets” and it will generate several new fields that the clinic recommends you use for that type of contact. <br><br> If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful; keep in mind that email, phone number, website, and address fields are just below this section.
+</div><div id='Q-1.2.1.2.1.1.1' name='Q-1.2.1.2.1.1.1' style='display:none;'>Once you’re done adding your information to each field, scroll to the bottom of the page and hit “Save New Person”
+</div><div id='Q-1.2.1.2.1.1.1.1' name='Q-1.2.1.2.1.1.1.1' style='display:none;'>Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: (pic)
+</div><div id='Q-1.2.1.2.1.1.1.1.1' name='Q-1.2.1.2.1.1.1.1.1' style='display:none;'>This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” 
+</div><div id='Q-1.2.1.2.1.1.1.1.1.1' name='Q-1.2.1.2.1.1.1.1.1.1' style='display:none;'>Once you’ve added all your contacts to this matter, click “Save matter” at the bottom of your screen (See screenshot below) and those contacts will be visible from your matter’s dashboard.
+
+</div><div id='A-1.1' name='A-1.1' style='display:none;'>Open a new case/matter
+</div><div id='A-href-1.1' name='A-href-1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1' name='A-target-1.1' style='display:none;'></div><div id='X-1.1' name='X-1.1' style='display:none;'>Open a new case/matter</div><div id='A-1.1.1' name='A-1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1' name='A-href-1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1' name='A-target-1.1.1' style='display:none;'></div><div id='X-1.1.1' name='X-1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1' name='A-1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1' name='A-href-1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1' name='A-target-1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1' name='X-1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1' name='A-1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1' name='A-href-1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1' name='A-target-1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1' name='X-1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1' name='A-1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1' name='A-href-1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1' name='A-target-1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1' name='X-1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1.1' name='A-1.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1.1' name='A-href-1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1.1' name='A-target-1.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1.1' name='X-1.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1.1.1' name='A-1.1.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1.1.1' name='A-href-1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1.1.1' name='A-target-1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1.1.1' name='X-1.1.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1.1.1.1' name='A-1.1.1.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1.1.1.1' name='A-href-1.1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1.1.1.1' name='A-target-1.1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1.1.1.1' name='X-1.1.1.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1.1.1.1.1' name='A-1.1.1.1.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1.1.1.1.1' name='A-href-1.1.1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1.1.1.1.1' name='A-target-1.1.1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1.1.1.1.1' name='X-1.1.1.1.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1.1.1.1.1.1' name='A-1.1.1.1.1.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1.1.1.1.1.1' name='A-href-1.1.1.1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1.1.1.1.1.1' name='A-target-1.1.1.1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1.1.1.1.1.1' name='X-1.1.1.1.1.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.2' name='A-1.2' style='display:none;'>Create a new contact
+</div><div id='A-href-1.2' name='A-href-1.2' style='display:none;'>javascript:void('');</div><div id='A-target-1.2' name='A-target-1.2' style='display:none;'></div><div id='X-1.2' name='X-1.2' style='display:none;'>Create a new contact</div><div id='A-1.2.1' name='A-1.2.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1' name='A-href-1.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1' name='A-target-1.2.1' style='display:none;'></div><div id='X-1.2.1' name='X-1.2.1' style='display:none;'>Next step</div><div id='A-1.2.1.1' name='A-1.2.1.1' style='display:none;'>Create a new Company
+</div><div id='A-href-1.2.1.1' name='A-href-1.2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.1' name='A-target-1.2.1.1' style='display:none;'></div><div id='X-1.2.1.1' name='X-1.2.1.1' style='display:none;'>Create a new Company</div><div id='A-1.2.1.2' name='A-1.2.1.2' style='display:none;'>Create a new Person
+</div><div id='A-href-1.2.1.2' name='A-href-1.2.1.2' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2' name='A-target-1.2.1.2' style='display:none;'></div><div id='X-1.2.1.2' name='X-1.2.1.2' style='display:none;'>Create a new Person</div><div id='A-1.2.1.2.1' name='A-1.2.1.2.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1' name='A-href-1.2.1.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1' name='A-target-1.2.1.2.1' style='display:none;'></div><div id='X-1.2.1.2.1' name='X-1.2.1.2.1' style='display:none;'>Next step</div><div id='A-1.2.1.2.1.1' name='A-1.2.1.2.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1.1' name='A-href-1.2.1.2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1.1' name='A-target-1.2.1.2.1.1' style='display:none;'></div><div id='X-1.2.1.2.1.1' name='X-1.2.1.2.1.1' style='display:none;'>Next step</div><div id='A-1.2.1.2.1.1.1' name='A-1.2.1.2.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1.1.1' name='A-href-1.2.1.2.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1.1.1' name='A-target-1.2.1.2.1.1.1' style='display:none;'></div><div id='X-1.2.1.2.1.1.1' name='X-1.2.1.2.1.1.1' style='display:none;'>Next step</div><div id='A-1.2.1.2.1.1.1.1' name='A-1.2.1.2.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1.1.1.1' name='A-href-1.2.1.2.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1.1.1.1' name='A-target-1.2.1.2.1.1.1.1' style='display:none;'></div><div id='X-1.2.1.2.1.1.1.1' name='X-1.2.1.2.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.2.1.2.1.1.1.1.1' name='A-1.2.1.2.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1.1.1.1.1' name='A-href-1.2.1.2.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1.1.1.1.1' name='A-target-1.2.1.2.1.1.1.1.1' style='display:none;'></div><div id='X-1.2.1.2.1.1.1.1.1' name='X-1.2.1.2.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.2.1.2.1.1.1.1.1.1' name='A-1.2.1.2.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1.1.1.1.1.1' name='A-href-1.2.1.2.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1.1.1.1.1.1' name='A-target-1.2.1.2.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.2.1.2.1.1.1.1.1.1' name='X-1.2.1.2.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.3' name='A-1.3' style='display:none;'>Create a task list
+</div><div id='A-href-1.3' name='A-href-1.3' style='display:none;'>javascript:void('');</div><div id='A-target-1.3' name='A-target-1.3' style='display:none;'></div><div id='X-1.3' name='X-1.3' style='display:none;'>Create a task list</div><div id='A-1.4' name='A-1.4' style='display:none;'>Open a document from a template
+</div><div id='A-href-1.4' name='A-href-1.4' style='display:none;'>javascript:void('');</div><div id='A-target-1.4' name='A-target-1.4' style='display:none;'></div><div id='X-1.4' name='X-1.4' style='display:none;'>Open a document from a template</div><div id='A-1.5' name='A-1.5' style='display:none;'>Send a message/communication
+</div><div id='A-href-1.5' name='A-href-1.5' style='display:none;'>javascript:void('');</div><div id='A-target-1.5' name='A-target-1.5' style='display:none;'></div><div id='X-1.5' name='X-1.5' style='display:none;'>Send a message/communication</div><div id='A-1.6' name='A-1.6' style='display:none;'>Add an event to the calendar
+</div><div id='A-href-1.6' name='A-href-1.6' style='display:none;'>javascript:void('');</div><div id='A-target-1.6' name='A-target-1.6' style='display:none;'></div><div id='X-1.6' name='X-1.6' style='display:none;'>Add an event to the calendar</div>
+<script>
+	var QVnames = [['1','1'],['1.1','1.1'],['1.1.1','1.1.1'],['1.1.1.1','1.1.1.1'],['1.1.1.1.1','1.1.1.1.1'],['1.1.1.1.1.1','1.1.1.1.1.1'],['1.1.1.1.1.1.1','1.1.1.1.1.1.1'],['1.1.1.1.1.1.1.1','1.1.1.1.1.1.1.1'],['1.1.1.1.1.1.1.1.1','1.1.1.1.1.1.1.1.1'],['1.1.1.1.1.1.1.1.1.1','1.1.1.1.1.1.1.1.1.1'],['1.2','1.2'],['1.2.1','1.2.1'],['1.2.1.1','1.2.1.1'],['1.2.1.2','1.2.1.2'],['1.2.1.2.1','1.2.1.2.1'],['1.2.1.2.1.1','1.2.1.2.1.1'],['1.2.1.2.1.1.1','1.2.1.2.1.1.1'],['1.2.1.2.1.1.1.1','1.2.1.2.1.1.1.1'],['1.2.1.2.1.1.1.1.1','1.2.1.2.1.1.1.1.1'],['1.2.1.2.1.1.1.1.1.1','1.2.1.2.1.1.1.1.1.1']];
+</script>
+</div><textarea id="original" name="original" style="display:none;" disabled="disabled"><div id='Q-1' name='Q-1' style='display:none;'> What would you like to do?
+</div><div id='Q-1.1' name='Q-1.1' style='display:none;'>Go to the top right corner, where there is a green button that says "Create New"
+</div><div id='Q-1.1.1' name='Q-1.1.1' style='display:none;'>Click on the drop down button and the click "Matter" (pic) <br><br>This will take you to the following screen (pic)
+</div><div id='Q-1.1.1.1' name='Q-1.1.1.1' style='display:none;'>For the client, you will have to create a new contact for them by clicking on the drop down box under “Client” and clicking “Create new contact” (pic)
+</div><div id='Q-1.1.1.1.1' name='Q-1.1.1.1.1' style='display:none;'>There will be a pop up that will ask for additional information about your client: (pic)
+</div><div id='Q-1.1.1.1.1.1' name='Q-1.1.1.1.1.1' style='display:none;'>Once you’ve filled out all that information, click “save contact” and it will return to the page you were on before.
+</div><div id='Q-1.1.1.1.1.1.1' name='Q-1.1.1.1.1.1.1' style='display:none;'>Under “Matter description,” only type your client’s full first and last name in all CAPS - this is how you will find your client on the search bar in the future.<br><br>Under “Permissions” and “Practice area,” click on the drop down button and select your clinic.<br><br>Under “Responsible attorney,” type the name of the student attorney assigned to this case.
+</div><div id='Q-1.1.1.1.1.1.1.1' name='Q-1.1.1.1.1.1.1.1' style='display:none;'>If another attorney within your clinic has worked on this case before, type their name into “Originating attorney,” otherwise this may be left blank
+</div><div id='Q-1.1.1.1.1.1.1.1.1' name='Q-1.1.1.1.1.1.1.1.1' style='display:none;'>Client reference number and location may be left blank unless directed to do otherwise by a supervisor.
+</div><div id='Q-1.1.1.1.1.1.1.1.1.1' name='Q-1.1.1.1.1.1.1.1.1.1' style='display:none;'>Next, scroll down and expand the “Related contacts” section if you have other contacts relating to your client.
+</div><div id='Q-1.2' name='Q-1.2' style='display:none;'>Go to top right corner, where there is a green button stating “Create New”
+</div><div id='Q-1.2.1' name='Q-1.2.1' style='display:none;'>Click on the drop down button and click either “Person” or “Company,” depending on what type of contact you want to create. This will take you to another page to type in the information you have for that contact. (pic)
+</div><div id='Q-1.2.1.1' name='Q-1.2.1.1' style='display:none;'>For a new company, type in the company name, add their email, phone number, website, and address and click on “Save New Company” <br><br>If you need to add any comments or notes, add it to the “Custom Fields” section. <br><br>If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there.
+</div><div id='Q-1.2.1.2' name='Q-1.2.1.2' style='display:none;'>For a new person, type in their first and last name, choose the company they belong to from the drop down box (if applicable), and enter that person’s title (if applicable)
+</div><div id='Q-1.2.1.2.1' name='Q-1.2.1.2.1' style='display:none;'>Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” (pic)
+</div><div id='Q-1.2.1.2.1.1' name='Q-1.2.1.2.1.1' style='display:none;'>This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath “Custom Field Sets” and it will generate several new fields that the clinic recommends you use for that type of contact. <br><br> If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful; keep in mind that email, phone number, website, and address fields are just below this section.
+</div><div id='Q-1.2.1.2.1.1.1' name='Q-1.2.1.2.1.1.1' style='display:none;'>Once you’re done adding your information to each field, scroll to the bottom of the page and hit “Save New Person”
+</div><div id='Q-1.2.1.2.1.1.1.1' name='Q-1.2.1.2.1.1.1.1' style='display:none;'>Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: (pic)
+</div><div id='Q-1.2.1.2.1.1.1.1.1' name='Q-1.2.1.2.1.1.1.1.1' style='display:none;'>This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” 
+</div><div id='Q-1.2.1.2.1.1.1.1.1.1' name='Q-1.2.1.2.1.1.1.1.1.1' style='display:none;'>Once you’ve added all your contacts to this matter, click “Save matter” at the bottom of your screen (See screenshot below) and those contacts will be visible from your matter’s dashboard.
+
+</div><div id='A-1.1' name='A-1.1' style='display:none;'>Open a new case/matter
+</div><div id='A-href-1.1' name='A-href-1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1' name='A-target-1.1' style='display:none;'></div><div id='X-1.1' name='X-1.1' style='display:none;'>Open a new case/matter</div><div id='A-1.1.1' name='A-1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1' name='A-href-1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1' name='A-target-1.1.1' style='display:none;'></div><div id='X-1.1.1' name='X-1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1' name='A-1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1' name='A-href-1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1' name='A-target-1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1' name='X-1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1' name='A-1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1' name='A-href-1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1' name='A-target-1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1' name='X-1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1' name='A-1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1' name='A-href-1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1' name='A-target-1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1' name='X-1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1.1' name='A-1.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1.1' name='A-href-1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1.1' name='A-target-1.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1.1' name='X-1.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1.1.1' name='A-1.1.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1.1.1' name='A-href-1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1.1.1' name='A-target-1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1.1.1' name='X-1.1.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1.1.1.1' name='A-1.1.1.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1.1.1.1' name='A-href-1.1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1.1.1.1' name='A-target-1.1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1.1.1.1' name='X-1.1.1.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1.1.1.1.1' name='A-1.1.1.1.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1.1.1.1.1' name='A-href-1.1.1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1.1.1.1.1' name='A-target-1.1.1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1.1.1.1.1' name='X-1.1.1.1.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.1.1.1.1.1.1.1.1.1.1' name='A-1.1.1.1.1.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.1.1.1.1.1.1.1.1.1.1' name='A-href-1.1.1.1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1.1.1.1.1.1.1.1.1.1' name='A-target-1.1.1.1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.1.1.1.1.1.1.1.1.1.1' name='X-1.1.1.1.1.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.2' name='A-1.2' style='display:none;'>Create a new contact
+</div><div id='A-href-1.2' name='A-href-1.2' style='display:none;'>javascript:void('');</div><div id='A-target-1.2' name='A-target-1.2' style='display:none;'></div><div id='X-1.2' name='X-1.2' style='display:none;'>Create a new contact</div><div id='A-1.2.1' name='A-1.2.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1' name='A-href-1.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1' name='A-target-1.2.1' style='display:none;'></div><div id='X-1.2.1' name='X-1.2.1' style='display:none;'>Next step</div><div id='A-1.2.1.1' name='A-1.2.1.1' style='display:none;'>Create a new Company
+</div><div id='A-href-1.2.1.1' name='A-href-1.2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.1' name='A-target-1.2.1.1' style='display:none;'></div><div id='X-1.2.1.1' name='X-1.2.1.1' style='display:none;'>Create a new Company</div><div id='A-1.2.1.2' name='A-1.2.1.2' style='display:none;'>Create a new Person
+</div><div id='A-href-1.2.1.2' name='A-href-1.2.1.2' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2' name='A-target-1.2.1.2' style='display:none;'></div><div id='X-1.2.1.2' name='X-1.2.1.2' style='display:none;'>Create a new Person</div><div id='A-1.2.1.2.1' name='A-1.2.1.2.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1' name='A-href-1.2.1.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1' name='A-target-1.2.1.2.1' style='display:none;'></div><div id='X-1.2.1.2.1' name='X-1.2.1.2.1' style='display:none;'>Next step</div><div id='A-1.2.1.2.1.1' name='A-1.2.1.2.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1.1' name='A-href-1.2.1.2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1.1' name='A-target-1.2.1.2.1.1' style='display:none;'></div><div id='X-1.2.1.2.1.1' name='X-1.2.1.2.1.1' style='display:none;'>Next step</div><div id='A-1.2.1.2.1.1.1' name='A-1.2.1.2.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1.1.1' name='A-href-1.2.1.2.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1.1.1' name='A-target-1.2.1.2.1.1.1' style='display:none;'></div><div id='X-1.2.1.2.1.1.1' name='X-1.2.1.2.1.1.1' style='display:none;'>Next step</div><div id='A-1.2.1.2.1.1.1.1' name='A-1.2.1.2.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1.1.1.1' name='A-href-1.2.1.2.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1.1.1.1' name='A-target-1.2.1.2.1.1.1.1' style='display:none;'></div><div id='X-1.2.1.2.1.1.1.1' name='X-1.2.1.2.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.2.1.2.1.1.1.1.1' name='A-1.2.1.2.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1.1.1.1.1' name='A-href-1.2.1.2.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1.1.1.1.1' name='A-target-1.2.1.2.1.1.1.1.1' style='display:none;'></div><div id='X-1.2.1.2.1.1.1.1.1' name='X-1.2.1.2.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.2.1.2.1.1.1.1.1.1' name='A-1.2.1.2.1.1.1.1.1.1' style='display:none;'>Next step
+</div><div id='A-href-1.2.1.2.1.1.1.1.1.1' name='A-href-1.2.1.2.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.2.1.2.1.1.1.1.1.1' name='A-target-1.2.1.2.1.1.1.1.1.1' style='display:none;'></div><div id='X-1.2.1.2.1.1.1.1.1.1' name='X-1.2.1.2.1.1.1.1.1.1' style='display:none;'>Next step</div><div id='A-1.3' name='A-1.3' style='display:none;'>Create a task list
+</div><div id='A-href-1.3' name='A-href-1.3' style='display:none;'>javascript:void('');</div><div id='A-target-1.3' name='A-target-1.3' style='display:none;'></div><div id='X-1.3' name='X-1.3' style='display:none;'>Create a task list</div><div id='A-1.4' name='A-1.4' style='display:none;'>Open a document from a template
+</div><div id='A-href-1.4' name='A-href-1.4' style='display:none;'>javascript:void('');</div><div id='A-target-1.4' name='A-target-1.4' style='display:none;'></div><div id='X-1.4' name='X-1.4' style='display:none;'>Open a document from a template</div><div id='A-1.5' name='A-1.5' style='display:none;'>Send a message/communication
+</div><div id='A-href-1.5' name='A-href-1.5' style='display:none;'>javascript:void('');</div><div id='A-target-1.5' name='A-target-1.5' style='display:none;'></div><div id='X-1.5' name='X-1.5' style='display:none;'>Send a message/communication</div><div id='A-1.6' name='A-1.6' style='display:none;'>Add an event to the calendar
+</div><div id='A-href-1.6' name='A-href-1.6' style='display:none;'>javascript:void('');</div><div id='A-target-1.6' name='A-target-1.6' style='display:none;'></div><div id='X-1.6' name='X-1.6' style='display:none;'>Add an event to the calendar</div>
+<script>
+	var QVnames = [['1','1'],['1.1','1.1'],['1.1.1','1.1.1'],['1.1.1.1','1.1.1.1'],['1.1.1.1.1','1.1.1.1.1'],['1.1.1.1.1.1','1.1.1.1.1.1'],['1.1.1.1.1.1.1','1.1.1.1.1.1.1'],['1.1.1.1.1.1.1.1','1.1.1.1.1.1.1.1'],['1.1.1.1.1.1.1.1.1','1.1.1.1.1.1.1.1.1'],['1.1.1.1.1.1.1.1.1.1','1.1.1.1.1.1.1.1.1.1'],['1.2','1.2'],['1.2.1','1.2.1'],['1.2.1.1','1.2.1.1'],['1.2.1.2','1.2.1.2'],['1.2.1.2.1','1.2.1.2.1'],['1.2.1.2.1.1','1.2.1.2.1.1'],['1.2.1.2.1.1.1','1.2.1.2.1.1.1'],['1.2.1.2.1.1.1.1','1.2.1.2.1.1.1.1'],['1.2.1.2.1.1.1.1.1','1.2.1.2.1.1.1.1.1'],['1.2.1.2.1.1.1.1.1.1','1.2.1.2.1.1.1.1.1.1']];
+</script>
+</textarea><textarea id="transcript" name="transcript" style="display:none;" disabled="disabled"></textarea><div style="float:left;width:100%;margin:15px 0 0px 0;border-top: solid 1px #ddd;"><div id=credits class=credits style="display:none;"><div class=credit_text></div></div><p align=center> <a href="https://www.qnamarkup.org/" target=_top>code your own</a></p></div></FORM></div></div>
+<script type="text/javascript">
+	var QNum = 0;
+	var Qhtml = "";
+	var Dhtml = "";
+	var label = "";
+	var GOTOfired = 0;
+	var path = [];
+	var doc_bin = [];
+	var convo_bin = [];
+	var freetext = 0;
+	var goingback = 0;
+
+	$("#conversation input").on("keypress", 'form', function (e) {
+    	var code = e.keyCode || e.which;
+    	if (code == 13) {
+        	e.preventDefault();
+        	return false;
+    	}
+	});
+
+	function answerQ(lb,restart) {
+		currentQ = label;
+		label = lb;
+		Dhtml = 'D-'+label;
+		Qhtml = 'Q-'+label;
+		var Ahtml = 'A-'+label;
+		var Jhtml = 'J-'+QNum;
+		var Xhtml = 'X-'+label;
+		var Xihtml = 'Xi-'+label;
+		
+		var input_error = 0;
+		if (restart == undefined) {
+			var regexp = new RegExp("\<variable\>");
+			//if (document.getElementById(Xihtml)) {
+			//	console.log("document.getElementById("+Xihtml+").value: "+document.getElementById(Xihtml).value);
+			//} else {
+			//	console.log("NO document.getElementById("+Xihtml+").value: ");
+			//}
+			if (document.getElementById(Ahtml).innerHTML.match(regexp)) {
+				document.getElementById(Xihtml).value = document.getElementById(Xihtml).value.replace(/(^\s*|\s*$)/,"");
+				if (document.getElementById(Xihtml).value == "") {
+					input_error = "Your answer appears to be empty.";
+					label = currentQ;
+				} else {
+					document.getElementById(Xihtml).value = document.getElementById(Xihtml).value.replace(/</g,"<");
+					document.getElementById(Xihtml).value = document.getElementById(Xihtml).value.replace(/>/g,">");
+				}
+			} 
+		}
+			
+		if (input_error != 0) {
+			alert(input_error);
+			document.getElementById(Xihtml).focus();			
+		} else {
+			if (restart == undefined) {
+				document.getElementById('QandA').innerHTML += "<div id=\"break-at-"+QNum+"\" class='frame'><div class='full'><div class='ans_text'>"+document.getElementById(Ahtml).innerHTML+"</div></div><div class='ans_arrow'></div></div></div></div>";
+				// insert answer from button
+				if (document.getElementById(valueis(currentQ))) {
+					document.getElementById(valueis(currentQ)).outerHTML='';
+				}
+				if (document.getElementById(Xihtml)) {
+					document.getElementById('QandA').innerHTML = "<textarea style=\"display:none;\" id=\""+valueis(currentQ)+"\" name=\""+valueis(currentQ)+"\">"+document.getElementById(Xihtml).value+"</textarea>\n" + document.getElementById('QandA').innerHTML				
+				} else {
+					document.getElementById('QandA').innerHTML = "<textarea style=\"display:none;\" id=\""+valueis(currentQ)+"\" name=\""+valueis(currentQ)+"\">"+document.getElementById(Xhtml).innerHTML+"</textarea>\n" + document.getElementById('QandA').innerHTML
+				}
+				if (document.getElementById('QandA').innerHTML.match(regexp)) {
+				 	var duplicatevars = new RegExp("id=\""+document.getElementById(Xhtml).innerHTML+"(.)*"+document.getElementById(Xhtml).innerHTML+"\"","g");
+					document.getElementById('QandA').innerHTML = document.getElementById('QandA').innerHTML.replace(duplicatevars, "");
+					document.getElementById('QandA').innerHTML = document.getElementById('QandA').innerHTML.replace(/\<variable\>(\<\/variable\>)?/, "<input type=hidden id=\""+document.getElementById(Xhtml).innerHTML+"\" name=\""+document.getElementById(Xhtml).innerHTML+"\" value=\""+document.getElementById(Xihtml).value+"\"/>"+document.getElementById(Xihtml).value);
+					//document.getElementById('transcript').value = document.getElementById('transcript').value.replace(/\<variable\>(\<\/variable\>)?/, document.getElementById(Xihtml).value+"\n");
+					var thisvariable = new RegExp("<(X|x)>"+document.getElementById(Xhtml).innerHTML+"<\/(X|x)>","g");
+					//document.getElementById('doc').innerHTML = document.getElementById('doc').innerHTML.replace(thisvariable, document.getElementById(document.getElementById(Xhtml).innerHTML).innerHTML);
+					//document.getElementById('ondeck').innerHTML = document.getElementById('ondeck').innerHTML.replace(thisvariable, document.getElementById(valueis(currentQ)).innerHTML);
+					//console.log("thisvariable: "+thisvariable);
+					//console.log("Variable name: "+valueis(currentQ));
+					//console.log("Variable value: "+document.getElementById(valueis(currentQ)).innerHTML);
+					if(document.getElementById(Ahtml).innerHTML != "") { 
+						//document.getElementById('transcript').value += "USER: "+document.getElementById(Xihtml).value+"\n"; 
+						convo_bin.push("USER: "+document.getElementById(Xihtml).value+"\n");
+					}
+				} else {
+					//document.getElementById('transcript').value += "USER: "+document.getElementById(Ahtml).innerHTML+"\n";
+					convo_bin.push("USER: "+document.getElementById(Ahtml).innerHTML+"\n");
+				}
+				document.getElementById('Choices').innerHTML = '';
+				if (goingback == 0) {
+					setTimeout(function() {renderQnA(Qhtml,Jhtml,Dhtml,restart)}, 300);
+				} else {
+					renderQnA(Qhtml,Jhtml,Dhtml,restart);
+				}
+			} else {
+				document.getElementById('Choices').innerHTML = '';
+				path = [];
+				renderQnA(Qhtml,Jhtml,Dhtml,restart);			
+			}
+
+		}
+		
+	}
+
+
+	function renderQnA(Qht,Jht,Dht,restar) {
+		Dhtml = Dht;
+					
+		GOTOfired = 0;
+		path.push(label);
+
+		swapGOTO(Qht,Jht);
+
+		console.log("After swap: "+GOTOfired);
+
+		if (GOTOfired == 0) {
+			document.getElementById('QandA').innerHTML += "<div id="+Jht+" style=\"float:left;width:100%;height:1px;\"> </div>";
+		}
+		document.getElementById('QandA').innerHTML += "<div class='frame'><div class='full'><div class='question_text'>"+swapvar(document.getElementById(Qhtml).innerHTML)+"</div></div><div class='question_arrow'></div></div>";		
+
+		document.getElementById('QandA').innerHTML = document.getElementById('QandA').innerHTML.replace(/(\<br\>){2}/gi,"</div></div><div class='question_arrow'></div></div></div></div><div class='frame'><div class='full'><div class='question_text'>");
+		document.getElementById('QandA').innerHTML = document.getElementById('QandA').innerHTML.replace(/(\<br\> \<br\>)/gi,"<br><br>");
+
+		// add question 
+		//document.getElementById('transcript').value += swapvar("BOT: "+ document.getElementById(Qhtml).innerHTML);
+		//document.getElementById('transcript').value = document.getElementById('transcript').value.replace(/(\<br\>){2}/gi,"\nBOT: ");
+		this_text = swapvar("BOT: "+ document.getElementById(Qhtml).innerHTML);
+		this_text = this_text.replace(/(\<br\>){2}/gi,"\nBOT: ");
+		convo_bin.push(this_text);
+				
+		// make push doc into array in doc() cycle through array and put into output
+		// maybe remove doc div
+		if (document.getElementById(Dhtml)) {
+			doc_bin.push([document.getElementById(Dhtml).innerHTML,currentQ]);
+			console.log("Add to Doc ("+Dhtml+"): "+document.getElementById(Dhtml).innerHTML);
+			//document.getElementById('doc').innerHTML += document.getElementById(Dhtml).innerHTML;
+		}
+						
+		tmp = getElementsByIdRegExp("div", "A-"+label+"(\\.{1}\\d){1}$");
+		a_href = getElementsByIdRegExp("div", "A-href-"+label+"(\\.{1}\\d){1}$");
+		a_target = getElementsByIdRegExp("div", "A-target-"+label+"(\\.{1}\\d){1}$");
+		tmp_x = getElementsByIdRegExp("div", "X-"+label+"(\\.{1}\\d){1}$");
+		var Xishere = 0;
+		for ( var i = 0; i < tmp.length; i++ ) {
+			var nextlabel = tmp[i].id.substr(2);
+			var Xihtml = 'Xi-'+nextlabel;
+			var regexp = "\<variable\>";
+			var regexp_js = "^javascript:";
+			var script_call = "";
+			if (tmp[i].innerHTML.match(regexp)) {
+				if (a_href[i].innerHTML.match('^(_blank:)?javascript:')) {
+					script_call = a_href[i].innerHTML.replace(/^(_blank:)?javascript:/gi,"");
+				} else {
+					if (a_href[i].innerHTML.match('^_blank:')) {
+						script_call = "window.open('"+a_href[i].innerHTML.replace(/^_blank:/,"")+"','_blank');";			
+					} else {
+						script_call = "location.href = '"+a_href[i].innerHTML+"';";
+					}
+				}
+				document.getElementById('Choices').innerHTML += "<div class=\"xdiv\"><input type=\""+a_target[i].innerHTML+"\" id=\""+Xihtml+"\" name=\""+Xihtml+"\" class=\"xinput\" onkeypress=\"if (event.keyCode==13){answerQ('"+nextlabel+"');"+script_call+"}\"/><a href=\"javascript:void('');\" class=\"xbutton\" onClick=\"answerQ('"+nextlabel+"');"+script_call+"\"><span class=\"qpad\">Save above text as answer.</span></a></div>";
+				Xishere = Xihtml;
+				freetext = Xihtml;
+			} else if (a_href[i].innerHTML.match(regexp_js) && a_href[i].innerHTML != "javascript:void('');") {
+				tmp[i].innerHTML = tmp[i].innerHTML.replace(/(\<br\>){2}/gi,"<br> <br>");
+				var script_call = a_href[i].innerHTML.replace(/^javascript:/gi,"");
+				document.getElementById('Choices').innerHTML += "<a href=\"javascript:void('');\" class=\"qabutton\" onClick=\"answerQ('"+nextlabel+"');"+script_call+"\" "+a_target[i].innerHTML+"><span class=\"qpad\">"+tmp[i].innerHTML+"</span></a>";							
+				freetext = 0;
+			} else {
+				tmp[i].innerHTML = tmp[i].innerHTML.replace(/(\<br\>){2}/gi,"<br> <br>");
+				document.getElementById('Choices').innerHTML += "<a href=\""+a_href[i].innerHTML+"\" class=\"qabutton\" onClick=\"answerQ('"+nextlabel+"');\" "+a_target[i].innerHTML+"><span class=\"qpad\">"+tmp[i].innerHTML+"</span></a>";				
+				freetext = 0;
+			}
+		}			
+
+		if (restar == undefined) {
+			
+			document.getElementById('Choices').innerHTML += "<div class=\"standard_buttons\">";
+			if (QNum > 1) { 
+				document.getElementById('Choices').innerHTML += "<a href=\"javascript:void('');\" class=\"sbutton\" onClick=\"goback(QNum);\">GO BACK ONE</a>";
+				document.getElementById('Choices').innerHTML += "<a href=\"javascript:void('');\" class=\"sbutton\" style=\"float:right\" onClick=\"startAT('1');\">START OVER</a>";
+			} else if (QNum == 1) {
+				document.getElementById('Choices').innerHTML += "<a href=\"javascript:void('');\" class=\"sbutton\" onClick=\"startAT('1');\">GO BACK ONE</a>";
+				document.getElementById('Choices').innerHTML += "<a href=\"javascript:void('');\" class=\"sbutton\" style=\"float:right\" onClick=\"startAT('1');\">START OVER</a>";				
+			}
+			document.getElementById('Choices').innerHTML += "</div>"
+		}
+				
+		if (QNum != 0) { 
+			if (goingback == 0) {
+				scroll2Q(Jht,800);           	
+			} else {
+				window.scrollTo(0, document.getElementById(Jht).offsetTop);     		
+			}
+		} else if (restar != undefined) {
+			window.scrollTo(0,0);
+		}
+		if (Xishere != 0 && window.self == window.top) {
+			console.log("Set focus for: "+Xishere);
+			document.getElementById(Xishere).focus();
+		}
+		console.log("Q#: "+QNum);
+		console.log("New Path: "+path);
+		QNum++;
+		goingback = 0;
+					
+	}
+
+	
+	function swapGOTO(QH,JH) {
+		var regex = new RegExp("GOTO:(\d*)(\.\d+)*");
+		if (regex.test(document.getElementById(QH).innerHTML)) {
+			var Qtext = document.getElementById(QH).innerHTML.match(/(GOTO:(\d*)(.\s*\d+)*)/);
+			document.getElementById('QandA').innerHTML += "<div id="+JH+" style=\"float:left;width:100%;height:1px;\"> </div>";
+			// Add question
+			// note I added () around the < to avoid a < followed by a ? which causes problems in php
+			var Qtexttrans = document.getElementById(QH).innerHTML.replace(/(<)?GOTO:(\d*)(.\s*\d+)*>?/,"");
+			Qtexttrans = Qtexttrans.replace(/\s*$/,"");
+			if (Qtexttrans != "") {
+				//document.getElementById('transcript').value += swapvar("BOT: "+Qtexttrans+"\n");
+				convo_bin.push(swapvar("BOT: "+Qtexttrans+"\n"));
+			}
+			if (document.getElementById(QH).innerHTML.match(/^GOTO:(\d*)(.\s*\d+)*/)) {
+				document.getElementById('QandA').innerHTML += document.getElementById(QH).innerHTML.replace(/(<)?GOTO:(\d*)(.\s*\d+)*>?/,"<"+Qtext+">");
+			} else {
+				document.getElementById('QandA').innerHTML += "<div class='frame'><div class='full'><div class='question_text'>"+ swapvar(document.getElementById(QH).innerHTML.replace(/(<)?GOTO:(\d*)(.\s*\d+)*>?/,"<"+Qtext+">"))+"</div></div><div class='question_arrow'></div></div>";						
+			}
+			// replace GOTO with text
+			label = Qtext[0].replace("GOTO:","");
+			Qhtml = 'Q-'+label;
+			if (document.getElementById(Dhtml)) {
+				doc_bin.push([document.getElementById(Dhtml).innerHTML,currentQ]);
+				console.log("Add to Doc ("+Dhtml+"): "+document.getElementById(Dhtml).innerHTML);
+				//document.getElementById('doc').innerHTML += document.getElementById(Dhtml).innerHTML;
+			}
+			Dhtml = 'D-'+label;
+			GOTOfired = 1;
+			console.log("In swap: "+GOTOfired);
+			swapGOTO(Qhtml,JH);
+		}
+	}
+
+	
+	function scroll2Q(id,speed) {
+		var top = document.getElementById(id).offsetTop; //Getting Y of target element
+		console.log("Jump to Y for ("+id+"): "+top);
+		//adapted from https://github.com/Yappli/smooth-scroll
+		var moving_frequency = 5; // Affects performance !
+		var hop_count = speed/moving_frequency
+        var getScrollTopDocumentAtBegin = document.documentElement.scrollTop + document.body.scrollTop;
+        var gap = (top - getScrollTopDocumentAtBegin) / hop_count;
+		for(var i = 1; i <= hop_count; i++)
+        {
+        	(function()
+           	{
+           		var hop_top_position = gap*i;
+           	    setTimeout(function(){  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*i);
+           	 })();
+        }
+	}
+
+	function getElementsByIdIs(selectorTag, name) {
+		var items = [];
+		var myPosts = document.getElementsByTagName(selectorTag);
+			//omitting undefined null check for brevity
+			if (myPosts[0].id == name) {
+				items.push(myPosts[0]);
+			}
+		
+		return items;
+	}
+
+	function getElementsByIdRegExp(selectorTag, expression) {
+		// note you need to escape \ in the expression with \, i.e., \\ = \
+		var regex = new RegExp(expression);
+		var items = [];
+		var myPosts = document.getElementsByTagName(selectorTag);
+		for (var i = 0; i < myPosts.length; i++) {
+			if (regex.test(myPosts[i].id)) {
+				items.push(myPosts[i]);
+			}
+		}
+		
+		return items;
+	}	
+
+	// startAT QnA
+	function startAT(id) {
+		document.getElementById('ondeck').innerHTML = document.getElementById('original').value;
+		document.getElementById('QandA').innerHTML = "";
+		//document.getElementById('transcript').value = "";
+		doc_bin = [];
+		convo_bin = [];
+		QNum = 0;
+		answerQ(id,'1');
+	}
+		
+	//show funtion
+	function show(id) { 
+   		if (document.getElementById) { // DOM3 = IE5, NS6
+        	document.getElementById(id).style.display = 'block';
+    	} else { 
+        	if (document.layers) {  
+            	document.id.display = 'block';
+        	} else {
+                document.all.id.style.display = 'block';
+        	}
+    	}
+	}
+
+	//hide funtion
+	function hide(id) { 
+    	if (document.getElementById) { // DOM3 = IE5, NS6
+        	document.getElementById(id).style.display = 'none';         
+    	} else { 
+        	if (document.layers) {  
+                document.id.display = 'none';
+        	} else {
+                document.all.id.style.display = 'none';
+        	}
+    	}
+	}
+
+	//show OR hide funtion depends on if element is shown or hidden
+	function shoh(id) { 
+    	if (document.getElementById) { // DOM3 = IE5, NS6
+        	if (document.getElementById(id).style.display == "none"){
+            	document.getElementById(id).style.display = 'block';
+        	} else {
+            	document.getElementById(id).style.display = 'none';         
+        	}   
+    	} else { 
+        	if (document.layers) {  
+            	if (document.id.display == "none"){
+                	document.id.display = 'block';
+            	} else {
+                	document.id.display = 'none';
+            	}
+        	} else {
+            	if (document.all.id.style.visibility == "none"){
+                	document.all.id.style.display = 'block';
+            	} else {
+                	document.all.id.style.display = 'none';
+            	}
+        	}
+    	}
+	}
+	
+	function swapvar(input) {
+		var output; 
+		for(var i = 0; i < QVnames.length; i++) {
+			if (document.getElementById(QVnames[i][1])) {
+				var item = QVnames[i][1].replace(/\./g,"\\.");
+				var varegx = new RegExp("<x>"+item+"<\/x>","gi");
+				//console.log(QVnames[i][1]);
+				input = input.replace(varegx,document.getElementById(QVnames[i][1]).innerHTML);
+			} 
+		}
+		output = input
+		return output
+	}
+	
+	function docforindex(indexID) {
+		for(var i = 0; i < doc_bin.length; i++) {
+			if(doc_bin[i][1] == indexID) {
+				return true;
+			}
+		}
+	}
+	function indexis(variablename) {
+		for(var i = 0; i < QVnames.length; i++) {
+			if(QVnames[i][1] == variablename) {
+				return QVnames[i][0];
+			}
+		}
+	}
+	function valueis(variablekey) {
+		for(var i = 0; i < QVnames.length; i++) {
+			if(QVnames[i][0] == variablekey) {
+				return QVnames[i][1];
+			}
+		}
+	}
+	
+	function look4goto(qn,id) {
+		console.log("GOTO SEARCH: "+id);
+		var qID = "Q-"+id;
+		// If there's a doc in the XXXXXXXXXXXXXXXX, remove it.
+		if (docforindex(path.indexOf(id))) {
+			console.log("DOC FOUND "+id);
+			doc_bin.splice(doc_bin.length-1,1);
+		}
+		convo_bin.splice(-2,2);
+		var re = new RegExp("GOTO:(([a-z0-9\._-]*)\s*)$","gi");
+		if (document.getElementById(qID).innerHTML.match(re)) {
+			convo_bin.splice(-1,1);
+			console.log("GOTO FOUND: "+id);
+			textinput = re.exec(document.getElementById(qID).innerHTML)[2]+"";
+			if (docforindex(indexis(textinput))) {
+				document.getElementById("Xi-"+path[qn]).value = document.getElementById(valueis(textinput)).innerHTML;
+				console.log("DOC FOUND "+textinput);
+				doc_bin.splice(doc_bin.length-1,1);
+			}
+			look4goto(qn,textinput);
+		}
+	}
+	
+	function goback(qn) {
+		Qlast = qn - 3
+		qn = qn - 2;
+		label = path[qn];
+		goingback = 1;
+		
+		console.log("GO BACK TO:"+qn);
+		var re = new RegExp('(((^|\\n).*)*)<div id="break-at-'+qn+'" class="frame">((.*)(\\W.*))*', 'g');
+		document.getElementById("QandA").innerHTML = document.getElementById("QandA").innerHTML.replace(re, '$1');
+		document.getElementById('Choices').innerHTML += "<input type=\"hidden\" id=\"Xi-"+path[qn]+"\" name=\"Xi-"+path[qn]+"\" value=\"\">";
+			console.log("####################: "+path[path.length-1]);
+		
+		//look4goto(qn,path[path.length-1]);
+		
+		path.splice(-1,1);
+		convo_bin.splice(-4,4);
+		//convo_bin.splice(-2,2);
+
+		// If there's a doc in the last Q that you're removing, hold on to it.
+		// And put it back after you've removed it. When you rerender the Q.
+		if (document.getElementById("X-"+path[qn]) && document.getElementById(valueis(path[Qlast]))) {
+			document.getElementById("Xi-"+path[qn]).value = document.getElementById(valueis(path[Qlast])).innerHTML;
+			doc_bin.splice(doc_bin.length-1,1);
+		}
+		
+		// If there's a doc in the current Q, remove it.
+		if (docforindex(currentQ)) {
+			console.log("DOC FOUND (current) "+currentQ);
+			doc_bin.splice(doc_bin.length-1,1);
+		}
+		// If there's a doc in the queued up Q, remove it. 
+		if (document.getElementById(Dhtml)) {
+			console.log("DOC FOUND (ondeck)"+Dhtml);
+			doc_bin.splice(doc_bin.length-1,1);
+		}
+		
+		look4goto(qn,path[path.length-1]);
+		
+		if (freetext != 0) {
+			document.getElementById(freetext).value = "";
+		}
+		QNum = qn;
+		loadQ = path[path.length-1];
+		path.splice(-1,1);
+		
+		console.log("Reload ans for: "+loadQ);
+		answerQ(loadQ);
+	}
+
+	function transcript(output) {
+		var convo_output = "";
+		for (var i = 0, len = convo_bin.length; i < len; i++) {
+			convo_output += convo_bin[i];
+		}
+		if (output == 1) {
+			return convo_output;
+		} else {
+			return convo_output.replace(/<[^>]*>/g,"");
+		}
+	}		
+	
+	function doc() {
+		var doc_output = ""; 
+		for (var i = 0, len = doc_bin.length; i < len; i++) {
+			doc_output += doc_bin[i][0];
+		}
+		return swapvar(doc_output);
+	}	
+	
+	function json_str() {
+		
+		var json_list = "{";
+		for(var i = 0; i < QVnames.length; i++) {
+			if (!document.getElementById("Q-"+QVnames[i][0]).innerHTML.match(/(GOTO:(\d*)(.\s*\d+)*)/)) {
+				if (document.getElementById(QVnames[i][1])) {
+					json_list = json_list+'"'+QVnames[i][1]+'":"'+document.getElementById(QVnames[i][1]).innerHTML+'"';
+				} else {
+					json_list = json_list+'"'+QVnames[i][1]+'":"'+'"';
+				}
+				json_list = json_list+",";
+			} 
+			if (i+1 == QVnames.length) {
+				json_list = json_list.replace(/,$/, '');
+				json_list = json_list+"}";
+			}
+		}
+		return json_list;
+	}
+
+	function mail2(to,subject,body) {
+		to = encodeURIComponent(to);
+		subject = encodeURIComponent(subject);
+		body = encodeURIComponent(body);
+		window.location.href = "mailto:"+to+"?subject="+subject+"&body="+body;
+	}
+	
+	function submit2(action,method,docAs,instructions,transcriptAs,jsonAs,target) {
+		document.FORM.action = action;
+		document.FORM.method = method;
+		if (target) {
+			document.FORM.target = target;
+		} else {
+			document.FORM.target = "_self";		
+		}
+		
+		if (docAs) {
+			if (document.getElementsByName(docAs).length == 0) { 
+				var doctext = document.createElement("textarea");
+				doctext.style.display ='none';
+				doctext.name= docAs;
+				doctext.value= doc();
+				document.getElementById('FORM').appendChild(doctext);
+			} else {
+				$('textarea[name='+docAs+']').val(json_str())
+			}
+			if (instructions) {
+				if (document.getElementsByName('i').length == 0) { 
+					var instructtext = document.createElement("textarea");
+					instructtext.type='hidden';
+					instructtext.style.display ='none';
+					instructtext.name= 'i';
+					instructtext.value= instructions;
+					document.getElementById('FORM').appendChild(instructtext);	
+				} else {
+					$('textarea[name=i]').val(json_str())
+				}
+			}
+		}
+		if (transcriptAs) {
+			if (document.getElementsByName(transcriptAs).length == 0) { 
+				var ttext = document.createElement("textarea");
+				ttext.type='hidden';
+				ttext.style.display ='none';
+				ttext.name= transcriptAs;
+				ttext.value= transcript();
+				document.getElementById('FORM').appendChild(ttext);
+			} else {
+				$('textarea[name='+transcriptAs+']').val(json_str())
+			}
+		}
+		if (jsonAs) {
+			if (document.getElementsByName(jsonAs).length == 0) { 
+				var json = document.createElement("textarea");
+				json.type='hidden';
+				json.style.display ='none';
+				json.name= jsonAs;			
+				json.value= json_str();
+				document.getElementById('FORM').appendChild(json);
+			} else {
+				$('textarea[name='+jsonAs+']').val(json_str())
+			}
+		}
+		var ondeckdiv = document.getElementById('ondeck').innerHTML;
+		var rawmarkupdiv = document.getElementById('rawmarkup').innerHTML;
+		document.getElementById('ondeck').innerHTML = "";
+		document.getElementById('rawmarkup').innerHTML = "";
+		document.FORM.submit();
+		document.getElementById('ondeck').innerHTML = ondeckdiv;
+		document.getElementById('rawmarkup').innerHTML = rawmarkupdiv;
+	}
+	
+	function csv() {
+		var csv_list = "";
+		for(var i = 0; i < QVnames.length; i++) {
+			if (!document.getElementById("Q-"+QVnames[i][0]).innerHTML.match(/(GOTO:(\d*)(.\s*\d+)*)/)) {
+				csv_list = csv_list+'"'+QVnames[i][1]+'"';
+				csv_list = csv_list+",";
+			} 
+			if (i+1 == QVnames.length) {
+				csv_list = csv_list.replace(/,$/, '');
+				csv_list = csv_list+"\n";
+			}
+		}
+		for(var i = 0; i < QVnames.length; i++) {
+			if (!document.getElementById("Q-"+QVnames[i][0]).innerHTML.match(/(GOTO:(\d*)(.\s*\d+)*)/)) {
+				if (document.getElementById(QVnames[i][1])) {
+					csv_list = csv_list+'"'+document.getElementById(QVnames[i][1]).innerHTML+'"';
+				} else {
+					csv_list = csv_list+'""';
+				}
+				csv_list = csv_list+",";
+			} 			
+			if (i+1 == QVnames.length) {
+				csv_list = csv_list.replace(/,$/, '');
+				csv_list = csv_list+"\n";
+			}
+		}
+
+		return csv_list;
+	}
+	
+	function getvar(val) {
+		return document.getElementById(val).value;
+	}
+
+	function goto(val) {
+	   answerQ(indexis(val));
+	}
+
+	// h/t http://runnable.com/U5HC9xtufQpsu5aj/use-javascript-to-save-textarea-as-a-txt-file
+	function save2(filename,content)
+	{
+
+	// I'm using file system support as a proxy for support for this feature. 
+	// Check based on one found at: http://blog.teamtreehouse.com/building-an-html5-text-editor-with-the-filesystem-apis
+	// Handle vendor prefixes.
+	window.requestFileSystem = window.requestFileSystem || 
+							   window.webkitRequestFileSystem;
+	// Check for support.
+	if (window.requestFileSystem) {
+	// content = ID of textarea to save
+	// name = name to save file as, including file extension     
+	// grab the content of the form field and place it into a variable
+	//    var textToWrite = document.getElementById(content).value;
+	//  create a new Blob (html5 magic) that conatins the data from your form feild
+		var textFileAsBlob = new Blob([content], {type:'text/plain'});
+		
+	// Specify the name of the file to be saved
+		var fileNamecontentAs = filename;
+		
+	// Optionally allow the user to choose a file name by providing 
+	// an imput field in the HTML and using the collected data here
+	// var fileNamecontentAs = txtFileName.text;
+
+	// create a link for our script to 'click'
+		var downloadLink = document.createElement("a");
+	//  supply the name of the file (from the var above).
+	// you could create the name here but using a var
+	// allows more flexability later.
+		downloadLink.download = fileNamecontentAs;
+	// provide text for the link. This will be hidden so you
+	// can actually use anything you want.
+		downloadLink.innerHTML = "My Hidden Link";
+		
+	// allow our code to work in webkit & Gecko based browsers
+	// without the need for a if / else block.
+		window.URL = window.URL || window.webkitURL;
+			  
+	// Create the link Object.
+		downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+	// when link is clicked call a function to remove it from
+	// the DOM in case user wants to save a second file.
+		downloadLink.onclick = destroyClickedElement;
+	// make sure the link is hidden.
+		downloadLink.style.display = "none";
+	// add the link to the DOM
+		document.body.appendChild(downloadLink);
+		
+	// click the new link
+		downloadLink.click();
+	} else {
+		alert('This feature is not supported by your browser.');
+	}
+		
+	}
+
+	function destroyClickedElement(event)
+	{
+	// remove the link from the DOM
+		document.body.removeChild(event.target);
+	}
+
+	// EOF
+
+</script>
+</BODY>
+</HTML>

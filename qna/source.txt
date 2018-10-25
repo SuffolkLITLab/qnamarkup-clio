@@ -1,0 +1,24 @@
+Q(1): What would you like to do?
+A:Open a new case/matter
+	Q(1.1):Go to the top right corner, where there is a green button that says "Create New"
+	A:Next step
+		Q(1.1.1):Click on the drop down button and the click "Matter" (pic) <br><br>This will take you to the following screen (pic)
+		A:Next step
+			Q(1.1.1.1):For the client, you will have to create a new contact for them by clicking on the drop down box under “Client” and clicking “Create new contact” (pic)
+			A:Next step
+				Q(1.1.1.1.1):There will be a pop up that will ask for additional information about your client: (pic)
+				A:Next step
+					Q(1.1.1.1.1.1):Once you’ve filled out all that information, click “save contact” and it will return to the page you were on before.
+					A:Next step
+						Q(1.1.1.1.1.1.1):Under “Matter description,” only type your client’s full first and last name in all CAPS - this is how you will find your client on the search bar in the future.<br><br>Under “Permissions” and “Practice area,” click on the drop down button and select your clinic.<br><br>Under “Responsible attorney,” type the name of the student attorney assigned to this case.
+						A:Next step
+							Q(1.1.1.1.1.1.1.1):If another attorney within your clinic has worked on this case before, type their name into “Originating attorney,” otherwise this may be left blank
+							A:Next step
+								Q(1.1.1.1.1.1.1.1.1):Client reference number and location may be left blank unless directed to do otherwise by a supervisor.
+								A:Next step
+									Q(1.1.1.1.1.1.1.1.1.1):Next, scroll down and expand the “Related contacts” section if you have other contacts relating to your client.
+									A:Next step
+A:Create a task list
+A:Open a document from a template
+A:Send a message/communication
+A:Add an event to the calendar

@@ -101,24 +101,24 @@ A:Create a task list
 A:Creating a document from a template
 	Q(doc):Go to the “Documents” tab on the left bar or on the at the top.
 	A:I'm there, now what?
-		Q(3.2.1):Click on the blue “New” button that is located on the right side of the page. <p><img src="https://suffolklitlab.org/clio/images/Calendar1.png"></p> 
+		Q(3.2.1):Click on the blue “New” button that is located on the right side of the page. <p><img src="https://suffolklitlab.org/clio/images/DocTemp3.png"></p> 
 		A:Done!
 			Q(3.2.1.1):Select “Document from Template” from the drop-down menu.
 			A:Ok, now what?
-				Q(3.2.1.1.1):A window titled “Create A Document” will appear. In the first box, select the template you wish to use for your document.<p><img src="https://suffolklitlab.org/clio/images/Calendar2.png"></p>  <br><br>  In the second box, select the matter that this document will be taking information from.
+				Q(3.2.1.1.1):A window titled “Create A Document” will appear. In the first box, select the template you wish to use for your document.<p><img src="https://suffolklitlab.org/clio/images/DocTemp4.png"></p>  <br><br>  In the second box, select the matter that this document will be taking information from.
 				A:Got it!
 					Q(3.2.1.1.1.1):Next, you can select how you want the document to be saved (PDF and/or Word document). <br><br> Once this information has been filled in, click on “Create Document”.
 					A:Great, am I done?
-						Q(3.2.1.1.1.1.1):You will then be required to refresh the page to view the document as listed. <br><br> The document will appear in the matter folder. If the template was categorized,however, then under the “category” column, you will see in which folder the document was placed in. (pic)
+						Q(3.2.1.1.1.1.1):You will then be required to refresh the page to view the document as listed. <br><br> The document will appear in the matter folder. If the template was categorized, however, then under the “category” column, you will see in which folder the document was placed in. <p><img src="https://suffolklitlab.org/clio/images/DocTemp5.png"></p>
 						A:You have created a document from a template! 
 							Q(3.2.1.1.1.1.1.1):GOTO:current
 
 A:Add an event to the calendar
-	Q(cal):Click on the “Calendar” tab on the left. <br><br>On top of the calendar, click on the green “Add Event” button. (pic)
+	Q(cal):Click on the “Calendar” tab on the left. <br><br>On top of the calendar, click on the green “Add Event” button. <p><img src="https://suffolklitlab.org/clio/images/Calendar1.png"></p>
 	A:Done, what's next?
 		Q(3.3.1):A window titled “Create Calendar Entry” will open. Here you can enter information concerning the event that you wish to submit.
 		A:Got it!
-			Q(3.3.1.1):Under “Matter”, select the case you wish to apply this event to. You may also add a location and invite others by selecting “Invite contacts Via Clio Connect”. (pic)
+			Q(3.3.1.1):Under “Matter”, select the case you wish to apply this event to. You may also add a location and invite others by selecting “Invite contacts Via Clio Connect”. <p><img src="https://suffolklitlab.org/clio/images/Calendar2.png"></p>
 			A:Ok
 				Q(3.3.1.1.1):On top, you will see tabs “Repeats”, “Reminders” and “Time Entries”. <br><br>If you click on the  “Repeats” tab, you can control how often the event will repeat and notify you of its occurrence.<br><br>If you click on the “Reminders” tab, you can control when you are alerted of the event for the date it starts and whether to be alerted by an email or pop-up notification.
 				A:Great! Am I done?

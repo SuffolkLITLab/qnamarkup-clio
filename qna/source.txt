@@ -44,7 +44,7 @@ A:Create a new contact
 						A:Saved! Am I done?
 							Q(2.2.1.2.1.1.1.1):Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"></p>
 							A:Got it!
-								Q(2.2.1.2.1.1.1.1.1):This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"></p>
+								Q(2.2.1.2.1.1.1.1.1):This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.4.png"></p>
 								A:All done!
 									Q(2.2.1.2.1.1.1.1.1.1):Once you’ve added all your contacts to this matter, click “Save matter” at the bottom of your screen (See screenshot below) and those contacts will be visible from your matter’s dashboard.
 									A:That is it! You have opened a matter!

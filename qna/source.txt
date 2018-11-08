@@ -1,84 +1,129 @@
-Q(start): What would you like to do?
+Q(home):Welcome! What stage are you in your case?
+A:I am starting a new case
+	Q(1.1):GOTO:new
+A:I am currently working on a case
+	Q(1.2):GOTO:current
+A:I am closing a case
+A:I am transferring a case
+
+
+
+Q(new): What would you like to do?
+A:Run conflict check
+	Q(conflict): To run a conflict check you must enter your client's name and anyone related to the case in the search bar and click "Enter" on your keyboard <p><img src="https://suffolklitlab.org/clio/images/SearchBar.png"></p> <br><br> Make sure you check on other possible spellings for the names.
+	A:I've checked spelling and entered my client's name!
+		Q(2.1.1):Did any of those searches pull up an existing client or contact?
+		A:Yes
+			Q(2.1.1.1):Go to your clinic supervisor and ask for further guidance before continuing.
+			A:While you wait you can go back to the start.
+				Q(2.1.1.1.1):GOTO:new
+		A:No	
+			Q(2.1.1.2):Great! Now you just print the page and proceed to the next step.
+			A:I need to create a contact
+				Q(2.1.1.2.1):GOTO:contact
+			A:I have already created a contact and am ready to open a matter
+				Q(2.1.1.2.2):GOTO:matter
+A:Create a new contact
+	Q(contact):Go to top right corner, where there is a green button stating “Create New”
+	A:Found it! What's next?
+		Q(2.2.1):Click on the drop down button and select either “Person” or “Company” depending on what type of contact you want to create. This will take you to another page to type in the information you have for that contact. <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.1.png"></p>
+		A:Create a new Company
+			Q(company):For a new company, type in the company name, add their email, phone number, website, and address and click on “Save New Company” <br><br>If you need to add any comments or notes, add it to the “Custom Fields” section.
+			A:Got it! What do I do now?
+				Q(2.2.1.1.1):If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there. <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.2.png"></p>
+				A:That is all! Take me back to the start.
+					Q(2.2.1.1.1.1):GOTO:new
+		A:Create a new Person
+			Q(person):For a new person, type in their first and last name, choose the company they belong to from the drop down box (if applicable), and enter that person’s title (if applicable)
+			A:Done! What's next?
+				Q(2.2.1.2.1):Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"></p>
+				A:Found it, now what?
+					Q(2.2.1.2.1.1):This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath “Custom Field Sets” and it will generate several new fields that the clinic recommends you use for that type of contact. <br><br> If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful; keep in mind that email, phone number, website, and address fields are just below this section.
+					A:Got it! 
+						Q(2.2.1.2.1.1.1):Once you’re done adding your information to each field, scroll to the bottom of the page and hit “Save New Person”
+						A:Saved! Am I done?
+							Q(2.2.1.2.1.1.1.1):Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"></p>
+							A:Got it!
+								Q(2.2.1.2.1.1.1.1.1):This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” 
+								A:All done!
+									Q(2.2.1.2.1.1.1.1.1.1):Once you’ve added all your contacts to this matter, click “Save matter” at the bottom of your screen (See screenshot below) and those contacts will be visible from your matter’s dashboard.
+									A:That is it! You have opened a matter!
+										Q(2.2.1.2.1.1.1.1.1.1.1):GOTO:new
+
 A:Open a new case/matter
 	Q(before):Before opening a matter make sure you ran a conflict check and created your contacts.
 	A:I need to run a conflict check. 
-		Q(1.1.1):GOTO:conflict
+		Q(2.3.1):GOTO:conflict
 	A:I need to create a contact 
-		Q(1.1.2):GOTO:contact
+		Q(2.3.2):GOTO:contact
 	A:I did both, I am ready to create a matter 
-		Q(1.1.3):Go to top right corner, where there is a green button that says “Create New”	
-		A:Next	
-			Q(1.1.3.1):Click on the drop down button and the click "Matter"<p> <img src="CreatenewMatter.1"></p>
- <br><br>This will take you to the following screen<p><img src="CreatenewMatter.2"></p>
-			A:Next
-				Q(client):For the client, you will have to create a new contact for them by clicking on the drop down box under “Client” and clicking “Create new contact” <p><img src="CreatenewMatter.3"></p>
-				A:Next
-					Q(1.1.3.1.1.1):There will be a pop up that will ask for additional information about your client: <p><img src="CreatenewMatter.4"></p>
-					A:Next
-						Q(1.1.3.1.1.1.1):Once you’ve filled out all that information, click “save contact” and it will return to the page you were on before.
-						A:Next
+		Q(matter):Go to top right corner, where there is a green button that says “Create New”	
+		A:Found it!	
+			Q(2.3.3.1):Click on the drop down button and the click "Matter"<p> <img src="https://suffolklitlab.org/clio/images/CreatenewMatter.1.PNG"></p>
+ <br><br>This will take you to the following screen<p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.2.PNG"></p>
+			A:I'm there! Now what?
+				Q(client):For the client, you will have to create a new contact for them by clicking on the drop down box under “Client” and clicking “Create new contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.3.png"></p>
+				A:Done!
+					Q(2.3.3.1.1.1):There will be a pop up that will ask for additional information about your client: <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.4.png"></p>
+					A:Ok, I see it.
+						Q(2.3.3.1.1.1.1):Once you’ve filled out all that information, click “save contact” and it will return to the page you were on before.
+						A:I'm back on that page.
 							Q(desc):Under “Matter description,” only type your client’s full first and last name in all CAPS - this is how you will find your client on the search bar in the future.<br><br>Under “Permissions” and “Practice area,” click on the drop down button and select your clinic.<br><br>Under “Responsible attorney,” type the name of the student attorney assigned to this case.
-							A:Next
+							A:All done! What's next?
 								Q(attny):If another attorney within your clinic has worked on this case before, type their name into “Originating attorney,” otherwise this may be left blank
-								A:Next
+								A:Got it!
 									Q(ref):Client reference number and location may be left blank unless directed to do otherwise by a supervisor.
-									A:Next
+									A:Ok
 										Q(related):Next, scroll down and expand the “Related contacts” section if you have other contacts relating to your client.
-										A:Next
-A:Create a new contact
-	Q(contact):Go to top right corner, where there is a green button stating “Create New”
-	A:Next
-		Q(1.2.1):Click on the drop down button and click either “Person” or “Company,” depending on what type of contact you want to create. This will take you to another page to type in the information you have for that contact. <p><img src="CreatenewContact.1"></p>
-		A:Create a new Company
-			Q(company):For a new company, type in the company name, add their email, phone number, website, and address and click on “Save New Company” <br><br>If you need to add any comments or notes, add it to the “Custom Fields” section. <br><br>If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there. <p><img src="CreatenewContact.2"></p>
-		A:Create a new Person
-			Q(person):For a new person, type in their first and last name, choose the company they belong to from the drop down box (if applicable), and enter that person’s title (if applicable)
-			A:Next
-				Q(1.2.1.2.1):Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” <p><img src="CreatenewContact.3"></p>
-				A:Next
-					Q(1.2.1.2.1.1):This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath “Custom Field Sets” and it will generate several new fields that the clinic recommends you use for that type of contact. <br><br> If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful; keep in mind that email, phone number, website, and address fields are just below this section.
-					A:Next
-						Q(1.2.1.2.1.1.1):Once you’re done adding your information to each field, scroll to the bottom of the page and hit “Save New Person”
-						A:Next
-							Q(1.2.1.2.1.1.1.1):Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: <p><img src="CreatenewContact.4"></p>
-							A:Next
-								Q(1.2.1.2.1.1.1.1.1):This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” 
-								A:Next
-									Q(1.2.1.2.1.1.1.1.1.1):Once you’ve added all your contacts to this matter, click “Save matter” at the bottom of your screen (See screenshot below) and those contacts will be visible from your matter’s dashboard.
-									A:You have opened a matter!
-										Q(1.2.1.2.1.1.1.1.1.1.1):GOTO:start
+										A:Once everything has been added, you have opened a matter!
+											Q(2.3.3.1.1.1.1.1.1.1.1.1):GOTO:new
 
+Q(current):What do you need help with?
 A:Create a task list
-	Q(task):On your client page or on the left side bar, select the  “Tasks” tab and click “Add”.
-	A:Next
-		Q(tdesc):Fill in the “Task Name”, “Due at” and “Description field” in relation to your case. The description you put in should give you enough information to know what step in the process you are currently in on your case assignment.
-		A:Next
-			Q(1.3.1.1):Clicking on the date under “Due at” will pull up a calendar. From here, you can select a date for when the task must be completed by.
-			A:Next
-				Q(1.3.1.1.1):Click on the drop down menu under “Assignee” and select “Firm User” and your own Clio ID or a person who you wish to receive the task. (pic) <br><br> Move down to the “Matter” section and select the client/case you wish to apply this task to.
-				A:Next
-					Q(reminder):Below “Matter”, you will see “Add a Reminder”. If you click on this, you will be able to give yourself or an assigned person a reminder to complete a task through email or through a pop-up message. The amount of time to give the reminder can be defined in minutes, hours, days, or weeks. (pic)
-					A:Next
-						Q(1.3.1.1.1.1.1):Submit the information and you will be able edit or mark the task as complete/incomplete. (pic) <br><br>You will then be able to view your tasks on your “Dashboard” and on your “Calendar”.
-						A:Next
-							Q(1.3.1.1.1.1.1.1):To view tasks you have assigned to a specific user, click on  “Tasks”  on the sidebar. Then on the right side of the page, click on “Filter”.  <br><br> This will pull up different variables you may use to find a specific task. For example, If you wish to find tasks only assigned by you, click on the drop down under “Assigned by” and select “Me”. You may then select a user under “Assigned to” and filter tasks by whether they are complete or incomplete under “Status”.
-							A:You have created a task!
-								Q(1.3.1.1.1.1.1.1.1):GOTO:start
-A:Open a document from a template
-A:Send a message/communication
+	Q(task):First we will create a Task Template. <br><br>Click “Tasks” on the left side of the page.<br><br> Then, click on the “Lists” tab. <p><img src="https://suffolklitlab.org/clio/images/Task1.png"></p>
+	A:Ok, I clicked on "Lists", now what?
+		Q(tdesc):Click on the green “Add” button and a box titled “Assign List Template” will appear.  <p><img src="https://suffolklitlab.org/clio/images/Task2.png"></p>
+		A:Ok, got it.
+			Q(3.1.1.1):Fill in a “Name”, “Description” and the “Practice Area” to be applied to your list. <br><br> Then, click “Save List Template”.
+			A:Great!
+				Q(3.1.1.1.1):Now to create the task list go back and click “Tasks” on the left side of the page.<br><br>Then you will click on the "Lists" tab once again.
+				A:Done, now what?
+					Q(reminder):Select one of the templates under “List” and click the green “Add Button”.<p><img src="https://suffolklitlab.org/clio/images/Task3.png"></p> 
+					A:Great!
+						Q(3.1.1.1.1.1.1):An “Add Task Template” window will appear.<p><img src="https://suffolklitlab.org/clio/images/Task4.png"></p>  
+						A:Got it!
+							Q(3.1.1.1.1.1.1.1):Fill in the empty fields and click “Save Task Template”.
+							A:Ok, did that
+								Q(3.1.1.1.1.1.1.1.1):Now click on the blue “Assign” under the Task Template. <br><br>Select the matter you wish to assign this task to and click “Save Task.”<br><br>Now go back to the Tasks page and see your new tasks listed.
+								A:Nice!
+									Q(3.1.1.1.1.1.1.1.1.1):GOTO:current
+
+A:Creating a document from a template
+	Q(doc):Go to the “Documents” tab on the left bar or on the at the top.
+	A:I'm there, now what?
+		Q(3.2.1):Click on the blue “New” button that is located on the right side of the page. <p><img src="https://suffolklitlab.org/clio/images/Calendar1.png"></p> 
+		A:Done!
+			Q(3.2.1.1):Select “Document from Template” from the drop-down menu.
+			A:Ok, now what?
+				Q(3.2.1.1.1):A window titled “Create A Document” will appear. In the first box, select the template you wish to use for your document.<p><img src="https://suffolklitlab.org/clio/images/Calendar2.png"></p>  <br><br>  In the second box, select the matter that this document will be taking information from.
+				A:Got it!
+					Q(3.2.1.1.1.1):Next, you can select how you want the document to be saved (PDF and/or Word document). <br><br> Once this information has been filled in, click on “Create Document”.
+					A:Great, am I done?
+						Q(3.2.1.1.1.1.1):You will then be required to refresh the page to view the document as listed. <br><br> The document will appear in the matter folder. If the template was categorized,however, then under the “category” column, you will see in which folder the document was placed in. (pic)
+						A:You have created a document from a template! 
+							Q(3.2.1.1.1.1.1.1):GOTO:current
+
 A:Add an event to the calendar
 	Q(cal):Click on the “Calendar” tab on the left. <br><br>On top of the calendar, click on the green “Add Event” button. (pic)
-	A:Next
-		Q(1.6.1):A window titled “Create Calendar Entry” will open. Here you can enter information concerning the event that you wish to submit.
-		A:Next
-			Q(1.6.1.1):Under “Matter”, select the case you wish to apply this event to. You may also add a location and invite others by selecting “Invite contacts Via Clio Connect”. (pic)
-			A:Next
-				Q(1.6.1.1.1):On top, you will see tabs “Repeats”, “Reminders” and “Time Entries”. <br><br>If you click on the  “Repeats” tab, you can control how often the event will repeat and notify you of its occurrence.<br><br>If you click on the “Reminders” tab, you can control when you are alerted of the event for the date it starts and whether to be alerted by an email or pop-up notification.
-				A:Next
-					Q(1.6.1.1.1.1):Once you have filled in all the necessary information, you may click “Create Calendar Entry” to finish or “ Save and Add Another” to create an additional calendar entry.
+	A:Done, what's next?
+		Q(3.3.1):A window titled “Create Calendar Entry” will open. Here you can enter information concerning the event that you wish to submit.
+		A:Got it!
+			Q(3.3.1.1):Under “Matter”, select the case you wish to apply this event to. You may also add a location and invite others by selecting “Invite contacts Via Clio Connect”. (pic)
+			A:Ok
+				Q(3.3.1.1.1):On top, you will see tabs “Repeats”, “Reminders” and “Time Entries”. <br><br>If you click on the  “Repeats” tab, you can control how often the event will repeat and notify you of its occurrence.<br><br>If you click on the “Reminders” tab, you can control when you are alerted of the event for the date it starts and whether to be alerted by an email or pop-up notification.
+				A:Great! Am I done?
+					Q(3.3.1.1.1.1):Once you have filled in all the necessary information, you may click “Create Calendar Entry” to finish or “ Save and Add Another” to create an additional calendar entry.
 					A:You have now added an event to the calendar!
-						Q(1.6.1.1.1.1.1):GOTO:start
-A:Run conflict check
-	Q(conflict): To run a conflict check you must enter your client's name and anyone related to the case in the search bar and click "Enter" 
-	A:If the search comes up blank, print the page and...
-	A:If the search brings up an existing page for that individual, print the page and...
+						Q(3.3.1.1.1.1.1):GOTO:current
+
+			

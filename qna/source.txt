@@ -30,21 +30,21 @@ A:Create a new contact
 		A:Create a new Company
 			Q(company):For a new company, type in the company name, add their email, phone number, website, and address and click on “Save New Company” <br><br>If you need to add any comments or notes, add it to the “Custom Fields” section.
 			A:Got it! What do I do now?
-				Q(2.2.1.1.1):If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there. <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.2.png"></p>
+				Q(2.2.1.1.1):If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there. 
 				A:That is all! Take me back to the start.
 					Q(2.2.1.1.1.1):GOTO:new
 		A:Create a new Person
 			Q(person):For a new person, type in their first and last name, choose the company they belong to from the drop down box (if applicable), and enter that person’s title (if applicable)
 			A:Done! What's next?
-				Q(2.2.1.2.1):Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"></p>
+				Q(2.2.1.2.1):Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.2.png"></p>
 				A:Found it, now what?
 					Q(2.2.1.2.1.1):This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath “Custom Field Sets” and it will generate several new fields that the clinic recommends you use for that type of contact. <br><br> If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful; keep in mind that email, phone number, website, and address fields are just below this section.
 					A:Got it! 
 						Q(2.2.1.2.1.1.1):Once you’re done adding your information to each field, scroll to the bottom of the page and hit “Save New Person”
 						A:Saved! Am I done?
-							Q(2.2.1.2.1.1.1.1):Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"></p>
+							Q(2.2.1.2.1.1.1.1):Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"></p>
 							A:Got it!
-								Q(2.2.1.2.1.1.1.1.1):This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” 
+								Q(2.2.1.2.1.1.1.1.1):This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"></p>
 								A:All done!
 									Q(2.2.1.2.1.1.1.1.1.1):Once you’ve added all your contacts to this matter, click “Save matter” at the bottom of your screen (See screenshot below) and those contacts will be visible from your matter’s dashboard.
 									A:That is it! You have opened a matter!

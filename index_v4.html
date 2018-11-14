@@ -1,0 +1,1353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<HEAD>
+	<title>Untitled QnA</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="apple-mobile-web-app-capable" content="no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content=""/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="apple-touch-icon" href="https://www.qnamarkup.org/images/QnA_300.png"/>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="" MARGINWIDTH="0" MARGINHEIGHT="0" onLoad="startAT('1');"><style>	
+
+	body {
+
+		font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+
+	}
+
+
+
+	#rawmarkup{
+
+		display:none;
+
+	}
+
+	
+
+	#QandA img{
+
+		width:100%;
+
+	}
+
+
+
+	div.main{
+
+		min-width:300px;
+
+		max-width:650px;
+
+		margin: 0 auto;
+
+	padding:0 5px 0 5px;
+
+		}
+
+	div.frame{
+
+		float:left;
+
+		width:100%;
+
+		margin:5px 0 5px 0;
+
+	}
+
+	div.full{
+
+		float:left;
+
+		width:100%;
+
+	}
+
+	.button{
+
+		padding:8px;
+
+		margin:8px 0 0px 0;
+
+		width:100%;
+
+	}
+
+	div.question_text{
+
+		float:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		color:#ffffff;
+
+		min-width:30px;
+
+		background:#5489eb;
+
+		border-radius: 15px;
+
+		padding:10px 15px 14px 15px;
+
+		margin-right:45px;
+
+	}
+
+
+
+	div.question_text a:link, div.question_text a:hover, div.question_text a:active, div.question_text a:visited{ color:#e3fbfc; } 
+
+
+
+	div.question_arrow{
+
+		float:left; 
+
+		width: 0; 
+
+		height: 0; 
+
+		border-left: 5px solid transparent; 
+
+		border-right: 10px solid transparent; 
+
+		border-top: 15px solid #5489eb;
+
+		margin:0 20px;
+
+	}
+
+	div.ans_text{
+
+		float:right;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		color:#000000;
+
+		min-width:30px;
+
+		background:#eeeeee;
+
+		border-radius: 15px;
+
+		padding:10px 15px 14px 15px;
+
+		margin-left:45px;
+
+	}
+
+	div.ans_arrow{
+
+		float:right; 
+
+		width: 0; 
+
+		height: 0; 
+
+		border-left: 10px solid transparent; 
+
+		border-right: 5px solid transparent; 
+
+		border-top: 15px solid #eeeeee;
+
+		margin:0 20px;
+
+	}
+
+	div.choices{
+
+		float:left;
+
+		width:100%;
+
+		margin:15px 0 0 0;
+
+	}
+
+	div.standard_buttons{
+
+		float:left;
+
+		width:100%;
+
+		margin-top:5px;
+
+		border-top: 1px solid #ddd; 
+
+		padding-top:12px;		
+
+	}
+
+	div.credits{
+
+		float:left;
+
+		dispaly:none;
+
+		width:100%;
+
+		background:#eee;
+
+		margin:0px 0 15px 0;
+
+	}
+
+	div.credit_text{
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		padding:4px 15px 10px 15px;
+
+	}
+
+	li.error{
+
+		list-style-type: none;
+
+		background:#ffdddd;
+
+		margin: 10px 0 0 0;
+
+		padding: 5px;
+
+	}
+
+
+
+	.qpad {
+
+		float:left;
+
+		padding:0 15px;
+
+	}
+
+	
+
+	a.sbutton {
+
+		float:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		width:48%;
+
+		background: #eee;
+
+		border-radius: 8px;
+
+		padding:10px 0px 12px 0;
+
+		margin: 0 0 3px 0;
+
+		border: solid 1px #888;
+
+		text-align:center;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+
+
+	a.sbutton:hover, a.sbutton:active {
+
+		float:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		width:48%;
+
+		background: #ddd;
+
+		border-radius: 8px;
+
+		padding:10px 0px 12px 0;
+
+		margin: 0 0 3px 0;
+
+		border: solid 1px #888;
+
+		text-align:center;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+
+
+	a.qabutton {
+
+		float:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		width:100%;
+
+		background: #eee;
+
+		border-radius: 8px;
+
+		padding:10px 0px 12px 0;
+
+		margin: 0 0 8px 0;
+
+		border: solid 1px #888;
+
+		text-align:left;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+
+
+	a.qabutton:hover, a.qabutton:active {
+
+		float:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		width:100%;
+
+		background: #ddd;
+
+		border-radius: 8px;
+
+		padding:10px 0px 12px 0;
+
+		margin: 0 0 8px 0;
+
+		border: solid 1px #888;
+
+		text-align:left;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+	
+
+
+
+	div.xdiv {
+
+		float:left;
+
+		width:100%;
+
+		margin: 0 0 8px 0;
+
+		background: #eee;
+
+		border: solid 1px #888;
+
+		border-radius: 8px;
+
+	}	
+
+
+
+	input.xinput {
+
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */ 
+
+		box-sizing: border-box;         /* Opera/IE 8+ */
+
+		float:left;
+
+		width:100%;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		background: #fff;
+
+		border-top-left-radius: 8px;
+
+		border-top-right-radius: 8px;
+
+		padding:10px 10px 12px 10px;
+
+		border: solid 0px #888;
+
+		border-bottom: solid 1px #888;
+
+		text-align:left;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+	
+
+	a.xbutton {
+
+		float:left;
+
+		width:100%;
+
+		text-align:left;
+
+		font-family: Verdana, Geneva, sans-serif;
+
+		font-size: 14px;
+
+		line-height: 20px;
+
+		background: #eee;
+
+		border-radius: 8px;
+
+		padding:10px 0px 12px 0px;
+
+		color: #000000;
+
+		text-decoration: none;
+
+	}
+
+	
+
+	a.xbutton:hover, a.xbutton:active {
+
+		border-top-left-radius: 0px;
+
+		border-top-right-radius: 0px;
+
+		background: #ddd;
+
+	}
+
+</style>
+<FORM name="FORM" id="FORM"><div id="conversation" style="margin:15px auto 0 auto;padding:0 15px;max-width:500px"><div id='QandA' class='QandA'><div style='padding:15px;background:#ddffdd;text-align:center;'>Loading QnA...</div></div><div id='Choices' class='choices'></div><div id="rawmarkup" style="display:none;">Q%28home%29%3AWelcome%21+What+stage+are+you+in+your+case%3F%0D%0AA%3AI+am+starting+a+new+case%0D%0A%09Q%281.1%29%3AGOTO%3Anew%0D%0AA%3AI+am+currently+working+on+a+case%0D%0A%09Q%281.2%29%3AGOTO%3Acurrent%0D%0AA%3AI+am+closing+a+case%0D%0AA%3AI+am+transferring+a+case%0D%0A%0D%0A%0D%0A%0D%0AQ%28new%29%3A+What+would+you+like+to+do%3F%0D%0AA%3ARun+conflict+check%0D%0A%09Q%28conflict%29%3A+To+run+a+conflict+check+you+must+enter+your+client%27s+name+and+anyone+related+to+the+case+in+the+search+bar+and+click+%22Enter%22+on+your+keyboard+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FSearchBar.png%22%3E%3C%2Fp%3E+%3Cbr%3E%3Cbr%3E+Make+sure+you+check+on+other+possible+spellings+for+the+names.%0D%0A%09A%3AI%27ve+checked+spelling+and+entered+my+client%27s+name%21%0D%0A%09%09Q%282.1.1%29%3ADid+any+of+those+searches+pull+up+an+existing+client+or+contact%3F%0D%0A%09%09A%3AYes%0D%0A%09%09%09Q%282.1.1.1%29%3AGo+to+your+clinic+supervisor+and+ask+for+further+guidance+before+continuing.%0D%0A%09%09%09A%3AWhile+you+wait+you+can+go+back+to+the+start.%0D%0A%09%09%09%09Q%282.1.1.1.1%29%3AGOTO%3Anew%0D%0A%09%09A%3ANo%09%0D%0A%09%09%09Q%282.1.1.2%29%3AGreat%21+Now+you+just+print+the+page+and+proceed+to+the+next+step.%0D%0A%09%09%09A%3AI+need+to+create+a+contact%0D%0A%09%09%09%09Q%282.1.1.2.1%29%3AGOTO%3Acontact%0D%0A%09%09%09A%3AI+have+already+created+a+contact+and+am+ready+to+open+a+matter%0D%0A%09%09%09%09Q%282.1.1.2.2%29%3AGOTO%3Amatter%0D%0AA%3ACreate+a+new+contact%0D%0A%09Q%28contact%29%3AGo+to+top+right+corner%2C+where+there+is+a+green+button+stating+%E2%80%9CCreate+New%E2%80%9D%0D%0A%09A%3AFound+it%21+What%27s+next%3F%0D%0A%09%09Q%282.2.1%29%3AClick+on+the+drop+down+button+and+select+either+%E2%80%9CPerson%E2%80%9D+or+%E2%80%9CCompany%E2%80%9D+depending+on+what+type+of+contact+you+want+to+create.+This+will+take+you+to+another+page+to+type+in+the+information+you+have+for+that+contact.+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FCreatenewContact.1.png%22%3E%3C%2Fp%3E%0D%0A%09%09A%3ACreate+a+new+Company%0D%0A%09%09%09Q%28company%29%3AFor+a+new+company%2C+type+in+the+company+name%2C+add+their+email%2C+phone+number%2C+website%2C+and+address+and+click+on+%E2%80%9CSave+New+Company%E2%80%9D+%3Cbr%3E%3Cbr%3EIf+you+need+to+add+any+comments+or+notes%2C+add+it+to+the+%E2%80%9CCustom+Fields%E2%80%9D+section.%0D%0A%09%09%09A%3AGot+it%21+What+do+I+do+now%3F%0D%0A%09%09%09%09Q%282.2.1.1.1%29%3AIf+you+would+like+to+add+other+information+that+doesn%E2%80%99t+fit+the+above+categories%2C+you+can+click+on+%E2%80%9CSelect+to+add+a+custom+field%E2%80%9D+and+add+additional+fields+through+there.+%0D%0A%09%09%09%09A%3AThat+is+all%21+You+have+added+a+new+company.%0D%0A%09%09%09%09%09Q%282.2.1.1.1.1%29%3AGOTO%3Anew%0D%0A%09%09A%3ACreate+a+new+Person%0D%0A%09%09%09Q%28person%29%3AFor+a+new+person%2C+type+in+their+first+and+last+name%2C+choose+the+company+they+belong+to+from+the+drop+down+box+%28if+applicable%29%2C+and+enter+that+person%E2%80%99s+title+%28if+applicable%29%0D%0A%09%09%09A%3ADone%21+What%27s+next%3F%0D%0A%09%09%09%09Q%282.2.1.2.1%29%3AScroll+down+a+little+and+you+will+see+a+%E2%80%9CCustom+Fields%E2%80%9D+section+with+comments%2Fnotes+underneath.+Under+the+comments%2Fnotes+section%2C+click+the+drop+down+box+stating+%E2%80%9CSelect+to+add+a+custom+field%E2%80%9D+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FCreatenewContact.2.png%22%3E%3C%2Fp%3E%0D%0A%09%09%09%09A%3AFound+it%2C+now+what%3F%0D%0A%09%09%09%09%09Q%282.2.1.2.1.1%29%3AThis+drop+down+list+adds+new+fields+to+add+information+about+your+new+contact.+If+your+new+contact+is+a+new+client+or+opposing+counsel%2C+you+can+click+on+those+labels+underneath+%E2%80%9CCustom+Field+Sets%E2%80%9D+and+it+will+generate+several+new+fields+that+the+clinic+recommends+you+use+for+that+type+of+contact.+%3Cbr%3E%3Cbr%3E+If+your+new+contact+is+not+a+new+client+or+opposing+counsel%2C+you+can+scroll+down+the+list+to+add+any+new+fields+that+you+might+find+useful%3B+keep+in+mind+that+email%2C+phone+number%2C+website%2C+and+address+fields+are+just+below+this+section.%0D%0A%09%09%09%09%09A%3AGot+it%21+%0D%0A%09%09%09%09%09%09Q%282.2.1.2.1.1.1%29%3AOnce+you%E2%80%99re+done+adding+your+information+to+each+field%2C+scroll+to+the+bottom+of+the+page+and+hit+%E2%80%9CSave+New+Person%E2%80%9D%0D%0A%09%09%09%09%09%09A%3ASaved%21+Am+I+done%3F%0D%0A%09%09%09%09%09%09%09Q%282.2.1.2.1.1.1.1%29%3AOnce+you%E2%80%99ve+created+a+new+contact%2C+you+can+attach+that+contact+to+a+matter+by+going+to+the+dashboard+of+your+matter+and+clicking+%E2%80%9CAdd+related+contact%2C%E2%80%9D+as+you+can+see+below%3A+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FCreatenewContact.3.png%22%3E%3C%2Fp%3E%0D%0A%09%09%09%09%09%09%09A%3AGot+it%21%0D%0A%09%09%09%09%09%09%09%09Q%282.2.1.2.1.1.1.1.1%29%3AThis+will+take+you+to+edit+the+matter.+Then%2C+scroll+down+to+where+it+says+%E2%80%9CRelated+contacts%2C%E2%80%9D+type+in+the+contact%E2%80%99s+relationship+to+the+matter+and+find+the+contact+you+created+either+by+typing+it+in+or+finding+them+on+the+drop+down+bar+underneath+%E2%80%9CContact%E2%80%9D+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FCreatenewMatter.4.png%22%3E%3C%2Fp%3E%0D%0A%09%09%09%09%09%09%09%09A%3AAll+done%21%0D%0A%09%09%09%09%09%09%09%09%09Q%282.2.1.2.1.1.1.1.1.1%29%3AOnce+you%E2%80%99ve+added+all+your+contacts+to+this+matter%2C+click+%E2%80%9CSave+matter%E2%80%9D+at+the+bottom+of+your+screen+%28See+screenshot+below%29+and+those+contacts+will+be+visible+from+your+matter%E2%80%99s+dashboard.%0D%0A%09%09%09%09%09%09%09%09%09A%3AThat+is+it%21+You+have+created+a+contact%21%0D%0A%09%09%09%09%09%09%09%09%09%09Q%282.2.1.2.1.1.1.1.1.1.1%29%3AGOTO%3Anew%0D%0A%0D%0AA%3AOpen+a+new+case%2Fmatter%0D%0A%09Q%28before%29%3ABefore+opening+a+matter+make+sure+you+ran+a+conflict+check+and+created+your+contacts.%0D%0A%09A%3AI+need+to+run+a+conflict+check.+%0D%0A%09%09Q%282.3.1%29%3AGOTO%3Aconflict%0D%0A%09A%3AI+need+to+create+a+contact+%0D%0A%09%09Q%282.3.2%29%3AGOTO%3Acontact%0D%0A%09A%3AI+did+both%2C+I+am+ready+to+create+a+matter+%0D%0A%09%09Q%28matter%29%3AGo+to+top+right+corner%2C+where+there+is+a+green+button+that+says+%E2%80%9CCreate+New%E2%80%9D%09%0D%0A%09%09A%3AFound+it%21%09%0D%0A%09%09%09Q%282.3.3.1%29%3AClick+on+the+drop+down+button+and+the+click+%22Matter%22%3Cp%3E+%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FCreatenewMatter.1.PNG%22%3E%3C%2Fp%3E%0D%0A+%3Cbr%3E%3Cbr%3EThis+will+take+you+to+the+following+screen%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FCreatenewMatter.2.PNG%22%3E%3C%2Fp%3E%0D%0A%09%09%09A%3AI%27m+there%21+Now+what%3F%0D%0A%09%09%09%09Q%28client%29%3AFor+the+client%2C+you+will+have+to+create+a+new+contact+for+them+by+clicking+on+the+drop+down+box+under+%E2%80%9CClient%E2%80%9D+and+clicking+%E2%80%9CCreate+new+contact%E2%80%9D+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FCreatenewMatter.3.png%22%3E%3C%2Fp%3E%0D%0A%09%09%09%09A%3ADone%21%0D%0A%09%09%09%09%09Q%282.3.3.1.1.1%29%3AThere+will+be+a+pop+up+that+will+ask+for+additional+information+about+your+client%3A+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FCreatenewMatter.4.png%22%3E%3C%2Fp%3E%0D%0A%09%09%09%09%09A%3AOk%2C+I+see+it.%0D%0A%09%09%09%09%09%09Q%282.3.3.1.1.1.1%29%3AOnce+you%E2%80%99ve+filled+out+all+that+information%2C+click+%E2%80%9Csave+contact%E2%80%9D+and+it+will+return+to+the+page+you+were+on+before.%0D%0A%09%09%09%09%09%09A%3AI%27m+back+on+that+page.%0D%0A%09%09%09%09%09%09%09Q%28desc%29%3AUnder+%E2%80%9CMatter+description%2C%E2%80%9D+only+type+your+client%E2%80%99s+full+first+and+last+name+in+all+CAPS+-+this+is+how+you+will+find+your+client+on+the+search+bar+in+the+future.%3Cbr%3E%3Cbr%3EUnder+%E2%80%9CPermissions%E2%80%9D+and+%E2%80%9CPractice+area%2C%E2%80%9D+click+on+the+drop+down+button+and+select+your+clinic.%3Cbr%3E%3Cbr%3EUnder+%E2%80%9CResponsible+attorney%2C%E2%80%9D+type+the+name+of+the+student+attorney+assigned+to+this+case.%0D%0A%09%09%09%09%09%09%09A%3AAll+done%21+What%27s+next%3F%0D%0A%09%09%09%09%09%09%09%09Q%28attny%29%3AIf+another+attorney+within+your+clinic+has+worked+on+this+case+before%2C+type+their+name+into+%E2%80%9COriginating+attorney%2C%E2%80%9D+otherwise+this+may+be+left+blank%0D%0A%09%09%09%09%09%09%09%09A%3AGot+it%21%0D%0A%09%09%09%09%09%09%09%09%09Q%28ref%29%3AClient+reference+number+and+location+may+be+left+blank+unless+directed+to+do+otherwise+by+a+supervisor.%0D%0A%09%09%09%09%09%09%09%09%09A%3AOk%0D%0A%09%09%09%09%09%09%09%09%09%09Q%28related%29%3ANext%2C+scroll+down+and+expand+the+%E2%80%9CRelated+contacts%E2%80%9D+section+if+you+have+other+contacts+relating+to+your+client.%0D%0A%09%09%09%09%09%09%09%09%09%09A%3AOnce+everything+has+been+added%2C+you+have+opened+a+matter%21%0D%0A%09%09%09%09%09%09%09%09%09%09%09Q%282.3.3.1.1.1.1.1.1.1.1.1%29%3AGOTO%3Anew%0D%0A%0D%0AQ%28current%29%3AWhat+do+you+need+help+with%3F%0D%0AA%3ACreate+a+task+list%0D%0A%09Q%28task%29%3AClick+%E2%80%9CTasks%E2%80%9D+on+the+left+side+of+the+page.%3Cbr%3E%3Cbr%3E+Then%2C+click+on+the+%E2%80%9CLists%E2%80%9D+tab.+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FTask1.png%22%3E%3C%2Fp%3E%0D%0A%09A%3AOk%2C+I+clicked+on+%22Lists%22%2C+now+what%3F%0D%0A%09%09Q%28reminder%29%3ASelect+one+of+the+pre-made+task+checklists+under+%E2%80%9CList%E2%80%9D.+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FTask3.png%22%3E%3C%2Fp%3E+%0D%0A%09%09A%3AWhat%27s+next%3F%0D%0A%09%09%09Q%283.1.1.1%29%3ANow+click+on+the+blue+%E2%80%9CAssign%E2%80%9D+under+the+Task+Checklist.+%3Cbr%3E%3Cbr%3ESelect+the+matter+you+wish+to+assign+this+task+to+and+click+%E2%80%9CAssign+List%E2%80%9D%3Cbr%3E%3Cbr%3ENow+go+back+your+client%27s+matter%2C+click+the+%22Task%22+tab+on+the+top+of+the+page+and+you+should+see+your+tasks+listed%21%0D%0A%09%09%09A%3ANice%21%0D%0A%09%09%09%09Q%283.1.1.1.1%29%3AGOTO%3Acurrent%0D%0A%0D%0AA%3ACreating+a+document+from+a+template%0D%0A%09Q%28doc%29%3AGo+to+the+%E2%80%9CDocuments%E2%80%9D+tab+on+the+left+bar+or+on+the+at+the+top.%0D%0A%09A%3AI%27m+there%2C+now+what%3F%0D%0A%09%09Q%283.2.1%29%3AClick+on+the+blue+%E2%80%9CNew%E2%80%9D+button+that+is+located+on+the+right+side+of+the+page.+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FDocTemp3.png%22%3E%3C%2Fp%3E+%0D%0A%09%09A%3ADone%21+What%27s+next%3F%0D%0A%09%09%09Q%283.2.1.1%29%3ASelect+%E2%80%9CDocument+from+Template%E2%80%9D+from+the+drop-down+menu.%0D%0A%09%09%09A%3AOk%2C+now+what%3F%0D%0A%09%09%09%09Q%283.2.1.1.1%29%3AA+window+titled+%E2%80%9CCreate+A+Document%E2%80%9D+will+appear.+In+the+first+box%2C+select+the+template+you+wish+to+use+for+your+document.%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FDocTemp4.png%22%3E%3C%2Fp%3E++%3Cbr%3E%3Cbr%3E++In+the+second+box%2C+select+the+matter+that+this+document+will+be+taking+information+from.%0D%0A%09%09%09%09A%3AGot+it%21+What+do+I+do+now%3F%0D%0A%09%09%09%09%09Q%283.2.1.1.1.1%29%3ANext%2C+you+can+select+how+you+want+the+document+to+be+saved+%28PDF+and%2For+Word+document%29.+%3Cbr%3E%3Cbr%3E+Once+this+information+has+been+filled+in%2C+click+on+%E2%80%9CCreate+Document%E2%80%9D.%0D%0A%09%09%09%09%09A%3AGreat%2C+am+I+done%3F%0D%0A%09%09%09%09%09%09Q%283.2.1.1.1.1.1%29%3AYou+will+then+be+required+to+refresh+the+page+to+view+the+document+as+listed.+%3Cbr%3E%3Cbr%3E+The+document+will+appear+in+the+matter+folder.+If+the+template+was+categorized%2C+however%2C+then+under+the+%E2%80%9Ccategory%E2%80%9D+column%2C+you+will+see+in+which+folder+the+document+was+placed+in.+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FDocTemp5.png%22%3E%3C%2Fp%3E%0D%0A%09%09%09%09%09%09A%3AYou+have+created+a+document+from+a+template%21+%0D%0A%09%09%09%09%09%09%09Q%283.2.1.1.1.1.1.1%29%3AGOTO%3Acurrent%0D%0A%0D%0AA%3AAdd+an+event+to+the+calendar%0D%0A%09Q%28cal%29%3AClick+on+the+%E2%80%9CCalendar%E2%80%9D+tab+on+the+left.+%3Cbr%3E%3Cbr%3EOn+top+of+the+calendar%2C+click+on+the+green+%E2%80%9CAdd+Event%E2%80%9D+button.+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FCalendar1.png%22%3E%3C%2Fp%3E%0D%0A%09A%3ADone%2C+what%27s+next%3F%0D%0A%09%09Q%283.3.1%29%3AA+window+titled+%E2%80%9CCreate+Calendar+Entry%E2%80%9D+will+open.+Here+you+can+enter+information+concerning+the+event+that+you+wish+to+submit.%0D%0A%09%09A%3AGot+it%21%0D%0A%09%09%09Q%283.3.1.1%29%3AUnder+%E2%80%9CMatter%E2%80%9D%2C+select+the+case+you+wish+to+apply+this+event+to.+You+may+also+add+a+location+and+invite+others+by+selecting+%E2%80%9CInvite+contacts+Via+Clio+Connect%E2%80%9D.+%3Cp%3E%3Cimg+src%3D%22https%3A%2F%2Fsuffolklitlab.org%2Fclio%2Fimages%2FCalendar2.png%22%3E%3C%2Fp%3E%0D%0A%09%09%09A%3AOk%0D%0A%09%09%09%09Q%283.3.1.1.1%29%3AOn+top%2C+you+will+see+tabs+%E2%80%9CRepeats%E2%80%9D%2C+%E2%80%9CReminders%E2%80%9D+and+%E2%80%9CTime+Entries%E2%80%9D.+%3Cbr%3E%3Cbr%3EIf+you+click+on+the++%E2%80%9CRepeats%E2%80%9D+tab%2C+you+can+control+how+often+the+event+will+repeat+and+notify+you+of+its+occurrence.%3Cbr%3E%3Cbr%3EIf+you+click+on+the+%E2%80%9CReminders%E2%80%9D+tab%2C+you+can+control+when+you+are+alerted+of+the+event+for+the+date+it+starts+and+whether+to+be+alerted+by+an+email+or+pop-up+notification.%0D%0A%09%09%09%09A%3AGreat%21+Am+I+done%3F%0D%0A%09%09%09%09%09Q%283.3.1.1.1.1%29%3AOnce+you+have+filled+in+all+the+necessary+information%2C+you+may+click+%E2%80%9CCreate+Calendar+Entry%E2%80%9D+to+finish+or+%E2%80%9C+Save+and+Add+Another%E2%80%9D+to+create+an+additional+calendar+entry.%0D%0A%09%09%09%09%09A%3AYou+have+now+added+an+event+to+the+calendar%21%0D%0A%09%09%09%09%09%09Q%283.3.1.1.1.1.1%29%3AGOTO%3Acurrent%0D%0A%0D%0A%09%09%09%0D%0A</div><div id="ondeck" name="ondeck"><div id='Q-1' name='Q-1' style='display:none;'>Welcome! What stage are you in your case?
+</div><div id='Q-1.1' name='Q-1.1' style='display:none;'>GOTO:2</div><div id='Q-1.2' name='Q-1.2' style='display:none;'>GOTO:3</div><div id='Q-2' name='Q-2' style='display:none;'> What would you like to do?
+</div><div id='Q-2.1' name='Q-2.1' style='display:none;'> To run a conflict check you must enter your client's name and anyone related to the case in the search bar and click "Enter" on your keyboard <p><img src="https://suffolklitlab.org/clio/images/SearchBar.png"></p> <br><br> Make sure you check on other possible spellings for the names.
+</div><div id='Q-2.1.1' name='Q-2.1.1' style='display:none;'>Did any of those searches pull up an existing client or contact?
+</div><div id='Q-2.1.1.1' name='Q-2.1.1.1' style='display:none;'>Go to your clinic supervisor and ask for further guidance before continuing.
+</div><div id='Q-2.1.1.1.1' name='Q-2.1.1.1.1' style='display:none;'>GOTO:2</div><div id='Q-2.1.1.2' name='Q-2.1.1.2' style='display:none;'>Great! Now you just print the page and proceed to the next step.
+</div><div id='Q-2.1.1.2.1' name='Q-2.1.1.2.1' style='display:none;'>GOTO:2.2</div><div id='Q-2.1.1.2.2' name='Q-2.1.1.2.2' style='display:none;'>GOTO:2.3.3</div><div id='Q-2.2' name='Q-2.2' style='display:none;'>Go to top right corner, where there is a green button stating “Create New”
+</div><div id='Q-2.2.1' name='Q-2.2.1' style='display:none;'>Click on the drop down button and select either “Person” or “Company” depending on what type of contact you want to create. This will take you to another page to type in the information you have for that contact. <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.1.png"></p>
+</div><div id='Q-2.2.1.1' name='Q-2.2.1.1' style='display:none;'>For a new company, type in the company name, add their email, phone number, website, and address and click on “Save New Company” <br><br>If you need to add any comments or notes, add it to the “Custom Fields” section.
+</div><div id='Q-2.2.1.1.1' name='Q-2.2.1.1.1' style='display:none;'>If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there. 
+</div><div id='Q-2.2.1.1.1.1' name='Q-2.2.1.1.1.1' style='display:none;'>GOTO:2</div><div id='Q-2.2.1.2' name='Q-2.2.1.2' style='display:none;'>For a new person, type in their first and last name, choose the company they belong to from the drop down box (if applicable), and enter that person’s title (if applicable)
+</div><div id='Q-2.2.1.2.1' name='Q-2.2.1.2.1' style='display:none;'>Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.2.png"></p>
+</div><div id='Q-2.2.1.2.1.1' name='Q-2.2.1.2.1.1' style='display:none;'>This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath “Custom Field Sets” and it will generate several new fields that the clinic recommends you use for that type of contact. <br><br> If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful; keep in mind that email, phone number, website, and address fields are just below this section.
+</div><div id='Q-2.2.1.2.1.1.1' name='Q-2.2.1.2.1.1.1' style='display:none;'>Once you’re done adding your information to each field, scroll to the bottom of the page and hit “Save New Person”
+</div><div id='Q-2.2.1.2.1.1.1.1' name='Q-2.2.1.2.1.1.1.1' style='display:none;'>Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"></p>
+</div><div id='Q-2.2.1.2.1.1.1.1.1' name='Q-2.2.1.2.1.1.1.1.1' style='display:none;'>This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.4.png"></p>
+</div><div id='Q-2.2.1.2.1.1.1.1.1.1' name='Q-2.2.1.2.1.1.1.1.1.1' style='display:none;'>Once you’ve added all your contacts to this matter, click “Save matter” at the bottom of your screen (See screenshot below) and those contacts will be visible from your matter’s dashboard.
+</div><div id='Q-2.2.1.2.1.1.1.1.1.1.1' name='Q-2.2.1.2.1.1.1.1.1.1.1' style='display:none;'>GOTO:2</div><div id='Q-2.3' name='Q-2.3' style='display:none;'>Before opening a matter make sure you ran a conflict check and created your contacts.
+</div><div id='Q-2.3.1' name='Q-2.3.1' style='display:none;'>GOTO:2.1</div><div id='Q-2.3.2' name='Q-2.3.2' style='display:none;'>GOTO:2.2</div><div id='Q-2.3.3' name='Q-2.3.3' style='display:none;'>Go to top right corner, where there is a green button that says “Create New”	
+</div><div id='Q-2.3.3.1' name='Q-2.3.3.1' style='display:none;'>Click on the drop down button and the click "Matter"<p> <img src="https://suffolklitlab.org/clio/images/CreatenewMatter.1.PNG"></p>
+ <br><br>This will take you to the following screen<p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.2.PNG"></p>
+</div><div id='Q-2.3.3.1.1' name='Q-2.3.3.1.1' style='display:none;'>For the client, you will have to create a new contact for them by clicking on the drop down box under “Client” and clicking “Create new contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.3.png"></p>
+</div><div id='Q-2.3.3.1.1.1' name='Q-2.3.3.1.1.1' style='display:none;'>There will be a pop up that will ask for additional information about your client: <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.4.png"></p>
+</div><div id='Q-2.3.3.1.1.1.1' name='Q-2.3.3.1.1.1.1' style='display:none;'>Once you’ve filled out all that information, click “save contact” and it will return to the page you were on before.
+</div><div id='Q-2.3.3.1.1.1.1.1' name='Q-2.3.3.1.1.1.1.1' style='display:none;'>Under “Matter description,” only type your client’s full first and last name in all CAPS - this is how you will find your client on the search bar in the future.<br><br>Under “Permissions” and “Practice area,” click on the drop down button and select your clinic.<br><br>Under “Responsible attorney,” type the name of the student attorney assigned to this case.
+</div><div id='Q-2.3.3.1.1.1.1.1.1' name='Q-2.3.3.1.1.1.1.1.1' style='display:none;'>If another attorney within your clinic has worked on this case before, type their name into “Originating attorney,” otherwise this may be left blank
+</div><div id='Q-2.3.3.1.1.1.1.1.1.1' name='Q-2.3.3.1.1.1.1.1.1.1' style='display:none;'>Client reference number and location may be left blank unless directed to do otherwise by a supervisor.
+</div><div id='Q-2.3.3.1.1.1.1.1.1.1.1' name='Q-2.3.3.1.1.1.1.1.1.1.1' style='display:none;'>Next, scroll down and expand the “Related contacts” section if you have other contacts relating to your client.
+</div><div id='Q-2.3.3.1.1.1.1.1.1.1.1.1' name='Q-2.3.3.1.1.1.1.1.1.1.1.1' style='display:none;'>GOTO:2</div><div id='Q-3' name='Q-3' style='display:none;'>What do you need help with?
+</div><div id='Q-3.1' name='Q-3.1' style='display:none;'>Click “Tasks” on the left side of the page.<br><br> Then, click on the “Lists” tab. <p><img src="https://suffolklitlab.org/clio/images/Task1.png"></p>
+</div><div id='Q-3.1.1' name='Q-3.1.1' style='display:none;'>Select one of the pre-made task checklists under “List”. <p><img src="https://suffolklitlab.org/clio/images/Task3.png"></p> 
+</div><div id='Q-3.1.1.1' name='Q-3.1.1.1' style='display:none;'>Now click on the blue “Assign” under the Task Checklist. <br><br>Select the matter you wish to assign this task to and click “Assign List”<br><br>Now go back your client's matter, click the "Task" tab on the top of the page and you should see your tasks listed!
+</div><div id='Q-3.1.1.1.1' name='Q-3.1.1.1.1' style='display:none;'>GOTO:3</div><div id='Q-3.2' name='Q-3.2' style='display:none;'>Go to the “Documents” tab on the left bar or on the at the top.
+</div><div id='Q-3.2.1' name='Q-3.2.1' style='display:none;'>Click on the blue “New” button that is located on the right side of the page. <p><img src="https://suffolklitlab.org/clio/images/DocTemp3.png"></p> 
+</div><div id='Q-3.2.1.1' name='Q-3.2.1.1' style='display:none;'>Select “Document from Template” from the drop-down menu.
+</div><div id='Q-3.2.1.1.1' name='Q-3.2.1.1.1' style='display:none;'>A window titled “Create A Document” will appear. In the first box, select the template you wish to use for your document.<p><img src="https://suffolklitlab.org/clio/images/DocTemp4.png"></p>  <br><br>  In the second box, select the matter that this document will be taking information from.
+</div><div id='Q-3.2.1.1.1.1' name='Q-3.2.1.1.1.1' style='display:none;'>Next, you can select how you want the document to be saved (PDF and/or Word document). <br><br> Once this information has been filled in, click on “Create Document”.
+</div><div id='Q-3.2.1.1.1.1.1' name='Q-3.2.1.1.1.1.1' style='display:none;'>You will then be required to refresh the page to view the document as listed. <br><br> The document will appear in the matter folder. If the template was categorized, however, then under the “category” column, you will see in which folder the document was placed in. <p><img src="https://suffolklitlab.org/clio/images/DocTemp5.png"></p>
+</div><div id='Q-3.2.1.1.1.1.1.1' name='Q-3.2.1.1.1.1.1.1' style='display:none;'>GOTO:3</div><div id='Q-3.3' name='Q-3.3' style='display:none;'>Click on the “Calendar” tab on the left. <br><br>On top of the calendar, click on the green “Add Event” button. <p><img src="https://suffolklitlab.org/clio/images/Calendar1.png"></p>
+</div><div id='Q-3.3.1' name='Q-3.3.1' style='display:none;'>A window titled “Create Calendar Entry” will open. Here you can enter information concerning the event that you wish to submit.
+</div><div id='Q-3.3.1.1' name='Q-3.3.1.1' style='display:none;'>Under “Matter”, select the case you wish to apply this event to. You may also add a location and invite others by selecting “Invite contacts Via Clio Connect”. <p><img src="https://suffolklitlab.org/clio/images/Calendar2.png"></p>
+</div><div id='Q-3.3.1.1.1' name='Q-3.3.1.1.1' style='display:none;'>On top, you will see tabs “Repeats”, “Reminders” and “Time Entries”. <br><br>If you click on the  “Repeats” tab, you can control how often the event will repeat and notify you of its occurrence.<br><br>If you click on the “Reminders” tab, you can control when you are alerted of the event for the date it starts and whether to be alerted by an email or pop-up notification.
+</div><div id='Q-3.3.1.1.1.1' name='Q-3.3.1.1.1.1' style='display:none;'>Once you have filled in all the necessary information, you may click “Create Calendar Entry” to finish or “ Save and Add Another” to create an additional calendar entry.
+</div><div id='Q-3.3.1.1.1.1.1' name='Q-3.3.1.1.1.1.1' style='display:none;'>GOTO:3</div><div id='A-1.1' name='A-1.1' style='display:none;'>I am starting a new case
+</div><div id='A-href-1.1' name='A-href-1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1' name='A-target-1.1' style='display:none;'></div><div id='X-1.1' name='X-1.1' style='display:none;'>I am starting a new case</div><div id='A-1.2' name='A-1.2' style='display:none;'>I am currently working on a case
+</div><div id='A-href-1.2' name='A-href-1.2' style='display:none;'>javascript:void('');</div><div id='A-target-1.2' name='A-target-1.2' style='display:none;'></div><div id='X-1.2' name='X-1.2' style='display:none;'>I am currently working on a case</div><div id='A-1.3' name='A-1.3' style='display:none;'>I am closing a case
+</div><div id='A-href-1.3' name='A-href-1.3' style='display:none;'>javascript:void('');</div><div id='A-target-1.3' name='A-target-1.3' style='display:none;'></div><div id='X-1.3' name='X-1.3' style='display:none;'>I am closing a case</div><div id='A-1.4' name='A-1.4' style='display:none;'>I am transferring a case
+
+
+
+</div><div id='A-href-1.4' name='A-href-1.4' style='display:none;'>javascript:void('');</div><div id='A-target-1.4' name='A-target-1.4' style='display:none;'></div><div id='X-1.4' name='X-1.4' style='display:none;'>I am transferring a case</div><div id='A-2.1' name='A-2.1' style='display:none;'>Run conflict check
+</div><div id='A-href-2.1' name='A-href-2.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.1' name='A-target-2.1' style='display:none;'></div><div id='X-2.1' name='X-2.1' style='display:none;'>Run conflict check</div><div id='A-2.1.1' name='A-2.1.1' style='display:none;'>I've checked spelling and entered my client's name!
+</div><div id='A-href-2.1.1' name='A-href-2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1' name='A-target-2.1.1' style='display:none;'></div><div id='X-2.1.1' name='X-2.1.1' style='display:none;'>I've checked spelling and entered my client's name!</div><div id='A-2.1.1.1' name='A-2.1.1.1' style='display:none;'>Yes
+</div><div id='A-href-2.1.1.1' name='A-href-2.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1.1' name='A-target-2.1.1.1' style='display:none;'></div><div id='X-2.1.1.1' name='X-2.1.1.1' style='display:none;'>Yes</div><div id='A-2.1.1.1.1' name='A-2.1.1.1.1' style='display:none;'>While you wait you can go back to the start.
+</div><div id='A-href-2.1.1.1.1' name='A-href-2.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1.1.1' name='A-target-2.1.1.1.1' style='display:none;'></div><div id='X-2.1.1.1.1' name='X-2.1.1.1.1' style='display:none;'>While you wait you can go back to the start.</div><div id='A-2.1.1.2' name='A-2.1.1.2' style='display:none;'>No	
+</div><div id='A-href-2.1.1.2' name='A-href-2.1.1.2' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1.2' name='A-target-2.1.1.2' style='display:none;'></div><div id='X-2.1.1.2' name='X-2.1.1.2' style='display:none;'>No</div><div id='A-2.1.1.2.1' name='A-2.1.1.2.1' style='display:none;'>I need to create a contact
+</div><div id='A-href-2.1.1.2.1' name='A-href-2.1.1.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1.2.1' name='A-target-2.1.1.2.1' style='display:none;'></div><div id='X-2.1.1.2.1' name='X-2.1.1.2.1' style='display:none;'>I need to create a contact</div><div id='A-2.1.1.2.2' name='A-2.1.1.2.2' style='display:none;'>I have already created a contact and am ready to open a matter
+</div><div id='A-href-2.1.1.2.2' name='A-href-2.1.1.2.2' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1.2.2' name='A-target-2.1.1.2.2' style='display:none;'></div><div id='X-2.1.1.2.2' name='X-2.1.1.2.2' style='display:none;'>I have already created a contact and am ready to open a matter</div><div id='A-2.2' name='A-2.2' style='display:none;'>Create a new contact
+</div><div id='A-href-2.2' name='A-href-2.2' style='display:none;'>javascript:void('');</div><div id='A-target-2.2' name='A-target-2.2' style='display:none;'></div><div id='X-2.2' name='X-2.2' style='display:none;'>Create a new contact</div><div id='A-2.2.1' name='A-2.2.1' style='display:none;'>Found it! What's next?
+</div><div id='A-href-2.2.1' name='A-href-2.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1' name='A-target-2.2.1' style='display:none;'></div><div id='X-2.2.1' name='X-2.2.1' style='display:none;'>Found it! What's next?</div><div id='A-2.2.1.1' name='A-2.2.1.1' style='display:none;'>Create a new Company
+</div><div id='A-href-2.2.1.1' name='A-href-2.2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.1' name='A-target-2.2.1.1' style='display:none;'></div><div id='X-2.2.1.1' name='X-2.2.1.1' style='display:none;'>Create a new Company</div><div id='A-2.2.1.1.1' name='A-2.2.1.1.1' style='display:none;'>Got it! What do I do now?
+</div><div id='A-href-2.2.1.1.1' name='A-href-2.2.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.1.1' name='A-target-2.2.1.1.1' style='display:none;'></div><div id='X-2.2.1.1.1' name='X-2.2.1.1.1' style='display:none;'>Got it! What do I do now?</div><div id='A-2.2.1.1.1.1' name='A-2.2.1.1.1.1' style='display:none;'>That is all! You have added a new company.
+</div><div id='A-href-2.2.1.1.1.1' name='A-href-2.2.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.1.1.1' name='A-target-2.2.1.1.1.1' style='display:none;'></div><div id='X-2.2.1.1.1.1' name='X-2.2.1.1.1.1' style='display:none;'>That is all! You have added a new company.</div><div id='A-2.2.1.2' name='A-2.2.1.2' style='display:none;'>Create a new Person
+</div><div id='A-href-2.2.1.2' name='A-href-2.2.1.2' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2' name='A-target-2.2.1.2' style='display:none;'></div><div id='X-2.2.1.2' name='X-2.2.1.2' style='display:none;'>Create a new Person</div><div id='A-2.2.1.2.1' name='A-2.2.1.2.1' style='display:none;'>Done! What's next?
+</div><div id='A-href-2.2.1.2.1' name='A-href-2.2.1.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1' name='A-target-2.2.1.2.1' style='display:none;'></div><div id='X-2.2.1.2.1' name='X-2.2.1.2.1' style='display:none;'>Done! What's next?</div><div id='A-2.2.1.2.1.1' name='A-2.2.1.2.1.1' style='display:none;'>Found it, now what?
+</div><div id='A-href-2.2.1.2.1.1' name='A-href-2.2.1.2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1' name='A-target-2.2.1.2.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1' name='X-2.2.1.2.1.1' style='display:none;'>Found it, now what?</div><div id='A-2.2.1.2.1.1.1' name='A-2.2.1.2.1.1.1' style='display:none;'>Got it! 
+</div><div id='A-href-2.2.1.2.1.1.1' name='A-href-2.2.1.2.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1.1' name='A-target-2.2.1.2.1.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1.1' name='X-2.2.1.2.1.1.1' style='display:none;'>Got it!</div><div id='A-2.2.1.2.1.1.1.1' name='A-2.2.1.2.1.1.1.1' style='display:none;'>Saved! Am I done?
+</div><div id='A-href-2.2.1.2.1.1.1.1' name='A-href-2.2.1.2.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1.1.1' name='A-target-2.2.1.2.1.1.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1.1.1' name='X-2.2.1.2.1.1.1.1' style='display:none;'>Saved! Am I done?</div><div id='A-2.2.1.2.1.1.1.1.1' name='A-2.2.1.2.1.1.1.1.1' style='display:none;'>Got it!
+</div><div id='A-href-2.2.1.2.1.1.1.1.1' name='A-href-2.2.1.2.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1.1.1.1' name='A-target-2.2.1.2.1.1.1.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1.1.1.1' name='X-2.2.1.2.1.1.1.1.1' style='display:none;'>Got it!</div><div id='A-2.2.1.2.1.1.1.1.1.1' name='A-2.2.1.2.1.1.1.1.1.1' style='display:none;'>All done!
+</div><div id='A-href-2.2.1.2.1.1.1.1.1.1' name='A-href-2.2.1.2.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1.1.1.1.1' name='A-target-2.2.1.2.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1.1.1.1.1' name='X-2.2.1.2.1.1.1.1.1.1' style='display:none;'>All done!</div><div id='A-2.2.1.2.1.1.1.1.1.1.1' name='A-2.2.1.2.1.1.1.1.1.1.1' style='display:none;'>That is it! You have created a contact!
+</div><div id='A-href-2.2.1.2.1.1.1.1.1.1.1' name='A-href-2.2.1.2.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1.1.1.1.1.1' name='A-target-2.2.1.2.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1.1.1.1.1.1' name='X-2.2.1.2.1.1.1.1.1.1.1' style='display:none;'>That is it! You have created a contact!</div><div id='A-2.3' name='A-2.3' style='display:none;'>Open a new case/matter
+</div><div id='A-href-2.3' name='A-href-2.3' style='display:none;'>javascript:void('');</div><div id='A-target-2.3' name='A-target-2.3' style='display:none;'></div><div id='X-2.3' name='X-2.3' style='display:none;'>Open a new case/matter</div><div id='A-2.3.1' name='A-2.3.1' style='display:none;'>I need to run a conflict check. 
+</div><div id='A-href-2.3.1' name='A-href-2.3.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.1' name='A-target-2.3.1' style='display:none;'></div><div id='X-2.3.1' name='X-2.3.1' style='display:none;'>I need to run a conflict check.</div><div id='A-2.3.2' name='A-2.3.2' style='display:none;'>I need to create a contact 
+</div><div id='A-href-2.3.2' name='A-href-2.3.2' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.2' name='A-target-2.3.2' style='display:none;'></div><div id='X-2.3.2' name='X-2.3.2' style='display:none;'>I need to create a contact</div><div id='A-2.3.3' name='A-2.3.3' style='display:none;'>I did both, I am ready to create a matter 
+</div><div id='A-href-2.3.3' name='A-href-2.3.3' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3' name='A-target-2.3.3' style='display:none;'></div><div id='X-2.3.3' name='X-2.3.3' style='display:none;'>I did both, I am ready to create a matter</div><div id='A-2.3.3.1' name='A-2.3.3.1' style='display:none;'>Found it!	
+</div><div id='A-href-2.3.3.1' name='A-href-2.3.3.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1' name='A-target-2.3.3.1' style='display:none;'></div><div id='X-2.3.3.1' name='X-2.3.3.1' style='display:none;'>Found it!</div><div id='A-2.3.3.1.1' name='A-2.3.3.1.1' style='display:none;'>I'm there! Now what?
+</div><div id='A-href-2.3.3.1.1' name='A-href-2.3.3.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1' name='A-target-2.3.3.1.1' style='display:none;'></div><div id='X-2.3.3.1.1' name='X-2.3.3.1.1' style='display:none;'>I'm there! Now what?</div><div id='A-2.3.3.1.1.1' name='A-2.3.3.1.1.1' style='display:none;'>Done!
+</div><div id='A-href-2.3.3.1.1.1' name='A-href-2.3.3.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1' name='A-target-2.3.3.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1' name='X-2.3.3.1.1.1' style='display:none;'>Done!</div><div id='A-2.3.3.1.1.1.1' name='A-2.3.3.1.1.1.1' style='display:none;'>Ok, I see it.
+</div><div id='A-href-2.3.3.1.1.1.1' name='A-href-2.3.3.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1' name='A-target-2.3.3.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1' name='X-2.3.3.1.1.1.1' style='display:none;'>Ok, I see it.</div><div id='A-2.3.3.1.1.1.1.1' name='A-2.3.3.1.1.1.1.1' style='display:none;'>I'm back on that page.
+</div><div id='A-href-2.3.3.1.1.1.1.1' name='A-href-2.3.3.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1.1' name='A-target-2.3.3.1.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1.1' name='X-2.3.3.1.1.1.1.1' style='display:none;'>I'm back on that page.</div><div id='A-2.3.3.1.1.1.1.1.1' name='A-2.3.3.1.1.1.1.1.1' style='display:none;'>All done! What's next?
+</div><div id='A-href-2.3.3.1.1.1.1.1.1' name='A-href-2.3.3.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1.1.1' name='A-target-2.3.3.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1.1.1' name='X-2.3.3.1.1.1.1.1.1' style='display:none;'>All done! What's next?</div><div id='A-2.3.3.1.1.1.1.1.1.1' name='A-2.3.3.1.1.1.1.1.1.1' style='display:none;'>Got it!
+</div><div id='A-href-2.3.3.1.1.1.1.1.1.1' name='A-href-2.3.3.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1.1.1.1' name='A-target-2.3.3.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1.1.1.1' name='X-2.3.3.1.1.1.1.1.1.1' style='display:none;'>Got it!</div><div id='A-2.3.3.1.1.1.1.1.1.1.1' name='A-2.3.3.1.1.1.1.1.1.1.1' style='display:none;'>Ok
+</div><div id='A-href-2.3.3.1.1.1.1.1.1.1.1' name='A-href-2.3.3.1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1.1.1.1.1' name='A-target-2.3.3.1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1.1.1.1.1' name='X-2.3.3.1.1.1.1.1.1.1.1' style='display:none;'>Ok</div><div id='A-2.3.3.1.1.1.1.1.1.1.1.1' name='A-2.3.3.1.1.1.1.1.1.1.1.1' style='display:none;'>Once everything has been added, you have opened a matter!
+</div><div id='A-href-2.3.3.1.1.1.1.1.1.1.1.1' name='A-href-2.3.3.1.1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1.1.1.1.1.1' name='A-target-2.3.3.1.1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1.1.1.1.1.1' name='X-2.3.3.1.1.1.1.1.1.1.1.1' style='display:none;'>Once everything has been added, you have opened a matter!</div><div id='A-3.1' name='A-3.1' style='display:none;'>Create a task list
+</div><div id='A-href-3.1' name='A-href-3.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.1' name='A-target-3.1' style='display:none;'></div><div id='X-3.1' name='X-3.1' style='display:none;'>Create a task list</div><div id='A-3.1.1' name='A-3.1.1' style='display:none;'>Ok, I clicked on "Lists", now what?
+</div><div id='A-href-3.1.1' name='A-href-3.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.1.1' name='A-target-3.1.1' style='display:none;'></div><div id='X-3.1.1' name='X-3.1.1' style='display:none;'>Ok, I clicked on "Lists", now what?</div><div id='A-3.1.1.1' name='A-3.1.1.1' style='display:none;'>What's next?
+</div><div id='A-href-3.1.1.1' name='A-href-3.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.1.1.1' name='A-target-3.1.1.1' style='display:none;'></div><div id='X-3.1.1.1' name='X-3.1.1.1' style='display:none;'>What's next?</div><div id='A-3.1.1.1.1' name='A-3.1.1.1.1' style='display:none;'>Nice!
+</div><div id='A-href-3.1.1.1.1' name='A-href-3.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.1.1.1.1' name='A-target-3.1.1.1.1' style='display:none;'></div><div id='X-3.1.1.1.1' name='X-3.1.1.1.1' style='display:none;'>Nice!</div><div id='A-3.2' name='A-3.2' style='display:none;'>Creating a document from a template
+</div><div id='A-href-3.2' name='A-href-3.2' style='display:none;'>javascript:void('');</div><div id='A-target-3.2' name='A-target-3.2' style='display:none;'></div><div id='X-3.2' name='X-3.2' style='display:none;'>Creating a document from a template</div><div id='A-3.2.1' name='A-3.2.1' style='display:none;'>I'm there, now what?
+</div><div id='A-href-3.2.1' name='A-href-3.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1' name='A-target-3.2.1' style='display:none;'></div><div id='X-3.2.1' name='X-3.2.1' style='display:none;'>I'm there, now what?</div><div id='A-3.2.1.1' name='A-3.2.1.1' style='display:none;'>Done! What's next?
+</div><div id='A-href-3.2.1.1' name='A-href-3.2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1.1' name='A-target-3.2.1.1' style='display:none;'></div><div id='X-3.2.1.1' name='X-3.2.1.1' style='display:none;'>Done! What's next?</div><div id='A-3.2.1.1.1' name='A-3.2.1.1.1' style='display:none;'>Ok, now what?
+</div><div id='A-href-3.2.1.1.1' name='A-href-3.2.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1.1.1' name='A-target-3.2.1.1.1' style='display:none;'></div><div id='X-3.2.1.1.1' name='X-3.2.1.1.1' style='display:none;'>Ok, now what?</div><div id='A-3.2.1.1.1.1' name='A-3.2.1.1.1.1' style='display:none;'>Got it! What do I do now?
+</div><div id='A-href-3.2.1.1.1.1' name='A-href-3.2.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1.1.1.1' name='A-target-3.2.1.1.1.1' style='display:none;'></div><div id='X-3.2.1.1.1.1' name='X-3.2.1.1.1.1' style='display:none;'>Got it! What do I do now?</div><div id='A-3.2.1.1.1.1.1' name='A-3.2.1.1.1.1.1' style='display:none;'>Great, am I done?
+</div><div id='A-href-3.2.1.1.1.1.1' name='A-href-3.2.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1.1.1.1.1' name='A-target-3.2.1.1.1.1.1' style='display:none;'></div><div id='X-3.2.1.1.1.1.1' name='X-3.2.1.1.1.1.1' style='display:none;'>Great, am I done?</div><div id='A-3.2.1.1.1.1.1.1' name='A-3.2.1.1.1.1.1.1' style='display:none;'>You have created a document from a template! 
+</div><div id='A-href-3.2.1.1.1.1.1.1' name='A-href-3.2.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1.1.1.1.1.1' name='A-target-3.2.1.1.1.1.1.1' style='display:none;'></div><div id='X-3.2.1.1.1.1.1.1' name='X-3.2.1.1.1.1.1.1' style='display:none;'>You have created a document from a template!</div><div id='A-3.3' name='A-3.3' style='display:none;'>Add an event to the calendar
+</div><div id='A-href-3.3' name='A-href-3.3' style='display:none;'>javascript:void('');</div><div id='A-target-3.3' name='A-target-3.3' style='display:none;'></div><div id='X-3.3' name='X-3.3' style='display:none;'>Add an event to the calendar</div><div id='A-3.3.1' name='A-3.3.1' style='display:none;'>Done, what's next?
+</div><div id='A-href-3.3.1' name='A-href-3.3.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.3.1' name='A-target-3.3.1' style='display:none;'></div><div id='X-3.3.1' name='X-3.3.1' style='display:none;'>Done, what's next?</div><div id='A-3.3.1.1' name='A-3.3.1.1' style='display:none;'>Got it!
+</div><div id='A-href-3.3.1.1' name='A-href-3.3.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.3.1.1' name='A-target-3.3.1.1' style='display:none;'></div><div id='X-3.3.1.1' name='X-3.3.1.1' style='display:none;'>Got it!</div><div id='A-3.3.1.1.1' name='A-3.3.1.1.1' style='display:none;'>Ok
+</div><div id='A-href-3.3.1.1.1' name='A-href-3.3.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.3.1.1.1' name='A-target-3.3.1.1.1' style='display:none;'></div><div id='X-3.3.1.1.1' name='X-3.3.1.1.1' style='display:none;'>Ok</div><div id='A-3.3.1.1.1.1' name='A-3.3.1.1.1.1' style='display:none;'>Great! Am I done?
+</div><div id='A-href-3.3.1.1.1.1' name='A-href-3.3.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.3.1.1.1.1' name='A-target-3.3.1.1.1.1' style='display:none;'></div><div id='X-3.3.1.1.1.1' name='X-3.3.1.1.1.1' style='display:none;'>Great! Am I done?</div><div id='A-3.3.1.1.1.1.1' name='A-3.3.1.1.1.1.1' style='display:none;'>You have now added an event to the calendar!
+</div><div id='A-href-3.3.1.1.1.1.1' name='A-href-3.3.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.3.1.1.1.1.1' name='A-target-3.3.1.1.1.1.1' style='display:none;'></div><div id='X-3.3.1.1.1.1.1' name='X-3.3.1.1.1.1.1' style='display:none;'>You have now added an event to the calendar!</div>
+<script>
+	var QVnames = [['1','home'],['1.1','1.1'],['1.2','1.2'],['2','new'],['2.1','conflict'],['2.1.1','2.1.1'],['2.1.1.1','2.1.1.1'],['2.1.1.1.1','2.1.1.1.1'],['2.1.1.2','2.1.1.2'],['2.1.1.2.1','2.1.1.2.1'],['2.1.1.2.2','2.1.1.2.2'],['2.2','contact'],['2.2.1','2.2.1'],['2.2.1.1','company'],['2.2.1.1.1','2.2.1.1.1'],['2.2.1.1.1.1','2.2.1.1.1.1'],['2.2.1.2','person'],['2.2.1.2.1','2.2.1.2.1'],['2.2.1.2.1.1','2.2.1.2.1.1'],['2.2.1.2.1.1.1','2.2.1.2.1.1.1'],['2.2.1.2.1.1.1.1','2.2.1.2.1.1.1.1'],['2.2.1.2.1.1.1.1.1','2.2.1.2.1.1.1.1.1'],['2.2.1.2.1.1.1.1.1.1','2.2.1.2.1.1.1.1.1.1'],['2.2.1.2.1.1.1.1.1.1.1','2.2.1.2.1.1.1.1.1.1.1'],['2.3','before'],['2.3.1','2.3.1'],['2.3.2','2.3.2'],['2.3.3','matter'],['2.3.3.1','2.3.3.1'],['2.3.3.1.1','client'],['2.3.3.1.1.1','2.3.3.1.1.1'],['2.3.3.1.1.1.1','2.3.3.1.1.1.1'],['2.3.3.1.1.1.1.1','desc'],['2.3.3.1.1.1.1.1.1','attny'],['2.3.3.1.1.1.1.1.1.1','ref'],['2.3.3.1.1.1.1.1.1.1.1','related'],['2.3.3.1.1.1.1.1.1.1.1.1','2.3.3.1.1.1.1.1.1.1.1.1'],['3','current'],['3.1','task'],['3.1.1','reminder'],['3.1.1.1','3.1.1.1'],['3.1.1.1.1','3.1.1.1.1'],['3.2','doc'],['3.2.1','3.2.1'],['3.2.1.1','3.2.1.1'],['3.2.1.1.1','3.2.1.1.1'],['3.2.1.1.1.1','3.2.1.1.1.1'],['3.2.1.1.1.1.1','3.2.1.1.1.1.1'],['3.2.1.1.1.1.1.1','3.2.1.1.1.1.1.1'],['3.3','cal'],['3.3.1','3.3.1'],['3.3.1.1','3.3.1.1'],['3.3.1.1.1','3.3.1.1.1'],['3.3.1.1.1.1','3.3.1.1.1.1'],['3.3.1.1.1.1.1','3.3.1.1.1.1.1']];
+</script>
+</div><textarea id="original" name="original" style="display:none;" disabled="disabled"><div id='Q-1' name='Q-1' style='display:none;'>Welcome! What stage are you in your case?
+</div><div id='Q-1.1' name='Q-1.1' style='display:none;'>GOTO:2</div><div id='Q-1.2' name='Q-1.2' style='display:none;'>GOTO:3</div><div id='Q-2' name='Q-2' style='display:none;'> What would you like to do?
+</div><div id='Q-2.1' name='Q-2.1' style='display:none;'> To run a conflict check you must enter your client's name and anyone related to the case in the search bar and click "Enter" on your keyboard <p><img src="https://suffolklitlab.org/clio/images/SearchBar.png"></p> <br><br> Make sure you check on other possible spellings for the names.
+</div><div id='Q-2.1.1' name='Q-2.1.1' style='display:none;'>Did any of those searches pull up an existing client or contact?
+</div><div id='Q-2.1.1.1' name='Q-2.1.1.1' style='display:none;'>Go to your clinic supervisor and ask for further guidance before continuing.
+</div><div id='Q-2.1.1.1.1' name='Q-2.1.1.1.1' style='display:none;'>GOTO:2</div><div id='Q-2.1.1.2' name='Q-2.1.1.2' style='display:none;'>Great! Now you just print the page and proceed to the next step.
+</div><div id='Q-2.1.1.2.1' name='Q-2.1.1.2.1' style='display:none;'>GOTO:2.2</div><div id='Q-2.1.1.2.2' name='Q-2.1.1.2.2' style='display:none;'>GOTO:2.3.3</div><div id='Q-2.2' name='Q-2.2' style='display:none;'>Go to top right corner, where there is a green button stating “Create New”
+</div><div id='Q-2.2.1' name='Q-2.2.1' style='display:none;'>Click on the drop down button and select either “Person” or “Company” depending on what type of contact you want to create. This will take you to another page to type in the information you have for that contact. <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.1.png"></p>
+</div><div id='Q-2.2.1.1' name='Q-2.2.1.1' style='display:none;'>For a new company, type in the company name, add their email, phone number, website, and address and click on “Save New Company” <br><br>If you need to add any comments or notes, add it to the “Custom Fields” section.
+</div><div id='Q-2.2.1.1.1' name='Q-2.2.1.1.1' style='display:none;'>If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there. 
+</div><div id='Q-2.2.1.1.1.1' name='Q-2.2.1.1.1.1' style='display:none;'>GOTO:2</div><div id='Q-2.2.1.2' name='Q-2.2.1.2' style='display:none;'>For a new person, type in their first and last name, choose the company they belong to from the drop down box (if applicable), and enter that person’s title (if applicable)
+</div><div id='Q-2.2.1.2.1' name='Q-2.2.1.2.1' style='display:none;'>Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.2.png"></p>
+</div><div id='Q-2.2.1.2.1.1' name='Q-2.2.1.2.1.1' style='display:none;'>This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath “Custom Field Sets” and it will generate several new fields that the clinic recommends you use for that type of contact. <br><br> If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful; keep in mind that email, phone number, website, and address fields are just below this section.
+</div><div id='Q-2.2.1.2.1.1.1' name='Q-2.2.1.2.1.1.1' style='display:none;'>Once you’re done adding your information to each field, scroll to the bottom of the page and hit “Save New Person”
+</div><div id='Q-2.2.1.2.1.1.1.1' name='Q-2.2.1.2.1.1.1.1' style='display:none;'>Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"></p>
+</div><div id='Q-2.2.1.2.1.1.1.1.1' name='Q-2.2.1.2.1.1.1.1.1' style='display:none;'>This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.4.png"></p>
+</div><div id='Q-2.2.1.2.1.1.1.1.1.1' name='Q-2.2.1.2.1.1.1.1.1.1' style='display:none;'>Once you’ve added all your contacts to this matter, click “Save matter” at the bottom of your screen (See screenshot below) and those contacts will be visible from your matter’s dashboard.
+</div><div id='Q-2.2.1.2.1.1.1.1.1.1.1' name='Q-2.2.1.2.1.1.1.1.1.1.1' style='display:none;'>GOTO:2</div><div id='Q-2.3' name='Q-2.3' style='display:none;'>Before opening a matter make sure you ran a conflict check and created your contacts.
+</div><div id='Q-2.3.1' name='Q-2.3.1' style='display:none;'>GOTO:2.1</div><div id='Q-2.3.2' name='Q-2.3.2' style='display:none;'>GOTO:2.2</div><div id='Q-2.3.3' name='Q-2.3.3' style='display:none;'>Go to top right corner, where there is a green button that says “Create New”	
+</div><div id='Q-2.3.3.1' name='Q-2.3.3.1' style='display:none;'>Click on the drop down button and the click "Matter"<p> <img src="https://suffolklitlab.org/clio/images/CreatenewMatter.1.PNG"></p>
+ <br><br>This will take you to the following screen<p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.2.PNG"></p>
+</div><div id='Q-2.3.3.1.1' name='Q-2.3.3.1.1' style='display:none;'>For the client, you will have to create a new contact for them by clicking on the drop down box under “Client” and clicking “Create new contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.3.png"></p>
+</div><div id='Q-2.3.3.1.1.1' name='Q-2.3.3.1.1.1' style='display:none;'>There will be a pop up that will ask for additional information about your client: <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.4.png"></p>
+</div><div id='Q-2.3.3.1.1.1.1' name='Q-2.3.3.1.1.1.1' style='display:none;'>Once you’ve filled out all that information, click “save contact” and it will return to the page you were on before.
+</div><div id='Q-2.3.3.1.1.1.1.1' name='Q-2.3.3.1.1.1.1.1' style='display:none;'>Under “Matter description,” only type your client’s full first and last name in all CAPS - this is how you will find your client on the search bar in the future.<br><br>Under “Permissions” and “Practice area,” click on the drop down button and select your clinic.<br><br>Under “Responsible attorney,” type the name of the student attorney assigned to this case.
+</div><div id='Q-2.3.3.1.1.1.1.1.1' name='Q-2.3.3.1.1.1.1.1.1' style='display:none;'>If another attorney within your clinic has worked on this case before, type their name into “Originating attorney,” otherwise this may be left blank
+</div><div id='Q-2.3.3.1.1.1.1.1.1.1' name='Q-2.3.3.1.1.1.1.1.1.1' style='display:none;'>Client reference number and location may be left blank unless directed to do otherwise by a supervisor.
+</div><div id='Q-2.3.3.1.1.1.1.1.1.1.1' name='Q-2.3.3.1.1.1.1.1.1.1.1' style='display:none;'>Next, scroll down and expand the “Related contacts” section if you have other contacts relating to your client.
+</div><div id='Q-2.3.3.1.1.1.1.1.1.1.1.1' name='Q-2.3.3.1.1.1.1.1.1.1.1.1' style='display:none;'>GOTO:2</div><div id='Q-3' name='Q-3' style='display:none;'>What do you need help with?
+</div><div id='Q-3.1' name='Q-3.1' style='display:none;'>Click “Tasks” on the left side of the page.<br><br> Then, click on the “Lists” tab. <p><img src="https://suffolklitlab.org/clio/images/Task1.png"></p>
+</div><div id='Q-3.1.1' name='Q-3.1.1' style='display:none;'>Select one of the pre-made task checklists under “List”. <p><img src="https://suffolklitlab.org/clio/images/Task3.png"></p> 
+</div><div id='Q-3.1.1.1' name='Q-3.1.1.1' style='display:none;'>Now click on the blue “Assign” under the Task Checklist. <br><br>Select the matter you wish to assign this task to and click “Assign List”<br><br>Now go back your client's matter, click the "Task" tab on the top of the page and you should see your tasks listed!
+</div><div id='Q-3.1.1.1.1' name='Q-3.1.1.1.1' style='display:none;'>GOTO:3</div><div id='Q-3.2' name='Q-3.2' style='display:none;'>Go to the “Documents” tab on the left bar or on the at the top.
+</div><div id='Q-3.2.1' name='Q-3.2.1' style='display:none;'>Click on the blue “New” button that is located on the right side of the page. <p><img src="https://suffolklitlab.org/clio/images/DocTemp3.png"></p> 
+</div><div id='Q-3.2.1.1' name='Q-3.2.1.1' style='display:none;'>Select “Document from Template” from the drop-down menu.
+</div><div id='Q-3.2.1.1.1' name='Q-3.2.1.1.1' style='display:none;'>A window titled “Create A Document” will appear. In the first box, select the template you wish to use for your document.<p><img src="https://suffolklitlab.org/clio/images/DocTemp4.png"></p>  <br><br>  In the second box, select the matter that this document will be taking information from.
+</div><div id='Q-3.2.1.1.1.1' name='Q-3.2.1.1.1.1' style='display:none;'>Next, you can select how you want the document to be saved (PDF and/or Word document). <br><br> Once this information has been filled in, click on “Create Document”.
+</div><div id='Q-3.2.1.1.1.1.1' name='Q-3.2.1.1.1.1.1' style='display:none;'>You will then be required to refresh the page to view the document as listed. <br><br> The document will appear in the matter folder. If the template was categorized, however, then under the “category” column, you will see in which folder the document was placed in. <p><img src="https://suffolklitlab.org/clio/images/DocTemp5.png"></p>
+</div><div id='Q-3.2.1.1.1.1.1.1' name='Q-3.2.1.1.1.1.1.1' style='display:none;'>GOTO:3</div><div id='Q-3.3' name='Q-3.3' style='display:none;'>Click on the “Calendar” tab on the left. <br><br>On top of the calendar, click on the green “Add Event” button. <p><img src="https://suffolklitlab.org/clio/images/Calendar1.png"></p>
+</div><div id='Q-3.3.1' name='Q-3.3.1' style='display:none;'>A window titled “Create Calendar Entry” will open. Here you can enter information concerning the event that you wish to submit.
+</div><div id='Q-3.3.1.1' name='Q-3.3.1.1' style='display:none;'>Under “Matter”, select the case you wish to apply this event to. You may also add a location and invite others by selecting “Invite contacts Via Clio Connect”. <p><img src="https://suffolklitlab.org/clio/images/Calendar2.png"></p>
+</div><div id='Q-3.3.1.1.1' name='Q-3.3.1.1.1' style='display:none;'>On top, you will see tabs “Repeats”, “Reminders” and “Time Entries”. <br><br>If you click on the  “Repeats” tab, you can control how often the event will repeat and notify you of its occurrence.<br><br>If you click on the “Reminders” tab, you can control when you are alerted of the event for the date it starts and whether to be alerted by an email or pop-up notification.
+</div><div id='Q-3.3.1.1.1.1' name='Q-3.3.1.1.1.1' style='display:none;'>Once you have filled in all the necessary information, you may click “Create Calendar Entry” to finish or “ Save and Add Another” to create an additional calendar entry.
+</div><div id='Q-3.3.1.1.1.1.1' name='Q-3.3.1.1.1.1.1' style='display:none;'>GOTO:3</div><div id='A-1.1' name='A-1.1' style='display:none;'>I am starting a new case
+</div><div id='A-href-1.1' name='A-href-1.1' style='display:none;'>javascript:void('');</div><div id='A-target-1.1' name='A-target-1.1' style='display:none;'></div><div id='X-1.1' name='X-1.1' style='display:none;'>I am starting a new case</div><div id='A-1.2' name='A-1.2' style='display:none;'>I am currently working on a case
+</div><div id='A-href-1.2' name='A-href-1.2' style='display:none;'>javascript:void('');</div><div id='A-target-1.2' name='A-target-1.2' style='display:none;'></div><div id='X-1.2' name='X-1.2' style='display:none;'>I am currently working on a case</div><div id='A-1.3' name='A-1.3' style='display:none;'>I am closing a case
+</div><div id='A-href-1.3' name='A-href-1.3' style='display:none;'>javascript:void('');</div><div id='A-target-1.3' name='A-target-1.3' style='display:none;'></div><div id='X-1.3' name='X-1.3' style='display:none;'>I am closing a case</div><div id='A-1.4' name='A-1.4' style='display:none;'>I am transferring a case
+
+
+
+</div><div id='A-href-1.4' name='A-href-1.4' style='display:none;'>javascript:void('');</div><div id='A-target-1.4' name='A-target-1.4' style='display:none;'></div><div id='X-1.4' name='X-1.4' style='display:none;'>I am transferring a case</div><div id='A-2.1' name='A-2.1' style='display:none;'>Run conflict check
+</div><div id='A-href-2.1' name='A-href-2.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.1' name='A-target-2.1' style='display:none;'></div><div id='X-2.1' name='X-2.1' style='display:none;'>Run conflict check</div><div id='A-2.1.1' name='A-2.1.1' style='display:none;'>I've checked spelling and entered my client's name!
+</div><div id='A-href-2.1.1' name='A-href-2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1' name='A-target-2.1.1' style='display:none;'></div><div id='X-2.1.1' name='X-2.1.1' style='display:none;'>I've checked spelling and entered my client's name!</div><div id='A-2.1.1.1' name='A-2.1.1.1' style='display:none;'>Yes
+</div><div id='A-href-2.1.1.1' name='A-href-2.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1.1' name='A-target-2.1.1.1' style='display:none;'></div><div id='X-2.1.1.1' name='X-2.1.1.1' style='display:none;'>Yes</div><div id='A-2.1.1.1.1' name='A-2.1.1.1.1' style='display:none;'>While you wait you can go back to the start.
+</div><div id='A-href-2.1.1.1.1' name='A-href-2.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1.1.1' name='A-target-2.1.1.1.1' style='display:none;'></div><div id='X-2.1.1.1.1' name='X-2.1.1.1.1' style='display:none;'>While you wait you can go back to the start.</div><div id='A-2.1.1.2' name='A-2.1.1.2' style='display:none;'>No	
+</div><div id='A-href-2.1.1.2' name='A-href-2.1.1.2' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1.2' name='A-target-2.1.1.2' style='display:none;'></div><div id='X-2.1.1.2' name='X-2.1.1.2' style='display:none;'>No</div><div id='A-2.1.1.2.1' name='A-2.1.1.2.1' style='display:none;'>I need to create a contact
+</div><div id='A-href-2.1.1.2.1' name='A-href-2.1.1.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1.2.1' name='A-target-2.1.1.2.1' style='display:none;'></div><div id='X-2.1.1.2.1' name='X-2.1.1.2.1' style='display:none;'>I need to create a contact</div><div id='A-2.1.1.2.2' name='A-2.1.1.2.2' style='display:none;'>I have already created a contact and am ready to open a matter
+</div><div id='A-href-2.1.1.2.2' name='A-href-2.1.1.2.2' style='display:none;'>javascript:void('');</div><div id='A-target-2.1.1.2.2' name='A-target-2.1.1.2.2' style='display:none;'></div><div id='X-2.1.1.2.2' name='X-2.1.1.2.2' style='display:none;'>I have already created a contact and am ready to open a matter</div><div id='A-2.2' name='A-2.2' style='display:none;'>Create a new contact
+</div><div id='A-href-2.2' name='A-href-2.2' style='display:none;'>javascript:void('');</div><div id='A-target-2.2' name='A-target-2.2' style='display:none;'></div><div id='X-2.2' name='X-2.2' style='display:none;'>Create a new contact</div><div id='A-2.2.1' name='A-2.2.1' style='display:none;'>Found it! What's next?
+</div><div id='A-href-2.2.1' name='A-href-2.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1' name='A-target-2.2.1' style='display:none;'></div><div id='X-2.2.1' name='X-2.2.1' style='display:none;'>Found it! What's next?</div><div id='A-2.2.1.1' name='A-2.2.1.1' style='display:none;'>Create a new Company
+</div><div id='A-href-2.2.1.1' name='A-href-2.2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.1' name='A-target-2.2.1.1' style='display:none;'></div><div id='X-2.2.1.1' name='X-2.2.1.1' style='display:none;'>Create a new Company</div><div id='A-2.2.1.1.1' name='A-2.2.1.1.1' style='display:none;'>Got it! What do I do now?
+</div><div id='A-href-2.2.1.1.1' name='A-href-2.2.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.1.1' name='A-target-2.2.1.1.1' style='display:none;'></div><div id='X-2.2.1.1.1' name='X-2.2.1.1.1' style='display:none;'>Got it! What do I do now?</div><div id='A-2.2.1.1.1.1' name='A-2.2.1.1.1.1' style='display:none;'>That is all! You have added a new company.
+</div><div id='A-href-2.2.1.1.1.1' name='A-href-2.2.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.1.1.1' name='A-target-2.2.1.1.1.1' style='display:none;'></div><div id='X-2.2.1.1.1.1' name='X-2.2.1.1.1.1' style='display:none;'>That is all! You have added a new company.</div><div id='A-2.2.1.2' name='A-2.2.1.2' style='display:none;'>Create a new Person
+</div><div id='A-href-2.2.1.2' name='A-href-2.2.1.2' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2' name='A-target-2.2.1.2' style='display:none;'></div><div id='X-2.2.1.2' name='X-2.2.1.2' style='display:none;'>Create a new Person</div><div id='A-2.2.1.2.1' name='A-2.2.1.2.1' style='display:none;'>Done! What's next?
+</div><div id='A-href-2.2.1.2.1' name='A-href-2.2.1.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1' name='A-target-2.2.1.2.1' style='display:none;'></div><div id='X-2.2.1.2.1' name='X-2.2.1.2.1' style='display:none;'>Done! What's next?</div><div id='A-2.2.1.2.1.1' name='A-2.2.1.2.1.1' style='display:none;'>Found it, now what?
+</div><div id='A-href-2.2.1.2.1.1' name='A-href-2.2.1.2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1' name='A-target-2.2.1.2.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1' name='X-2.2.1.2.1.1' style='display:none;'>Found it, now what?</div><div id='A-2.2.1.2.1.1.1' name='A-2.2.1.2.1.1.1' style='display:none;'>Got it! 
+</div><div id='A-href-2.2.1.2.1.1.1' name='A-href-2.2.1.2.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1.1' name='A-target-2.2.1.2.1.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1.1' name='X-2.2.1.2.1.1.1' style='display:none;'>Got it!</div><div id='A-2.2.1.2.1.1.1.1' name='A-2.2.1.2.1.1.1.1' style='display:none;'>Saved! Am I done?
+</div><div id='A-href-2.2.1.2.1.1.1.1' name='A-href-2.2.1.2.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1.1.1' name='A-target-2.2.1.2.1.1.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1.1.1' name='X-2.2.1.2.1.1.1.1' style='display:none;'>Saved! Am I done?</div><div id='A-2.2.1.2.1.1.1.1.1' name='A-2.2.1.2.1.1.1.1.1' style='display:none;'>Got it!
+</div><div id='A-href-2.2.1.2.1.1.1.1.1' name='A-href-2.2.1.2.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1.1.1.1' name='A-target-2.2.1.2.1.1.1.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1.1.1.1' name='X-2.2.1.2.1.1.1.1.1' style='display:none;'>Got it!</div><div id='A-2.2.1.2.1.1.1.1.1.1' name='A-2.2.1.2.1.1.1.1.1.1' style='display:none;'>All done!
+</div><div id='A-href-2.2.1.2.1.1.1.1.1.1' name='A-href-2.2.1.2.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1.1.1.1.1' name='A-target-2.2.1.2.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1.1.1.1.1' name='X-2.2.1.2.1.1.1.1.1.1' style='display:none;'>All done!</div><div id='A-2.2.1.2.1.1.1.1.1.1.1' name='A-2.2.1.2.1.1.1.1.1.1.1' style='display:none;'>That is it! You have created a contact!
+</div><div id='A-href-2.2.1.2.1.1.1.1.1.1.1' name='A-href-2.2.1.2.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.2.1.2.1.1.1.1.1.1.1' name='A-target-2.2.1.2.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.2.1.2.1.1.1.1.1.1.1' name='X-2.2.1.2.1.1.1.1.1.1.1' style='display:none;'>That is it! You have created a contact!</div><div id='A-2.3' name='A-2.3' style='display:none;'>Open a new case/matter
+</div><div id='A-href-2.3' name='A-href-2.3' style='display:none;'>javascript:void('');</div><div id='A-target-2.3' name='A-target-2.3' style='display:none;'></div><div id='X-2.3' name='X-2.3' style='display:none;'>Open a new case/matter</div><div id='A-2.3.1' name='A-2.3.1' style='display:none;'>I need to run a conflict check. 
+</div><div id='A-href-2.3.1' name='A-href-2.3.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.1' name='A-target-2.3.1' style='display:none;'></div><div id='X-2.3.1' name='X-2.3.1' style='display:none;'>I need to run a conflict check.</div><div id='A-2.3.2' name='A-2.3.2' style='display:none;'>I need to create a contact 
+</div><div id='A-href-2.3.2' name='A-href-2.3.2' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.2' name='A-target-2.3.2' style='display:none;'></div><div id='X-2.3.2' name='X-2.3.2' style='display:none;'>I need to create a contact</div><div id='A-2.3.3' name='A-2.3.3' style='display:none;'>I did both, I am ready to create a matter 
+</div><div id='A-href-2.3.3' name='A-href-2.3.3' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3' name='A-target-2.3.3' style='display:none;'></div><div id='X-2.3.3' name='X-2.3.3' style='display:none;'>I did both, I am ready to create a matter</div><div id='A-2.3.3.1' name='A-2.3.3.1' style='display:none;'>Found it!	
+</div><div id='A-href-2.3.3.1' name='A-href-2.3.3.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1' name='A-target-2.3.3.1' style='display:none;'></div><div id='X-2.3.3.1' name='X-2.3.3.1' style='display:none;'>Found it!</div><div id='A-2.3.3.1.1' name='A-2.3.3.1.1' style='display:none;'>I'm there! Now what?
+</div><div id='A-href-2.3.3.1.1' name='A-href-2.3.3.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1' name='A-target-2.3.3.1.1' style='display:none;'></div><div id='X-2.3.3.1.1' name='X-2.3.3.1.1' style='display:none;'>I'm there! Now what?</div><div id='A-2.3.3.1.1.1' name='A-2.3.3.1.1.1' style='display:none;'>Done!
+</div><div id='A-href-2.3.3.1.1.1' name='A-href-2.3.3.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1' name='A-target-2.3.3.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1' name='X-2.3.3.1.1.1' style='display:none;'>Done!</div><div id='A-2.3.3.1.1.1.1' name='A-2.3.3.1.1.1.1' style='display:none;'>Ok, I see it.
+</div><div id='A-href-2.3.3.1.1.1.1' name='A-href-2.3.3.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1' name='A-target-2.3.3.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1' name='X-2.3.3.1.1.1.1' style='display:none;'>Ok, I see it.</div><div id='A-2.3.3.1.1.1.1.1' name='A-2.3.3.1.1.1.1.1' style='display:none;'>I'm back on that page.
+</div><div id='A-href-2.3.3.1.1.1.1.1' name='A-href-2.3.3.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1.1' name='A-target-2.3.3.1.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1.1' name='X-2.3.3.1.1.1.1.1' style='display:none;'>I'm back on that page.</div><div id='A-2.3.3.1.1.1.1.1.1' name='A-2.3.3.1.1.1.1.1.1' style='display:none;'>All done! What's next?
+</div><div id='A-href-2.3.3.1.1.1.1.1.1' name='A-href-2.3.3.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1.1.1' name='A-target-2.3.3.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1.1.1' name='X-2.3.3.1.1.1.1.1.1' style='display:none;'>All done! What's next?</div><div id='A-2.3.3.1.1.1.1.1.1.1' name='A-2.3.3.1.1.1.1.1.1.1' style='display:none;'>Got it!
+</div><div id='A-href-2.3.3.1.1.1.1.1.1.1' name='A-href-2.3.3.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1.1.1.1' name='A-target-2.3.3.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1.1.1.1' name='X-2.3.3.1.1.1.1.1.1.1' style='display:none;'>Got it!</div><div id='A-2.3.3.1.1.1.1.1.1.1.1' name='A-2.3.3.1.1.1.1.1.1.1.1' style='display:none;'>Ok
+</div><div id='A-href-2.3.3.1.1.1.1.1.1.1.1' name='A-href-2.3.3.1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1.1.1.1.1' name='A-target-2.3.3.1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1.1.1.1.1' name='X-2.3.3.1.1.1.1.1.1.1.1' style='display:none;'>Ok</div><div id='A-2.3.3.1.1.1.1.1.1.1.1.1' name='A-2.3.3.1.1.1.1.1.1.1.1.1' style='display:none;'>Once everything has been added, you have opened a matter!
+</div><div id='A-href-2.3.3.1.1.1.1.1.1.1.1.1' name='A-href-2.3.3.1.1.1.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-2.3.3.1.1.1.1.1.1.1.1.1' name='A-target-2.3.3.1.1.1.1.1.1.1.1.1' style='display:none;'></div><div id='X-2.3.3.1.1.1.1.1.1.1.1.1' name='X-2.3.3.1.1.1.1.1.1.1.1.1' style='display:none;'>Once everything has been added, you have opened a matter!</div><div id='A-3.1' name='A-3.1' style='display:none;'>Create a task list
+</div><div id='A-href-3.1' name='A-href-3.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.1' name='A-target-3.1' style='display:none;'></div><div id='X-3.1' name='X-3.1' style='display:none;'>Create a task list</div><div id='A-3.1.1' name='A-3.1.1' style='display:none;'>Ok, I clicked on "Lists", now what?
+</div><div id='A-href-3.1.1' name='A-href-3.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.1.1' name='A-target-3.1.1' style='display:none;'></div><div id='X-3.1.1' name='X-3.1.1' style='display:none;'>Ok, I clicked on "Lists", now what?</div><div id='A-3.1.1.1' name='A-3.1.1.1' style='display:none;'>What's next?
+</div><div id='A-href-3.1.1.1' name='A-href-3.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.1.1.1' name='A-target-3.1.1.1' style='display:none;'></div><div id='X-3.1.1.1' name='X-3.1.1.1' style='display:none;'>What's next?</div><div id='A-3.1.1.1.1' name='A-3.1.1.1.1' style='display:none;'>Nice!
+</div><div id='A-href-3.1.1.1.1' name='A-href-3.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.1.1.1.1' name='A-target-3.1.1.1.1' style='display:none;'></div><div id='X-3.1.1.1.1' name='X-3.1.1.1.1' style='display:none;'>Nice!</div><div id='A-3.2' name='A-3.2' style='display:none;'>Creating a document from a template
+</div><div id='A-href-3.2' name='A-href-3.2' style='display:none;'>javascript:void('');</div><div id='A-target-3.2' name='A-target-3.2' style='display:none;'></div><div id='X-3.2' name='X-3.2' style='display:none;'>Creating a document from a template</div><div id='A-3.2.1' name='A-3.2.1' style='display:none;'>I'm there, now what?
+</div><div id='A-href-3.2.1' name='A-href-3.2.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1' name='A-target-3.2.1' style='display:none;'></div><div id='X-3.2.1' name='X-3.2.1' style='display:none;'>I'm there, now what?</div><div id='A-3.2.1.1' name='A-3.2.1.1' style='display:none;'>Done! What's next?
+</div><div id='A-href-3.2.1.1' name='A-href-3.2.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1.1' name='A-target-3.2.1.1' style='display:none;'></div><div id='X-3.2.1.1' name='X-3.2.1.1' style='display:none;'>Done! What's next?</div><div id='A-3.2.1.1.1' name='A-3.2.1.1.1' style='display:none;'>Ok, now what?
+</div><div id='A-href-3.2.1.1.1' name='A-href-3.2.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1.1.1' name='A-target-3.2.1.1.1' style='display:none;'></div><div id='X-3.2.1.1.1' name='X-3.2.1.1.1' style='display:none;'>Ok, now what?</div><div id='A-3.2.1.1.1.1' name='A-3.2.1.1.1.1' style='display:none;'>Got it! What do I do now?
+</div><div id='A-href-3.2.1.1.1.1' name='A-href-3.2.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1.1.1.1' name='A-target-3.2.1.1.1.1' style='display:none;'></div><div id='X-3.2.1.1.1.1' name='X-3.2.1.1.1.1' style='display:none;'>Got it! What do I do now?</div><div id='A-3.2.1.1.1.1.1' name='A-3.2.1.1.1.1.1' style='display:none;'>Great, am I done?
+</div><div id='A-href-3.2.1.1.1.1.1' name='A-href-3.2.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1.1.1.1.1' name='A-target-3.2.1.1.1.1.1' style='display:none;'></div><div id='X-3.2.1.1.1.1.1' name='X-3.2.1.1.1.1.1' style='display:none;'>Great, am I done?</div><div id='A-3.2.1.1.1.1.1.1' name='A-3.2.1.1.1.1.1.1' style='display:none;'>You have created a document from a template! 
+</div><div id='A-href-3.2.1.1.1.1.1.1' name='A-href-3.2.1.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.2.1.1.1.1.1.1' name='A-target-3.2.1.1.1.1.1.1' style='display:none;'></div><div id='X-3.2.1.1.1.1.1.1' name='X-3.2.1.1.1.1.1.1' style='display:none;'>You have created a document from a template!</div><div id='A-3.3' name='A-3.3' style='display:none;'>Add an event to the calendar
+</div><div id='A-href-3.3' name='A-href-3.3' style='display:none;'>javascript:void('');</div><div id='A-target-3.3' name='A-target-3.3' style='display:none;'></div><div id='X-3.3' name='X-3.3' style='display:none;'>Add an event to the calendar</div><div id='A-3.3.1' name='A-3.3.1' style='display:none;'>Done, what's next?
+</div><div id='A-href-3.3.1' name='A-href-3.3.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.3.1' name='A-target-3.3.1' style='display:none;'></div><div id='X-3.3.1' name='X-3.3.1' style='display:none;'>Done, what's next?</div><div id='A-3.3.1.1' name='A-3.3.1.1' style='display:none;'>Got it!
+</div><div id='A-href-3.3.1.1' name='A-href-3.3.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.3.1.1' name='A-target-3.3.1.1' style='display:none;'></div><div id='X-3.3.1.1' name='X-3.3.1.1' style='display:none;'>Got it!</div><div id='A-3.3.1.1.1' name='A-3.3.1.1.1' style='display:none;'>Ok
+</div><div id='A-href-3.3.1.1.1' name='A-href-3.3.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.3.1.1.1' name='A-target-3.3.1.1.1' style='display:none;'></div><div id='X-3.3.1.1.1' name='X-3.3.1.1.1' style='display:none;'>Ok</div><div id='A-3.3.1.1.1.1' name='A-3.3.1.1.1.1' style='display:none;'>Great! Am I done?
+</div><div id='A-href-3.3.1.1.1.1' name='A-href-3.3.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.3.1.1.1.1' name='A-target-3.3.1.1.1.1' style='display:none;'></div><div id='X-3.3.1.1.1.1' name='X-3.3.1.1.1.1' style='display:none;'>Great! Am I done?</div><div id='A-3.3.1.1.1.1.1' name='A-3.3.1.1.1.1.1' style='display:none;'>You have now added an event to the calendar!
+</div><div id='A-href-3.3.1.1.1.1.1' name='A-href-3.3.1.1.1.1.1' style='display:none;'>javascript:void('');</div><div id='A-target-3.3.1.1.1.1.1' name='A-target-3.3.1.1.1.1.1' style='display:none;'></div><div id='X-3.3.1.1.1.1.1' name='X-3.3.1.1.1.1.1' style='display:none;'>You have now added an event to the calendar!</div>
+<script>
+	var QVnames = [['1','home'],['1.1','1.1'],['1.2','1.2'],['2','new'],['2.1','conflict'],['2.1.1','2.1.1'],['2.1.1.1','2.1.1.1'],['2.1.1.1.1','2.1.1.1.1'],['2.1.1.2','2.1.1.2'],['2.1.1.2.1','2.1.1.2.1'],['2.1.1.2.2','2.1.1.2.2'],['2.2','contact'],['2.2.1','2.2.1'],['2.2.1.1','company'],['2.2.1.1.1','2.2.1.1.1'],['2.2.1.1.1.1','2.2.1.1.1.1'],['2.2.1.2','person'],['2.2.1.2.1','2.2.1.2.1'],['2.2.1.2.1.1','2.2.1.2.1.1'],['2.2.1.2.1.1.1','2.2.1.2.1.1.1'],['2.2.1.2.1.1.1.1','2.2.1.2.1.1.1.1'],['2.2.1.2.1.1.1.1.1','2.2.1.2.1.1.1.1.1'],['2.2.1.2.1.1.1.1.1.1','2.2.1.2.1.1.1.1.1.1'],['2.2.1.2.1.1.1.1.1.1.1','2.2.1.2.1.1.1.1.1.1.1'],['2.3','before'],['2.3.1','2.3.1'],['2.3.2','2.3.2'],['2.3.3','matter'],['2.3.3.1','2.3.3.1'],['2.3.3.1.1','client'],['2.3.3.1.1.1','2.3.3.1.1.1'],['2.3.3.1.1.1.1','2.3.3.1.1.1.1'],['2.3.3.1.1.1.1.1','desc'],['2.3.3.1.1.1.1.1.1','attny'],['2.3.3.1.1.1.1.1.1.1','ref'],['2.3.3.1.1.1.1.1.1.1.1','related'],['2.3.3.1.1.1.1.1.1.1.1.1','2.3.3.1.1.1.1.1.1.1.1.1'],['3','current'],['3.1','task'],['3.1.1','reminder'],['3.1.1.1','3.1.1.1'],['3.1.1.1.1','3.1.1.1.1'],['3.2','doc'],['3.2.1','3.2.1'],['3.2.1.1','3.2.1.1'],['3.2.1.1.1','3.2.1.1.1'],['3.2.1.1.1.1','3.2.1.1.1.1'],['3.2.1.1.1.1.1','3.2.1.1.1.1.1'],['3.2.1.1.1.1.1.1','3.2.1.1.1.1.1.1'],['3.3','cal'],['3.3.1','3.3.1'],['3.3.1.1','3.3.1.1'],['3.3.1.1.1','3.3.1.1.1'],['3.3.1.1.1.1','3.3.1.1.1.1'],['3.3.1.1.1.1.1','3.3.1.1.1.1.1']];
+</script>
+</textarea><textarea id="transcript" name="transcript" style="display:none;" disabled="disabled"></textarea><div style="float:left;width:100%;margin:15px 0 0px 0;border-top: solid 1px #ddd;"><div id=credits class=credits style="display:none;"><div class=credit_text></div></div><p align=center> <a href="https://www.qnamarkup.org/" target=_top>code your own</a></p></div></FORM></div></div>
+<script type="text/javascript">
+	var QNum = 0;
+	var Qhtml = "";
+	var Dhtml = "";
+	var label = "";
+	var GOTOfired = 0;
+	var path = [];
+	var doc_bin = [];
+	var convo_bin = [];
+	var freetext = 0;
+	var goingback = 0;
+
+	$("#conversation input").on("keypress", 'form', function (e) {
+    	var code = e.keyCode || e.which;
+    	if (code == 13) {
+        	e.preventDefault();
+        	return false;
+    	}
+	});
+
+	function answerQ(lb,restart) {
+		currentQ = label;
+		label = lb;
+		Dhtml = 'D-'+label;
+		Qhtml = 'Q-'+label;
+		var Ahtml = 'A-'+label;
+		var Jhtml = 'J-'+QNum;
+		var Xhtml = 'X-'+label;
+		var Xihtml = 'Xi-'+label;
+		
+		var input_error = 0;
+		if (restart == undefined) {
+			var regexp = new RegExp("\<variable\>");
+			//if (document.getElementById(Xihtml)) {
+			//	console.log("document.getElementById("+Xihtml+").value: "+document.getElementById(Xihtml).value);
+			//} else {
+			//	console.log("NO document.getElementById("+Xihtml+").value: ");
+			//}
+			if (document.getElementById(Ahtml).innerHTML.match(regexp)) {
+				document.getElementById(Xihtml).value = document.getElementById(Xihtml).value.replace(/(^\s*|\s*$)/,"");
+				if (document.getElementById(Xihtml).value == "") {
+					input_error = "Your answer appears to be empty.";
+					label = currentQ;
+				} else {
+					document.getElementById(Xihtml).value = document.getElementById(Xihtml).value.replace(/</g,"<");
+					document.getElementById(Xihtml).value = document.getElementById(Xihtml).value.replace(/>/g,">");
+				}
+			} 
+		}
+			
+		if (input_error != 0) {
+			alert(input_error);
+			document.getElementById(Xihtml).focus();			
+		} else {
+			if (restart == undefined) {
+				document.getElementById('QandA').innerHTML += "<div id=\"break-at-"+QNum+"\" class='frame'><div class='full'><div class='ans_text'>"+document.getElementById(Ahtml).innerHTML+"</div></div><div class='ans_arrow'></div></div></div></div>";
+				// insert answer from button
+				if (document.getElementById(valueis(currentQ))) {
+					document.getElementById(valueis(currentQ)).outerHTML='';
+				}
+				if (document.getElementById(Xihtml)) {
+					document.getElementById('QandA').innerHTML = "<textarea style=\"display:none;\" id=\""+valueis(currentQ)+"\" name=\""+valueis(currentQ)+"\">"+document.getElementById(Xihtml).value+"</textarea>\n" + document.getElementById('QandA').innerHTML				
+				} else {
+					document.getElementById('QandA').innerHTML = "<textarea style=\"display:none;\" id=\""+valueis(currentQ)+"\" name=\""+valueis(currentQ)+"\">"+document.getElementById(Xhtml).innerHTML+"</textarea>\n" + document.getElementById('QandA').innerHTML
+				}
+				if (document.getElementById('QandA').innerHTML.match(regexp)) {
+				 	var duplicatevars = new RegExp("id=\""+document.getElementById(Xhtml).innerHTML+"(.)*"+document.getElementById(Xhtml).innerHTML+"\"","g");
+					document.getElementById('QandA').innerHTML = document.getElementById('QandA').innerHTML.replace(duplicatevars, "");
+					document.getElementById('QandA').innerHTML = document.getElementById('QandA').innerHTML.replace(/\<variable\>(\<\/variable\>)?/, "<input type=hidden id=\""+document.getElementById(Xhtml).innerHTML+"\" name=\""+document.getElementById(Xhtml).innerHTML+"\" value=\""+document.getElementById(Xihtml).value+"\"/>"+document.getElementById(Xihtml).value);
+					//document.getElementById('transcript').value = document.getElementById('transcript').value.replace(/\<variable\>(\<\/variable\>)?/, document.getElementById(Xihtml).value+"\n");
+					var thisvariable = new RegExp("<(X|x)>"+document.getElementById(Xhtml).innerHTML+"<\/(X|x)>","g");
+					//document.getElementById('doc').innerHTML = document.getElementById('doc').innerHTML.replace(thisvariable, document.getElementById(document.getElementById(Xhtml).innerHTML).innerHTML);
+					//document.getElementById('ondeck').innerHTML = document.getElementById('ondeck').innerHTML.replace(thisvariable, document.getElementById(valueis(currentQ)).innerHTML);
+					//console.log("thisvariable: "+thisvariable);
+					//console.log("Variable name: "+valueis(currentQ));
+					//console.log("Variable value: "+document.getElementById(valueis(currentQ)).innerHTML);
+					if(document.getElementById(Ahtml).innerHTML != "") { 
+						//document.getElementById('transcript').value += "USER: "+document.getElementById(Xihtml).value+"\n"; 
+						convo_bin.push("USER: "+document.getElementById(Xihtml).value+"\n");
+					}
+				} else {
+					//document.getElementById('transcript').value += "USER: "+document.getElementById(Ahtml).innerHTML+"\n";
+					convo_bin.push("USER: "+document.getElementById(Ahtml).innerHTML+"\n");
+				}
+				document.getElementById('Choices').innerHTML = '';
+				if (goingback == 0) {
+					setTimeout(function() {renderQnA(Qhtml,Jhtml,Dhtml,restart)}, 300);
+				} else {
+					renderQnA(Qhtml,Jhtml,Dhtml,restart);
+				}
+			} else {
+				document.getElementById('Choices').innerHTML = '';
+				path = [];
+				renderQnA(Qhtml,Jhtml,Dhtml,restart);			
+			}
+
+		}
+		
+	}
+
+
+	function renderQnA(Qht,Jht,Dht,restar) {
+		Dhtml = Dht;
+					
+		GOTOfired = 0;
+		path.push(label);
+
+		swapGOTO(Qht,Jht);
+
+		console.log("After swap: "+GOTOfired);
+
+		if (GOTOfired == 0) {
+			document.getElementById('QandA').innerHTML += "<div id="+Jht+" style=\"float:left;width:100%;height:1px;\"> </div>";
+		}
+		document.getElementById('QandA').innerHTML += "<div class='frame'><div class='full'><div class='question_text'>"+swapvar(document.getElementById(Qhtml).innerHTML)+"</div></div><div class='question_arrow'></div></div>";		
+
+		document.getElementById('QandA').innerHTML = document.getElementById('QandA').innerHTML.replace(/(\<br\>){2}/gi,"</div></div><div class='question_arrow'></div></div></div></div><div class='frame'><div class='full'><div class='question_text'>");
+		document.getElementById('QandA').innerHTML = document.getElementById('QandA').innerHTML.replace(/(\<br\> \<br\>)/gi,"<br><br>");
+
+		// add question 
+		//document.getElementById('transcript').value += swapvar("BOT: "+ document.getElementById(Qhtml).innerHTML);
+		//document.getElementById('transcript').value = document.getElementById('transcript').value.replace(/(\<br\>){2}/gi,"\nBOT: ");
+		this_text = swapvar("BOT: "+ document.getElementById(Qhtml).innerHTML);
+		this_text = this_text.replace(/(\<br\>){2}/gi,"\nBOT: ");
+		convo_bin.push(this_text);
+				
+		// make push doc into array in doc() cycle through array and put into output
+		// maybe remove doc div
+		if (document.getElementById(Dhtml)) {
+			doc_bin.push([document.getElementById(Dhtml).innerHTML,currentQ]);
+			console.log("Add to Doc ("+Dhtml+"): "+document.getElementById(Dhtml).innerHTML);
+			//document.getElementById('doc').innerHTML += document.getElementById(Dhtml).innerHTML;
+		}
+						
+		tmp = getElementsByIdRegExp("div", "A-"+label+"(\\.{1}\\d){1}$");
+		a_href = getElementsByIdRegExp("div", "A-href-"+label+"(\\.{1}\\d){1}$");
+		a_target = getElementsByIdRegExp("div", "A-target-"+label+"(\\.{1}\\d){1}$");
+		tmp_x = getElementsByIdRegExp("div", "X-"+label+"(\\.{1}\\d){1}$");
+		var Xishere = 0;
+		for ( var i = 0; i < tmp.length; i++ ) {
+			var nextlabel = tmp[i].id.substr(2);
+			var Xihtml = 'Xi-'+nextlabel;
+			var regexp = "\<variable\>";
+			var regexp_js = "^javascript:";
+			var script_call = "";
+			if (tmp[i].innerHTML.match(regexp)) {
+				if (a_href[i].innerHTML.match('^(_blank:)?javascript:')) {
+					script_call = a_href[i].innerHTML.replace(/^(_blank:)?javascript:/gi,"");
+				} else {
+					if (a_href[i].innerHTML.match('^_blank:')) {
+						script_call = "window.open('"+a_href[i].innerHTML.replace(/^_blank:/,"")+"','_blank');";			
+					} else {
+						script_call = "location.href = '"+a_href[i].innerHTML+"';";
+					}
+				}
+				document.getElementById('Choices').innerHTML += "<div class=\"xdiv\"><input type=\""+a_target[i].innerHTML+"\" id=\""+Xihtml+"\" name=\""+Xihtml+"\" class=\"xinput\" onkeypress=\"if (event.keyCode==13){answerQ('"+nextlabel+"');"+script_call+"}\"/><a href=\"javascript:void('');\" class=\"xbutton\" onClick=\"answerQ('"+nextlabel+"');"+script_call+"\"><span class=\"qpad\">Save above text as answer.</span></a></div>";
+				Xishere = Xihtml;
+				freetext = Xihtml;
+			} else if (a_href[i].innerHTML.match(regexp_js) && a_href[i].innerHTML != "javascript:void('');") {
+				tmp[i].innerHTML = tmp[i].innerHTML.replace(/(\<br\>){2}/gi,"<br> <br>");
+				var script_call = a_href[i].innerHTML.replace(/^javascript:/gi,"");
+				document.getElementById('Choices').innerHTML += "<a href=\"javascript:void('');\" class=\"qabutton\" onClick=\"answerQ('"+nextlabel+"');"+script_call+"\" "+a_target[i].innerHTML+"><span class=\"qpad\">"+tmp[i].innerHTML+"</span></a>";							
+				freetext = 0;
+			} else {
+				tmp[i].innerHTML = tmp[i].innerHTML.replace(/(\<br\>){2}/gi,"<br> <br>");
+				document.getElementById('Choices').innerHTML += "<a href=\""+a_href[i].innerHTML+"\" class=\"qabutton\" onClick=\"answerQ('"+nextlabel+"');\" "+a_target[i].innerHTML+"><span class=\"qpad\">"+tmp[i].innerHTML+"</span></a>";				
+				freetext = 0;
+			}
+		}			
+
+		if (restar == undefined) {
+			
+			document.getElementById('Choices').innerHTML += "<div class=\"standard_buttons\">";
+			if (QNum > 1) { 
+				document.getElementById('Choices').innerHTML += "<a href=\"javascript:void('');\" class=\"sbutton\" onClick=\"goback(QNum);\">GO BACK ONE</a>";
+				document.getElementById('Choices').innerHTML += "<a href=\"javascript:void('');\" class=\"sbutton\" style=\"float:right\" onClick=\"startAT('1');\">START OVER</a>";
+			} else if (QNum == 1) {
+				document.getElementById('Choices').innerHTML += "<a href=\"javascript:void('');\" class=\"sbutton\" onClick=\"startAT('1');\">GO BACK ONE</a>";
+				document.getElementById('Choices').innerHTML += "<a href=\"javascript:void('');\" class=\"sbutton\" style=\"float:right\" onClick=\"startAT('1');\">START OVER</a>";				
+			}
+			document.getElementById('Choices').innerHTML += "</div>"
+		}
+				
+		if (QNum != 0) { 
+			if (goingback == 0) {
+				scroll2Q(Jht,800);           	
+			} else {
+				window.scrollTo(0, document.getElementById(Jht).offsetTop);     		
+			}
+		} else if (restar != undefined) {
+			window.scrollTo(0,0);
+		}
+		if (Xishere != 0 && window.self == window.top) {
+			console.log("Set focus for: "+Xishere);
+			document.getElementById(Xishere).focus();
+		}
+		console.log("Q#: "+QNum);
+		console.log("New Path: "+path);
+		QNum++;
+		goingback = 0;
+					
+	}
+
+	
+	function swapGOTO(QH,JH) {
+		var regex = new RegExp("GOTO:(\d*)(\.\d+)*");
+		if (regex.test(document.getElementById(QH).innerHTML)) {
+			var Qtext = document.getElementById(QH).innerHTML.match(/(GOTO:(\d*)(.\s*\d+)*)/);
+			document.getElementById('QandA').innerHTML += "<div id="+JH+" style=\"float:left;width:100%;height:1px;\"> </div>";
+			// Add question
+			// note I added () around the < to avoid a < followed by a ? which causes problems in php
+			var Qtexttrans = document.getElementById(QH).innerHTML.replace(/(<)?GOTO:(\d*)(.\s*\d+)*>?/,"");
+			Qtexttrans = Qtexttrans.replace(/\s*$/,"");
+			if (Qtexttrans != "") {
+				//document.getElementById('transcript').value += swapvar("BOT: "+Qtexttrans+"\n");
+				convo_bin.push(swapvar("BOT: "+Qtexttrans+"\n"));
+			}
+			if (document.getElementById(QH).innerHTML.match(/^GOTO:(\d*)(.\s*\d+)*/)) {
+				document.getElementById('QandA').innerHTML += document.getElementById(QH).innerHTML.replace(/(<)?GOTO:(\d*)(.\s*\d+)*>?/,"<"+Qtext+">");
+			} else {
+				document.getElementById('QandA').innerHTML += "<div class='frame'><div class='full'><div class='question_text'>"+ swapvar(document.getElementById(QH).innerHTML.replace(/(<)?GOTO:(\d*)(.\s*\d+)*>?/,"<"+Qtext+">"))+"</div></div><div class='question_arrow'></div></div>";						
+			}
+			// replace GOTO with text
+			label = Qtext[0].replace("GOTO:","");
+			Qhtml = 'Q-'+label;
+			if (document.getElementById(Dhtml)) {
+				doc_bin.push([document.getElementById(Dhtml).innerHTML,currentQ]);
+				console.log("Add to Doc ("+Dhtml+"): "+document.getElementById(Dhtml).innerHTML);
+				//document.getElementById('doc').innerHTML += document.getElementById(Dhtml).innerHTML;
+			}
+			Dhtml = 'D-'+label;
+			GOTOfired = 1;
+			console.log("In swap: "+GOTOfired);
+			swapGOTO(Qhtml,JH);
+		}
+	}
+
+	
+	function scroll2Q(id,speed) {
+		var top = document.getElementById(id).offsetTop; //Getting Y of target element
+		console.log("Jump to Y for ("+id+"): "+top);
+		//adapted from https://github.com/Yappli/smooth-scroll
+		var moving_frequency = 5; // Affects performance !
+		var hop_count = speed/moving_frequency
+        var getScrollTopDocumentAtBegin = document.documentElement.scrollTop + document.body.scrollTop;
+        var gap = (top - getScrollTopDocumentAtBegin) / hop_count;
+		for(var i = 1; i <= hop_count; i++)
+        {
+        	(function()
+           	{
+           		var hop_top_position = gap*i;
+           	    setTimeout(function(){  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*i);
+           	 })();
+        }
+	}
+
+	function getElementsByIdIs(selectorTag, name) {
+		var items = [];
+		var myPosts = document.getElementsByTagName(selectorTag);
+			//omitting undefined null check for brevity
+			if (myPosts[0].id == name) {
+				items.push(myPosts[0]);
+			}
+		
+		return items;
+	}
+
+	function getElementsByIdRegExp(selectorTag, expression) {
+		// note you need to escape \ in the expression with \, i.e., \\ = \
+		var regex = new RegExp(expression);
+		var items = [];
+		var myPosts = document.getElementsByTagName(selectorTag);
+		for (var i = 0; i < myPosts.length; i++) {
+			if (regex.test(myPosts[i].id)) {
+				items.push(myPosts[i]);
+			}
+		}
+		
+		return items;
+	}	
+
+	// startAT QnA
+	function startAT(id) {
+		document.getElementById('ondeck').innerHTML = document.getElementById('original').value;
+		document.getElementById('QandA').innerHTML = "";
+		//document.getElementById('transcript').value = "";
+		doc_bin = [];
+		convo_bin = [];
+		QNum = 0;
+		answerQ(id,'1');
+	}
+		
+	//show funtion
+	function show(id) { 
+   		if (document.getElementById) { // DOM3 = IE5, NS6
+        	document.getElementById(id).style.display = 'block';
+    	} else { 
+        	if (document.layers) {  
+            	document.id.display = 'block';
+        	} else {
+                document.all.id.style.display = 'block';
+        	}
+    	}
+	}
+
+	//hide funtion
+	function hide(id) { 
+    	if (document.getElementById) { // DOM3 = IE5, NS6
+        	document.getElementById(id).style.display = 'none';         
+    	} else { 
+        	if (document.layers) {  
+                document.id.display = 'none';
+        	} else {
+                document.all.id.style.display = 'none';
+        	}
+    	}
+	}
+
+	//show OR hide funtion depends on if element is shown or hidden
+	function shoh(id) { 
+    	if (document.getElementById) { // DOM3 = IE5, NS6
+        	if (document.getElementById(id).style.display == "none"){
+            	document.getElementById(id).style.display = 'block';
+        	} else {
+            	document.getElementById(id).style.display = 'none';         
+        	}   
+    	} else { 
+        	if (document.layers) {  
+            	if (document.id.display == "none"){
+                	document.id.display = 'block';
+            	} else {
+                	document.id.display = 'none';
+            	}
+        	} else {
+            	if (document.all.id.style.visibility == "none"){
+                	document.all.id.style.display = 'block';
+            	} else {
+                	document.all.id.style.display = 'none';
+            	}
+        	}
+    	}
+	}
+	
+	function swapvar(input) {
+		var output; 
+		for(var i = 0; i < QVnames.length; i++) {
+			if (document.getElementById(QVnames[i][1])) {
+				var item = QVnames[i][1].replace(/\./g,"\\.");
+				var varegx = new RegExp("<x>"+item+"<\/x>","gi");
+				//console.log(QVnames[i][1]);
+				input = input.replace(varegx,document.getElementById(QVnames[i][1]).innerHTML);
+			} 
+		}
+		output = input
+		return output
+	}
+	
+	function docforindex(indexID) {
+		for(var i = 0; i < doc_bin.length; i++) {
+			if(doc_bin[i][1] == indexID) {
+				return true;
+			}
+		}
+	}
+	function indexis(variablename) {
+		for(var i = 0; i < QVnames.length; i++) {
+			if(QVnames[i][1] == variablename) {
+				return QVnames[i][0];
+			}
+		}
+	}
+	function valueis(variablekey) {
+		for(var i = 0; i < QVnames.length; i++) {
+			if(QVnames[i][0] == variablekey) {
+				return QVnames[i][1];
+			}
+		}
+	}
+	
+	function look4goto(qn,id) {
+		console.log("GOTO SEARCH: "+id);
+		var qID = "Q-"+id;
+		// If there's a doc in the XXXXXXXXXXXXXXXX, remove it.
+		if (docforindex(path.indexOf(id))) {
+			console.log("DOC FOUND "+id);
+			doc_bin.splice(doc_bin.length-1,1);
+		}
+		convo_bin.splice(-2,2);
+		var re = new RegExp("GOTO:(([a-z0-9\._-]*)\s*)$","gi");
+		if (document.getElementById(qID).innerHTML.match(re)) {
+			convo_bin.splice(-1,1);
+			console.log("GOTO FOUND: "+id);
+			textinput = re.exec(document.getElementById(qID).innerHTML)[2]+"";
+			if (docforindex(indexis(textinput))) {
+				document.getElementById("Xi-"+path[qn]).value = document.getElementById(valueis(textinput)).innerHTML;
+				console.log("DOC FOUND "+textinput);
+				doc_bin.splice(doc_bin.length-1,1);
+			}
+			look4goto(qn,textinput);
+		}
+	}
+	
+	function goback(qn) {
+		Qlast = qn - 3
+		qn = qn - 2;
+		label = path[qn];
+		goingback = 1;
+		
+		console.log("GO BACK TO:"+qn);
+		var re = new RegExp('(((^|\\n).*)*)<div id="break-at-'+qn+'" class="frame">((.*)(\\W.*))*', 'g');
+		document.getElementById("QandA").innerHTML = document.getElementById("QandA").innerHTML.replace(re, '$1');
+		document.getElementById('Choices').innerHTML += "<input type=\"hidden\" id=\"Xi-"+path[qn]+"\" name=\"Xi-"+path[qn]+"\" value=\"\">";
+			console.log("####################: "+path[path.length-1]);
+		
+		//look4goto(qn,path[path.length-1]);
+		
+		path.splice(-1,1);
+		convo_bin.splice(-4,4);
+		//convo_bin.splice(-2,2);
+
+		// If there's a doc in the last Q that you're removing, hold on to it.
+		// And put it back after you've removed it. When you rerender the Q.
+		if (document.getElementById("X-"+path[qn]) && document.getElementById(valueis(path[Qlast]))) {
+			document.getElementById("Xi-"+path[qn]).value = document.getElementById(valueis(path[Qlast])).innerHTML;
+			doc_bin.splice(doc_bin.length-1,1);
+		}
+		
+		// If there's a doc in the current Q, remove it.
+		if (docforindex(currentQ)) {
+			console.log("DOC FOUND (current) "+currentQ);
+			doc_bin.splice(doc_bin.length-1,1);
+		}
+		// If there's a doc in the queued up Q, remove it. 
+		if (document.getElementById(Dhtml)) {
+			console.log("DOC FOUND (ondeck)"+Dhtml);
+			doc_bin.splice(doc_bin.length-1,1);
+		}
+		
+		look4goto(qn,path[path.length-1]);
+		
+		if (freetext != 0) {
+			document.getElementById(freetext).value = "";
+		}
+		QNum = qn;
+		loadQ = path[path.length-1];
+		path.splice(-1,1);
+		
+		console.log("Reload ans for: "+loadQ);
+		answerQ(loadQ);
+	}
+
+	function transcript(output) {
+		var convo_output = "";
+		for (var i = 0, len = convo_bin.length; i < len; i++) {
+			convo_output += convo_bin[i];
+		}
+		if (output == 1) {
+			return convo_output;
+		} else {
+			return convo_output.replace(/<[^>]*>/g,"");
+		}
+	}		
+	
+	function doc() {
+		var doc_output = ""; 
+		for (var i = 0, len = doc_bin.length; i < len; i++) {
+			doc_output += doc_bin[i][0];
+		}
+		return swapvar(doc_output);
+	}	
+	
+	function json_str() {
+		
+		var json_list = "{";
+		for(var i = 0; i < QVnames.length; i++) {
+			if (!document.getElementById("Q-"+QVnames[i][0]).innerHTML.match(/(GOTO:(\d*)(.\s*\d+)*)/)) {
+				if (document.getElementById(QVnames[i][1])) {
+					json_list = json_list+'"'+QVnames[i][1]+'":"'+document.getElementById(QVnames[i][1]).innerHTML+'"';
+				} else {
+					json_list = json_list+'"'+QVnames[i][1]+'":"'+'"';
+				}
+				json_list = json_list+",";
+			} 
+			if (i+1 == QVnames.length) {
+				json_list = json_list.replace(/,$/, '');
+				json_list = json_list+"}";
+			}
+		}
+		return json_list;
+	}
+
+	function mail2(to,subject,body) {
+		to = encodeURIComponent(to);
+		subject = encodeURIComponent(subject);
+		body = encodeURIComponent(body);
+		window.location.href = "mailto:"+to+"?subject="+subject+"&body="+body;
+	}
+	
+	function submit2(action,method,docAs,instructions,transcriptAs,jsonAs,target) {
+		document.FORM.action = action;
+		document.FORM.method = method;
+		if (target) {
+			document.FORM.target = target;
+		} else {
+			document.FORM.target = "_self";		
+		}
+		
+		if (docAs) {
+			if (document.getElementsByName(docAs).length == 0) { 
+				var doctext = document.createElement("textarea");
+				doctext.style.display ='none';
+				doctext.name= docAs;
+				doctext.value= doc();
+				document.getElementById('FORM').appendChild(doctext);
+			} else {
+				$('textarea[name='+docAs+']').val(json_str())
+			}
+			if (instructions) {
+				if (document.getElementsByName('i').length == 0) { 
+					var instructtext = document.createElement("textarea");
+					instructtext.type='hidden';
+					instructtext.style.display ='none';
+					instructtext.name= 'i';
+					instructtext.value= instructions;
+					document.getElementById('FORM').appendChild(instructtext);	
+				} else {
+					$('textarea[name=i]').val(json_str())
+				}
+			}
+		}
+		if (transcriptAs) {
+			if (document.getElementsByName(transcriptAs).length == 0) { 
+				var ttext = document.createElement("textarea");
+				ttext.type='hidden';
+				ttext.style.display ='none';
+				ttext.name= transcriptAs;
+				ttext.value= transcript();
+				document.getElementById('FORM').appendChild(ttext);
+			} else {
+				$('textarea[name='+transcriptAs+']').val(json_str())
+			}
+		}
+		if (jsonAs) {
+			if (document.getElementsByName(jsonAs).length == 0) { 
+				var json = document.createElement("textarea");
+				json.type='hidden';
+				json.style.display ='none';
+				json.name= jsonAs;			
+				json.value= json_str();
+				document.getElementById('FORM').appendChild(json);
+			} else {
+				$('textarea[name='+jsonAs+']').val(json_str())
+			}
+		}
+		var ondeckdiv = document.getElementById('ondeck').innerHTML;
+		var rawmarkupdiv = document.getElementById('rawmarkup').innerHTML;
+		document.getElementById('ondeck').innerHTML = "";
+		document.getElementById('rawmarkup').innerHTML = "";
+		document.FORM.submit();
+		document.getElementById('ondeck').innerHTML = ondeckdiv;
+		document.getElementById('rawmarkup').innerHTML = rawmarkupdiv;
+	}
+	
+	function csv() {
+		var csv_list = "";
+		for(var i = 0; i < QVnames.length; i++) {
+			if (!document.getElementById("Q-"+QVnames[i][0]).innerHTML.match(/(GOTO:(\d*)(.\s*\d+)*)/)) {
+				csv_list = csv_list+'"'+QVnames[i][1]+'"';
+				csv_list = csv_list+",";
+			} 
+			if (i+1 == QVnames.length) {
+				csv_list = csv_list.replace(/,$/, '');
+				csv_list = csv_list+"\n";
+			}
+		}
+		for(var i = 0; i < QVnames.length; i++) {
+			if (!document.getElementById("Q-"+QVnames[i][0]).innerHTML.match(/(GOTO:(\d*)(.\s*\d+)*)/)) {
+				if (document.getElementById(QVnames[i][1])) {
+					csv_list = csv_list+'"'+document.getElementById(QVnames[i][1]).innerHTML+'"';
+				} else {
+					csv_list = csv_list+'""';
+				}
+				csv_list = csv_list+",";
+			} 			
+			if (i+1 == QVnames.length) {
+				csv_list = csv_list.replace(/,$/, '');
+				csv_list = csv_list+"\n";
+			}
+		}
+
+		return csv_list;
+	}
+	
+	function getvar(val) {
+		return document.getElementById(val).value;
+	}
+
+	function goto(val) {
+	   answerQ(indexis(val));
+	}
+
+	// h/t http://runnable.com/U5HC9xtufQpsu5aj/use-javascript-to-save-textarea-as-a-txt-file
+	function save2(filename,content)
+	{
+
+	// I'm using file system support as a proxy for support for this feature. 
+	// Check based on one found at: http://blog.teamtreehouse.com/building-an-html5-text-editor-with-the-filesystem-apis
+	// Handle vendor prefixes.
+	window.requestFileSystem = window.requestFileSystem || 
+							   window.webkitRequestFileSystem;
+	// Check for support.
+	if (window.requestFileSystem) {
+	// content = ID of textarea to save
+	// name = name to save file as, including file extension     
+	// grab the content of the form field and place it into a variable
+	//    var textToWrite = document.getElementById(content).value;
+	//  create a new Blob (html5 magic) that conatins the data from your form feild
+		var textFileAsBlob = new Blob([content], {type:'text/plain'});
+		
+	// Specify the name of the file to be saved
+		var fileNamecontentAs = filename;
+		
+	// Optionally allow the user to choose a file name by providing 
+	// an imput field in the HTML and using the collected data here
+	// var fileNamecontentAs = txtFileName.text;
+
+	// create a link for our script to 'click'
+		var downloadLink = document.createElement("a");
+	//  supply the name of the file (from the var above).
+	// you could create the name here but using a var
+	// allows more flexability later.
+		downloadLink.download = fileNamecontentAs;
+	// provide text for the link. This will be hidden so you
+	// can actually use anything you want.
+		downloadLink.innerHTML = "My Hidden Link";
+		
+	// allow our code to work in webkit & Gecko based browsers
+	// without the need for a if / else block.
+		window.URL = window.URL || window.webkitURL;
+			  
+	// Create the link Object.
+		downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+	// when link is clicked call a function to remove it from
+	// the DOM in case user wants to save a second file.
+		downloadLink.onclick = destroyClickedElement;
+	// make sure the link is hidden.
+		downloadLink.style.display = "none";
+	// add the link to the DOM
+		document.body.appendChild(downloadLink);
+		
+	// click the new link
+		downloadLink.click();
+	} else {
+		alert('This feature is not supported by your browser.');
+	}
+		
+	}
+
+	function destroyClickedElement(event)
+	{
+	// remove the link from the DOM
+		document.body.removeChild(event.target);
+	}
+
+	// EOF
+
+</script>
+</BODY>
+</HTML>

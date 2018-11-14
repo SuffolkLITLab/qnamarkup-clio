@@ -83,17 +83,17 @@ A:Create a task list
 	Q(task):First we will create a Task Template. <br><br>Click “Tasks” on the left side of the page.<br><br> Then, click on the “Lists” tab. <p><img src="https://suffolklitlab.org/clio/images/Task1.png"></p>
 	A:Ok, I clicked on "Lists", now what?
 		Q(tdesc):Click on the green “Add” button and a box titled “Assign List Template” will appear.  <p><img src="https://suffolklitlab.org/clio/images/Task2.png"></p>
-		A:Ok, got it.
+		A:Ok, got it, what's next?
 			Q(3.1.1.1):Fill in a “Name”, “Description” and the “Practice Area” to be applied to your list. <br><br> Then, click “Save List Template”.
-			A:Great!
+			A:Great! What do I do now?
 				Q(3.1.1.1.1):Now to create the task list go back and click “Tasks” on the left side of the page.<br><br>Then you will click on the "Lists" tab once again.
 				A:Done, now what?
 					Q(reminder):Select one of the templates under “List” and click the green “Add Button”.<p><img src="https://suffolklitlab.org/clio/images/Task3.png"></p> 
-					A:Great!
+					A:What's next?
 						Q(3.1.1.1.1.1.1):An “Add Task Template” window will appear.<p><img src="https://suffolklitlab.org/clio/images/Task4.png"></p>  
-						A:Got it!
+						A:Got it! Now what?
 							Q(3.1.1.1.1.1.1.1):Fill in the empty fields and click “Save Task Template”.
-							A:Ok, did that
+							A:Ok, did that, what's next?
 								Q(3.1.1.1.1.1.1.1.1):Now click on the blue “Assign” under the Task Template. <br><br>Select the matter you wish to assign this task to and click “Save Task.”<br><br>Now go back to the Tasks page and see your new tasks listed.
 								A:Nice!
 									Q(3.1.1.1.1.1.1.1.1.1):GOTO:current
@@ -102,11 +102,11 @@ A:Creating a document from a template
 	Q(doc):Go to the “Documents” tab on the left bar or on the at the top.
 	A:I'm there, now what?
 		Q(3.2.1):Click on the blue “New” button that is located on the right side of the page. <p><img src="https://suffolklitlab.org/clio/images/DocTemp3.png"></p> 
-		A:Done!
+		A:Done! What's next?
 			Q(3.2.1.1):Select “Document from Template” from the drop-down menu.
 			A:Ok, now what?
 				Q(3.2.1.1.1):A window titled “Create A Document” will appear. In the first box, select the template you wish to use for your document.<p><img src="https://suffolklitlab.org/clio/images/DocTemp4.png"></p>  <br><br>  In the second box, select the matter that this document will be taking information from.
-				A:Got it!
+				A:Got it! What do I do now?
 					Q(3.2.1.1.1.1):Next, you can select how you want the document to be saved (PDF and/or Word document). <br><br> Once this information has been filled in, click on “Create Document”.
 					A:Great, am I done?
 						Q(3.2.1.1.1.1.1):You will then be required to refresh the page to view the document as listed. <br><br> The document will appear in the matter folder. If the template was categorized, however, then under the “category” column, you will see in which folder the document was placed in. <p><img src="https://suffolklitlab.org/clio/images/DocTemp5.png"></p>

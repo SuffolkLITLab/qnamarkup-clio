@@ -1,0 +1,4 @@
+Q(1):What do you need help with?
+A: Do you have a link to the Clinic Handbook?
+	Q(1.1):Of course! Here you go!
+	A:[https://github.com/SuffolkLITLab/clio/Clinic_Handbook.pdf]Clinic Handbook

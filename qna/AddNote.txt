@@ -1,0 +1,10 @@
+Q(1): What can I help you with?
+A: I would like to add a note to my case.
+	Q(1.1): OK, first type your case name into the search bar at the top of Clio and hit enter. This will take you to your case matter dashboard, which will look like this (screenshot). 
+	A: I am at my case matter's dashboard.
+		Q(1.1.1): Great. From here, click on the "Notes" tab near the top of the page.
+		A: OK.
+			Q(1.1.1.1): From this page, you can edit and add notes or view notes from previous students and/or faculty that have worked on this case. <p>Now, click on the blue "Add note" button near the top right of the screen, below the tabs. A popup will show asking for a Subject, Note, and Date. The Date will always default to today's date, but can be easily changed by clicking on it and choosing a different date. Make sure to add a subject and that it is a brief synopsis of what your note will be about. For example, client meeting, client phone call, etc. Once you have added a subject line, type a description of what occurred and what you would like your note to say. 
+			A: Great. I've completed my note.
+				Q(1.1.1.1.1): Once you're done writing your note, click on the blue "Save note" button at the bottom of the popup. The popup will close and then your note will show up on the notes tab as a new entry.
+				A: You have added a note!

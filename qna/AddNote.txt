@@ -1,6 +1,6 @@
 Q(1): What can I help you with?
 A: I would like to add a note to my case.
-	Q(1.1): OK, first type your case name into the search bar at the top of Clio and hit enter. This will take you to your case matter dashboard, which will look like this: href="https://suffolklitlab.org/clio/images/MatterDashboard.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.png"/></a> 
+	Q(1.1): OK, first type your case name into the search bar at the top of Clio and hit enter. This will take you to your case matter dashboard, which will look like this: <a href="https://suffolklitlab.org/clio/images/MatterDashboard.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.png"/></a> 
 	A: I am at my case matter's dashboard.
 		Q(1.1.1): Great. From here, click on the "Notes" tab near the top of the page.
 		A: OK.

@@ -1,24 +1,25 @@
 Q(1): What do you need help with?
 A: I need to add a contact to Clio
-	Q(1.1): OK. First, you need to sign into Clio and go to the top right corner of the screen, where there is a green button stating "Create New" and click on the drop down button. There you can select to create a new "Person" or "Company" as shown in the screenshot below. <a href="https://suffolklitlab.org/clio/images/CreatenewContact.1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.1.png"/></a> <p>Do you need to create a new Company or Person contact?
-	A: I need to create a new company
-		Q(1.1.1):For a new company, type in the company name, add their email, phone number, website, and address. Then, click on "Save New Company." <p>If you need to add any comments or notes, add it to the "Custom Fields" section.
-		A: Got it! What do I do now? 
-			Q(1.1.1.1): If you would like to add other information that doesn't fit the above categories, you can click on "Select to add a custom field" and add additional fields through there. Once you're done, scroll to the bottom of the page and hit "Save New Company."
-			A: Saved! Am I done?
-				Q(1.1.1.1.1):GOTO:addcontact
-	A: I need to create a new person
-		Q(1.1.2): For a new person, type in their first and last name, choose the company they belong to from the drop down box (if applicable), and enter that person's title (if applicable).
+	Q(1.1): OK. Have you already checked Clio to see if the contact information has already been added?
+	A: Yes
+		Q(1.1.1):GOTO:Addcontact
+	A: No
+		Q(1.1.2): Then you should type their name or company name into the search bar to make sure that their information has not already been entered into the system.
+		A: I've searched Clio and still need to create a new contact.
+			Q(1.1.2.1):GOTO:Addcontact
+		A: JK, I don't need to create a new contact.
+		
+Q(Addcontact): Great!  To create a new contact, go to the top right corner of the screen, where there is a green button that says "Create New" and click on the drop down button. There, you can select to create a new "Contact" as shown in the screenshot below. <a href="https://suffolklitlab.org/clio/images/CreatenewContact.1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.1.png"/></a>
+A: OK, I've clicked "Contact"
+	Q(2.1): Once you click on "Contact" a new page will load. Here, you can choose between creating a new Person or a Company, as shown below. <a href="https://suffolklitlab.org/clio/images/CreatenewContact.2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.2.png"/></a>  <p> If you are adding a person that belongs to a company, you can add that company to their contact information, just make sure you have checked whether the company has already been added to Clio prior to creating the person. If the company has not been added to Clio already, you will want to add the company contact information first before creating the new person contact.
+	A: Got it!
+		Q(2.1.1): Make sure you type in the contact's name, address, email, and any other additional information you have available. You can add comments to this contact by expanding the "Custom Fields" section. Here, you can add any other relevant information that is not covered in the other sections of the contact page.
 		A: Done! What's next?
-			Q(1.1.2.1): Scroll down a little and you will see a "Custom Fields" section with comments/notes underneath. Under the comments/nites section, click the drop down box stating "Select to add a custom field" as shown in the screenshot below. <a href="https://suffolklitlab.org/clio/images/CreatenewContact.2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.2.png"/></a>
-			A: Found it, now what?
-				Q(1.1.2.1.1): This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath "Custom Field Sets" and it will generate several new fields that the clinic recommends you use for that type of contact. <p>If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful. Keep in mind that email, phone number, website, and address fields are just below this section.
+			Q(2.1.1.1): Once you've finished adding all the contact's information, click the blue "Save contact" button at the bottom of your screen. 
+			A: Saved! Am I done?
+				Q(2.1.1.1.1): Not yet. Once you've created a new contact, you can attach that contact to a matter by going to the dashboard of your matter. You can access a matter's dashboard by typing the name of the matter in the search bar. At the matter dashboard, click "Add related contact," as seen in the screenshot below: <a href="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"/></a>
 				A: Got it!
-					Q(1.1.2.1.1.1): Once you're done adding your information to each field, scroll down to the bottom of the page and hit "Save New Person"
-					A: Saved! Am I done?
-						Q(addcontact): Not yet. Once you've created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking "Add related contact," as you can see in the screenshot below: <a href="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"/></a>
-						A: Got it!
-							Q: This will take you to edit the matter. Scroll down to where it says "Related contacts," you can see what it looks like in the screenshot below. Here, type the contact's relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath "Contact." <a href="https://suffolklitlab.org/clio/images/CreatenewContact.4.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"/></a>
-							A: All done!
-								Q: Once you've added all your contacts to this matter, click "Save matter" at the bottom of your screen and those contacts will be visible from your matter's dashboard.
-								A: That's it! you have created a contact!
+					Q(2.1.1.1.1.1): This will take you to edit the matter. Scroll down to where it says "Related contacts." Here, type the contact's relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath "Contact." <a href="https://suffolklitlab.org/clio/images/CreatenewContact.4.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"/></a>
+					A: All done!
+						Q(2.1.1.1.1.1.1): Once you've added all your contacts to this matter, click "Save matter" at the bottom of your screen and those contacts will be visible from your matter's dashboard.
+						A: That's it! you have created a contact!

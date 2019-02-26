@@ -1,6 +1,6 @@
 Q: What can I help you with?
 A: I need to edit a matter.
-	Q: OK. Type the name of the matter in the search bar and hit enter. This will take you to the matter's dashboard, which will look something like this: href="https://suffolklitlab.org/clio/images/MatterDashboard.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.png"/></a> 
+	Q: OK. Type the name of the matter in the search bar and hit enter. This will take you to the matter's dashboard, which will look something like this: <a href="https://suffolklitlab.org/clio/images/MatterDashboard.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.png"/></a> 
 	A: OK, I've made it to the dashboard.
 		Q: Great. Now, in order to edit the matter, click on the blue "Edit" button at the top right of the dashboard page. A new page will load and this is where you will be able to edit all the information in your matter. <p>Here, you can edit the status of the case, the attorney responsible for the case, edit contacts, add a brief case synopsis, change the supervisor, add the court Judge assigned to the case, add a docket number, etc. Make sure you check each section and add any information relevant to your case.
 		A: I'm done editing the matter.

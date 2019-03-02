@@ -1,7 +1,7 @@
-Q: Hi! What do you need help with?
+Q(1): Hi! What do you need help with?
 A: I would like to know how to edit a document in clio.
-	Q: Understood. First, find the document you wish to edit by typing in the client's name in the search bar. Click on the matter that has the document you wish to edit. Alternatively, you can click on the documents tab on the left bar and choose your document there.
-	A: Okay,I did that. Now what?
-		Q: If you are searching for your document through the matter, click on the white documents tab at the top. Then at the bottom, choose your document you wish to edit.
+	Q(1.1): Understood. First, find the document you wish to edit by typing in the client's name in the search bar. Click on the matter that has the document you wish to edit. <a href="https://suffolklitlab.org/clio/images/edit_documents1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/edit_documents1.png"/></a> Alternatively, you can click on the documents tab on the left bar and choose your document there.
+	A: Okay, I did that. Now what?
+		Q(1.1.1): If you are searching for your document through the matter, click on the white documents tab at the top. Then at the bottom, choose your document you wish to edit. <a href="https://suffolklitlab.org/clio/images/edit_documents2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/edit_documents2.png"/></a>
 		A: I have chosen my document. What do I do now?
-			Q: Click the document name to download the document. Once it is downloaded, you may edit and save any changes you make to the document. Please note that if the document is a pdf, you may need to have adobe software to make changes.
+			Q(1.1.1.1): Click the document name to download the document. Once it is downloaded, you may edit and save any changes you make to the document. Please note that if the document is a pdf, you may need to have adobe software to make changes.

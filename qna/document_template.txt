@@ -1,0 +1,16 @@
+Q(1): Hi! What can I help you with?
+A: I would like to know how to add a document.
+	Q(1.1): Okay. To start, type in the name of your client in the search bar to go to their matter.
+	A: Done. Then what do I do?
+		Q(1.1.1): Once you have done that, click on the documents tab. You will then see a blue button that is labeled new. Click new and a drop down will appear. Choose upload a file to add a document or select document from template to upload a document to be automated from a template.
+		A: Great, thank you.
+			Q(1.1.1.1):GOTO:1
+A: I would like to know how to make a document template.
+	Q(1.2): To create a document template, you must create a word document and determine which fields of the document you wish to fill. If you go to settings and click on documents under system, you will find merge fields. These merge fields should be placed on the areas of the document you wish for information to be automatically filled in.<a href="https://suffolklitlab.org/clio/images/doc_temp1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/doc_temp1.png"/></a>
+	A: I've done that. What comes next?
+		Q(1.2.1):Once you have the document you wish to build a template for all set up, click on documents on the left task bar and select templates.<a href="https://suffolklitlab.org/clio/images/doc_temp2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/doc_temp2.png"/></a>
+		A: Okay. Then what do I do?
+			Q(1.2.1.1): Click the green add button in the top right corner. A new window will pop up and allow you to upload your template. Click on choose file and select your document template. You can the category the template belongs to in the next box marked document category. Click save once you are done. <a href="https://suffolklitlab.org/clio/images/doc_temp3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/doc_temp3.png"/></a> You have created a template!
+			A: Great! Thanks. Take me back to the beginning please.
+				Q(1.2.1.1.1):GOTO:1
+			

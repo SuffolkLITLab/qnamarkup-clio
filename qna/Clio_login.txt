@@ -7,7 +7,7 @@ A: How do I sign into Clio?
 		A:I don't see the icon.
 			Q(1.1.2.1):If it's not there, you can simply open a web browser and go to clio.com
 			A:Got it! Now what?
-				Q(signin):Now you simply click on log in<a href="https://suffolklitlab.org/clio/images/cliolog.png" target="_blank"> and then sign into Clio with your clinic email and Clio password and you should be all set!<img src="https://suffolklitlab.org/clio/images/cliolog.png"/></a><a href="https://suffolklitlab.org/clio/images/cliosign.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliosign.png"/></a>
+				Q(signin):Now you simply click on log in<a href="https://suffolklitlab.org/clio/images/cliolog.png" target="_blank"><b></b>and then sign into Clio with your clinic email and Clio password and you should be all set!<img src="https://suffolklitlab.org/clio/images/cliolog.png"/></a><a href="https://suffolklitlab.org/clio/images/cliosign.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliosign.png"/></a>
 				A:Great!
 		A:Ok, I clicked on it!
 			Q(1.1.2.2):GOTO:signin

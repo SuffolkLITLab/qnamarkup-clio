@@ -11,7 +11,7 @@ A: How do I open a case?
 				A:What do I do with the copy?
 					Q(1.1.1.2.1.1):You have to take the copy to the office's administrative assistant and they will enter this information in Clio for you.
 					A:Now what?
-						Q(1.1.1.2.1.1.1):Once the case is open you can start adding information to the matter!
+						Q(1.1.1.2.1.1.1):Once the case is open you can start adding information to the matter!<br><br>Don't forget to scan the case opening form into Clio and save it in the matter under Documents! 
 						A:Thanks! 
 	
 		

@@ -1,6 +1,6 @@
 Q(1):What do you need help with?
 A: How do I open a case?
-	Q(1.1):First you need to find the Case Opening Form. This is usually in your clinic's S drive.
+	Q(1.1):First you need to find the Case Opening Form. You can find this in your clinic's S drive or where your clinic office keeps blank forms. It looks like this: <a href="https://suffolklitlab.org/clio/images/caseopen.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/caseopen.png"/></a>
 	A:Ok, I found it, now what?
 		Q(1.1.1):Now you fill it out with as much information as you can. Don't forget the conflict check!
 		A:How do I run a conflict check?

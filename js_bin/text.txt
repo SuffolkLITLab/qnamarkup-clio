@@ -1,0 +1,4 @@
+Q(john): john
+A: john
+	Q(backto): backtobob
+	A[javascript:goto('bob')]: go back

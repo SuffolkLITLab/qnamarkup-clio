@@ -14,8 +14,10 @@ function loadQnA(url_point) {
 
     var QVNames_tmp = QVnames;
     $('#ondeck').html($('#ondeck').html()+mydate.html());
-    QVnames = QVNames_tmp     
+    
+    answerQ(placeholder+.1);
 
+    QVnames = QVNames_tmp     
     for (var i in QVnames_placeholder) {
       //check to see if [][1] is a custom name, if so leave it alone
       if (QVnames_placeholder[i][1].match(/[a-z]/i)) {
@@ -25,9 +27,5 @@ function loadQnA(url_point) {
       }
     }
 
-    goto(placeholder+.1);
-    // figure out what to do with goback replicate Qnum == 1 
-    // put up a "thinking" bubble while loading
-    // maybe disable answerQ in php when loadQnA found
   } });
 }

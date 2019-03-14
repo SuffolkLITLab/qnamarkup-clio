@@ -12,9 +12,9 @@ function loadQnA(url_point) {
     
     mydate = mydata.html(mydata.html() + "<div id='A-"+placeholder+".1' name='A-"+placeholder+".1'></div>");
 
-    //qv = mydata.html().match(/var QVnames = (.*)/gi);
+    var QVNames_tmp = QVnames;
     $('#ondeck').html($('#ondeck').html()+mydate.html());
-    console.log(QVnames);
+    QVnames = QVNames_tmp     
 
     for (var i in QVnames_placeholder) {
       //check to see if [][1] is a custom name, if so leave it alone

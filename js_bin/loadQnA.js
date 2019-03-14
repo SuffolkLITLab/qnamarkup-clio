@@ -9,6 +9,9 @@ function loadQnA(url_point) {
     mydate = mydata.html(mydata.html().replace(/ (id|name)="X-/gi, ' $1="X-'+placeholder+'.'));
     mydate = mydata.html(mydata.html().replace(/ (id|name)="Xi-/gi, ' $1="Xi-'+placeholder+'.'));
     mydate = mydata.html(mydata.html().replace(/var QVnames =/gi, 'QVnames_placeholder ='));
+    
+    mydate = mydata.html(mydata.html() + "<div id='A-"+placeholder+".1' name='A-"+placeholder+".1'></div>");
+
     //qv = mydata.html().match(/var QVnames = (.*)/gi);
     $('#ondeck').html($('#ondeck').html()+mydate.html());
     console.log(QVnames);

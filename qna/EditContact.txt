@@ -1,12 +1,10 @@
-Q(1): What can I help you with?
-A: I would like to edit a contact in a matter on Clio.
-	Q(1.1): OK, has the contact already been created?
-	A: Yes
-		Q(1.1.1): Great! You can attach an already created contact to your matter by going to the matter dashboard (accessible by searching for the matter in the Clio search bar at the top of the page after signing in) and clicking "Add related contact," as shown below: <a href="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"/></a>
-		A: Got it!
-			Q(1.1.1.1): This will take you to edit the matter. You may need to scroll down to where it says "Related contacts," as seen in the screenshot below. Here, you can remove or add additional contacts to your matter. Make sure that you type the contact's relationship to the matter and find the contact either by typing it in or finding them on the drop down bar underneath "Contact." <a href="https://suffolklitlab.org/clio/images/CreatenewContact.4.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"/></a>
-			A: Done!
-				Q(1.1.1.1.1): Once you've added all your contacts to this matter, click the blue "Save matter" button at the bottom of your screen and those contacts will be visible from your matter's dashboard.
-				A: You've edited a contact in a matter!
-	A: No
-		<!--- Enter goto directing towards create contact qna --->
+<!-- I would like to edit a contact in a matter on Clio. -->
+Q(1): OK, has the contact already been created?
+A: Yes
+	Q(1.1): Great! You can attach an already created contact to your matter by going to the matter dashboard (accessible by searching for the matter in the Clio search bar at the top of the page after signing in) and clicking "Add related contact," as shown below: <a href="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"/></a>
+	A: Got it!
+		Q(1.1.1): This will take you to edit the matter. You may need to scroll down to where it says "Related contacts," as seen in the screenshot below. Here, you can remove or add additional contacts to your matter. Make sure that you type the contact's relationship to the matter and find the contact either by typing it in or finding them on the drop down bar underneath "Contact." <a href="https://suffolklitlab.org/clio/images/CreatenewContact.4.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"/></a>
+		A: Done!
+			Q(1.1.1.1): Once you've added all your contacts to this matter, click the blue "Save matter" button at the bottom of your screen and those contacts will be visible from your matter's dashboard.
+A: No
+	<!--- Enter goto directing towards create contact qna --->

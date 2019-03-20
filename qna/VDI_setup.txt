@@ -1,15 +1,15 @@
-Q(1.1): To set up your VDI you have to download the VMware Horizon client. First you have to go to <a href="https://desktop.suffolk.edu" target="_blank">https://desktop.suffolk.edu</a>
+Q(1): To set up the VDI you have to download the VMware Horizon client.<br><br> First you have to go to <a href="https://desktop.suffolk.edu" target="_blank">https://desktop.suffolk.edu</a>
 A:Click here once you've opened the link above!
-	Q(1.1.1):Once you're on the website, select "Install VMWare Horizon Client" <p><a href="https://suffolklitlab.org/clio/images/vmware.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/vmware.png"/></a></p>
+	Q(1.1):Once you're on the website, select "Install VMWare Horizon Client" <p><a href="https://suffolklitlab.org/clio/images/vmware.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/vmware.png"/></a></p>
 	A:Ok, I did that.
-		Q(1.1.1.1):Now you have to download the client that is specific to your computer's operating system. <p><a href="https://suffolklitlab.org/clio/images/download.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/download.png"/></a></p>
+		Q(1.1.1):Now you have to download the client that is specific to your computer's operating system. <p><a href="https://suffolklitlab.org/clio/images/download.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/download.png"/></a></p>
 		A:Got it! Now what?
-			Q(1.1.1.1.1):Now you have to click on the 'New Server' button on the top left of the pop-up screen. <p><a href="https://suffolklitlab.org/clio/images/server.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/server.png"/></a></p>
+			Q(1.1.1.1):Now you have to click on the 'New Server' button on the top left of the pop-up screen. <p><a href="https://suffolklitlab.org/clio/images/server.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/server.png"/></a></p>
 			A:Ok, now what do I do?
-				Q(1.1.1.1.1.1):A new smaller screen will ask you to enter the name of the Connection Server. There you will type 'desktop.suffolk.edu' and click connect. <p><a href="https://suffolklitlab.org/clio/images/servername.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/servername.png"/></a></p>
+				Q(1.1.1.1.1):A new smaller screen will ask you to enter the name of the Connection Server. There you will type 'desktop.suffolk.edu' and click connect. <p><a href="https://suffolklitlab.org/clio/images/servername.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/servername.png"/></a></p>
 				A:I did that, now what?
-					Q(1.1.1.1.1.1.1):Now double click on the cloud icon on the screen. If you are signing in for the first time you might have to re-type 'desktop.suffolk.edu' as the connection server name. 
+					Q(1.1.1.1.1.1):Now double click on the cloud icon on the screen. If you are signing in for the first time you might have to re-type 'desktop.suffolk.edu' as the connection server name. 
 					A:Ok, what do I do next?
-						Q(1.1.1.1.1.1.1.1):Now you log in with your Clinic email credentials. Remember this one starts with cl. <p><a href="https://suffolklitlab.org/clio/images/login.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/login.png"/></a></p>
+						Q(1.1.1.1.1.1.1):Now you log in with your Clinic email credentials. Remember this one starts with cl. <p><a href="https://suffolklitlab.org/clio/images/login.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/login.png"/></a></p>
 						A:Is that it?
-							Q(1.1.1.1.1.1.1.1.1):Yes! Now you just have to wait for the server to load and you are all set!
+							Q(1.1.1.1.1.1.1.1):Yes! Now you just have to wait for the server to load and you are all set!

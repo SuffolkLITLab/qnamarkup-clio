@@ -1,4 +1,2 @@
-Q(1):What do you need help with?
-A: Do you have a link to the Clinic Handbook?
-	Q(1.1):Of course! Here you go! <a href="https://suffolklitlab.org/clio/Clinic_Handbook.pdf" target="_blank">https://suffolklitlab.org/clio/Clinic_Handbook.pdf</a>
-	A:Thanks! 
+Q(1.1):Here is a link to the Clinic Handbook! <a href="https://suffolklitlab.org/clio/Clinic_Handbook.pdf" target="_blank">https://suffolklitlab.org/clio/Clinic_Handbook.pdf</a>
+A:Thanks! 

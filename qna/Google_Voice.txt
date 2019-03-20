@@ -1,10 +1,6 @@
-Q(1):What do you need help with?
-A: How do set up Google Voice?
-	Q(1.1):First you have to download the Google Voice app on your cellphone
-	A:Great, now what?
-		Q(1.1.1):The app will walk you through the set up step by step. Keep in mind that you will have to link this to an existing Gmail account.
-		A:Will it use my personal phone number?
-			Q(1.1.1.1):No. As you walk through the process to set up Google Voice, you will be able to pick a new number which will be used instead of your personal number while you call or text through the app.
-			A:Great!
-	
-		
+Q(1.1):To use Google Voice you first you have to download the Google Voice app on your cellphone
+A:Great, now what?
+	Q(1.1.1):The app will walk you through the set up step by step. Keep in mind that you will have to link this to an existing Gmail account.
+	A:Will it use my personal phone number?
+		Q(1.1.1.1):No. As you walk through the process to set up Google Voice, you will be able to pick a new number which will be used instead of your personal number while you call or text through the app.
+		A:Great!

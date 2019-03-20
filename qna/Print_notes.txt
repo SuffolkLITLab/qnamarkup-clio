@@ -4,9 +4,9 @@ A: How do I print my notes from Clio?
 	A:I'm there, now what?
 		Q(1.1.1):Now go to the Notes tab.
 		A:Ok, what do I do now?
-			Q(1.1.1.1):At the bottom of the page you will find en 'Export' button. Click on it. <a href="https://suffolklitlab.org/clio/images/print.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/print.png"/></a>
+			Q(1.1.1.1):At the bottom of the page you will find en 'Export' button. Click on it. <p><a href="https://suffolklitlab.org/clio/images/print.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/print.png"/></a></p>
 			A:I clicked on it, what do I do now?
-				Q(1.1.1.1.1):You should see an option to export in 'PDF' or 'CSV" format. Select 'PDF' <a href="https://suffolklitlab.org/clio/images/export_notes.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/export_notes.png"/></a>
+				Q(1.1.1.1.1):You should see an option to export in 'PDF' or 'CSV" format. Select 'PDF' <p><a href="https://suffolklitlab.org/clio/images/export_notes.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/export_notes.png"/></a></p>
 				A:Done, now what?
 					Q(1.1.1.1.1.1):A PDF should have downloaded. When you open it you will be able to see all your notes on that matter and print the PDF.
 					A:That was easy, thanks!

@@ -1,14 +1,11 @@
-Q(1):What do you need help with?
-A: How do I sign into Clio?
-	Q(1.1):First you have to log into the VDI.
-	A:How do I log into the VDI
-	A:Ok, I'm logged in!
-		Q(1.1.2):Now that you are in the VDI you should be able to see an icon for it on your desktop. <p><a href="https://suffolklitlab.org/clio/images/icon.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/icon.png"/></a></p>
-		A:I don't see the icon.
-			Q(1.1.2.1):If it's not there, you can simply open a web browser and go to clio.com
-			A:Got it! Now what?
-				Q(signin):Now you simply click on log in <p><a href="https://suffolklitlab.org/clio/images/cliolog.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliolog.png"/></a></p><p>and then sign into Clio with your clinic email and Clio password and you should be all set!</p><a href="https://suffolklitlab.org/clio/images/cliosign.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliosign.png"/></a>
-				A:Great!
-		A:Ok, I clicked on it!
-			Q(1.1.2.2):GOTO:signin
-		
+Q(1.1):To sign into Clio you should make sure you are logged into the VDI.
+A:How do I log into the VDI
+A:Ok, I'm logged in!
+	Q(1.1.2):Now that you are in the VDI you should be able to see an icon for it on your desktop. <p><a href="https://suffolklitlab.org/clio/images/icon.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/icon.png"/></a></p>
+	A:I don't see the icon.
+		Q(1.1.2.1):If it's not there, you can simply open a web browser and go to clio.com
+		A:Got it! Now what?
+			Q(signin):Now you simply click on log in <p><a href="https://suffolklitlab.org/clio/images/cliolog.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliolog.png"/></a></p><p>and then sign into Clio with your clinic email and Clio password and you should be all set!</p><a href="https://suffolklitlab.org/clio/images/cliosign.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliosign.png"/></a>
+			A:Great!
+	A:Ok, I clicked on it!
+		Q(1.1.2.2):GOTO:signin

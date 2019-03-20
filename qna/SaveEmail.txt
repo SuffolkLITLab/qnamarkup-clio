@@ -1,17 +1,16 @@
-Q(1): How can I help you?
-A: I need to save an email to Clio.
-	Q(1.1): OK. First, you need to sign in to your clinic email. Next, find the email you want to save and double click on the email's subject line while it is in your inbox so that a separate popup box with your email will appear, like this: <a href="https://suffolklitlab.org/clio/images/SaveEmail.1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.1.png"/></a>
-	A: I have opened the email in a popup.
-		Q(1.1.1): Great! Next, click on the printer icon that the image above is pointing to. Another popup will appear asking for the printing destination and other settings. Next to the "Destination" heading, click "Change..." as shown in the screenshot below and another popup will appear. <a href="https://suffolklitlab.org/clio/images/SaveEmail.2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.2.png"/></a> 
-		A: OK.
-			Q(1.1.1.1): From here, instead of clicking a printer, click on "Save as PDF" and another popup will appear asking for the name of the document and where to save the document on your computer. 
-			A: I've saved the email to my computer, now what?
-				Q(1.1.1.1.1): Now, log into Clio and locate the matter that you want to save your email into. Click on the "Documents" tab. From here, click "New" and then a drop down box will appear where you will click "File upload" as shown here: <a href="https://suffolklitlab.org/clio/images/SaveEmail.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.3.png"/></a> <p>A popup will appear, then you will need to find and click on the email PDF that you just saved into your computer and click "Open".
-				A: Done!
-					Q(1.1.1.1.1.1): This popup will appear asking for the file's name, date received, matter it is located in and category: <a href="https://suffolklitlab.org/clio/images/SaveEmail.4.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.4.png"/></a> <p>Fill out this information to the best of your ability and then click "Upload Documents"
-					A: OK, am I done now?
-						Q(1.1.1.1.1.1.1): Almost! Check that you can see that the email has been saved and properly downloaded into Clio. Then, you need to move the document into the Correspondence folder. Click "move" underneath the document name: <a href="https://suffolklitlab.org/clio/images/SaveEmail.5.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.5.png"/></a>
-						A: I can see the email and have clicked "move."
-							Q(1.1.1.1.1.1.1.1): Another popup like the one below will appear with your matter along with other matters. Click the plus sign next to the matter you want this email in and find the "Correspondence" folder. Highlight this folder by clicking on it and then click on the green "Move" button at the bottom of this popup. It may take a few seconds for it move. <a href="https://suffolklitlab.org/clio/images/SaveEmail.6.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.6.png"/></a>
-							A: Alright, I've moved the document. Now am I done?
-								Q(1.1.1.1.1.1.1.1.1): Yes! You've saved your email to Clio.
+<!-- I need to save an email to Clio. -->
+Q(1): OK. First, you need to sign in to your clinic email. Then find the email you want to save and double click on the email's subject line while it is in your inbox so that a separate popup box with your email will appear, like this: <a href="https://suffolklitlab.org/clio/images/SaveEmail.1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.1.png"/></a>
+A: I have opened the email in a popup.
+	Q(1.1): Great! Next, click on the printer icon that the image above is pointing to. Another popup will appear asking for the printing destination and other settings. Next to the "Destination" heading, click "Change..." as shown in the screenshot below and another popup will appear. <a href="https://suffolklitlab.org/clio/images/SaveEmail.2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.2.png"/></a> 
+	A: OK.
+		Q(1.1.1): From here, instead of clicking a printer, click on "Save as PDF" and another popup will appear asking for the name of the document and where to save the document on your computer. 
+		A: I've saved the email to my computer, now what?
+			Q(1.1.1.1): Now, log into Clio and locate the matter that you want to save your email into. Click on the "Documents" tab. <p>From here, click "New" and then a drop down box will appear where you will click "File upload" as shown here: <a href="https://suffolklitlab.org/clio/images/SaveEmail.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.3.png"/></a> <p>A popup will appear, then you will need to find and click on the email PDF that you just saved into your computer and click "Open".
+			A: Done!
+				Q(1.1.1.1.1): This popup will appear asking for the file's name, date received, matter it is located in and category: <a href="https://suffolklitlab.org/clio/images/SaveEmail.4.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.4.png"/></a> <p>Fill out this information to the best of your ability and then click "Upload Documents"
+				A: OK, am I done now?
+					Q(1.1.1.1.1.1): Almost! Check that you can see the email has been saved and properly downloaded into Clio. <p> If your matter has a separate folder for Correspondence, you will need to move the document into the Correspondence folder by clicking "move" underneath the document name: <a href="https://suffolklitlab.org/clio/images/SaveEmail.5.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.5.png"/></a>
+					A: Got it.
+						Q(1.1.1.1.1.1.1): Another popup like the one below will appear with your matter along with other matters. Click the plus sign next to the matter you want this email in and find the "Correspondence" folder. Highlight this folder by clicking on it and then click on the green "Move" button at the bottom of this popup. It may take a few seconds for it move. <a href="https://suffolklitlab.org/clio/images/SaveEmail.6.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.6.png"/></a>
+						A: Alright, I've moved the document. Now am I done?
+							Q(1.1.1.1.1.1.1.1): Yes! You've saved your email to Clio.

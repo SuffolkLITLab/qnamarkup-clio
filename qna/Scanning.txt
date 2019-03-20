@@ -1,11 +1,9 @@
-Q(1):What do you need help with?
-A: How do I scan files?
-	Q(1.1):That's easy! Do you have the files you want to scan?
-	A:Yes, I do! 
-		Q(1.1.1):Just place the files face up on the scanner.
-		A:Now, what?
-			Q(1.1.1.1):Now you will select scan on the machine and select your name from the list. These are listed by last name.
-			A:Ok, found my name, now what?
-				Q(1.1.1.1.1):Simply click your name and the files will scan and be sent straight to your clinic email.
-				A:Thanks, that was easy!
+Q(1.1):Scanning files is easy! Do you have the files you want to scan?
+A:Yes, I do! 
+	Q(1.1.1):Just place the files face up on the scanner.
+	A:Now, what?
+		Q(1.1.1.1):Now you will select scan on the machine and select your name from the list. These are listed by last name.
+		A:Ok, found my name, now what?
+			Q(1.1.1.1.1):Simply click your name and the files will scan and be sent straight to your clinic email.
+			A:Thanks, that was easy!
 		

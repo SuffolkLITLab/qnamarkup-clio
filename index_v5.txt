@@ -5,6 +5,7 @@ Before:<script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
 
 Q(home):Welcome to the Virtual Clinic Helper! I am here to help you through your clinical experience!<br><br>You can select the stage of the case you are working on or simply explore everything I can help you with by selecting the 'Index' 
 A:Clinic basics
+	Q(1.1):GOTO:basics
 A:New case
 	Q(1.2):GOTO:new
 A:Working on a case
@@ -14,66 +15,73 @@ A:Index
 	Q(1.5):GOTO:main
 
 
+Q(basics):Here you will find a few basic how-to's for your clinic!
+A:Link to clinic handbook
+A:Setting up Voicemail
+A:Setting up VDI
+A:Logging in to Clio
+A:Scanning documents
+A:Mailing documents 
 
 Q(new): What would you like to do?
 A:Run conflict check
 	Q(conflict): To run a conflict check you must enter your client's name and anyone related to the case in the search bar and click "Enter" on your keyboard <p><img src="https://suffolklitlab.org/clio/images/SearchBar.png"></p> <br><br> Make sure you check on other possible spellings for the names.
 	A:I've checked spelling and entered my client's name!
-		Q(2.1.1):Did any of those searches pull up an existing client or contact?
+		Q(3.1.1):Did any of those searches pull up an existing client or contact?
 		A:Yes
-			Q(2.1.1.1):Go to your clinic supervisor and ask for further guidance before continuing.
+			Q(3.1.1.1):Go to your clinic supervisor and ask for further guidance before continuing.
 			A:While you wait you can go back to the start.
-				Q(2.1.1.1.1):GOTO:new
+				Q(3.1.1.1.1):GOTO:new
 		A:No	
-			Q(2.1.1.2):Great! Now you just print the page and proceed to the next step.
+			Q(3.1.1.2):Great! Now you just print the page and proceed to the next step.
 			A:I need to create a contact
-				Q(2.1.1.2.1):GOTO:contact
+				Q(3.1.1.2.1):GOTO:contact
 			A:I have already created a contact and am ready to open a matter
-				Q(2.1.1.2.2):GOTO:matter
+				Q(3.1.1.2.2):GOTO:matter
 A:Create a new contact
 	Q(contact):Go to top right corner, where there is a green button stating “Create New”
 	A:Found it! What's next?
-		Q(2.2.1):Click on the drop down button and select either “Person” or “Company” depending on what type of contact you want to create. This will take you to another page to type in the information you have for that contact. <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.1.png"></p>
+		Q(3.2.1):Click on the drop down button and select either “Person” or “Company” depending on what type of contact you want to create. This will take you to another page to type in the information you have for that contact. <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.1.png"></p>
 		A:Create a new Company
 			Q(company):For a new company, type in the company name, add their email, phone number, website, and address and click on “Save New Company” <br><br>If you need to add any comments or notes, add it to the “Custom Fields” section.
 			A:Got it! What do I do now?
-				Q(2.2.1.1.1):If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there. 
+				Q(3.2.1.1.1):If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there. 
 				A:That is all! You have added a new company.
-					Q(2.2.1.1.1.1):GOTO:new
+					Q(3.2.1.1.1.1):GOTO:new
 		A:Create a new Person
 			Q(person):For a new person, type in their first and last name, choose the company they belong to from the drop down box (if applicable), and enter that person’s title (if applicable)
 			A:Done! What's next?
-				Q(2.2.1.2.1):Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.2.png"></p>
+				Q(3.2.1.2.1):Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.2.png"></p>
 				A:Found it, now what?
-					Q(2.2.1.2.1.1):This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath “Custom Field Sets” and it will generate several new fields that the clinic recommends you use for that type of contact. <br><br> If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful; keep in mind that email, phone number, website, and address fields are just below this section.
+					Q(3.2.1.2.1.1):This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath “Custom Field Sets” and it will generate several new fields that the clinic recommends you use for that type of contact. <br><br> If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful; keep in mind that email, phone number, website, and address fields are just below this section.
 					A:Got it! 
-						Q(2.2.1.2.1.1.1):Once you’re done adding your information to each field, scroll to the bottom of the page and hit “Save New Person”
+						Q(3.2.1.2.1.1.1):Once you’re done adding your information to each field, scroll to the bottom of the page and hit “Save New Person”
 						A:Saved! Am I done?
-							Q(2.2.1.2.1.1.1.1):Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"></p>
+							Q(3.2.1.2.1.1.1.1):Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"></p>
 							A:Got it!
-								Q(2.2.1.2.1.1.1.1.1):This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.4.png"></p>
+								Q(3.2.1.2.1.1.1.1.1):This will take you to edit the matter. Then, scroll down to where it says “Related contacts,” type in the contact’s relationship to the matter and find the contact you created either by typing it in or finding them on the drop down bar underneath “Contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.4.png"></p>
 								A:All done!
-									Q(2.2.1.2.1.1.1.1.1.1):Once you’ve added all your contacts to this matter, click “Save matter” at the bottom of your screen (See screenshot below) and those contacts will be visible from your matter’s dashboard.
+									Q(3.2.1.2.1.1.1.1.1.1):Once you’ve added all your contacts to this matter, click “Save matter” at the bottom of your screen (See screenshot below) and those contacts will be visible from your matter’s dashboard.
 									A:That is it! You have created a contact!
-										Q(2.2.1.2.1.1.1.1.1.1.1):GOTO:new
+										Q(3.2.1.2.1.1.1.1.1.1.1):GOTO:new
 
 A:Open a new case/matter
 	Q(before):Before opening a matter make sure you ran a conflict check and created your contacts.
 	A:I need to run a conflict check. 
-		Q(2.3.1):GOTO:conflict
+		Q(3.3.1):GOTO:conflict
 	A:I need to create a contact 
-		Q(2.3.2):GOTO:contact
+		Q(3.3.2):GOTO:contact
 	A:I did both, I am ready to create a matter 
 		Q(matter):Go to top right corner, where there is a green button that says “Create New”	
 		A:Found it!	
-			Q(2.3.3.1):Click on the drop down button and the click "Matter"<p> <img src="https://suffolklitlab.org/clio/images/CreatenewMatter.1.PNG"></p>
+			Q(3.3.3.1):Click on the drop down button and the click "Matter"<p> <img src="https://suffolklitlab.org/clio/images/CreatenewMatter.1.PNG"></p>
  <br><br>This will take you to the following screen<p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.2.PNG"></p>
 			A:I'm there! Now what?
 				Q(client):For the client, you will have to create a new contact for them by clicking on the drop down box under “Client” and clicking “Create new contact” <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.3.png"></p>
 				A:Done!
-					Q(2.3.3.1.1.1):There will be a pop up that will ask for additional information about your client: <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.4.png"></p>
+					Q(3.3.3.1.1.1):There will be a pop up that will ask for additional information about your client: <p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.4.png"></p>
 					A:Ok, I see it.
-						Q(2.3.3.1.1.1.1):Once you’ve filled out all that information, click “save contact” and it will return to the page you were on before.
+						Q(3.3.3.1.1.1.1):Once you’ve filled out all that information, click “save contact” and it will return to the page you were on before.
 						A:I'm back on that page.
 							Q(desc):Under “Matter description,” only type your client’s full first and last name in all CAPS - this is how you will find your client on the search bar in the future.<br><br>Under “Permissions” and “Practice area,” click on the drop down button and select your clinic.<br><br>Under “Responsible attorney,” type the name of the student attorney assigned to this case.
 							A:All done! What's next?
@@ -83,7 +91,7 @@ A:Open a new case/matter
 									A:Ok
 										Q(related):Next, scroll down and expand the “Related contacts” section if you have other contacts relating to your client.
 										A:Once everything has been added, you have opened a matter!
-											Q(2.3.3.1.1.1.1.1.1.1.1.1):GOTO:new
+											Q(3.3.3.1.1.1.1.1.1.1.1.1):GOTO:new
 
 Q(current):What do you need help with?
 A:Create a task list
@@ -91,66 +99,61 @@ A:Create a task list
 	A:Ok, I clicked on "Lists", now what?
 		Q(reminder):Choose one of the pre-made task checklists under “List”. <br><br>Now click on the blue “Assign” under the Task Checklist.<p><img src="https://suffolklitlab.org/clio/images/Task3.png"></p> 
 		A:What's next?
-			Q(3.1.1.1):Select the matter you wish to assign this task to and click “Assign List”<br><br>Now go back your client's matter, click the "Task" tab on the top of the page and you should see your tasks listed!
+			Q(4.1.1.1):Select the matter you wish to assign this task to and click “Assign List”<br><br>Now go back your client's matter, click the "Task" tab on the top of the page and you should see your tasks listed!
 			A:Nice!
-				Q(3.1.1.1.1):GOTO:home
+				Q(4.1.1.1.1):GOTO:home
 
 A:Creating a document from a template
 	Q(doc):Go to the “Documents” tab on the left bar.
 	A:I'm there, now what?
-		Q(3.2.1):Click on the blue “New” button that is located on the right side of the page. <p><img src="https://suffolklitlab.org/clio/images/DocTemp3.png"></p> 
+		Q(4.2.1):Click on the blue “New” button that is located on the right side of the page. <p><img src="https://suffolklitlab.org/clio/images/DocTemp3.png"></p> 
 		A:Done! What's next?
-			Q(3.2.1.1):Select “Document from Template” from the drop-down menu.
+			Q(4.2.1.1):Select “Document from Template” from the drop-down menu.
 			A:Ok, now what?
-				Q(3.2.1.1.1):A window titled “Create A Document” will appear. In the first box, select the template you wish to use for your document.<p><img src="https://suffolklitlab.org/clio/images/DocTemp4.png"></p>  <br><br>  In the second box, select the matter that this document will be taking information from.
+				Q(4.2.1.1.1):A window titled “Create A Document” will appear. In the first box, select the template you wish to use for your document.<p><img src="https://suffolklitlab.org/clio/images/DocTemp4.png"></p>  <br><br>  In the second box, select the matter that this document will be taking information from.
 				A:Got it! What do I do now?
-					Q(3.2.1.1.1.1):Next, you can select how you want the document to be saved (PDF and/or Word document). <br><br> Once this information has been filled in, click on “Create Document”.
+					Q(4.2.1.1.1.1):Next, you can select how you want the document to be saved (PDF and/or Word document). <br><br> Once this information has been filled in, click on “Create Document”.
 					A:Great, am I done?
-						Q(3.2.1.1.1.1.1):The document will appear in the matter folder. If the template was categorized, however, then under the “category” column, you will see in which folder the document was placed in. <p><img src="https://suffolklitlab.org/clio/images/DocTemp5.png"></p>
+						Q(4.2.1.1.1.1.1):The document will appear in the matter folder. If the template was categorized, however, then under the “category” column, you will see in which folder the document was placed in. <p><img src="https://suffolklitlab.org/clio/images/DocTemp5.png"></p>
 						A:You have created a document from a template! 
-							Q(3.2.1.1.1.1.1.1):GOTO:current
+							Q(4.2.1.1.1.1.1.1):GOTO:current
 
 A:Add an event to the calendar
 	Q(cal):Click on the “Calendar” tab on the left. <br><br>On top of the calendar, click on the green “Add Event” button. <p><img src="https://suffolklitlab.org/clio/images/Calendar1.png"></p>
 	A:Done, what's next?
-		Q(3.3.1):A window titled “Create Calendar Entry” will open. Here you can enter information concerning the event that you wish to submit.
+		Q(4.3.1):A window titled “Create Calendar Entry” will open. Here you can enter information concerning the event that you wish to submit.
 		A:Got it!
-			Q(3.3.1.1):Under “Matter”, select the case you wish to apply this event to. You may also add a location and invite others by selecting “Invite contacts Via Clio Connect”. <p><img src="https://suffolklitlab.org/clio/images/Calendar2.png"></p>
+			Q(4.3.1.1):Under “Matter”, select the case you wish to apply this event to. You may also add a location and invite others by selecting “Invite contacts Via Clio Connect”. <p><img src="https://suffolklitlab.org/clio/images/Calendar2.png"></p>
 			A:Ok
-				Q(3.3.1.1.1):On top, you will see tabs “Repeats”, “Reminders” and “Time Entries”. <br><br>If you click on the  “Repeats” tab, you can control how often the event will repeat and notify you of its occurrence.<br><br>If you click on the “Reminders” tab, you can control when you are alerted of the event for the date it starts and whether to be alerted by an email or pop-up notification.
+				Q(4.3.1.1.1):On top, you will see tabs “Repeats”, “Reminders” and “Time Entries”. <br><br>If you click on the  “Repeats” tab, you can control how often the event will repeat and notify you of its occurrence.<br><br>If you click on the “Reminders” tab, you can control when you are alerted of the event for the date it starts and whether to be alerted by an email or pop-up notification.
 				A:Great! Am I done?
-					Q(3.3.1.1.1.1):Once you have filled in all the necessary information, you may click “Create Calendar Entry” to finish or “ Save and Add Another” to create an additional calendar entry.
+					Q(4.3.1.1.1.1):Once you have filled in all the necessary information, you may click “Create Calendar Entry” to finish or “ Save and Add Another” to create an additional calendar entry.
 					A:You have now added an event to the calendar!
-						Q(3.3.1.1.1.1.1):GOTO:current
+						Q(4.3.1.1.1.1.1):GOTO:current
 
 
 Q(main):Looking for help with something specific? Find it below! 
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/ClioIntro.txt');]Intro to Clio
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Clinic_handbook.txt');]Clinic Handbook
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/voicemail.txt');]Voicemail
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/VDI_setup.txt');]VDI Setup
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Google_Voice.txt');]Google Voice
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Clio_login.txt');]Clio log in
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Conflictqna.txt');]Conflict check
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Case_opening.txt');]Case opening form
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/EditMatter.txt');]Editing a matter in Clio
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Print_notes.txt');]Printing notes from Clio
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/AddContact.txt');]Adding a contact in Clio
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/EditContact.txt');]Editing a contact in Clio
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/AddNote.txt');]Adding a note in Clio
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/BookRoom.txt');]Booking a room for a meeting
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Email_encryption.txt');]Encrypting emails
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Secure_messages_qna.txt');]Sending a secure message
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Certify_mail.txt');]Sending certified mail
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Translator.txt');]Finding a translator
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/document_template.txt');]Document templates
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/edit_documents.txt');]Editing a document in Clio
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Scanning.txt');]Scanning documents
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/mail_letter.txt');]Mailing
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/SaveEmail.txt');]Saving emails
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Closing_transfer.txt');]Closing/transferring a case
-
-
-
-
-
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/ClioIntro.txt',this.innerHTML);]Intro to Clio
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Clinic_handbook.txt',this.innerHTML);]Clinic Handbook
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/voicemail.txt',this.innerHTML);]Voicemail
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/VDI_setup.txt',this.innerHTML);]VDI Setup
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Google_Voice.txt',this.innerHTML);]Google Voice
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Clio_login.txt',this.innerHTML);]Clio log in
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Conflictqna.txt',this.innerHTML);]Conflict check
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Case_opening.txt',this.innerHTML);]Case opening form
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/EditMatter.txt',this.innerHTML);]Editing a matter in Clio
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Print_notes.txt',this.innerHTML);]Printing notes from Clio
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/AddContact.txt',this.innerHTML);]Adding a contact in Clio
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/EditContact.txt',this.innerHTML);]Editing a contact in Clio
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/AddNote.txt',this.innerHTML);]Adding a note in Clio
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/BookRoom.txt',this.innerHTML);]Booking a room for a meeting
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Email_encryption.txt',this.innerHTML);]Encrypting emails
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Secure_messages_qna.txt',this.innerHTML);]Sending a secure message
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Certify_mail.txt',this.innerHTML);]Sending certified mail
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Translator.txt',this.innerHTML);]Finding a translator
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/document_template.txt',this.innerHTML);]Document templates
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/edit_documents.txt',this.innerHTML);]Editing a document in Clio
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Scanning.txt',this.innerHTML);]Scanning documents
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/mail_letter.txt',this.innerHTML);]Mailing
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/SaveEmail.txt',this.innerHTML);]Saving emails
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Closing_transfer.txt',this.innerHTML);]Closing/transferring a case

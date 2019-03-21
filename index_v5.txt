@@ -11,6 +11,7 @@ A:New case
 A:Working on a case
 	Q(1.3):GOTO:current
 A:Closing/transferring a case
+	Q(1.4):GOTO:close
 A:Index
 	Q(1.5):GOTO:main
 
@@ -130,6 +131,11 @@ A:Add an event to the calendar
 					Q(4.3.1.1.1.1):Once you have filled in all the necessary information, you may click “Create Calendar Entry” to finish or “ Save and Add Another” to create an additional calendar entry.
 					A:You have now added an event to the calendar!
 						Q(4.3.1.1.1.1.1):GOTO:current
+
+
+Q(close):Are you closing a case or transferring a case?
+A:Closing
+A:Transferring
 
 
 Q(main):Looking for help with something specific? Find it below! 

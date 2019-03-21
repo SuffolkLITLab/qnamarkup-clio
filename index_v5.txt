@@ -1,14 +1,17 @@
 Before:<script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
 
-Q(home):Welcome! What stage are you in your case?
-A:Main menu
-	Q(1.1):GOTO:main
+<center><h1>Virtual Clinic Helper</h1>
+<p>I am an interactive flow chart programmed by your LIT Fellows!</p></center>
+
+Q(home):Welcome to the Virtual Clinic Helper! I am here to help you through your clinical experience!<br><br>You can select the stage of the case you are working on or simply explore everything I can help you with by selecting the 'Index' 
 A:Clinic basics
-A:I am starting a new case
-	Q(1.3):GOTO:new
-A:I am currently working on a case
-	Q(1.4):GOTO:current
-A:I am closing/transferring a case
+A:New case
+	Q(1.2):GOTO:new
+A:Working on a case
+	Q(1.3):GOTO:current
+A:Closing/transferring a case
+A:Index
+	Q(1.5):GOTO:main
 
 
 

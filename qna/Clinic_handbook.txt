@@ -1,2 +1,5 @@
-Q(1.1):Here is a link to the Clinic Handbook! <a href="https://suffolklitlab.org/clio/Clinic_Handbook.pdf" target="_blank">https://suffolklitlab.org/clio/Clinic_Handbook.pdf</a>
+Q(1):Here is a link to the Clinic Handbook! <a href="https://suffolklitlab.org/clio/Clinic_Handbook.pdf" target="_blank">https://suffolklitlab.org/clio/Clinic_Handbook.pdf</a>
 A:Thanks! 
+	Q:GOTO:home
+
+Q(home): place holder

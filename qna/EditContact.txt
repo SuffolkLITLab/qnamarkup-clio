@@ -10,7 +10,7 @@ A: Yes
 				Q(1.1.1.1.1): A new page will load: <p><a href="https://suffolklitlab.org/clio/images/editcontactinfo.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/editcontactinfo.png"/></a> <p>Here, you can add and/or change the contact's name, address, email, and any other information you have available. Make sure to scroll down and expand each section to make sure you're not missing anything.
 				A: I'm done.
 					Q(1.1.1.1.1.1): Once you've finished adding or changing the information, click the blue "Save contact" button at the bottom of your screen.
-					A: I still need to add this contact to my case matter. 
+					A: I need to add this contact to my case matter. 
 						Q(1.1.1.1.1.1.1):GOTO:Relatedcontacts
 					A: I'm all done!
 						Q(1.1.1.1.1.1.2):GOTO:home

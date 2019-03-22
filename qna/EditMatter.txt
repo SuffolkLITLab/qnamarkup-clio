@@ -1,8 +1,10 @@
 <!-- I need to edit a matter. -->
-Q(1): OK. Sign into Clio, type the name of the matter in the search bar at the top of the page and hit enter. This will take you to the matter's dashboard, which will look something like this: <a href="https://suffolklitlab.org/clio/images/MatterDashboard.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.PNG"/></a>
-A: OK, I've made it to the dashboard.
-	Q(1.1): Great. Now, in order to edit the matter, click on the blue "Edit" button at the top right of the dashboard page. A new page will load and this is where you will be able to edit all the information in your matter: <a href="https://suffolklitlab.org/clio/images/EditMatter.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/EditMatter.PNG"/></a>
-	A: OK, Now what?	
-		Q(1.1.1): Here, you can edit the status of the case, the attorney responsible for the case, edit contacts, add a brief case synopsis, change the supervisor, add a docket number, etc. Make sure you scroll down and expand each section to add any information relevant to your case.
+Q(1): OK. Sign into Clio, type the name of the matter in the search bar at the top of the page and hit enter when the name of the matter pops up. This will take you to the matter's dashboard, which will look something like this: <p><a href="https://suffolklitlab.org/clio/images/MatterDashboard.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.PNG"/></a>
+A: OK.
+	Q(1.1): Great. Now, in order to edit the matter, click on the blue "Edit" button at the top right of the dashboard page. A new page will load and this is where you will be able to edit all the information in your matter: <p><a href="https://suffolklitlab.org/clio/images/EditMatter.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/EditMatter.PNG"/></a>
+	A: What's next?	
+		Q(1.1.1): Here, you can edit the status of the case, the attorney responsible, edit contacts, add a brief case synopsis, change the supervisor, add a docket number, and much more. Make sure you scroll down and expand each section to add any information relevant to your case.
 		A: I'm done editing the matter.
-			Q(1.1.1.1): Once you're done adding information to your matter, click on the blue "Save matter" button at the bottom left of your screen. This will take you back to the matter dashboard where you can double check that all the information was entered correctly.
+			Q(1.1.1.1): Once you're done adding information to your matter, click on the blue "Save matter" button at the bottom left of your screen. This will take you back to the matter dashboard where you can double check that all the information was entered correctly. GOTO:home
+
+Q(home): placeholder

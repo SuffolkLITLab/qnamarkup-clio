@@ -8,7 +8,7 @@ A: No
 	A: I've searched Clio and still need to create a new contact.
 		Q(1.2.1):GOTO:Addcontact
 	A: Just kidding! I found the contact and I don't need to create a new contact. 
-		Q(1.2.2): <p><iframe src="https://giphy.com/embed/9wHtWs7MJct1u" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
+		Q(1.2.2): <p><iframe src="https://giphy.com/embed/9wHtWs7MJct1u" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p> GOTO:home
 		
 Q(Addcontact): Great!  To create a new contact, go to the top right corner of the screen where there is a green button that says "Create New" and click on the drop down button. There, you can select to create a new "Contact" as shown in the screenshot below. <p><a href="https://suffolklitlab.org/clio/images/CreatenewContact.1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.1.png"/></a>
 A: OK, I've clicked "Contact"

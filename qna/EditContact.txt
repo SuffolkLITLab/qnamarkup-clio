@@ -3,10 +3,11 @@ Q(1): Has the contact already been created?
 A: Yes
 	Q(1.1): Great! Do you need to change/add something to the contact's information or do you need to change the related contacts to your case?
 	A: Change/Add information to the contact
+		Q: 
 	A: Change the related contacts
 		Q(1.1.2): OK! You can attach an already created contact to your matter by going to the matter dashboard (accessible by searching for the matter in the Clio search bar at the top of the page after signing in) and clicking "Add related contact": <p><a href="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"/></a>
 		A: Got it!
-			Q(1.1.2.1): This will take you to edit the matter. You may need to scroll down to where it says "Related contacts," as you can see below. Here, you can remove or add additional contacts to your matter. <p><a href="https://suffolklitlab.org/clio/images/CreatenewContact.4.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"/></a>
+			Q(1.1.2.1): This will take you to edit the matter. You may need to scroll down to where it says "Related contacts," as you can see below. Here, you can remove or add additional contacts to your matter. <p><a href="https://suffolklitlab.org/clio/images/Relatedcontacts.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/Relatedcontacts.png"/></a>
 			A: OK.
 				Q(1.1.2.1.1): You can delete a contact from the matter by clicking the blue "Remove" text to the right of the contact you want to delete. <p>To add a contact, click on the blue "Add related contact" text at the bottom of the "Related contacts" section and more boxes will appear for you to add new contacts. When adding the contact, type the contact's relationship to the matter and then find the contact either by typing their name in or finding them in the drop down bar underneath "Contact." 
 				A: I'm done.

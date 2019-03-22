@@ -2,7 +2,7 @@
 Q(1): Has the contact already been created?
 A: Yes
 	Q(1.1): Great! Do you need to change/add something to the contact's information or do you need to change the related contacts to your case?
-	A: Change/Add information to the contact
+	A: Change/Add contact information
 		Q(1.1.1): First, you need to find the contact. Type the contact's name into the search bar and click on their name, make sure that you are clicking the <b>contact</b> and not the <b>matter</b>, as shown in the example below. <p><a href="https://suffolklitlab.org/clio/images/searchcontact.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/searchcontact.png"/></a>
 		A: Found it!
 			Q(1.1.1.1): This will take you the contact's dashboard. At the top right of the page, click on the blue "Edit" button. <p><a href="https://suffolklitlab.org/clio/images/editcontactbutton.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/editcontactbutton.png"/></a>

@@ -1,4 +1,4 @@
-Q(1):This tutorial should take you 1 min.<br><br>To open a case you first need to find the Case Opening Form.<br><br> You can find this in your clinic's S drive or where your clinic office keeps blank forms. It looks like this: <p><a href="https://suffolklitlab.org/clio/images/caseopen.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/caseopen.png"/></a></p>
+Q(1):This tutorial should take you 1 minute.<br><br>To open a case you first need to find the Case Opening Form.<br><br> You can find this in your clinic's S drive or where your clinic office keeps blank forms. It looks like this: <p><a href="https://suffolklitlab.org/clio/images/caseopen.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/caseopen.png"/></a></p>
 A:Ok, I found it, now what?
 	Q(1.1):Now you fill it out with as much information as you can. Don't forget the conflict check!
 	A:How do I run a conflict check?

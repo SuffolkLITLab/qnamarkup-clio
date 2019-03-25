@@ -1,4 +1,4 @@
-Q(1):Scanning files is easy and will only take you a min! Do you have the files you want to scan?
+Q(1):Scanning files is easy and will only take you a minute! Do you have the files you want to scan?
 A:Yes, I do! 
 	Q(1.1):Just place the files face up on the scanner.
 	A:Now, what?

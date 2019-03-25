@@ -1,6 +1,6 @@
-Q(1.1):To use Google Voice you first you have to download the Google Voice app on your cellphone
+Q(1):Setting up Google Voice should take around 5 mins.<br><br> First, you have to download the Google Voice app on your cellphone
 A:Great, now what?
-	Q(1.1.1):The app will walk you through the set up step by step. Keep in mind that you will have to link this to an existing Gmail account.
+	Q(1.1):The app will walk you through the set up step by step. Keep in mind that you will have to link this to an existing Gmail account.
 	A:Will it use my personal phone number?
-		Q(1.1.1.1):No. As you walk through the process to set up Google Voice, you will be able to pick a new number which will be used instead of your personal number while you call or text through the app.
+		Q(1.1.1):No. As you walk through the process to set up Google Voice, you will be able to pick a new number which will be used instead of your personal number while you call or text through the app.
 		A:Great!

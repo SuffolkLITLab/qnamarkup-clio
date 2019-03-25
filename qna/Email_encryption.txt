@@ -1,17 +1,20 @@
-Q(1.1):Before showing you how to send an encrypted email I have to ask, are you sending this email internally to a suffolk.edu user or external user?
+Q(1):Encrypting an email is easy! It should take you about 2 min.<br><br>Before showing you how to send an encrypted email I have to ask, are you sending this email internally to a suffolk.edu user or external user?
 A:Internal
-	Q(1.1.1):Is your email ready to send?
+	Q(1.1):Is your email ready to send?
 	A:Yes, I just need to encrypt it.
-		Q(1.1.1.1):First, you have to type <b>[ec]</b> in the subject line before your subject.
+		Q(1.1.1):First, you have to type <b>[ec]</b> in the subject line before your subject.
 		A:Ok, now what?
-			Q(1.1.1.1.1):Now, you will have to add <b>.sec</b> at the end of the recipient's email. It should look like this name@suffolk.edu.sec <p><a href="https://suffolklitlab.org/clio/images/internal.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/internal.png"/></a></p>
+			Q(1.1.1.1):Now, you will have to add <b>.sec</b> at the end of the recipient's email. It should look like this name@suffolk.edu.sec <p><a href="https://suffolklitlab.org/clio/images/internal.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/internal.png"/></a></p>
 			A:I did that, now what?
-				Q(1.1.1.1.1.1):That is all! Once you send it your email will be encrypted!
+				Q(1.1.1.1.1):That is all! Once you send it your email will be encrypted!
 				A:Great! 
 A:External
-	Q(1.1.2):Is your email ready to send?
+	Q(1.2):Is your email ready to send?
 	A:Yes, I just need to encrypt it.
-		Q(1.1.2.1):All you have to do is type <b>[ec]</b> in the subject line before your subject. <p><a href="https://suffolklitlab.org/clio/images/external.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/external.png"/></a></p>
+		Q(1.2.1):All you have to do is type <b>[ec]</b> in the subject line before your subject. <p><a href="https://suffolklitlab.org/clio/images/external.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/external.png"/></a></p>
 		A:Is that all?
-			Q(1.1.2.1.1):That is all! Once you send it your email will be encrypted!
+			Q(1.2.1.1):That is all! Once you send it your email will be encrypted!
 			A:Great!
+				Q:GOTO:home
+
+Q(home): place holder

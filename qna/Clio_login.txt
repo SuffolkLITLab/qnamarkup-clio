@@ -1,4 +1,4 @@
-Q(1):Learning to sign into Clio should take around 3 mins. First, you should make sure you are logged into the VDI.
+Q(1):Learning to sign into Clio should take around 3 minutes. First, you should make sure you are logged into the VDI.
 A:How do I log into the VDI
 A:Ok, I'm logged in!
 	Q(1.2):Now that you are in the VDI you should be able to see an icon for it on your desktop. <p><a href="https://suffolklitlab.org/clio/images/icon.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/icon.png"/></a></p>

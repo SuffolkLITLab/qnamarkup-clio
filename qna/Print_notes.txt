@@ -1,4 +1,4 @@
-Q(1):Printing notes from Clio is easy and it should only take 1 min!<br><br>Once you are logged into Clio go to the matter you want to print notes from.
+Q(1):Printing notes from Clio is easy and it should only take 1 minute!<br><br>Once you are logged into Clio go to the matter you want to print notes from.
 A:I'm there, now what?
 	Q(1.1):Now go to the Notes tab.
 	A:Ok, what do I do now?

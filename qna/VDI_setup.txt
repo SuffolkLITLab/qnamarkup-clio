@@ -13,3 +13,7 @@ A:Click here once you've opened the link above!
 						Q(1.1.1.1.1.1.1):Now you log in with your Clinic email credentials. Remember this one starts with cl. <p><a href="https://suffolklitlab.org/clio/images/login.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/login.png"/></a></p>
 						A:Is that it?
 							Q(1.1.1.1.1.1.1.1):Yes! Now you just have to wait for the server to load and you are all set!
+							A:Great!
+								Q:GOTO:home
+
+Q(home): place holder

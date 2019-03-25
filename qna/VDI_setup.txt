@@ -1,4 +1,4 @@
-Q(1): Setting up the VDI should take no more than 10 mins. First you have to download the VMware Horizon client.<br><br> First you have to go to <a href="https://desktop.suffolk.edu" target="_blank">https://desktop.suffolk.edu</a>
+Q(1): Setting up the VDI should take no more than 10 minutes. First you have to download the VMware Horizon client.<br><br> First you have to go to <a href="https://desktop.suffolk.edu" target="_blank">https://desktop.suffolk.edu</a>
 A:Click here once you've opened the link above!
 	Q(1.1):Once you're on the website, select "Install VMWare Horizon Client" <p><a href="https://suffolklitlab.org/clio/images/vmware.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/vmware.png"/></a></p>
 	A:Ok, I did that.

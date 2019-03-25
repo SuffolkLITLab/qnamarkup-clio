@@ -1,4 +1,4 @@
-Q(1):Encrypting an email is easy! It should take you about 2 min.<br><br>Before showing you how to send an encrypted email I have to ask, are you sending this email internally to a suffolk.edu user or external user?
+Q(1):Encrypting an email is easy! It should take you about 2 minutes.<br><br>Before showing you how to send an encrypted email I have to ask, are you sending this email internally to a suffolk.edu user or external user?
 A:Internal
 	Q(1.1):Is your email ready to send?
 	A:Yes, I just need to encrypt it.

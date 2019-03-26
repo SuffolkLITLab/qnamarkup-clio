@@ -1,5 +1,5 @@
 <!-- I need to save an email to Clio. -->
-Q(1): OK. First, you need to sign in to your clinic email. Then find the email you want to save and double click on the email's subject line while it is in your inbox so that a separate popup box with your email will appear, like this: <p><a href="https://suffolklitlab.org/clio/images/SaveEmail.1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.1.png"/></a>
+Q(1): OK, saving an email will take less than 5 minutes. First, you need to sign in to your clinic email. Then find the email you want to save and double click on the email's subject line while it is in your inbox so that a separate popup box with your email will appear, like this: <p><a href="https://suffolklitlab.org/clio/images/SaveEmail.1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.1.png"/></a>
 A: I've opened the email.
 	Q(1.1): Next, click on the printer icon that the image above is pointing to. Another popup will appear asking for the printing destination and other settings. Next to the "Destination" heading, click "Change..." as shown below and another popup will appear. <p><a href="https://suffolklitlab.org/clio/images/SaveEmail.2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.2.png"/></a> 
 	A: OK.

@@ -1,6 +1,6 @@
 <!-- What do you need help with? 
 I need to add a contact to Clio -->
-Q(1): OK. Have you checked Clio to see if the contact information has already been added?
+Q(1): OK, adding a contact should take about 5-10 minutes. Have you checked Clio to see if the contact information has already been added?
 A: Yes
 	Q(1.1):GOTO:Addcontact
 A: No

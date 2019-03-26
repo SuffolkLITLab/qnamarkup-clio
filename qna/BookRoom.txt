@@ -1,6 +1,6 @@
 <!-- I need help booking a room in the clinic. -->
-Q(1): OK. The clinic has a total of 4 rooms available to be reserved for client meetings. There are two small interview rooms just off the student work area in suite 150, as well as a larger meeting room in suite 160 and one small client meeting room in suite 165. 
+Q(1): OK, booking a room should take less than a minute! The clinic has a total of 4 rooms available to be reserved for client meetings. There are two small interview rooms just off the student work area in suite 150, as well as a larger meeting room in suite 160 and one small client meeting room in suite 165. 
 A: OK. Where do I sign up?
-	Q(1.1): To use an interview room, sign up by using the notebook just outside of the room that you plan to use - make sure to write your name and how long you plan to use the room for. <br>If you want to reserve the clinic library for any reason, speak to one of the front desk administrators. GOTO:home
+	Q(1.1): To use an interview room, sign up by using the notebook just outside of the room that you plan to use - make sure to write your name and how long you plan to use the room for. <p>If you want to reserve the clinic library for any reason, speak to one of the front desk administrators. GOTO:home
 	
 Q(home): placeholder

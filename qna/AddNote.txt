@@ -1,5 +1,5 @@
 <!-- I would like to add a note to my case. -->
-Q(1): OK, first type your case name into the search bar at the top of Clio and hit enter. This will take you to your case matter dashboard, which will look like this: <p><a href="https://suffolklitlab.org/clio/images/MatterDashboard.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.PNG"/></a> 
+Q(1): OK, adding a note should take a few minutes, depending on the content of your note. First, type your case name into the search bar at the top of Clio and hit enter. This will take you to your case matter dashboard, which will look like this: <p><a href="https://suffolklitlab.org/clio/images/MatterDashboard.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.PNG"/></a> 
 A: Done!
 	Q(1.1): Great. From here, click on the "Notes" tab near the top of the page. On this page, you can edit, add, or view notes from previous students and/or faculty that have worked on this case. <p>Now, click on the blue "New note" button near the top right of the screen, below the tabs.</p> <p><a href="https://suffolklitlab.org/clio/images/newnote.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/newnote.png"/></a> 
 	A: OK.

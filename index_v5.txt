@@ -17,12 +17,12 @@ A:Index
 
 
 Q(basics):Here you will find a few basic how-to's for your clinic!
-A:Link to clinic handbook
-A:Setting up Voicemail
-A:Setting up VDI
-A:Logging in to Clio
-A:Scanning documents
-A:Mailing documents 
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Clinic_handbook.txt',this.innerHTML);]Link to clinic handbook
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/voicemail.txt',this.innerHTML);]Setting up Voicemail
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/VDI_setup.txt',this.innerHTML);]Setting up VDI
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Clio_login.txt',this.innerHTML);]Logging in to Clio
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Scanning.txt',this.innerHTML);]Scanning documents
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/mail_letter.txt',this.innerHTML);]Mailing documents 
 
 Q(new): What would you like to do?
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Conflictqna.txt',this.innerHTML);]Run conflict check

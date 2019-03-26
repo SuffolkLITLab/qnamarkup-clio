@@ -1,5 +1,5 @@
 <!-- I would like to edit a contact in a matter on Clio. -->
-Q(1): Has the contact already been created?
+Q(1): Editing a contact should take less than 5 minutes. Has the contact already been created?
 A: Yes
 	Q(1.1): Great! Do you need to change/add something to the contact's information or do you need to change the related contacts to your case?
 	A: Change/Add contact information

@@ -1,0 +1,11 @@
+Q(start):This should take you about 2 minutes. One thing to understand about secure messages is how they are different from e-mails. Secure messages require a password to view and are protected by encryption. Now, let's begin. Go to the "Communications" page. You can navigate here through a client's matter or on the taskbar on the left side of the screen.
+A: Got it. What next?
+	Q(first):Click on the blue "Add secure message" button on the upper right side of the page. A new window will pop up.
+	A: Done. tell me what to do now.
+		Q(second):Type in the name of the matter related to the message in the first box or use the drop-down to select a matter. Under "Contact" type in the recipient of the message. You will then need to type a subject in the subject box and your secure message in the body.
+		A: Great! Can I attach a document?
+			Q(third): Yes. At the bottom of the window, you will see an option to attach a document.<p><a href="https://suffolklitlab.org/clio/images/attach_doc.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/attach_doc.png"/></a></p> Once all the fields are filled in, click the blue "Send message" button to have your secure message sent. 
+			A: Understood. Great, thanks!
+				Q(home):placeholder 
+			 
+			

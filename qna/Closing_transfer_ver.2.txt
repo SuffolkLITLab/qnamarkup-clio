@@ -1,0 +1,49 @@
+Q(1): Hi! Let's get started.
+A: Tell me how to transfer a case.
+	Q(1.1): First, you will want to make sure that all necessary court and administrative orders have been scanned into Clio as well as the physical paper file.
+	A: That has been done. Go on.
+		Q(1.1.1): You may then need to write up a "Notice of motion to withdraw" or "Notice of substitution of counsel" that should be filed in court, served to all appropriate parties, and scanned into Clio as well as retained in the paper file. You may want to ask your supervisor if this applies to you.
+		A: Right. What's next?
+			Q(1.1.1.1): Send back any original documents you possess back to your client.
+			A: Got it. Tell me more.
+				Q(1.1.1.1.1): Take any extra copies or extraneous materials that you have with client information and shred it.You may find these materials and documents in your client's folder.
+				A: All right. What else?
+					Q(1.1.1.1.1.1): preserve a copy of the closing memo in clio and in the cliet's paper file.
+					A: Great. Next step.
+						Q(1.1.1.1.1.1.1): If applicable to your case or clinic, keep new and related laws, useful memos, research, and/or sample pleadings, and other documents redacted and saved on the shared drive or in Clio template matter.
+						A: Okay, continue.
+							Q(1.1.1.1.1.1.1.1): Check that necessary contact information for all your relevant clients, opposing parties, attorneys, witnesses, experts, etc. is in Clio. 
+							A: I am on top of it. I want to know more.
+								Q(1.1.1.1.1.1.1.1.1): Make sure you have submitted all case notes and time entries into Clio.
+								A: Okay. Is there more?
+									Q(1.1.1.1.1.1.1.1.1.1): Yes. You will then want to write up a case closing letter and send it to your client to inform them of your departure.
+									A: Makes sense. What else am I expected to do?
+										Q(1.1.1.1.1.1.1.1.1.1.1): Finally, you will be expected to make certain that there is no confidential case-related information or documents in your non-clinic email, on personal devices, on laptops, or other personal computers that you possess.
+										A: Thank you. Please take me back to the start.
+											Q(1.1.1.1.1.1.1.1.1.1.1.1): GOTO:home
+							A: How do I add contacts into Clio?
+								Q(1.1.1.1.1.1.1.1.2):GOTO:home				 
+A: Tell me how to close a case.
+	Q(1.2): Okay! First, you will want to make sure that all necessary court and administrative orders have been scanned into Clio as well as the physical paper file.
+	A: That has been done. Go on.
+		Q(1.2.1): You may then need to write up a "Notice of motion to withdraw" or "Notice of substitution of counsel" that should be filed in court, served to all appropriate parties, and scanned into Clio as well as retained in the paper file. You may want to ask your supervisor if this applies to you.
+		A: Right. What's next?
+			Q(1.2.1.1): Make sure that origninal documents are properly preserved for the attorney you are transferring the case to.
+			A: Got it. Tell me more.
+				Q(1.2.1.1.1): Take any extra copies or extraneous materials that you have with client information and shred it.You may find these materials and documents in your client's folder.
+				A: All right. What else?
+					Q(1.2.1.1.1.1): Write a transfer memo and submit a copy of the transfer memo to clio as well as to the cliet's paper file. The transfer memo should fully explain in depth what you have done in the case and what the next attorney should expect to work on.
+					A: Great. Next step.
+						Q(1.2.1.1.1.1.1): If applicable to your case or clinic, keep new and related laws, useful memos, research, and/or sample pleadings, and other documents redacted and saved on the shared drive or in Clio template matter.
+						A: Okay, continue.
+							Q(1.2.1.1.1.1.1.1): Check that necessary contact information for all your relevant clients, opposing parties, attorneys, witnesses, experts, etc. is in Clio.  
+							A: I am on top of it. I want to know more.
+								Q(1.2.1.1.1.1.1.1.1): Make sure you have submitted all case notes and time entries into Clio.
+								A: Okay. Is there more?
+									Q(1.2.1.1.1.1.1.1.1.1): Yes. You will then want to write up a case transfer letter and send it to your client to inform them of your departure and that a new attorney will take over their case.
+									A: Makes sense. What else am I expected to do?
+										Q(1.2.1.1.1.1.1.1.1.1.1): Finally, you will be expected to make certain that there is no confidential case-related information or documents in your non-clinic email, on personal devices, on laptops, or other personal computers that you possess.
+										A: Thank you. Please take me back to the start.
+											Q(home): placeholder
+							A: How do I add contacts into Clio?
+								Q(1.2.1.1.1.1.1.1.2):GOTO:home

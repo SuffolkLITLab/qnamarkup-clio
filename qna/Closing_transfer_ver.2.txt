@@ -1,4 +1,4 @@
-Q(1): Hi! Let's get started.
+Q(1): Hi! Let's get started. Please set aside around 10 minutes to walkthrough these steps.
 A: Tell me how to transfer a case.
 	Q(1.1): First, you will want to make sure that all necessary court and administrative orders have been scanned into Clio as well as the physical paper file.
 	A: That has been done. Go on.

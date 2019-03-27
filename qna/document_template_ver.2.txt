@@ -1,0 +1,13 @@
+Q(1): Hi! This should take about 5 minutes. Are you trying to add a document or make a document template?
+A: I am trying to add a document.
+	Q(1.1): Okay. To start, type in the name of your client in the search bar to go to their matter.
+	A: Done. Then what do I do?
+		Q(1.1.1): Once you have done that, click on the "Documents" tab. You will then see a blue button that is labeled "New". Click "New" and a drop down will appear. Choose upload a file to add a document or select document from template to upload a document to be automated from a template.<p><a href="https://suffolklitlab.org/clio/images/add_doc1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/add_doc1.png"/></a></p>
+		A: Great! Thank you.
+			Q(home):Placeholder
+A: I am trying to make a document from a template.
+	Q(create): Okay, great! To create a document from a template, select "Documents" on the left-side taskbar. On the top right, click on the big blue "New" button. Select " Document from template" from the drop-down. <p><a href="https://suffolklitlab.org/clio/images/doctemp1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/doctemp1.png"/></a></p>
+	A: Done! tell me more.
+		Q(1.2.1): A new window labeled "Create a Document" will pop up. Select the template you wish to use and fill in the matter the document will belong to. You will be able to choose whether you want your document in word or PDF format in the checkboxes.<p><a href="https://suffolklitlab.org/clio/images/add_doc2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/add_doc2.png"/></a></p> Once you have filled out the required fields, click "Create".
+		A: Great, thank you!
+			Q(1.2.1.1):GOTO:home

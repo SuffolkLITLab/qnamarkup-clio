@@ -48,7 +48,7 @@ body{
 <script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
 
 <center><h1>Virtual Clinic Assistant</h1></center>
-<p>I am an interactive flow chart programmed by your LIT Fellows!</p><p> For more information, please refer to the Clinic Handbook by clicking here: <a href="https://suffolklitlab.org/clio/Clinic_Handbook.pdf" target="_blank">https://suffolklitlab.org/clio/Clinic_Handbook.pdf</a></p>
+<p>I am an interactive flow chart programmed by your LIT Fellows!</p><p> For more information, please refer to the Clinic Handbook by clicking <a href="https://suffolklitlab.org/clio/Clinic_Handbook.pdf" target="_blank">here</a></p>
 
 Q(home):Welcome to the Virtual Clinic Assistant! I am here to help you through your clinical experience!<br><br>You can select the stage of the case you are working on or simply explore everything I can help you with by selecting the 'Index' 
 A:Clinic basics

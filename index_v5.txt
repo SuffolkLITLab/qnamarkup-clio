@@ -1,9 +1,57 @@
-Before:<script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+Title: Virtual Clinic Assistant
+Author: <a href="https://twitter.com/SuffolkLITLab" target="_blank">Suffolk Legal Innovation & Technology Lab</a>
+Description: I am an interactive flow chart programmed by your LIT Fellows!
 
-<center><h1>Virtual Clinic Helper</h1>
+Before:
+<style>
+body{
+    background:white;
+    background-image: url("https://suffolklitlab.github.io/images/babbage.jpg");
+    background-color: #fff;
+    background-repeat: repeat-x;
+    background-position: center -120px ;
+}
+#conversation {
+    max-width:900px;
+}
+#icon {
+    z-index:2;
+    margin: 20px auto 0px auto;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    border: 4px solid #fff;
+    background-color: #fff;
+    background-size: 100px;
+    background-position: center;
+     background-repeat: no-repeat;
+    background-image: url('https://suffolklitlab.org/images/seal.jpg');
+}
+.title {
+    text-align:center;
+    border-bottom: solid 1px #888;
+    margin-top:10px;
+    padding-bottom:15px;
+}
+.profile_vid {
+    float:none;
+    position:relative;
+    margin: auto;
+}
+.embed_vid {
+    float:none;
+    width:100%;
+}
+</style>
+<div id="icon"></div>
+<h2 align=center>This Is Not A Chatbot</h2>
+
+<script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+
+<center><h1>Virtual Clinic Assistant</h1>
 <p>I am an interactive flow chart programmed by your LIT Fellows!</p></center><p> For more information, please refer to the Clinic Handbook by clicking here: <a href="https://suffolklitlab.org/clio/Clinic_Handbook.pdf" target="_blank">https://suffolklitlab.org/clio/Clinic_Handbook.pdf</a></p>
 
-Q(home):Welcome to the Virtual Clinic Helper! I am here to help you through your clinical experience!<br><br>You can select the stage of the case you are working on or simply explore everything I can help you with by selecting the 'Index' 
+Q(home):Welcome to the Virtual Clinic Assistant! I am here to help you through your clinical experience!<br><br>You can select the stage of the case you are working on or simply explore everything I can help you with by selecting the 'Index' 
 A:Clinic basics
 	Q(1.1):GOTO:basics
 A:New case
@@ -36,6 +84,7 @@ A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/AddContact.txt',this.innerHTML);]Adding a contact in Clio
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/EditContact.txt',this.innerHTML);]Editing a contact in Clio
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/AddNote.txt',this.innerHTML);]Adding a note in Clio
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/document_template_ver.2.txt',this.innerHTML);]Creating a document from a template
 
 
 Q(close):Here you will find what to do when closing or transferring a case.

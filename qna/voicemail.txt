@@ -10,4 +10,6 @@ A: I would like to know how to access my voicemail mailbox.
 	A: Okay. What's next?
 		Q(1.2.1): If the system asks for a mailbox number, press the pound key and enter the mailbox number. If the system does not ask for this, press star, pound and enter the security code instead of the mailbox number. If this is your first time using it, you may need to use the default code 147258.
 		A: Understood. Thank you.
-			Q(1.2.1.1): Have a great day!
+			Q(1.2.1.1): Have a great day! GOTO:home
+			
+Q(home): placeholder

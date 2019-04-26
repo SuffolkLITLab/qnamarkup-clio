@@ -7,14 +7,21 @@ A:Internal
 			Q(1.1.1.1):Now, you will have to add <b>.sec</b> at the end of the recipient's email. It should look like this name@suffolk.edu.sec <p><a href="https://suffolklitlab.org/clio/images/internal.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/internal.png"/></a></p>
 			A:I did that, now what?
 				Q(1.1.1.1.1):That is all! Once you send it your email will be encrypted!
-				A:Great! 
+				A:Great! What will the receiver see?
+					Q(1.1.1.1.1.1):GOTO:encrypt
 A:External
 	Q(1.2):Is your email ready to send?
 	A:Yes, I just need to encrypt it.
 		Q(1.2.1):All you have to do is type <b>[ec]</b> in the subject line before your subject. <p><a href="https://suffolklitlab.org/clio/images/external.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/external.png"/></a></p>
 		A:Is that all?
 			Q(1.2.1.1):That is all! Once you send it your email will be encrypted!
-			A:Great!
-				Q:GOTO:home
+			A:Great! What will the receiver see?
+				Q(1.2.1.1.1):GOTO:encrypt				
+
+Q(encrypt):The receiver will see something like this <p><a href="https://suffolklitlab.org/clio/images/instruc.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/instruc.png" width="200px" height="200px"/></a></p>
+A:What will they need to do?
+	Q(2.1):They will have to open the attachment. If they need to register they will have to do so before opening the email. If they have registered before they will simply enter their password to see the email.
+	A:Great!
+		Q(2.1.1):GOTO:home
 
 Q(home): place holder

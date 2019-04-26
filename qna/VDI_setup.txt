@@ -8,11 +8,11 @@ A:Click here once you've opened the link above!
 			A:Ok, now what?
 				Q(1.1.1.1.1):A new smaller screen will ask you to enter the name of the Connection Server. There you will type 'desktop.suffolk.edu' and click connect. <p><a href="https://suffolklitlab.org/clio/images/servername.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/servername.png"/></a></p>
 				A:I did that, now what?
-					Q(1.1.1.1.1.1):Now double click on the cloud icon on the screen. If you are signing in for the first time you might have to re-type 'desktop.suffolk.edu' as the connection server name. 
+					Q(1.1.1.1.1.1):Now double click on the cloud icon on the screen.<p><a href="https://suffolklitlab.org/clio/images/cloud.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cloud.png"/></a></p> If you are signing in for the first time you might have to re-type 'desktop.suffolk.edu' as the connection server name. 
 					A:Ok, what's next?
-						Q(1.1.1.1.1.1.1):Now you log in with your Clinic email credentials. Remember this one starts with cl. <p><a href="https://suffolklitlab.org/clio/images/login.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/login.png"/></a></p>
+						Q(1.1.1.1.1.1.1):Now you log in with your Clinic email credentials. You should have received these via email at the beginning of the year. Remember this one starts with cl. If you don't have them contact your supervisor. <p><a href="https://suffolklitlab.org/clio/images/login.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/login.png"/></a></p>
 						A:Is that it?
-							Q(1.1.1.1.1.1.1.1):Yes! Now you just have to wait for the server to load and you are all set!
+							Q(1.1.1.1.1.1.1.1):Yes! Now you just have to wait for the server to load and you are all set! Next time you sign in you will simply need to enter your password! 
 							A:Great!
 								Q(1.1.1.1.1.1.1.1.1):GOTO:home
 

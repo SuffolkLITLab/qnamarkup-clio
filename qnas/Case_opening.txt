@@ -3,7 +3,7 @@ A:Ok, I found it, now what?
 	Q(1.1):Now you fill it out with as much information as you can. Don't forget the conflict check!
 	A:How do I run a conflict check?
 		Q(1.1.1):That's easy! 
-		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qna/Conflict%20Qna_ver.2.txt',this.innerHTML);]Click here I'll explain! 
+		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Conflict%20Qna_ver.2.txt',this.innerHTML);]Click here I'll explain! 
 	A:I ran a conflict check and filled out the form, now what?
 		Q(1.1.2):Now you should take it to your supervisor to have it signed. 
 		A:My supervisor signed it, now what?

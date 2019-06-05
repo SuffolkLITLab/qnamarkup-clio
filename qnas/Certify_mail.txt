@@ -1,0 +1,11 @@
+Q(1): Hi! How may I help you today?
+A: I would like to know how to certify a letter.
+	Q(1.1): Okay. First you will need the small green certified mail receipt form. This form will have a bar-code on the left side.
+	A: I have it. Now what?
+		Q: Fill in the required information on the form including the recipient and the address the letter will delivered to.
+		A: After that, then what?
+			Q: Remove the back of the receipt and stick the side with the bar-code over the top of the envelope. The back of the bar-code will have an adhesive for easy placement. The bar-code should also be to the right of the return address but should have enough pace for a stamp.
+			A: Is there anything else?
+				Q: If required, check off receipt for merchandise if you will need proof of a signature. You may also check off restricted delivery if yo require that someone must sign on receipt of the letter.
+				A: Great. Am I done.
+					Q: Keep record of the mailing by holding the receipt. After that, you are all clear.

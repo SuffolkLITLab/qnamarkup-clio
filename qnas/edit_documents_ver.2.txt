@@ -1,0 +1,7 @@
+Q(1): This should take you a little over a minute. First, type the client's name in the search bar. Then, click on the matter that has the document you wish to edit. Alternatively, you can click on the documents tab on the left bar and choose your document there.
+A: Okay,I did that. Now what?
+	Q(1.1): If you are searching for your document through the matter, click on the white "Documents" tab at the top. Then at the bottom, click the document you wish to edit in order to download the document.
+	A: I have downloaded the document. What do I do now?
+		Q(1.1.1): Once it is downloaded, you may edit and save any changes you make to the document. Please note that if the document is a pdf, you may need to have adobe software to make changes.
+		A: Nice! I get it now.
+			Q(home):Placeholder

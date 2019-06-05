@@ -1,8 +1,0 @@
-Q: Hi! How may I help you today?
-A: I would like to know how to print notes.
-	Q: Okay. First, click on a specific client Matter or Contact on the left task bar.
-	A: I've done that. Now what?
-		Q: Click on the Notes header.
-		A: Got it. Then what do I do?
-			Q: Find which note you wish to print. Once you locate it, click on the down arrow under the Actions column next to the edit button. click print. A new window will pop up where you can select your printing options.
-			A: Thank you!

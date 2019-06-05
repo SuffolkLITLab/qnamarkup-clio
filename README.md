@@ -1,11 +1,10 @@
 # QnA Modules for LIT Fellow's Clinical Just-in-time Training
 
-## Stand-alone References
+## Stand-alone QnA(s)
 - [Home Screen](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt) ([edit](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/index.txt))
-- [Clinic Handbook](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Clinic_handbook.txt) ([edit](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Clinic_handbook.txt))
 
 ## Stubs
-A QnA stub is a modular block of QnA logic that is intended for interaction as part of a larger whole. E.g., the main/home page references stubs as needed.
+A QnA stub is a modular block of QnA logic that is intended for use as part of a larger whole. E.g., the main/home page references stubs, such as [this goodbye](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt) as needed.
 
 ### Communications
 - [Voicemail](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt) ([edit](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt))

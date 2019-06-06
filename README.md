@@ -27,8 +27,9 @@ A QnA stub is a modular block of QnA logic that is intended for use as part of a
 - [Contacts overview](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/contacts_overview.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/contacts_overview.txt))
 - [Matters overview](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/matters_overview.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/matters_overview.txt))
 - [Clio log in](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Clio_login.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Clio_login.txt))
+- [Search](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/search.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/search.txt))
 - [Conflict checks](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Conflictqna.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Conflictqna.txt))
-- [Case opening form](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Case_opening.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Case_opening.txt))
+- [Opening a case](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Case_opening.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Case_opening.txt))
 - [Editing a matter](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/EditMatter.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/EditMatter.txt))
 - [Adding a contact](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/AddContact.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/AddContact.txt))
 - [Editing a contact](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/EditContact.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/EditContact.txt))
@@ -37,7 +38,7 @@ A QnA stub is a modular block of QnA logic that is intended for use as part of a
 - [Upload documents](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/document_template.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/document_template.txt))
 - [Creating a document from a template](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/document_template_ver.2.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/document_template_ver.2.txt))
 - [Editing a document](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/edit_documents.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/edit_documents.txt))
-- [Saving emails](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt))
+- [Log email or phone call](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt))
 - [Closing/transferring a case](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt))
 
 ### Whimsy

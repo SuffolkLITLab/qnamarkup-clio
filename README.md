@@ -1,7 +1,8 @@
 # QnA Modules for LIT Fellow's Clinical Just-in-time Training
 
-## Stand-alone QnA(s)
-- [Home Screen](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt) ([edit](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/index.txt))
+## Stand-alone QnA
+This is the main QnA, the homepage if you will. Everyone should start here. The QnAs below are part of this QnA by reference. 
+- [Homepage](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt) ([edit](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/index.txt))
 
 ## Stubs
 A QnA stub is a modular block of QnA logic that is intended for use as part of a larger whole. E.g., the main/home page references stubs, such as [this goodbye](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt) as needed.
@@ -36,5 +37,5 @@ A QnA stub is a modular block of QnA logic that is intended for use as part of a
 - [Saving emails](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt) ([edit](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt))
 - [Closing/transferring a case](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt) ([edit](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt))
 
-### whimsy
+### Whimsy
 - [Good bye w/ cats](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt) ([edit](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/cats.txt))

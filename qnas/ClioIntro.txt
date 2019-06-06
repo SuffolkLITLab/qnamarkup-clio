@@ -48,4 +48,5 @@ A: No thanks
 	Q(1.2):GOTO:end
 
 Q(end): placeholder
+Q(bye): placeholder
 

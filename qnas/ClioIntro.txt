@@ -43,7 +43,7 @@ body{
 
 Q(1): Clio is our case management system, and it's your responsibility to keep it up-to-date with your case's data. Don't worry, I can show you detailed How To Guides later, but for now, here's an overview video (~11 min). Just ignore the stuff about billing.<br><br><div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/GtiS2TcVi3E?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div><br><br>
 How about some cat videos?
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','end')] Sure
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','bye')] Sure
 A: No thanks
 	Q(1.2):GOTO:end
 

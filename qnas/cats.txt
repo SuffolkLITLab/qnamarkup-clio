@@ -104,4 +104,4 @@ A: No
 	Q(10.2):GOTO:end
 
 
-Q(end): <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>
+Q(end): Bye then. <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>

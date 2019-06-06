@@ -1,12 +1,55 @@
-<!-- I would like to add a note to my case. -->
-Q(1): OK, adding a note will take a few minutes depending on the content of your note. First, type your case name into the search bar at the top of Clio and hit enter. This will take you to your case matter dashboard, which will look like this: <p><a href="https://suffolklitlab.org/clio/images/MatterDashboard.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.PNG"/></a> 
+Title: QnA Stub
+Author: <a href="Virtual Clinic Assistant " target="_blank">Suffolk Legal Innovation & Technology Fellows</a>
+Description: An interactive FAQ. This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.
+After: <script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+Before:
+<style>
+body{
+    background:white;
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
+    background-color: #fff;
+    background-repeat: repeat-x;
+    background-position: center -40px ;
+}
+#conversation {
+    max-width:900px;
+}
+#icon {
+	z-index:2;
+	margin: 20px auto 0px auto;
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	border: 4px solid #fff;
+	background-color: #fff;
+	background-size: 104px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+	background-image: url('https://suffolklitlab.org/images/seal.jpg');
+}
+.profile_vid {
+    float:none;
+    position:relative;
+    margin: auto;
+}
+.embed_vid {
+    float:none;
+    width:100%;
+}
+</style>
+<div id="icon"></div>
+<h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
+<p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
+
+
+Q(1): OK, adding a note will take a few minutes depending on the content of your note. First, type your case name into the search bar at the top of Clio and hit enter. This will take you to your case matter dashboard, which will look like this: <p><a href="https://suffolklitlab.org/clio/images/MatterDashboard.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.PNG"/></a>
 A: Done!
-	Q(1.1): Great. From here, click on the "Notes" tab near the top of the page. On this page, you can edit, add, or view notes from previous students and/or faculty that have worked on this case. <p>Now, click on the blue "New note" button near the top right of the screen, below the tabs.</p> <p><a href="https://suffolklitlab.org/clio/images/newnote.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/newnote.png"/></a> 
+	Q(1.1): Great. From here, click on the "Notes" tab near the top of the page. On this page, you can edit, add, or view notes from previous students and/or faculty that have worked on this case. <p>Now, click on the blue "New note" button near the top right of the screen, below the tabs.</p> <p><a href="https://suffolklitlab.org/clio/images/newnote.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/newnote.png"/></a>
 	A: OK.
 		Q(1.1.1): A new screen will popup up where you can add the subject, note and date. <p><a href="https://suffolklitlab.org/clio/images/NewNote.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/NewNote.PNG"/></a>
 		A: Got it.
-			Q(1.1.1.1): The Date will always default to today's date, but can be easily changed by clicking on it and choosing a different date. Make sure to add a subject that is a brief synopsis of what your note will be about. For example: client meeting, client phone call, etc. <p>Once you have added a subject line, type a description of what occurred and what you would like your note to say. 
+			Q(1.1.1.1): The Date will always default to today's date, but can be easily changed by clicking on it and choosing a different date. Make sure to add a subject that is a brief synopsis of what your note will be about. For example: client meeting, client phone call, etc. <p>Once you have added a subject line, type a description of what occurred and what you would like your note to say.
 			A: I've completed my note.
 				Q(1.1.1.1.1): Now that you are done writing your note, click on the blue "Save note" button at the bottom of the popup. The popup will close and then your new note will show up on the notes tab as a new entry. GOTO:home
 
-Q(home):placeholder
+Q(end): placeholder

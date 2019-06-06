@@ -1,12 +1,55 @@
+Title: QnA Stub
+Author: <a href="Virtual Clinic Assistant " target="_blank">Suffolk Legal Innovation & Technology Fellows</a>
+Description: An interactive FAQ. This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.
+After: <script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+Before:
+<style>
+body{
+    background:white;
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
+    background-color: #fff;
+    background-repeat: repeat-x;
+    background-position: center -40px ;
+}
+#conversation {
+    max-width:900px;
+}
+#icon {
+	z-index:2;
+	margin: 20px auto 0px auto;
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	border: 4px solid #fff;
+	background-color: #fff;
+	background-size: 104px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+	background-image: url('https://suffolklitlab.org/images/seal.jpg');
+}
+.profile_vid {
+    float:none;
+    position:relative;
+    margin: auto;
+}
+.embed_vid {
+    float:none;
+    width:100%;
+}
+</style>
+<div id="icon"></div>
+<h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
+<p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
+
 Q(1): Hi! This should take about 5 minutes. Are you trying to add a document or make a document template?
 A: I am trying to add a document.
 	Q(1.1): Okay. To start, type in the name of your client in the search bar to go to their matter.
 	A: Done. Then what do I do?
 		Q(1.1.1): Once you have done that, click on the "Documents" tab. You will then see a blue button that is labeled "New". Click "New" and a drop down will appear. Choose upload a file to add a document or select document from template to upload a document to be automated from a template.<p><a href="https://suffolklitlab.org/clio/images/add_doc1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/add_doc1.png"/></a></p>
 		A: Great! Thank you.
-			Q(home):Placeholder
+			Q(end): placeholder
 A: I am trying to make a document from a template.
-	Q(create): Okay, great! To create a document from a template, select "Documents" on the left-side taskbar. <p><a href="https://suffolklitlab.org/clio/images/doctemp1.1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/doctemp1.1.png"/></a></p> 
+	Q(create): Okay, great! To create a document from a template, select "Documents" on the left-side taskbar. <p><a href="https://suffolklitlab.org/clio/images/doctemp1.1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/doctemp1.1.png"/></a></p>
 	A: Cool! What's next?
 		Q(1.2.1): On the top right, click on the big blue "New" button. Select " Document from template" from the drop-down. <p><a href="https://suffolklitlab.org/clio/images/doctemp1.2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/doctemp1.2.png"/></a></p>
 		A: Done! tell me more.

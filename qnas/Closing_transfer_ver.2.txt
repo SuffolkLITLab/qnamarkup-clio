@@ -1,3 +1,46 @@
+Title: QnA Stub
+Author: <a href="Virtual Clinic Assistant " target="_blank">Suffolk Legal Innovation & Technology Fellows</a>
+Description: An interactive FAQ. This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.
+After: <script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+Before:
+<style>
+body{
+    background:white;
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
+    background-color: #fff;
+    background-repeat: repeat-x;
+    background-position: center -40px ;
+}
+#conversation {
+    max-width:900px;
+}
+#icon {
+	z-index:2;
+	margin: 20px auto 0px auto;
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	border: 4px solid #fff;
+	background-color: #fff;
+	background-size: 104px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+	background-image: url('https://suffolklitlab.org/images/seal.jpg');
+}
+.profile_vid {
+    float:none;
+    position:relative;
+    margin: auto;
+}
+.embed_vid {
+    float:none;
+    width:100%;
+}
+</style>
+<div id="icon"></div>
+<h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
+<p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
+
 Q(1): Hi! Let's get started. Please set aside around 10 minutes to walkthrough these steps.
 A: Tell me how to transfer a case.
 	Q(1.1): First, you will want to make sure that all necessary court and administrative orders have been scanned into Clio as well as the physical paper file.
@@ -12,7 +55,7 @@ A: Tell me how to transfer a case.
 					A: Great. Next step.
 						Q(1.1.1.1.1.1.1): If applicable to your case or clinic, keep new and related laws, useful memos, research, and/or sample pleadings, and other documents redacted and saved on the shared drive or in Clio template matter.
 						A: Okay, continue.
-							Q(1.1.1.1.1.1.1.1): Check that necessary contact information for all your relevant clients, opposing parties, attorneys, witnesses, experts, etc. is in Clio. 
+							Q(1.1.1.1.1.1.1.1): Check that necessary contact information for all your relevant clients, opposing parties, attorneys, witnesses, experts, etc. is in Clio.
 							A: I am on top of it. I want to know more.
 								Q(1.1.1.1.1.1.1.1.1): Make sure you have submitted all case notes and time entries into Clio.
 								A: Okay. Is there more?
@@ -22,7 +65,7 @@ A: Tell me how to transfer a case.
 										A: Thank you. Please take me back to the start.
 											Q(1.1.1.1.1.1.1.1.1.1.1.1): GOTO:home
 							A: How do I add contacts into Clio?
-								Q(1.1.1.1.1.1.1.1.2):GOTO:home				 
+								Q(1.1.1.1.1.1.1.1.2):GOTO:home
 A: Tell me how to close a case.
 	Q(1.2): Okay! First, you will want to make sure that all necessary court and administrative orders have been scanned into Clio as well as the physical paper file.
 	A: That has been done. Go on.
@@ -36,7 +79,7 @@ A: Tell me how to close a case.
 					A: Great. Next step.
 						Q(1.2.1.1.1.1.1): If applicable to your case or clinic, keep new and related laws, useful memos, research, and/or sample pleadings, and other documents redacted and saved on the shared drive or in Clio template matter.
 						A: Okay, continue.
-							Q(1.2.1.1.1.1.1.1): Check that necessary contact information for all your relevant clients, opposing parties, attorneys, witnesses, experts, etc. is in Clio.  
+							Q(1.2.1.1.1.1.1.1): Check that necessary contact information for all your relevant clients, opposing parties, attorneys, witnesses, experts, etc. is in Clio.
 							A: I am on top of it. I want to know more.
 								Q(1.2.1.1.1.1.1.1.1): Make sure you have submitted all case notes and time entries into Clio.
 								A: Okay. Is there more?
@@ -44,6 +87,6 @@ A: Tell me how to close a case.
 									A: Makes sense. What else am I expected to do?
 										Q(1.2.1.1.1.1.1.1.1.1.1): Finally, you will be expected to make certain that there is no confidential case-related information or documents in your non-clinic email, on personal devices, on laptops, or other personal computers that you possess.
 										A: Thank you. Please take me back to the start.
-											Q(home): placeholder
+											Q(end): placeholder
 							A: How do I add contacts into Clio?
 								Q(1.2.1.1.1.1.1.1.2):GOTO:home

@@ -1,3 +1,46 @@
+Title: QnA Stub
+Author: <a href="Virtual Clinic Assistant " target="_blank">Suffolk Legal Innovation & Technology Fellows</a>
+Description: An interactive FAQ. This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.
+After: <script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+Before:
+<style>
+body{
+    background:white;
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
+    background-color: #fff;
+    background-repeat: repeat-x;
+    background-position: center -40px ;
+}
+#conversation {
+    max-width:900px;
+}
+#icon {
+	z-index:2;
+	margin: 20px auto 0px auto;
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	border: 4px solid #fff;
+	background-color: #fff;
+	background-size: 104px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+	background-image: url('https://suffolklitlab.org/images/seal.jpg');
+}
+.profile_vid {
+    float:none;
+    position:relative;
+    margin: auto;
+}
+.embed_vid {
+    float:none;
+    width:100%;
+}
+</style>
+<div id="icon"></div>
+<h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
+<p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
+
 Q(home):Welcome! What stage are you in your case?
 A:I am starting a new case
 	Q(1.1):GOTO:new
@@ -17,7 +60,7 @@ A:Run conflict check
 			Q(2.1.1.1):Go to your clinic supervisor and ask for further guidance before continuing.
 			A:While you wait you can go back to the start.
 				Q(2.1.1.1.1):GOTO:new
-		A:No	
+		A:No
 			Q(2.1.1.2):Great! Now you just print the page and proceed to the next step.
 			A:I need to create a contact
 				Q(2.1.1.2.1):GOTO:contact
@@ -30,7 +73,7 @@ A:Create a new contact
 		A:Create a new Company
 			Q(company):For a new company, type in the company name, add their email, phone number, website, and address and click on “Save New Company” <br><br>If you need to add any comments or notes, add it to the “Custom Fields” section.
 			A:Got it! What do I do now?
-				Q(2.2.1.1.1):If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there. 
+				Q(2.2.1.1.1):If you would like to add other information that doesn’t fit the above categories, you can click on “Select to add a custom field” and add additional fields through there.
 				A:That is all! You have added a new company.
 					Q(2.2.1.1.1.1):GOTO:new
 		A:Create a new Person
@@ -39,7 +82,7 @@ A:Create a new contact
 				Q(2.2.1.2.1):Scroll down a little and you will see a “Custom Fields” section with comments/notes underneath. Under the comments/notes section, click the drop down box stating “Select to add a custom field” <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.2.png"></p>
 				A:Found it, now what?
 					Q(2.2.1.2.1.1):This drop down list adds new fields to add information about your new contact. If your new contact is a new client or opposing counsel, you can click on those labels underneath “Custom Field Sets” and it will generate several new fields that the clinic recommends you use for that type of contact. <br><br> If your new contact is not a new client or opposing counsel, you can scroll down the list to add any new fields that you might find useful; keep in mind that email, phone number, website, and address fields are just below this section.
-					A:Got it! 
+					A:Got it!
 						Q(2.2.1.2.1.1.1):Once you’re done adding your information to each field, scroll to the bottom of the page and hit “Save New Person”
 						A:Saved! Am I done?
 							Q(2.2.1.2.1.1.1.1):Once you’ve created a new contact, you can attach that contact to a matter by going to the dashboard of your matter and clicking “Add related contact,” as you can see below: <p><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"></p>
@@ -52,13 +95,13 @@ A:Create a new contact
 
 A:Open a new case/matter
 	Q(before):Before opening a matter make sure you ran a conflict check and created your contacts.
-	A:I need to run a conflict check. 
+	A:I need to run a conflict check.
 		Q(2.3.1):GOTO:conflict
-	A:I need to create a contact 
+	A:I need to create a contact
 		Q(2.3.2):GOTO:contact
-	A:I did both, I am ready to create a matter 
-		Q(matter):Go to top right corner, where there is a green button that says “Create New”	
-		A:Found it!	
+	A:I did both, I am ready to create a matter
+		Q(matter):Go to top right corner, where there is a green button that says “Create New”
+		A:Found it!
 			Q(2.3.3.1):Click on the drop down button and the click "Matter"<p> <img src="https://suffolklitlab.org/clio/images/CreatenewMatter.1.PNG"></p>
  <br><br>This will take you to the following screen<p><img src="https://suffolklitlab.org/clio/images/CreatenewMatter.2.PNG"></p>
 			A:I'm there! Now what?
@@ -82,7 +125,7 @@ Q(current):What do you need help with?
 A:Create a task list
 	Q(task):Click “Tasks” on the left side of the page.<br><br> Then, click on the “Lists” tab. <p><img src="https://suffolklitlab.org/clio/images/Task1.png"></p>
 	A:Ok, I clicked on "Lists", now what?
-		Q(reminder):Choose one of the pre-made task checklists under “List”. <br><br>Now click on the blue “Assign” under the Task Checklist.<p><img src="https://suffolklitlab.org/clio/images/Task3.png"></p> 
+		Q(reminder):Choose one of the pre-made task checklists under “List”. <br><br>Now click on the blue “Assign” under the Task Checklist.<p><img src="https://suffolklitlab.org/clio/images/Task3.png"></p>
 		A:What's next?
 			Q(3.1.1.1):Select the matter you wish to assign this task to and click “Assign List”<br><br>Now go back your client's matter, click the "Task" tab on the top of the page and you should see your tasks listed!
 			A:Nice!
@@ -91,7 +134,7 @@ A:Create a task list
 A:Creating a document from a template
 	Q(doc):Go to the “Documents” tab on the left bar.
 	A:I'm there, now what?
-		Q(3.2.1):Click on the blue “New” button that is located on the right side of the page. <p><img src="https://suffolklitlab.org/clio/images/DocTemp3.png"></p> 
+		Q(3.2.1):Click on the blue “New” button that is located on the right side of the page. <p><img src="https://suffolklitlab.org/clio/images/DocTemp3.png"></p>
 		A:Done! What's next?
 			Q(3.2.1.1):Select “Document from Template” from the drop-down menu.
 			A:Ok, now what?
@@ -100,7 +143,7 @@ A:Creating a document from a template
 					Q(3.2.1.1.1.1):Next, you can select how you want the document to be saved (PDF and/or Word document). <br><br> Once this information has been filled in, click on “Create Document”.
 					A:Great, am I done?
 						Q(3.2.1.1.1.1.1):The document will appear in the matter folder. If the template was categorized, however, then under the “category” column, you will see in which folder the document was placed in. <p><img src="https://suffolklitlab.org/clio/images/DocTemp5.png"></p>
-						A:You have created a document from a template! 
+						A:You have created a document from a template!
 							Q(3.2.1.1.1.1.1.1):GOTO:current
 
 A:Add an event to the calendar
@@ -115,5 +158,3 @@ A:Add an event to the calendar
 					Q(3.3.1.1.1.1):Once you have filled in all the necessary information, you may click “Create Calendar Entry” to finish or “ Save and Add Another” to create an additional calendar entry.
 					A:You have now added an event to the calendar!
 						Q(3.3.1.1.1.1.1):GOTO:current
-
-			

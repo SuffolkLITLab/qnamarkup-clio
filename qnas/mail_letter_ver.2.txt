@@ -1,4 +1,47 @@
-Q(1): This should take you a minute to go through.To mail your letter, drop the letter in the mailbox bin in clinic 150 located at the clinic’s front desk. This mail bin is for all first class mail.
+Title: QnA Stub
+Author: <a href="Virtual Clinic Assistant " target="_blank">Suffolk Legal Innovation & Technology Fellows</a>
+Description: An interactive FAQ. This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.
+After: <script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+Before:
+<style>
+body{
+    background:white;
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
+    background-color: #fff;
+    background-repeat: repeat-x;
+    background-position: center -40px ;
+}
+#conversation {
+    max-width:900px;
+}
+#icon {
+	z-index:2;
+	margin: 20px auto 0px auto;
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	border: 4px solid #fff;
+	background-color: #fff;
+	background-size: 104px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+	background-image: url('https://suffolklitlab.org/images/seal.jpg');
+}
+.profile_vid {
+    float:none;
+    position:relative;
+    margin: auto;
+}
+.embed_vid {
+    float:none;
+    width:100%;
+}
+</style>
+<div id="icon"></div>
+<h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
+<p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
+
+Q(1): This should take you a minute to go through.To mail your letter, drop the letter in the mailbox bin in clinic 150 located at the clinicï¿½s front desk. This mail bin is for all first class mail.
 A: When will my mail be picked up?
 	Q(1.1): Outgoing mail will be picked up in the morning during the mail drop. This will be before noon at Clinic 150 only.
 A: What if my letter requires special services? (return receipt, overnight delivery, certified mail, registered mail, etc.)
@@ -7,4 +50,4 @@ Floor. The sender must be the person to bring this type of mail.
 A: Where can I Find the letters?
 	You can find large and small envelopes in the supplies section of your clinic near the printers. Ask the front desk administrators if you have issue locating materials.
 A: What needs to go on the letter?
-	Q: The recipient name and address will need to be on the letter. If you need this information, be sure to check through your Clio contacts for this information. 
+	Q: The recipient name and address will need to be on the letter. If you need this information, be sure to check through your Clio contacts for this information.

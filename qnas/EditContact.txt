@@ -1,4 +1,46 @@
-<!-- I would like to edit a contact in a matter on Clio. -->
+Title: QnA Stub
+Author: <a href="Virtual Clinic Assistant " target="_blank">Suffolk Legal Innovation & Technology Fellows</a>
+Description: An interactive FAQ. This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.
+After: <script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+Before:
+<style>
+body{
+    background:white;
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
+    background-color: #fff;
+    background-repeat: repeat-x;
+    background-position: center -40px ;
+}
+#conversation {
+    max-width:900px;
+}
+#icon {
+	z-index:2;
+	margin: 20px auto 0px auto;
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	border: 4px solid #fff;
+	background-color: #fff;
+	background-size: 104px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+	background-image: url('https://suffolklitlab.org/images/seal.jpg');
+}
+.profile_vid {
+    float:none;
+    position:relative;
+    margin: auto;
+}
+.embed_vid {
+    float:none;
+    width:100%;
+}
+</style>
+<div id="icon"></div>
+<h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
+<p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
+
 Q(1): Editing a contact should take less than 5 minutes. Has the contact already been created?
 A: Yes
 	Q(1.1): Great! Do you need to change/add something to the contact's information or do you need to change the related contacts to your case?
@@ -10,7 +52,7 @@ A: Yes
 				Q(1.1.1.1.1): A new page will load: <p><a href="https://suffolklitlab.org/clio/images/editcontactinfo.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/editcontactinfo.png"/></a> <p>Here, you can add and/or change the contact's name, address, email, and any other information you have available. Make sure to scroll down and expand each section to make sure you're not missing anything.
 				A: I'm done.
 					Q(1.1.1.1.1.1): Once you've finished adding or changing the information, click the blue "Save contact" button at the bottom of your screen.
-					A: I need to add this contact to my case matter. 
+					A: I need to add this contact to my case matter.
 						Q(1.1.1.1.1.1.1):GOTO:Relatedcontacts
 					A: I'm all done!
 						Q(1.1.1.1.1.1.2):GOTO:home
@@ -21,7 +63,7 @@ A: Yes
 		A: Got it!
 			Q(1.1.2.1): This will take you to edit the matter. You may need to scroll down to where it says "Related contacts," as you can see below. Here, you can remove or add additional contacts to your matter. <p><a href="https://suffolklitlab.org/clio/images/Relatedcontacts.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/Relatedcontacts.png"/></a>
 			A: OK.
-				Q(1.1.2.1.1): You can delete a contact from the matter by clicking the blue "Remove" text to the right of the contact you want to delete. <p>To add a contact, click on the blue "Add related contact" text at the bottom of the "Related contacts" section and more boxes will appear for you to add new contacts. When adding the contact, type the contact's relationship to the matter and then find the contact either by typing their name in or finding them in the drop down bar underneath "Contact." 
+				Q(1.1.2.1.1): You can delete a contact from the matter by clicking the blue "Remove" text to the right of the contact you want to delete. <p>To add a contact, click on the blue "Add related contact" text at the bottom of the "Related contacts" section and more boxes will appear for you to add new contacts. When adding the contact, type the contact's relationship to the matter and then find the contact either by typing their name in or finding them in the drop down bar underneath "Contact."
 				A: I'm done.
 					Q(1.1.2.1.1.1): Once you've finished adding and/or removing the contacts to this matter, click the blue "Save matter" button at the bottom left of your screen and those contacts will be visible from your matter's dashboard. GOTO:home
 A: No
@@ -29,4 +71,4 @@ A: No
 
 Q(createcontactqna): placeholder for Create Contact QnA
 
-Q(home): placeholder
+Q(end): placeholder

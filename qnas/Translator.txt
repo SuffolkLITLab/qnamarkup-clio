@@ -1,10 +1,52 @@
-<!-- I need help translating for a client. -->
+Title: QnA Stub
+Author: <a href="Virtual Clinic Assistant " target="_blank">Suffolk Legal Innovation & Technology Fellows</a>
+Description: An interactive FAQ. This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.
+After: <script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+Before:
+<style>
+body{
+    background:white;
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
+    background-color: #fff;
+    background-repeat: repeat-x;
+    background-position: center -40px ;
+}
+#conversation {
+    max-width:900px;
+}
+#icon {
+	z-index:2;
+	margin: 20px auto 0px auto;
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	border: 4px solid #fff;
+	background-color: #fff;
+	background-size: 104px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+	background-image: url('https://suffolklitlab.org/images/seal.jpg');
+}
+.profile_vid {
+    float:none;
+    position:relative;
+    margin: auto;
+}
+.embed_vid {
+    float:none;
+    width:100%;
+}
+</style>
+<div id="icon"></div>
+<h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
+<p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
+
 Q(1): First, know that it may take a few days before you can set up a translator and that you must consult with your clinical professor in order to determine the level of need for interpretation in a given case. This portion of the training will take about 3-5 minutes and will provide you with some additional information about setting up a translator. <p>Before we get started, some preliminary questions in order to determine the level of translation needed include: Does the client understand some English? If so, how much? Can they understand enough to schedule an appointment?
 A: OK. What should I know before consulting with my professor?
-	Q(1.1): We have some Spanish translators available onsite: <p>Vivian Rosado, in suite 150, provides interpretation for the Health Law and Family Law Clinics. <p>Ana Vaquerano, in suite 110, provides interpretation for Accelerator Practice and Immigration Clinics. <p>Juvenile Defenders and Defenders Clinics utilize Court-provided interpreters, when available. 
+	Q(1.1): We have some Spanish translators available onsite: <p>Vivian Rosado, in suite 150, provides interpretation for the Health Law and Family Law Clinics. <p>Ana Vaquerano, in suite 110, provides interpretation for Accelerator Practice and Immigration Clinics. <p>Juvenile Defenders and Defenders Clinics utilize Court-provided interpreters, when available.
 	A: Can I ask them directly for help?
 		Q(1.1.1): Only after pre-approval from your supervisor. Then, students may request interpretation services directly from the staff member. You must provide the staff member at least 24 hours notice and provide an agenda for the meeting in advance.
 		A: What about non-Spanish translators?
 			Q(1.1.1.1): All requests for non-Spanish interpretation must go to Professor Sarah Boonin for pre-approval and then to an outside translation service, if approved. Students requesting outside translation services must email Joan Luke and their supervising professor, provide an estimate of the length and cost of the interpretation, and describe its necessity. <p><b>Only those interpretations necessary for the litigation will be approved.</b> GOTO:home
 
-Q(home): placeholder
+Q(end): placeholder

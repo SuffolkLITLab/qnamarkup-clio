@@ -1,5 +1,48 @@
+Title: QnA Stub
+Author: <a href="Virtual Clinic Assistant " target="_blank">Suffolk Legal Innovation & Technology Fellows</a>
+Description: An interactive FAQ. This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.
+After: <script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+Before:
+<style>
+body{
+    background:white;
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
+    background-color: #fff;
+    background-repeat: repeat-x;
+    background-position: center -40px ;
+}
+#conversation {
+    max-width:900px;
+}
+#icon {
+	z-index:2;
+	margin: 20px auto 0px auto;
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	border: 4px solid #fff;
+	background-color: #fff;
+	background-size: 104px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+	background-image: url('https://suffolklitlab.org/images/seal.jpg');
+}
+.profile_vid {
+    float:none;
+    position:relative;
+    margin: auto;
+}
+.embed_vid {
+    float:none;
+    width:100%;
+}
+</style>
+<div id="icon"></div>
+<h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
+<p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
+
 Q(1):Scanning files is easy and will only take you 1 minute! Do you have the files you want to scan?
-A:Yes, I do! 
+A:Yes, I do!
 	Q(1.1):Locate the multipurpose copier in your office. It looks like this <p><a href="https://suffolklitlab.org/clio/images/scan.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/scan.png" width="200px" height="200px" class="rotateimg90"/></a></p>
 	A:Found it! Now what?
 		Q(1.1.1):Just place the files face up on the scanner.
@@ -13,5 +56,5 @@ A:Yes, I do!
 				Q(1.1.1.1.2):If your name is not listed, let your supervisor know.
 				A:Thanks!
 					Q(1.1.1.1.2.1):GOTO:home
-	
-Q(home): place holder
+
+Q(end): placeholder

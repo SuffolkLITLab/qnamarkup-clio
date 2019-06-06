@@ -41,12 +41,11 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1): Clio is our case management system, and it's your responsibility to keep it up-to-date with your case's data. Don't worry, I can show you detailed How To Guides later, but for now, here's an overview video (~11 min). Just ignore the stuff about billing.<br><br><div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/GtiS2TcVi3E?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div><br><br>
+Q(1): Clio is our case management system, and it's your responsibility to keep it up-to-date with your cases' data. Don't worry, I can show you detailed How To Guides later, but for now, here's an overview video (~11 min). Just ignore the stuff about billing.<br><br><div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/GtiS2TcVi3E?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div><br><br>
 How about some cat videos?
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','bye')] Sure
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','home')] Sure
 A: No thanks
 	Q(1.2):GOTO:end
 
 Q(end): placeholder
-Q(bye): placeholder
 

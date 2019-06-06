@@ -51,31 +51,31 @@ A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab
 		Q(1.1.1):GOTO:clio_start
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt',this.innerHTML,'end','voice');]Set up my voicemail
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Google_Voice.txt',this.innerHTML,'end','gvoice');]Set up Google Voice
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML)]  I need cat videos	
+	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','vdi')]  I need cat videos	
 A: Set up Clio
 	Q(clio_start): Do you need a Clio overview?
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/ClioIntro.txt',this.innerHTML,'end','clio_next');] Yes
 		Q(clio_next): What next?
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt',this.innerHTML,'end','voice');]Set up my voicemail
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Google_Voice.txt',this.innerHTML,'end','gvoice');]Set up Google Voice
-		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML)]  I need cat videos	
+		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','clio_next')]  I need cat videos	
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Clio_login.txt',this.innerHTML);] No; I want to login
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt',this.innerHTML);]Set up my voicemail
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt',this.innerHTML,'end','voice');]Set up my voicemail
 	Q(voice): What next?
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Google_Voice.txt',this.innerHTML,'end','gvoice');]Set up Google Voice
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML)]  I need cat videos	
+	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','voice')]  I need cat videos	
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Google_Voice.txt',this.innerHTML,'end','gvoice');]Set up Google Voice
 	Q(gvoice): What next?
 	A:I'm all set up; let's jump ahead
 		Q(1.4.1):working
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML)]  I need cat videos	
+	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','gvoice')]  I need cat videos	
 A: I'm all set up; let's jump ahead
 	Q(1.5):GOTO:working
 
 
 Q(2):<!-- ##############################
 
-   Move this Q to the top after an 
+   Move `home` to the top after an 
    on boarding period.
 
 ##################################### -->
@@ -95,7 +95,7 @@ A: I need to open a case
 A: I'm working a case
 	Q(4.2):GOTO:current
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt',this.innerHTML,'end','working');] I'm closing/transferring a case
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML)] I need cat videos
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','working')] I need cat videos
 
 
 Q(new): What do you need help with?
@@ -111,20 +111,21 @@ A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab
 Q(current): What do you need help with?
 A: Clio (case management & tracking)
 	Q(6.1): What specifically? 
+	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/search.txt',this.innerHTML,'end','current')] Search
 	A: Contacts
-		Q(6.1.1): Would would you like to do?
+		Q(6.1.2): Would would you like to do?
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/AddContact.txt',this.innerHTML,'end','current');]Add a contact 	
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/EditContact.txt',this.innerHTML,'end','current');]Edit a contact
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/contacts_overview.txt',this.innerHTML,'end','new');] Watch Contacts overview (~4 min)
 	A: Matters & notes
-		Q(6.1.2): Would would you like to do?
+		Q(6.1.3): Would would you like to do?
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/EditMatter.txt',this.innerHTML,'end','current');]Edit a matter
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/AddNote.txt',this.innerHTML,'end','current');]Add a note
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Print_notes.txt',this.innerHTML,'end','current');]Print notes
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt',this.innerHTML,'end','current');]Save email(s) to a matter
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/matters_overview.txt',this.innerHTML,'end','new');] Watch Matters overview (~6 min)
 	A: Documents
-		Q(6.1.3): Would would you like to do?
+		Q(6.1.4): Would would you like to do?
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Scanning.txt',this.innerHTML,'end','current');]Scan a document
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/document_template_ver.2.txt',this.innerHTML,'end','current');]Create from template
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/document_template.txt',this.innerHTML,'end','current');]Upload a document
@@ -133,11 +134,11 @@ A: Clio (case management & tracking)
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/ClioIntro.txt',this.innerHTML,'end','current');] What is Clio?
 A: Correspondence (email, certified mail, etc.)
 	Q(6.2):  What type?
-	A: Email or Secure Message
+	A: Electronic (emails & secure messages)
 		Q(6.2.1): What do you need to do?
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt',this.innerHTML,'end','current');]Encrypt an email
-		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Secure_messages_qna.txt',this.innerHTML,'end','current');]Send a secure message
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt',this.innerHTML,'end','current');]Save email(s) to a matter
+		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Secure_messages_qna.txt',this.innerHTML,'end','current');]Send a secure message
 	A: Physical mail
 		Q(6.2.2): What do you need to do?
 		A: Mail something

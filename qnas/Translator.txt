@@ -47,6 +47,6 @@ A: OK. What should I know before consulting with my professor?
 	A: Can I ask them directly for help?
 		Q(1.1.1): Only after pre-approval from your supervisor. Then, students may request interpretation services directly from the staff member. You must provide the staff member at least 24 hours notice and provide an agenda for the meeting in advance.
 		A: What about non-Spanish translators?
-			Q(1.1.1.1): All requests for non-Spanish interpretation must go to Professor Sarah Boonin for pre-approval and then to an outside translation service, if approved. Students requesting outside translation services must email Joan Luke and their supervising professor, provide an estimate of the length and cost of the interpretation, and describe its necessity. <p><b>Only those interpretations necessary for the litigation will be approved.</b> GOTO:home
+			Q(1.1.1.1): All requests for non-Spanish interpretation must go to Professor Sarah Boonin for pre-approval and then to an outside translation service, if approved. Students requesting outside translation services must email Joan Luke and their supervising professor, provide an estimate of the length and cost of the interpretation, and describe its necessity. <p><b>Only those interpretations necessary for the litigation will be approved.</b> GOTO:end
 
 Q(end): placeholder

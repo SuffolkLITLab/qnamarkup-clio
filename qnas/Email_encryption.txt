@@ -65,6 +65,6 @@ Q(encrypt):The receiver will see something like this <p><a href="https://suffolk
 A:What will they need to do?
 	Q(2.1):They will have to open the attachment. If they need to register they will have to do so before opening the email. If they have registered before they will simply enter their password to see the email.
 	A:Great!
-		Q(2.1.1):GOTO:home
+		Q(2.1.1):GOTO:end
 
 Q(end): placeholder

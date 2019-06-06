@@ -56,6 +56,6 @@ A:Ok, I found it, now what?
 				A:Now what?
 					Q(1.1.2.1.1.1):Once the case is open you can start adding information to the matter!<br><br>Don't forget to scan the case opening form into Clio and save it in the matter under Documents!
 					A:Thanks!
-						Q(1.1.2.1.1.1.1):GOTO:home
+						Q(1.1.2.1.1.1.1):GOTO:end
 
 Q(end): placeholder

@@ -63,9 +63,9 @@ A: Tell me how to transfer a case.
 									A: Makes sense. What else am I expected to do?
 										Q(1.1.1.1.1.1.1.1.1.1.1): Finally, you will be expected to make certain that there is no confidential case-related information or documents in your non-clinic email, on personal devices, on laptops, or other personal computers that you possess.
 										A: Thank you. Please take me back to the start.
-											Q(1.1.1.1.1.1.1.1.1.1.1.1): GOTO:home
+											Q(1.1.1.1.1.1.1.1.1.1.1.1): GOTO:end
 							A: How do I add contacts into Clio?
-								Q(1.1.1.1.1.1.1.1.2):GOTO:home
+								Q(1.1.1.1.1.1.1.1.2):GOTO:end
 A: Tell me how to close a case.
 	Q(1.2): Okay! First, you will want to make sure that all necessary court and administrative orders have been scanned into Clio as well as the physical paper file.
 	A: That has been done. Go on.
@@ -89,4 +89,4 @@ A: Tell me how to close a case.
 										A: Thank you. Please take me back to the start.
 											Q(end): placeholder
 							A: How do I add contacts into Clio?
-								Q(1.2.1.1.1.1.1.1.2):GOTO:home
+								Q(1.2.1.1.1.1.1.1.2):GOTO:end

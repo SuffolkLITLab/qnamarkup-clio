@@ -47,6 +47,6 @@ A: OK.
 	A: What's next?
 		Q(1.1.1): Here, you can edit the status of the case, the attorney responsible, edit contacts, add a brief case synopsis, change the supervisor, add a docket number, and much more. Make sure you scroll down and expand each section to add any information relevant to your case.
 		A: I'm done editing the matter.
-			Q(1.1.1.1): Once you're done adding information to your matter, click on the blue "Save matter" button at the bottom left of your screen. This will take you back to the matter dashboard where you can double check that all the information was entered correctly. GOTO:home
+			Q(1.1.1.1): Once you're done adding information to your matter, click on the blue "Save matter" button at the bottom left of your screen. This will take you back to the matter dashboard where you can double check that all the information was entered correctly. GOTO:end
 
 Q(end): placeholder

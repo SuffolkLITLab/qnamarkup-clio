@@ -49,6 +49,6 @@ A:Great, how do I set it up?
 		A:Will it use my personal phone number?
 			Q(1.1.1.1):No. As you walk through the process to set up Google Voice, you will be able to pick a new number which will be used instead of your personal number while you call or text through the app.
 			A:Great!
-				Q(1.1.1.1.1):GOTO:home
+				Q(1.1.1.1.1):GOTO:end
 
 Q(end): placeholder

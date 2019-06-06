@@ -51,10 +51,10 @@ A:Yes, I do!
 			A:Ok, found my name, now what?
 				Q(1.1.1.1.1):Simply click your name and the files will scan and be sent straight to your clinic email.
 				A:Thanks, that was easy!
-					Q(1.1.1.1.1.1):GOTO:home
+					Q(1.1.1.1.1.1):GOTO:end
 			A:My name is not listed
 				Q(1.1.1.1.2):If your name is not listed, let your supervisor know.
 				A:Thanks!
-					Q(1.1.1.1.2.1):GOTO:home
+					Q(1.1.1.1.2.1):GOTO:end
 
 Q(end): placeholder

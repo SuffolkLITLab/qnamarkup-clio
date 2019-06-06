@@ -55,7 +55,7 @@ A: Yes
 					A: I need to add this contact to my case matter.
 						Q(1.1.1.1.1.1.1):GOTO:Relatedcontacts
 					A: I'm all done!
-						Q(1.1.1.1.1.1.2):GOTO:home
+						Q(1.1.1.1.1.1.2):GOTO:end
 
 
 	A: Change the related contacts
@@ -65,7 +65,7 @@ A: Yes
 			A: OK.
 				Q(1.1.2.1.1): You can delete a contact from the matter by clicking the blue "Remove" text to the right of the contact you want to delete. <p>To add a contact, click on the blue "Add related contact" text at the bottom of the "Related contacts" section and more boxes will appear for you to add new contacts. When adding the contact, type the contact's relationship to the matter and then find the contact either by typing their name in or finding them in the drop down bar underneath "Contact."
 				A: I'm done.
-					Q(1.1.2.1.1.1): Once you've finished adding and/or removing the contacts to this matter, click the blue "Save matter" button at the bottom left of your screen and those contacts will be visible from your matter's dashboard. GOTO:home
+					Q(1.1.2.1.1.1): Once you've finished adding and/or removing the contacts to this matter, click the blue "Save matter" button at the bottom left of your screen and those contacts will be visible from your matter's dashboard. GOTO:end
 A: No
 	Q(1.2):GOTO:createcontactqna
 

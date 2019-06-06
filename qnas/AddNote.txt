@@ -50,6 +50,6 @@ A: Done!
 		A: Got it.
 			Q(1.1.1.1): The Date will always default to today's date, but can be easily changed by clicking on it and choosing a different date. Make sure to add a subject that is a brief synopsis of what your note will be about. For example: client meeting, client phone call, etc. <p>Once you have added a subject line, type a description of what occurred and what you would like your note to say.
 			A: I've completed my note.
-				Q(1.1.1.1.1): Now that you are done writing your note, click on the blue "Save note" button at the bottom of the popup. The popup will close and then your new note will show up on the notes tab as a new entry. GOTO:home
+				Q(1.1.1.1.1): Now that you are done writing your note, click on the blue "Save note" button at the bottom of the popup. The popup will close and then your new note will show up on the notes tab as a new entry. GOTO:end
 
 Q(end): placeholder

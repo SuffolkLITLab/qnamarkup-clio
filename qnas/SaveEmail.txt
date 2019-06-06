@@ -55,6 +55,6 @@ A: I've opened the email.
 					A: Got it.
 						Q(1.1.1.1.1.1.1): Another popup like the one below will appear with your matter along with other matters. Click the plus sign next to the matter you want this email in and find the "Correspondence" folder. Highlight this folder by clicking on it and then click on the green "Move" button at the bottom of this popup. It may take a few seconds for it move. <p><a href="https://suffolklitlab.org/clio/images/SaveEmail.6.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.6.png"/></a>
 						A: Finished!
-							Q(1.1.1.1.1.1.1.1): Great! You've saved your email to Clio. GOTO:home
+							Q(1.1.1.1.1.1.1.1): Great! You've saved your email to Clio. GOTO:end
 
 Q(end): placeholder

@@ -43,6 +43,6 @@ body{
 
 Q(1): Certainly, this will only take a minute! <p>Clio is an online cloud-based legal management tool we use at Suffolk University Law School Clinics. It helps maintain our cases, organize client files, scan documents, track deadlines, add notes, and much more. <br><br>Keeping Clio up to date is the responsibility of the student attorney. This will make it easier for you and your supervisor to keep track of the progress on your case so they can better assist and guide you. <p> As you go through this tutorial, I will show you how to use Clio and follow general clinic procedures.</p><br>
 A: Sounds useful! What should I know before starting?
-	Q(1.1): If you have any questions that this tutorial does not answer, please check your clinic manual, follow up with a supervisor, or speak with one of the front desk administrators. GOTO:home
+	Q(1.1): If you have any questions that this tutorial does not answer, please check your clinic manual, follow up with a supervisor, or speak with one of the front desk administrators. GOTO:end
 
 Q(end): placeholder

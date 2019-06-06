@@ -52,7 +52,7 @@ A:Ok, I'm logged in!
 		A:Got it! Now what?
 			Q(signin):Now you simply click on log in <p><a href="https://suffolklitlab.org/clio/images/cliolog.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliolog.png"/></a></p><p>and then sign into Clio with your clinic email and Clio password and you should be all set!</p><a href="https://suffolklitlab.org/clio/images/cliosign.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliosign.png"/></a>
 			A:Great!
-				Q(1.2.1.1.1):GOTO:home
+				Q(1.2.1.1.1):GOTO:end
 	A:Ok, I clicked on it!
 		Q(1.2.2):GOTO:signin
 

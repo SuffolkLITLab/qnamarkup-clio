@@ -53,7 +53,7 @@ A: I am trying to set-up my voicemail.
 			A: Okay, done. What now?
 				Q(sec): Enter the default security code 147258 once you have logged on to the voicemail system for the first time.
 				A: Thanks!
-					Q(done):GOTO:home
+					Q(done):GOTO:end
 A: I am trying to access my voicemail.
 	Q(1.2): I can help with that. First, call the voicemail internal or external number.
 	A: Okay. What's next?

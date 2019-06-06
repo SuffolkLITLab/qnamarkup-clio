@@ -55,4 +55,4 @@ A: I am trying to make a document from a template.
 		A: Done! tell me more.
 			Q(1.2.1.1): A new window labeled "Create a Document" will pop up. Select the template you wish to use and fill in the matter the document will belong to. You will be able to choose whether you want your document in word or PDF format in the checkboxes.<p><a href="https://suffolklitlab.org/clio/images/add_doc2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/add_doc2.png"/></a></p> Once you have filled out the required fields, click "Create".
 			A: Great, thank you!
-				Q(1.2.1.1.1):GOTO:home
+				Q(1.2.1.1.1):GOTO:end

@@ -51,6 +51,6 @@ A:I'm there, now what?
 			A:Done, now what?
 				Q(1.1.1.1.1):A PDF should have downloaded. When you open it you will be able to see all your notes on that matter and print the PDF.
 				A:That was easy, thanks!
-					Q:GOTO:home
+					Q:GOTO:end
 
 Q(end): placeholder

@@ -41,19 +41,26 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1):Learning to sign into Clio should take around 3 minutes. First, you should make sure you are logged into the VDI.
-A:How do I log into the VDI
-	Q(1.1):That's easy!
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/VDI_setup.txt',this.innerHTML);]Click here and I'll show you how to set up VDI
-A:Ok, I'm logged in!
-	Q(1.2):Now that you are in the VDI you should be able to see an icon for it on your desktop. <p><a href="https://suffolklitlab.org/clio/images/icon.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/icon.png"/></a></p>
-	A:I don't see the icon.
-		Q(1.2.1):If it's not there, you can simply open a web browser and go to clio.com
-		A:Got it! Now what?
-			Q(signin):Now you simply click on log in <p><a href="https://suffolklitlab.org/clio/images/cliolog.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliolog.png"/></a></p><p>and then sign into Clio with your clinic email and Clio password and you should be all set!</p><a href="https://suffolklitlab.org/clio/images/cliosign.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliosign.png"/></a>
-			A:Great!
-				Q(1.2.1.1.1):GOTO:end
-	A:Ok, I clicked on it!
-		Q(1.2.2):GOTO:signin
+
+Q(1):This should take around 3 minutes. First, make sure you are logged into the VDI or working from one of the computers in the clinic.
+A:Done
+	Q(1.1):GOTO:vmware
+A:Um... 
+	Q(1.2):If you installed the VDI software on your computer, open it and connect to <i>desktop.suffolk.edu</i>. It should be called something like <i>VMWare</i>. If that doesn't ring a bell, I can help you set things up now. 
+	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/VDI_setup.txt',this.innerHTML,'end','vdi');] Yes, please
+	A: Found it, and I'm logged in 
+		Q(vmware):Now that you're in the VDI, you should be able to see an icon/bookmark for Clio on your desktop. <br><br><a href="https://suffolklitlab.org/clio/images/icon.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/icon.png" style="width:232px;height:158px;"/></a><br><br>Do you see it?
+		A:Yes
+			Q(1.2.2.1): Open the bookmark. GOTO:signin
+		A: No
+			Q(1.2.2.2): No worries, just go to <i>clio.com</i>.GOTO:signin 
+
+Q(signin):Click <i>Log In</i>. <br><br>
+<a href="https://suffolklitlab.org/clio/images/cliolog.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliolog.png" style="width:232px;height:170px;"/></a>
+<br><br>
+Sign into with your clinic email and Clio password.<br><br>
+<a href="https://suffolklitlab.org/clio/images/cliosign.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliosign.png" style="width:232px;height:171px;"/></a>
+GOTO:end
+
 
 Q(end): placeholder

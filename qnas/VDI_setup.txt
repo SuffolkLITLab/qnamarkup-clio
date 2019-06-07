@@ -41,22 +41,34 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1): Setting up the VDI should take no more than 10 minutes. First, download the VMware Horizon client by following this link <a href="https://desktop.suffolk.edu" target="_blank">https://desktop.suffolk.edu</a>
-A:Click here once you've opened the link above!
-	Q(1.1):Once you're on the website, select "Install VMWare Horizon Client" <p><a href="https://suffolklitlab.org/clio/images/vmware.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/vmware.png"/></a></p>
-	A:Ok, I did that.
-		Q(1.1.1):Now you have to download the client that is specific to your computer's operating system. <p><a href="https://suffolklitlab.org/clio/images/download.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/download.png"></a></p>
-		A:Got it! Now what?
-			Q(1.1.1.1):Now you have to click on the 'New Server' button on the top left of the pop-up screen. <p><a href="https://suffolklitlab.org/clio/images/server.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/server.png"/></a></p>
-			A:Ok, now what?
-				Q(1.1.1.1.1):A new smaller screen will ask you to enter the name of the Connection Server. There you will type 'desktop.suffolk.edu' and click connect. <p><a href="https://suffolklitlab.org/clio/images/servername.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/servername.png"/></a></p>
-				A:I did that, now what?
-					Q(1.1.1.1.1.1):Now double click on the cloud icon on the screen.<p><a href="https://suffolklitlab.org/clio/images/cloud.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cloud.png"/></a></p> If you are signing in for the first time you might have to re-type 'desktop.suffolk.edu' as the connection server name.
-					A:Ok, what's next?
-						Q(1.1.1.1.1.1.1):Now you log in with your Clinic email credentials. You should have received these via email at the beginning of the year. Remember this one starts with cl. If you don't have them contact your supervisor. <p><a href="https://suffolklitlab.org/clio/images/login.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/login.png"/></a></p>
-						A:Is that it?
-							Q(1.1.1.1.1.1.1.1):Yes! Now you just have to wait for the server to load and you are all set! Next time you sign in you will simply need to enter your password!
-							A:Great!
-								Q(1.1.1.1.1.1.1.1.1):GOTO:end
+Q(1): You can access clinic files from your personal computer thanks to the virtual desktop (VDI). Setting up the VDI should take no more than 10 minutes. On your personal computer, navigate to: <a href="https://desktop.suffolk.edu" target="_blank">https://desktop.suffolk.edu</a><br><br>
+Once you're there, select <i>Install VMWare Horizon Client</i>. See 
+<br><br>
+<a href="https://suffolklitlab.org/clio/images/vmware.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/vmware.png" style="width:232px;height:280px;"//></a>
+<br><br>
+Download the client for your computer's operating system. See 
+<br><br>
+<a href="https://suffolklitlab.org/clio/images/download.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/download.png" style="width:232px;height:140px;"/></a>
+<br><br>
+Click on the 'New Server' button in the top left of the pop-up.  See 
+<br><br>
+<a href="https://suffolklitlab.org/clio/images/server.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/server.png" style="width:232px;height:139px;"/></a>
+<br><br>
+A new window will ask you to enter the name of the Connection Server. Type <i>desktop.suffolk.edu</i>, and click <i>Connect</i>.  See 
+<br><br>
+<a href="https://suffolklitlab.org/clio/images/servername.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/servername.png" style="width:232px;height:135px;"/></a>
+<br><br>
+Double click the cloud icon.  See 
+<br><br>
+<a href="https://suffolklitlab.org/clio/images/cloud.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cloud.png" style="width:232px;height:220px;"/></a> 
+If you are signing in for the first time you might have to re-type <i>desktop.suffolk.edu</i> as the connection server name.
+<br><br>
+Log in with your Clinic email credentials. You should have received these via email at the beginning of the year. Remember this one starts with cl. If you don't have them, contact your supervisor.  See 
+<br><br>
+<a href="https://suffolklitlab.org/clio/images/login.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/login.png" style="width:232px;height:167px;"/></a>
+<br><br>
+Just have to wait for the server to load, and you are all set! Next time you sign in you just need to enter your password!
+GOTO:end
 
 Q(end): placeholder
+A: placeholder

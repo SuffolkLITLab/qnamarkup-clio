@@ -41,34 +41,36 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1): Editing a contact should take less than 5 minutes. Has the contact already been created?
+Q(1): Editing a contact should take less than 5 minutes. Is the contact already in the system?
 A: Yes
-	Q(1.1): Great! Do you need to change/add something to the contact's information or do you need to change the related contacts to your case?
+	Q(1.1): Great! Do you need to change/add something to the contact's information or do you need to change the related contacts for your case?
 	A: Change/Add contact information
-		Q(1.1.1): First, you need to find the contact. Type the contact's name into the search bar and click on their name, make sure that you are clicking the <b>contact</b> and not the <b>matter</b>, as shown in the example below. <p><a href="https://suffolklitlab.org/clio/images/searchcontact.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/searchcontact.png"/></a>
-		A: Found it!
-			Q(1.1.1.1): This will take you the contact's dashboard. At the top right of the page, click on the blue "Edit" button. <p><a href="https://suffolklitlab.org/clio/images/editcontactbutton.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/editcontactbutton.png"/></a>
-			A: OK
-				Q(1.1.1.1.1): A new page will load: <p><a href="https://suffolklitlab.org/clio/images/editcontactinfo.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/editcontactinfo.png"/></a> <p>Here, you can add and/or change the contact's name, address, email, and any other information you have available. Make sure to scroll down and expand each section to make sure you're not missing anything.
-				A: I'm done.
-					Q(1.1.1.1.1.1): Once you've finished adding or changing the information, click the blue "Save contact" button at the bottom of your screen.
-					A: I need to add this contact to my case matter.
-						Q(1.1.1.1.1.1.1):GOTO:Relatedcontacts
-					A: I'm all done!
-						Q(1.1.1.1.1.1.2):GOTO:end
-
-
+		Q(1.1.1): Type the contact's name into the search bar, and click on their name. Make sure you are clicking the <b>contact</b> and not the <b>matter</b>, as shown in the example below. 
+		<br><br><a href="https://suffolklitlab.org/clio/images/searchcontact.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/searchcontact.png" style="width:232px;height:102px;"//></a><br><br>
+		This will take you the contact's dashboard. At the top right of the page, click on the blue "Edit" button. 
+		<br><br><a href="https://suffolklitlab.org/clio/images/editcontactbutton.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/editcontactbutton.png" style="width:232px;height:191px;"//></a><br><br>
+		A new page will load. Here, you can add and/or change the contact's name, address, email, and any other information you have available. Make sure to scroll down and expand each section to make sure you're not missing anything.
+		<br><br><a href="https://suffolklitlab.org/clio/images/editcontactinfo.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/editcontactinfo.png" style="width:232px;height:132px;"//></a><br><br>
+		Once you've finished adding or changing the information, click the blue "Save contact" button at the bottom of your screen.<br><br>
+		Do you need to add this contact to a case matter?
+		A: Yes
+			Q(1.1.1.1):GOTO:Relatedcontacts
+		A: No
+			Q(1.1.1.2):GOTO:end
 	A: Change the related contacts
-		Q(Relatedcontacts): OK! You can attach an already created contact to your matter by going to the matter dashboard (accessible by searching for the matter in the Clio search bar at the top of the page after signing in) and clicking "Add related contact": <p><a href="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"/></a>
-		A: Got it!
-			Q(1.1.2.1): This will take you to edit the matter. You may need to scroll down to where it says "Related contacts," as you can see below. Here, you can remove or add additional contacts to your matter. <p><a href="https://suffolklitlab.org/clio/images/Relatedcontacts.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/Relatedcontacts.png"/></a>
-			A: OK.
-				Q(1.1.2.1.1): You can delete a contact from the matter by clicking the blue "Remove" text to the right of the contact you want to delete. <p>To add a contact, click on the blue "Add related contact" text at the bottom of the "Related contacts" section and more boxes will appear for you to add new contacts. When adding the contact, type the contact's relationship to the matter and then find the contact either by typing their name in or finding them in the drop down bar underneath "Contact."
-				A: I'm done.
-					Q(1.1.2.1.1.1): Once you've finished adding and/or removing the contacts to this matter, click the blue "Save matter" button at the bottom left of your screen and those contacts will be visible from your matter's dashboard. GOTO:end
-A: No
-	Q(1.2):GOTO:createcontactqna
+		Q(Relatedcontacts): OK! You can attach an existing contact to your matter by going to the matter dashboard (accessible by searching for the matter) and clicking "Add related contact." See 
+		<br><br><a href="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" style="width:232px;height:207px;"/></a><br><br>
+		This will take you to edit the matter. Scroll down to where it says "Related contacts." See below. Here, you can remove or add contacts to your matter. 
+		<br><br><a href="https://suffolklitlab.org/clio/images/Relatedcontacts.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/Relatedcontacts.png" style="width:232px;height:67px;"/></a><br><br>
+		You can delete a contact from the matter by clicking the blue "Remove" text to the right of the contact you want to delete. <br><br>
+		To add a contact, click on the blue "Add related contact" text at the bottom of the "Related contacts" section and more boxes will appear for you to add new contacts. When adding the contact, type the contact's relationship to the matter and then find the contact either by typing their name in or finding them in the drop down bar underneath "Contact."
+		<br><br>Once you've finished adding and/or removing the contacts to this matter, click the blue "Save matter" button at the bottom left of your screen and those contacts will be visible from your matter's dashboard. GOTO:end
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/AddContact.txt',this.innerHTML,'end','current');] No, let's add them
+A: I don't know
+	Q(1.3): You should start with a search. Do you need help with that?
+	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/search.txt',this.innerHTML,'end','current')] Yes
+	A: No
+		Q(1.3.2):GOTO:end
 
-Q(createcontactqna): placeholder for Create Contact QnA
 
 Q(end): placeholder

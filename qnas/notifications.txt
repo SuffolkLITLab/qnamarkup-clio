@@ -41,7 +41,13 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1): Here's a ~2 min video on Clio search.<br><br><div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/oyJLZMqHWMA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>GOTO:end
+Q(1): You can set notifications such that you receive an email when you get a secure message. Would you like to edit this setting?
+A: Yes
+	Q(1.1): Under "Settings," choose "Notifications." Check, or uncheck, the box by "Allow email notifications to be sent for secure messages." Then save your changes.<br><br>
+	<img src="https://suffolklitlab.org/clio/images/email_notification.png" style="width:232px;height:197px;"/>
+	GOTO:end
+A: No
+	Q(1.2):GOTO:end
 
 Q(end): placeholder
 A:placeholder

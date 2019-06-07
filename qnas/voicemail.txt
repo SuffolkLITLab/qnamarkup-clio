@@ -41,18 +41,22 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(Greeting): How may I help you today?
-A: I would like to know how to set up my voicemail.
-	Q(vm): Okay. If you are setting up the voicemail from inside the clinic, you will need to dial 3000. If you are setting up the voicemail outside the clinic, you will need to dial 617-305-3000.
-	A: Okay. Then what do I do?
-		Q(1.1.1): Enter your mailbox number, which will be the last four digits of your phone number.
-		A: Okay, done. What now?
-			Q(1.1.1.1): Enter the security code 147258 once you have logged on to the voicemail system for the first time.
-A: I would like to know how to access my voicemail mailbox.
-	Q(1.2): I can help with that. First, call the voicemail internal or external number.
-	A: Okay. What's next?
-		Q(1.2.1): If the system asks for a mailbox number, press the pound key and enter the mailbox number. If the system does not ask for this, press star, pound and enter the security code instead of the mailbox number. If this is your first time using it, you may need to use the default code 147258.
-		A: Understood. Thank you.
-			Q(1.2.1.1): Have a great day! GOTO:end
+Q(1): Please set aside 4-6 minutes to walkthrough these steps. What do you need to do?
+A: Set-up my voicemail
+	Q(1.1): Are you using your clinic phone right now?
+	A:Yes
+		Q(1.1.1):GOTO:vm
+	A:No
+		Q(1.1.2):If you are setting up voicemail from outside the clinic, dial 617-305-3000. GOTO:digit
+A: Access my voicemail
+	Q(1.2): Call the voicemail internal (300) or external number (617-305-3000).
+	If the system asks for a mailbox number, press the pound key and enter the mailbox number (the last four digits of your phone number). If the system does not ask for this, press star, pound and enter the security code instead of the mailbox number. If this is your first time using it, you may need to use the default code 147258.
+	GOTO:end
 
-Q(end): placeholder
+Q(vm): Okay. If you are setting up voicemail from inside the clinic, dial 3000. GOTO:digit
+
+Q(digit): First, enter your mailbox number, which is the last four digits of your phone number.
+	       Now Enter the default security code 147258 once you have logged on to the voicemail system for the first time. Follow the instructions, and be sure to reset your security code. 
+	       GOTO:end
+
+Q(end):placeholder

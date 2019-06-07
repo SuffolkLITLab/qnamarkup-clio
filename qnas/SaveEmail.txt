@@ -41,20 +41,7 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1): OK, saving an email will take less than 5 minutes. First, you need to sign in to your clinic email. Then find the email you want to save and double click on the email's subject line while it is in your inbox so that a separate popup box with your email will appear, like this: <p><a href="https://suffolklitlab.org/clio/images/SaveEmail.1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.1.png"/></a>
-A: I've opened the email.
-	Q(1.1): Next, click on the printer icon that the image above is pointing to. Another popup will appear asking for the printing destination and other settings. Next to the "Destination" heading, click "Change..." as shown below and another popup will appear. <p><a href="https://suffolklitlab.org/clio/images/SaveEmail.2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.2.png"/></a>
-	A: OK.
-		Q(1.1.1): From here, instead of clicking on a printer, click on "Save as PDF" and another popup will appear asking for the name of the document and where to save the document on your computer.
-		A: Now what?
-			Q(1.1.1.1): Now, log into Clio and locate the matter that you want to save your email into. Click on the "Documents" tab. <p>From here, click "New" and then a drop down box will appear where you will click "File upload" as shown: <p><a href="https://suffolklitlab.org/clio/images/SaveEmail.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.3.png"/></a> <p>A new popup will appear, then you will need to find and click on the email PDF that you just saved into your computer and click "Open".
-			A: Opened!
-				Q(1.1.1.1.1): This popup will appear asking for the file's name, date received, matter it is located in and category: <p><a href="https://suffolklitlab.org/clio/images/SaveEmail.4.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.4.png"/></a> <p>Fill out this information to the best of your ability and then click "Upload Documents"
-				A: Done!
-					Q(1.1.1.1.1.1): Check that you can see the email has been saved and properly downloaded into Clio. <p> If your matter has a separate folder for Correspondence, you will need to move the document into the Correspondence folder by clicking "move" underneath the document name: <p><a href="https://suffolklitlab.org/clio/images/SaveEmail.5.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.5.png"/></a>
-					A: Got it.
-						Q(1.1.1.1.1.1.1): Another popup like the one below will appear with your matter along with other matters. Click the plus sign next to the matter you want this email in and find the "Correspondence" folder. Highlight this folder by clicking on it and then click on the green "Move" button at the bottom of this popup. It may take a few seconds for it move. <p><a href="https://suffolklitlab.org/clio/images/SaveEmail.6.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/SaveEmail.6.png"/></a>
-						A: Finished!
-							Q(1.1.1.1.1.1.1.1): Great! You've saved your email to Clio. GOTO:end
+Q(1): This roughly 4 min video will cover logging phone calls and emails.<br><br><div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/vVvfxiNXYgA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>GOTO:end
 
 Q(end): placeholder
+A:placeholder

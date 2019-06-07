@@ -41,14 +41,12 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(Greeting): How may I help you today?
-A: I would like to know how to send a secure message.
-	Q(Clio): Great. To start, go to the communications page. You can navigate here through a client's matter or on the taskbar on the left side of the screen. <a href="https://suffolklitlab.org/clio/images/Communication_1.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/Communication_1.png"/></a>
-	A: Got it. What next?
-		Q(first):Click on the blue Add secure message button on the upper right side of the page. A new window will pop up.<a href="https://suffolklitlab.org/clio/images/Communication_2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/Communication_2.png"/></a>
-		A: Done. Tell me what to do now.
-			Q(second):Type in the name of the matter related to the message in the first box or use the drop-down to select a matter. Under Contact, type in the recipient of the message. You will then need to type a subject in the subject box and your secure message in the body.
-			A: Great! Can I attach a document?
-				Q(third): Yes. At the bottom of the window, you will see an option to attach a document. Once all the fields are filled in, click the blue send message button to have your secure message sent.
-				A: Understood. Is there anything I should know about secure messages?
-					Q(1.1.1.1.1.1): One thing to understand about secure messages is how they are different from e-mails. Secure messages require a password to view and are protected by encryption. These messages also do not leave the Clio servers to ensure security. That is all for now.
+Q(start): Choose one.
+A: Video (~3 min) 
+	Q(1.1):<div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/cSy3XJGuJlA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>GOTO:end 
+A: Text
+	Q(1.2): From within a matter, click on the blue "Add secure message" button in the upper right of the page. A new window will pop up. Complete the appropriate fields and click send. If you were in a matter, that matter should be selected, otherwise, be sure to assign a matter.<br><br>
+	Note, if you are sending to someone outside of the Clinic, they will be emailed a link to sign into the Clio portal. 
+	GOTO:end
+
+Q(end): placeholder

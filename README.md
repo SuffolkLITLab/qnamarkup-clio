@@ -10,7 +10,7 @@ A QnA stub is a modular block of QnA logic that is intended for use as part of a
 ### Communications
 - [Setting up voicemail](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt))
 - [Setting up Google Voice](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Google_Voice.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Google_Voice.txt))
-- [Using Maildrop address](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/maildrop.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/maildrop.txt))
+- [Getting a matter's Maildrop address](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/maildrop.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/maildrop.txt))
 - [Sending a secure message](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Secure_messages_qna.txt) (includes video) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Secure_messages_qna.txt))
 - [Encrypting emails](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt))
 - [Sending standard mail](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/mail_letter.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/mail_letter.txt))

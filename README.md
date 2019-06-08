@@ -13,8 +13,7 @@ A QnA stub is a modular block of QnA logic that is intended for use as part of a
 - [Sending a secure message](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Secure_messages_qna.txt) (includes video) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Secure_messages_qna.txt))
 - [Editting secure message notifications](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/notifications.txt)  ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/notifications.txt))
 - [Encrypting emails](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt))
-- [Sending standard mail](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/mail_letter.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/mail_letter.txt))
-- [Sending certified mail](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Certify_mail.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Certify_mail.txt))
+- [Physical mail](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/mail.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/mail.txt))
 
 ### Office Processes
 - [Setting up VDI](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/VDI_setup.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/VDI_setup.txt))

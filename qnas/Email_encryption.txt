@@ -41,30 +41,30 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1):Encrypting an email is easy! It should take you about 2 minutes.<br><br>Before showing you how to send an encrypted email I have to ask, are you sending this email internally to a suffolk.edu user or external user?
-A:Internal
-	Q(1.1):Is your email ready to send?
-	A:Yes, I just need to encrypt it.
-		Q(1.1.1):First, you have to type <b>[ec]</b> in the subject line before your subject.
-		A:Ok, now what?
-			Q(1.1.1.1):Now, you will have to add <b>.sec</b> at the end of the recipient's email. It should look like this name@suffolk.edu.sec <p><a href="https://suffolklitlab.org/clio/images/internal.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/internal.png"/></a></p>
-			A:I did that, now what?
-				Q(1.1.1.1.1):That is all! Once you send it your email will be encrypted!
-				A:Great! What will the receiver see?
-					Q(1.1.1.1.1.1):GOTO:encrypt
-A:External
-	Q(1.2):Is your email ready to send?
-	A:Yes, I just need to encrypt it.
-		Q(1.2.1):All you have to do is type <b>[ec]</b> in the subject line before your subject. <p><a href="https://suffolklitlab.org/clio/images/external.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/external.png"/></a></p>
-		A:Is that all?
-			Q(1.2.1.1):That is all! Once you send it your email will be encrypted!
-			A:Great! What will the receiver see?
-				Q(1.2.1.1.1):GOTO:encrypt
+Q(1):Encrypting should take you about 2 minutes. <br><br>Before showing you how to send an encrypted email I have to ask, are you sending this email internally to a suffolk.edu user or external user?
+A:Internal (another suffolk.edu email)
+	Q(1.1):FYI, you can also send secure messages via Clio to other Clio users. <br><br>
+	To send a secure email to someone with a suffolk.edu address, and <b>[ec]</b> at the start of your subject line.
+	You must also add <b>.sec</b> at the end of the recipient's email. It should look like this name@suffolk.edu.sec 
+	<br><br><a href="https://suffolklitlab.org/clio/images/internal.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/internal.png" style="width:232px;height:150px;"/></a><br><br>
+	That is all! Would you like to see what the recipient will see?
+	A: Yes
+		Q(1.1.1):GOTO:encrypt
+	A: No
+		Q(1.1.2):GOTO:end
 
-Q(encrypt):The receiver will see something like this <p><a href="https://suffolklitlab.org/clio/images/instruc.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/instruc.png" width="200px" height="200px"/></a></p>
-A:What will they need to do?
-	Q(2.1):They will have to open the attachment. If they need to register they will have to do so before opening the email. If they have registered before they will simply enter their password to see the email.
-	A:Great!
-		Q(2.1.1):GOTO:end
+A:External
+	Q(1.2):All you have to do is type <b>[ec]</b> in the subject line before your subject. 
+	<br><br><a href="https://suffolklitlab.org/clio/images/external.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/external.png" style="width:232px;height:158px;"/></a><br><br>
+	That is all! Would you like to see what the recipient will see?
+	A: Yes
+		Q(1.2.1):GOTO:encrypt
+	A: No
+		Q(1.2.2):GOTO:end
+
+Q(encrypt):They'll see something like this:<br><br>
+<a href="https://suffolklitlab.org/clio/images/instruc.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/instruc.png" style="width:232px;height:150px;"/></a><br><br>
+They will have to open the attachment. If they need to register, they will have to do so before opening the email. If they have registered before, they will simply enter their password to see the email.
+GOTO:end
 
 Q(end): placeholder

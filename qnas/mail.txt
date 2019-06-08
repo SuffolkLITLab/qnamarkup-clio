@@ -41,18 +41,17 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-
-Q(1): FYI, it can take a few days to arrange for a translator. This walk through should only take 3-5 min. Do you need Spanish translation? 
+Q(1): Do you need an envelope?
 A: Yes
-	Q(1.1): Have you consulted with your supervisor to determine the level of need ?
-	A: Yes
-		Q(translators): We have some Spanish translators available onsite: <p>Vivian Rosado, in suite 150, provides interpretation for the Health Law and Family Law Clinics. <p>Ana Vaquerano, in suite 110, provides interpretation for Accelerator Practice and Immigration Clinics. <p>Juvenile Defenders and Defenders Clinics utilize Court-provided interpreters, when available.<br><br>
-After you get pre-approval from your supervisor, you may request interpretation services directly from one of these staff members. You must provide them at least 24 hours notice and an agenda for the meeting in advance. GOTO:end
-	A: No
-		Q(1.1.2): Keep in mind you'll need to do that before anything else. GOTO:translators
+	Q(1.1): You can find large and small envelopes in the supplies section of your clinic near the printers. Ask the front desk administrators if you have issue locating materials. GOTO:firstclass
 A: No
-	Q(1.2): All requests for non-Spanish interpretation must go to Professor Sarah Boonin for pre-approval and then to an outside translation service, if approved. Students requesting outside translation services must email Joan Luke and their supervising professor, provide an estimate of the length and cost of the interpretation, and describe its necessity. <br><br>
-	<b>Only those interpretations necessary for the litigation will be approved.</b> GOTO:end
+	Q(firstclass): Are you looking to send plain old first class mail?
+	A: Yes
+		Q(1.2.1): Drop the letter in the mailbox bin in clinic 150 located at the clinic's front desk. This mail bin is for all first class mail. Outgoing mail will be picked up in the morning during the mail drop. This will be before noon at Clinic 150 only.
+		GOTO:end
+	A:No
+		Q(1.2.2): All mail that falls under special services (e.g., return receipt, overnight delivery, certified mail, registered mail) must have a completely filled out <a href="https://suffolklitlab.org/clio/docs/mail_request.pdf" target="_blank">mail request form</a> attached. <br><br>
+		You must also bring this type of mail to 73 Tremont Mail Services Office, located across the street on the 2nd Floor. The sender must be the one to bring the mail.
+		GOTO:end
 
-			
-Q(end): placeholder
+Q(end):placeholder

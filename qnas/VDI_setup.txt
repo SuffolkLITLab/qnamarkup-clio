@@ -60,7 +60,7 @@ A new window will ask you to enter the name of the Connection Server. Type <i>de
 <br><br>
 Double click the cloud icon.  See 
 <br><br>
-<a href="https://suffolklitlab.org/clio/images/cloud.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cloud.png" style="width:232px;height:220px;"/></a> 
+<a href="https://suffolklitlab.org/clio/images/cloud.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cloud.png" style="width:232px;height:220px;"/></a> <br><br>
 If you are signing in for the first time you might have to re-type <i>desktop.suffolk.edu</i> as the connection server name.
 <br><br>
 Log in with your Clinic email credentials. You should have received these via email at the beginning of the year. Remember this one starts with cl. If you don't have them, contact your supervisor.  See 

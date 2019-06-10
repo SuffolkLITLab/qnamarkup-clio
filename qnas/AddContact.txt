@@ -55,7 +55,7 @@ A: No
 		A: No
 			Q(1.2.2.2):GOTO:end
 
-Q(Addcontact): This ~3 min video explains the two ways to create a contact.<br><br><div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/GtiS2TcVi3E?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div><br><br>
+Q(Addcontact): This ~3 min video explains the two ways to create a contact.<br><br><div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/L1LQFnpBBFY?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div><br><br>
 Now that you've created a contact, you can attach it to a matter in one of two ways. Choose one:
 A: From the contact's dashboard
 	Q(2.1): From the dashboard, click the "Link Matter" under "Associated Matters." Then pick the related matter and define the relationship. And don't forget to save your work.GOTO:end

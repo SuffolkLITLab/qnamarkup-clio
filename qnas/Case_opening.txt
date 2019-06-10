@@ -41,13 +41,13 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1): To have a staff member open your case in Clio, you first need a copy of the <a href="https://suffolklitlab.org/clio/docs/mail_request.pdf" target="_blank">Case Opening Form</a>. You can find this in your clinic's S drive or where your clinic keeps blank forms. It looks like this: 
+Q(1): To have a staff member open your case in Clio, you need to fill out a <a href="https://suffolklitlab.org/clio/docs/mail_request.pdf" target="_blank">Case Opening Form</a>. You can find this in your clinic's S drive or where your clinic keeps blank forms. It looks like this: 
 <br><br><a href="https://suffolklitlab.org/clio/images/caseopen.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/caseopen.png" style="width:232px;height:177px"/></a><br><br>
 Once you've filled out as much as you can (don't forget the conflict check), take it to your supervisor to have it signed.<br><br>
 Make a copy of the signed form (keep the original in your file).
-Take the copy to the office's administrative assistant and they will enter this information in Clio for you.
-Once the case is open you can start adding information to the matter!<br><br>
-Don't forget to scan the case opening form into Clio and save it in the matter under Documents!
+Take the copy to your office's administrative assistant and they will enter this information in Clio for you.
+Once the case is open, you can start adding information to the matter.<br><br>
+Don't forget to scan the case opening form into Clio, and save it to the matter under Documents.
 GOTO:end
 
 Q(end): placeholder

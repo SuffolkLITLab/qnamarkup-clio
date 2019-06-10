@@ -41,17 +41,31 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1):How may I assist you today?
-A: I would like to know how to perform a conflict check?
-	Q(1.1): Okay. First, you will need to enter the name of your new potential client along with all the key parties and/or witnesses
-into Clio. You will then conduct a conflict check against other clients of the Clinical Programs. Once you have done this, you must submit the results of this conflict check in the case matter once it is opened.
-	A: Okay, is that all?
-		Q(1.1.1): There is more. You must also check the names of the new client and key parties/witnesses against the
-names in the "Conflict of Interest Form" from prior and current outside employment. The results from this must all be submitted in the case matter once it is opened.
-		A: Got it. What else do I need to do?
-			Q(1.1.1.1): Per the clinic student handbook, you must ask your colleagues who belong to the same clinic, to check the name of the new client and
-key parties/witnesses against the lists of their past and present clients from prior work as shown in their "Conflict of Interest" forms. You must then submit the results of this conflict check in the case matter once it is opened.
-			A: Great. Anything else?
-				Q(1.1.1.1.1): Look at your Conflicts of Interest form, and enter all the names within that form into Clio. Submit the results of in the Conflicts Log in Clio.
-				A: Then what?
-					Q(1.1.1.1.1.1): Once you have performed these checks and find that they show potential conflicts, you must take the information to your supervising attorney to discuss an appropriate resolution to the conflict.
+Q(1):Have you read the <a href="https://suffolklitlab.org/clio/docs/conflicts_policy.pdf" target="_blank">Clinic's Conflicts Policy</a> (Appendix 6 in the handbook)? 
+A: Yes
+	Q(1.1): Have you filled out your <a href="https://suffolklitlab.org/clio/docs/coflicts_form.pdf" target="_blank">In House Conflicts of Interest Form</a> (also available in the handbook)?
+	A: Yes
+		Q(1.1.1):GOTO:clioconflicts
+	A: No
+		Q(1.1.2): You can find it <a href="https://suffolklitlab.org/clio/docs/conflicts_form.pdf" target="_blank">here</a>. I'll wait.<br><br><img src="https://media.giphy.com/media/tXL4FHPSnVJ0A/giphy.gif" style="width:232px;height:153px;"/> 
+		A: Okay, done
+			Q(1.1.2.1):GOTO:clioconflicts
+A: No
+	Q(1.2): You can find it <a href="https://suffolklitlab.org/clio/docs/conflicts_policy.pdf" target="_blank">here</a>. I'll wait.<br><br><img src="https://media.giphy.com/media/tXL4FHPSnVJ0A/giphy.gif" style="width:232px;height:153px;"/> 
+	A: Okay, done
+		Q(1.2.1):GOTO:1.1
+
+Q(clioconflicts): Perform a search in Clion on your potential new client and all the key parties and/or witnesses. Input all first and last names, including searches with variable spellings where warranted. Print out a report documenting these searches regardless of whether Clio returned any results. Do this by clicking the "Export" button at the bottom of your search results. <br><br>
+<a href="https://suffolklitlab.org/clio/images/conflict_search.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/conflict_search.png" style="width:232px;height:115px;"/></a><br><br>
+You must also check the names of the new client and key parties/witnesses against names in your "Conflict of Interest Form." Then you must ask your colleagues who belong to the same clinic to check the name of the new client and
+key parties/witnesses against the lists of their past and present clients from prior work as shown in their "Conflict of Interest" forms. You must then submit the results of this conflict check in the case matter once it is opened. <br><br>
+Look at your Conflicts of Interest form, and enter all the names within that form into Clio. Submit the results of in the Conflicts Log in Clio.
+Do any of these searches reveal potential conflicts? 
+A: Yes
+	Q(2.1): Share the results of your search with your supervising attorney to discuss an appropriate resolution to the conflict. GOTO:2.2
+A: No
+	Q(2.2): Remember that if you go on to represent this potential client, you have an ongoing obligation to conduct additional conflict checks when new parties to the matter become known. <br><br>Also, at least mid-year, and more frequently if deemed necessary, you should update your list of clients from outside employment in the Conflicts of Interest Form and check them against Clio. This should be documented in the Imputed Conflicts Log. GOTO:end
+A: I don't know
+	Q(2.3): If in doubt, assume there's a potential conflict, and share the results of your search with your supervising attorney to discuss an appropriate resolution to the conflict. GOTO:2.2
+ 
+Q(end): placeholder

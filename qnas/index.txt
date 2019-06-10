@@ -107,7 +107,7 @@ Q(prenew): Before you can open a case, you must conduct conflict checks. Also, y
 
 Q(new): What do you need help with?
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Conflictqna.txt',this.innerHTML,'end','new_next');]Running conflict checks
-	Q(new_next):
+	Q(new_next): What next?
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Case_opening.txt',this.innerHTML,'end','home');]Opening a new case/matter
 	A: Back to "What's going on?"
 		Q(6.1.2):GOTO:home

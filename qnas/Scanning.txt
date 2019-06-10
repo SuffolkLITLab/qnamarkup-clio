@@ -44,7 +44,7 @@ body{
 Q(1):Scanning files is easy and will only take you 1 minute! Do you have the files you want to scan?
 A:Yes
 	Q(haveit):Locate the multipurpose copier in your office. It looks like this: <br><br>
-        <a href="https://suffolklitlab.org/clio/images/scan.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/scan.png" width="232px" height="309px"/></a><br><br>
+        <a href="https://suffolklitlab.org/clio/images/scan.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/scan.png" style="width:232px;height:309px;"/></a><br><br>
         Select "scan" on the machine, and look for you name on the list of recipients. Can you find your name?
 	A: Yes
 		Q(1.1.1):Select it, and scan. The files should be sent straight to your clinic email. GOTO:end

@@ -5,7 +5,7 @@ This is the main QnA, the homepage if you will. Everyone should start here. The 
 - [Homepage](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/index.txt))
 
 ## Stubs
-A QnA stub is a modular block of QnA logic that is intended for use as part of a larger whole. E.g., the main/home page references stubs, such as [this goodbye](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt), as needed.
+A QnA stub is a modular block of QnA logic that is intended for use as part of a larger whole. E.g., the main/home page references stubs, such as [this goodbye](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt), as needed. If you visit these on their own and see placeholder text, that’s where the QnA would return to the homepage under normal usage. 
 
 ### Communications
 - [Setting up voicemail](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt))

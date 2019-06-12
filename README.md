@@ -11,7 +11,7 @@ A QnA stub is a modular block of QnA logic that is intended for use as part of a
 - [Setting up voicemail](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt))
 - [Getting a matter's Maildrop address](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/maildrop.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/maildrop.txt))
 - [Sending a secure message](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Secure_messages_qna.txt) (includes video) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Secure_messages_qna.txt))
-- [Editting secure message notifications](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/notifications.txt)  ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/notifications.txt))
+- [Editing secure message notifications](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/notifications.txt)  ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/notifications.txt))
 - [Encrypting emails](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt))
 - [Physical mail](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/mail.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/mail.txt))
 
@@ -20,7 +20,7 @@ A QnA stub is a modular block of QnA logic that is intended for use as part of a
 - [Scanning documents](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Scanning.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Scanning.txt))
 - [Booking a room](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/BookRoom.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/BookRoom.txt))
 - [Finding a translator](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Translator.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Translator.txt))
-- [Shreding Documents](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/shred.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/shred.txt))
+- [Shredding Documents](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/shred.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/shred.txt))
 
 ### Clio Usage
 - [Clio overview](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/ClioIntro.txt) (includes video) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/ClioIntro.txt))

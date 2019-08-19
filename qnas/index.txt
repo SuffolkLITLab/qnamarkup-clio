@@ -112,10 +112,10 @@ A: Sign into Clio
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Clio_login.txt',this.innerHTML,'end','after_log');] No; I want to login
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt',this.innerHTML,'end','voice');]Set up/access my voicemail
 	Q(voice): What next?
-	A: Skip the above; I'm all set up
+	A: I'm all set up; let's jump ahead
 		Q(1.3.1):GOTO:working
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','voice')]  I need cat videos
-A: I'm all set up; let's jump ahead
+A: Skip the above; I'm all set up
 	Q(1.4):GOTO:working
 
 

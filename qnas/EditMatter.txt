@@ -41,11 +41,17 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1): Editing a matter should only take a few minutes, depending on how much you need to add/change. Type the name of the matter into the Clio search bar at the top of the page, and hit enter. This should take you to the matter's dashboard, which will look something like this: 
+Q(1): It is very unlikely that you will need to edit a matter, as opposed to add or edit a contact or enter a note. Are you sure this is what you want to do?
+A: Yes
+	Q(1.1):GOTO:2
+A: No
+	Q(1.2): Fair enough. GOTO:end
+
+Q(2): Editing a matter should only take a few minutes, depending on how much you need to add/change. Type the name of the matter into the Clio search bar at the top of the page, and hit enter. This should take you to the matter's dashboard, which will look something like this:
 <br><br><a href="https://suffolklitlab.org/clio/images/MatterDashboard.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.PNG"/></a><br><br>
-Click the blue "Edit" button at the top right of the dashboard. A new page will appear where you can edit all the information in your matter: 
+Click the blue "Edit" button at the top right of the dashboard. A new page will appear where you can edit all the information in your matter:
 <br><br><a href="https://suffolklitlab.org/clio/images/EditMatter.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/EditMatter.PNG"/></a><br><br>
-Here, you can edit the status of the case, the attorney responsible, edit contacts, add a brief case synopsis, change the supervisor, add a docket number, and much more. 
+Here, you can edit the status of the case, the attorney responsible, add a brief case synopsis, change the supervisor, add a docket number, and much more.
 <br><br>Make sure you scroll down and expand each section to add any information relevant to your case.
 Once you're done adding information to your matter, click on the blue "Save matter" button at the bottom left of your screen. This will take you back to the matter dashboard where you can double check that all the information was entered correctly. GOTO:end
 

@@ -56,10 +56,11 @@ A: No
 			Q(1.2.2.2):GOTO:end
 
 Q(Addcontact): This ~3 min video explains the two ways to create a contact.<br><br><div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/L1LQFnpBBFY?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div><br><br>
+You may need to select an option under "Custom Fields" when creating the contact, depending on your clinic and the type of contact (e.g., if you're in the IPEC, you'll want to choose "IPEC Client" when creating a client). <br><br>
 Now that you've created a contact, you can attach it to a matter in one of two ways. Choose one:
 A: From the contact's dashboard
-	Q(2.1): From the dashboard, click the "Link Matter" under "Associated Matters." Then pick the related matter and define the relationship. And don't forget to save your work.GOTO:end
-A: From the matter 
+	Q(2.1): From the dashboard, click the "Link Matter" under "Associated Matters." Then pick the related matter and define the relationship. Different clinics will have their own nomenclature for describing a contact's relationship. And don't forget to save your work.GOTO:end
+A: From the matter
 	Q(2.2): From the matter dashboard, click "Add related contact."<br><br><a href="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"/></a><br><br>
 	Find the contact you created either by typing it in or finding them on the drop down bar underneath "Contact," then add their relationship to the matter. And don't forget to save your work. <br><br><a href="https://suffolklitlab.org/clio/images/CreatenewContact.4.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"/></a>
 	GOTO:end

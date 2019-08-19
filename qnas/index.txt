@@ -3,7 +3,54 @@ Author: <a href="Virtual Clinic Assistant " target="_blank">Suffolk Legal Innova
 Description: I am an interactive flow chart programmed by your LIT Fellows!
 After: <div style="float:left;margin-bottom:40px;"><font size=-1><sup>†</sup> Conceptually, I'm also a set of checklists to help make sure you don't miss anything. See <a href=https://www.samuelthomasdavies.com/book-summaries/health-fitness/the-checklist-manifesto/" target="_blank">The Checklist Manifesto</a>.<br><br>
 <sup>††</sup> FWIW, the initial prompt will change over time (e.g., once everyone is setup, we won't lead with that).</font></div>
-<script src="https://suffolklitlab.org/clio/js_bin/loadQnA.js"></script>
+<script>
+function loadQnA(url_point,button,find=false,replace=false) {
+  // The QnA you are loading must be on the same domain as the QnA calling it.
+  // `url_point` is a URL for the html of QnA
+  // `button` is the text you want the QnA to echo back after the button is "hit"
+  // `find` is the variable name for a Q tag in the target QnA that you want to replace
+  // `replace` is the variable name for a Q tag in the originating QnA that will replace `find`
+
+  $.ajax({ url: url_point, success: function(data) {
+
+    var mydata = $(data).find('div[id=ondeck]');
+    var placeholder = Date.now();
+    mydata  =  mydata.html(mydata.html().replace(/GOTO:(\d)/g,"GOTO:"+placeholder+".$1"));
+    mydate = mydata.html(mydata.html().replace(/ (id|name)="Q-/gi, ' $1="Q-'+placeholder+'.'));
+    mydate = mydata.html(mydata.html().replace(/ (id|name)="A-(target-|href-|)/gi, ' $1="A-$2'+placeholder+'.'));
+    mydate = mydata.html(mydata.html().replace(/ (id|name)="X-/gi, ' $1="X-'+placeholder+'.'));
+    mydate = mydata.html(mydata.html().replace(/ (id|name)="Xi-/gi, ' $1="Xi-'+placeholder+'.'));
+    mydate = mydata.html(mydata.html().replace(/var QVnames =/gi, 'QVnames_placeholder ='));
+
+    mydate = mydata.html(mydata.html() + "<div id='A-"+placeholder+".1' name='A-"+placeholder+".1' style='display:none;'>"+$($.parseHTML(button)).html()+"</div>");
+    mydate = mydata.html(mydata.html() + "<div id='X-"+placeholder+".1' name='X-"+placeholder+".1' style='display:none;'>"+$($.parseHTML(button)).html()+"</div>");
+
+    var QVNames_tmp = QVnames;
+    $('#ondeck').html($('#ondeck').html()+mydate.html());
+    QVnames = QVNames_tmp
+    for (var i in QVnames_placeholder) {
+      //check to see if [][1] is a custom name, if so leave it alone
+      if (QVnames_placeholder[i][1].match(/[a-z]/i)) {
+        QVnames.push([placeholder+'.'+QVnames_placeholder[i][0],QVnames_placeholder[i][1]])
+      } else {
+        QVnames.push([placeholder+'.'+QVnames_placeholder[i][0],placeholder+'.'+QVnames_placeholder[i][1]])
+      }
+    }
+
+    for(var i = 0; i < QVnames_placeholder.length; i++) {
+       if(QVnames_placeholder[i][1] == find) {
+          var find_id = placeholder+'.'+QVnames_placeholder[i][0];
+	     }
+    }
+
+    var regexp = new RegExp("GOTO:"+find_id,"g");
+    $('#ondeck').html($('#ondeck').html().replace(regexp,"GOTO:"+indexis(replace)));
+
+    answerQ(placeholder+.1);
+
+  } });
+}
+</script>
 Before:
 <style>
 body{
@@ -65,7 +112,7 @@ A: Sign into Clio
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Clio_login.txt',this.innerHTML,'end','after_log');] No; I want to login
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt',this.innerHTML,'end','voice');]Set up/access my voicemail
 	Q(voice): What next?
-	A:I'm all set up; let's jump ahead
+	A: Skip the above; I'm all set up
 		Q(1.3.1):GOTO:working
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','voice')]  I need cat videos
 A: I'm all set up; let's jump ahead
@@ -118,8 +165,8 @@ A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab
 Q(current): What do you need help with?
 A: Clio et al. (case management & tracking)
 	Q(7.1): What specifically?
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/search.txt',this.innerHTML,'end','current')] Search
-	A: Contacts
+	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/search.txt',this.innerHTML,'end','current')] Search Clio
+	A: Contacts (ppl &amp; orgs)
 		Q(7.1.2): Would would you like to do?
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/contacts_overview.txt',this.innerHTML,'end','current');] Watch Contacts overview (~4 min)
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/AddContact.txt',this.innerHTML,'end','current');]Add a contact
@@ -143,8 +190,8 @@ A: Correspondence (email, certified mail, etc.)
 	Q(7.2):  What type?
 	A: Electronic (emails & secure messages)
 		Q(7.2.1): What do you need to do?
-		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/maildrop.txt',this.innerHTML,'end','current');]Get Maildrop email
-		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Secure_messages_qna.txt',this.innerHTML,'end','current');]Send a secure message
+		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/maildrop.txt',this.innerHTML,'end','current');]Get email to CC/shares with Clio (Maildrop)
+		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Secure_messages_qna.txt',this.innerHTML,'end','current');]Send a secure Clio message
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/notifications.txt',this.innerHTML,'end','current');]Edit message notifications
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt',this.innerHTML,'end','current');]Log emails
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt',this.innerHTML,'end','current');]Encrypt an email
@@ -160,7 +207,7 @@ A: Correspondence (email, certified mail, etc.)
 A: Logistics (booking rooms, translators, etc.)
 	Q(7.3): What do you need to do?
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/BookRoom.txt',this.innerHTML,'end','current');]Book a room
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Translator.txt',this.innerHTML,'end','current');]Find a translator
+	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Translator.txt',this.innerHTML,'end','current');]Find a translator or interpreter
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/shred.txt',this.innerHTML,'end','current');]Shred a document
 A: Back to "What's going on?"
 	Q(7.4):GOTO:home

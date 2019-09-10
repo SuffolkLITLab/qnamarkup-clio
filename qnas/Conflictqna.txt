@@ -55,7 +55,7 @@ A: No
 	A: Okay, done
 		Q(1.2.1):GOTO:1.1
 
-Q(clioconflicts): Perform a search in Clion on your potential new client and all the key parties and/or witnesses. Input all first and last names, including searches with variable spellings where warranted. Print out a report documenting these searches regardless of whether Clio returned any results. Do this by clicking the "Export" button at the bottom of your search results. <br><br>
+Q(clioconflicts): Perform a search in Clio on your potential new client and all the key parties and/or witnesses. Input all first and last names, including searches with variable spellings where warranted. Print out a report documenting these searches regardless of whether Clio returned any results. Do this by clicking the "Export" button at the bottom of your search results. <br><br>
 <a href="https://suffolklitlab.org/clio/images/conflict_search.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/conflict_search.png" style="width:232px;height:115px;"/></a><br><br>
 You must also check the names of the new client and key parties/witnesses against names in your "Conflict of Interest Form." Then you must ask your colleagues who belong to the same clinic to check the name of the new cllient and
 key parties/witnesses against the lists of their past and present clients from prior work as shown in their "Conflict of Interest" forms. You must then submit the results of this conflict check in the case matter once it is opened. <br><br>

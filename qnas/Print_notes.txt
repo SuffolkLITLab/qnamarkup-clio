@@ -41,7 +41,7 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1):Printing notes for a matter should only take about a minute. navigate to the matter you want to print notes for. Click on the <i>Notes</i> tab.
+Q(1):Printing notes for a matter should only take about a minute. Navigate to the matter you want to print notes for. Click on the <i>Notes</i> tab.
 At the bottom of the page you will find en 'Export' button. Click it.
 <br><br><a href="https://suffolklitlab.org/clio/images/print.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/print.png"/></a><br><br>
 You should see an option to export in 'PDF' or 'CSV' format. Select 'PDF.'

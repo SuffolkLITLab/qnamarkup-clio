@@ -44,7 +44,7 @@ body{
 
 Q(1): Using Clio Launcher, you can edit common document types, like Word, without first having to manually downloading them. Just click the blue arrow to the right of the document. For example: <br><br>
 <a href="https://suffolklitlab.org/clio/images/launcher_arrow.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/launcher_arrow.png" style="width:232px;height:53px"/></a><br><br>
-The first time you use Clio Luncher you may be asked to sign in with your Clio credentials and connect your account. Clicking the blue arrow should open the document in your computer's default editor (e.g., Word) though it may take a while to open. Just edit the document, and hit save as you normally would. This will save the document back to Clio, requiring no additional action on your part. <br><br>
+The first time you use Clio Launcher you may be asked to sign in with your Clio credentials and connect your account. Clicking the blue arrow should open the document in your computer's default editor (e.g., Word) though it may take a while to open. Just edit the document, and hit save as you normally would. This will save the document back to Clio, requiring no additional action on your part. <br><br>
 You can check to make sure your changes have been saved by looking at the document's version history.<br><br>
 <a href="https://suffolklitlab.org/clio/images/doc_details.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/doc_details.png" style="width:232px;height:111px;"/></a><br><br>
 You can also download old versions of the document from here by clicking on their links. <br><br>
@@ -53,7 +53,7 @@ A: Tell me more about Launcher
 	Q(1.1): Launcher should already be installed. So you can ignore that bit, but this video does show it in action.<br><br>
 	<div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/pkUzAQhX-DY?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>
 	GOTO:end
-A: Tell me how to edit w/o launcher
+A: Tell me how to edit w/o Launcher
 	Q(1.2):GOTO:2
 
 Q(2): Find the document by typing the client's name in the search bar. Click on the matter that has the document you wish to edit. <br><br>
@@ -63,7 +63,7 @@ Alternatively, click the documents tab on the left bar and choose your document 
 If you are searching for your document through the matter, click on the white documents tab at the top. At the bottom, choose the document you wish to edit. <br><br>
 <a href="https://suffolklitlab.org/clio/images/edit_documents2.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/edit_documents2.png" style="width:232px;height:102px"/></a>
 <br><br>
-Click the document name to download the document. Once it is downloaded, you may edit and save any changes you make to the document. Please note that if the document is a pdf, you may need to have adobe software to make changes.
+Click the document name to download the document. Once it is downloaded, you may edit and save any changes you make to the document. Please note that if the document is a PDF, you may need to have Adobe software to make changes.
 <br><br>
 To upload you changes, click "View Details" under the document title then "Add new version" in the popup. 
 GOTO:end

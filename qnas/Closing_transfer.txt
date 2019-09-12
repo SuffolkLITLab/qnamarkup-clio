@@ -62,7 +62,7 @@ Q(2): You may then need to write up a "Notice of motion to withdraw" or "Notice 
 Make sure that original documents are properly preserved for the attorney you are transferring the case to.<br><br>
 Take any extra copies or extraneous materials that you have with client information and shred them. You may find these materials and documents in your client's folder.
 A: Done
-	Q(2.1):Write a transfer memo and submit a copy of the transfer memo to clio as well as to the cliet's paper file. The transfer memo should fully explain in depth what you have done in the case and what the next attorney should expect to work on.
+	Q(2.1):Write a transfer memo and submit a copy of the transfer memo to Clio as well as to the client's paper file. The transfer memo should fully explain in depth what you have done in the case and what the next attorney should expect to work on.
 	<br><br>
 	If applicable to your case or clinic, keep new and related laws, useful memos, research, and/or sample pleadings, and other documents redacted and saved on the shared drive or in Clio template matter.
 	<br><br>
@@ -79,12 +79,12 @@ A: Done
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/shred.txt',this.innerHTML,'end','home');] How do I shred docs?
 
 
-Q(3): Send back any original documents you possess back to your client.
+Q(3): Send any original documents you possess back to your client.
 <br><br>
 Make sure that original documents are properly preserved for the attorney you are transferring the case to.<br><br>
 Take any extra copies or extraneous materials that you have with client information and shred them. You may find these materials and documents in your client's folder.
 A: Done
-	Q(3.1):Preserve a copy of the closing memo in clio and in the cliet's paper file.
+	Q(3.1):Preserve a copy of the closing memo in Clio and in the client's paper file.
 	<br><br>
 	If applicable to your case or clinic, keep new and related laws, useful memos, research, and/or sample pleadings, and other documents redacted and saved on the shared drive or in Clio template matter.
 	<br><br>

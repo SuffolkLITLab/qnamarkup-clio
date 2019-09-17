@@ -43,6 +43,15 @@ body{
 <h2 align=center style="margin:5px 0 5px;">Virtual Clinic Assistant<sup><font size=-1> Beta</font></sup></h2>
 <p>I'm an interactive FAQ maintained by the <a href="https://suffolklitlab.org/courses/fellows/" target="_blank">LIT Fellows</a> to help you access resources and perform simple tasks. I'm a form of just-in-time training, giving you what you need when you need it.<sup>†</sup></p>
 
+Q(home): What's going on?
+A: I need to open a case
+	Q(3.1):GOTO:prenew
+A: I'm working a case
+	Q(3.2):GOTO:current
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt',this.innerHTML,'end','home');] I'm closing/transferring a case
+A: I need help setting stuff up
+	Q(3.4):GOTO:setup
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','home')] I need cat videos
 
 
 Q(setup): What would you like to do?<sup>††</sup>
@@ -79,15 +88,7 @@ Q(2):<!-- ##############################
    on boarding period.
 
 ##################################### -->
-Q(home): What's going on?
-A: I need to open a case
-	Q(3.1):GOTO:prenew
-A: I'm working a case
-	Q(3.2):GOTO:current
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt',this.innerHTML,'end','home');] I'm closing/transferring a case
-A: I need help setting stuff up
-	Q(3.4):GOTO:setup
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','home')] I need cat videos
+
 
 
 

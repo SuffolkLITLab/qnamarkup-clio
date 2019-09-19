@@ -5,11 +5,11 @@ This is a work in progress, please do not take any of the advice here as offical
 ## Stand-alone QnA
 This is the main QnA, the homepage if you will. Everyone should start here. The QnAs below are part of this QnA by reference.
 
--[Homepage](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt) ([view code](https://suffolklitlab.org/clio/qnas/index.txt))
+- [Homepage](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/index.txt))
 
 These references are made using the `loadQnA()` function, defined in [loadQnA.js](https://suffolklitlab.org/clio/js_bin/loadQnA.js). This script is a work in progress and is still in beta. For security reasons: you must reference a QnA on the same domain as the one calling it. FWIW, the `A` calls are of the form:
 `A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?`
-And you have to point at the HTML version of a QnA. 
+And you have to point at the HTML version of a QnA.
 
 ## Stubs
 A QnA stub is a modular block of QnA logic that is intended for use as part of a larger whole. E.g., the main/home page references stubs, such as [this goodbye](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt), as needed. If you visit these on their own and see placeholder text, that’s where the QnA would return to the homepage under normal usage.

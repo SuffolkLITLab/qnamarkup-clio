@@ -5,7 +5,7 @@ This is a work in progress, please do not take any of the advice here as offical
 ## Stand-alone QnA
 This is the main QnA, the homepage if you will. Everyone should start here. The QnAs below are part of this QnA by reference. 
 
--[Homepage](https://www.qnamarkup.net/i/?source=https://mlursul.github.io/clio/QnA_markup(2).txt) ([view code](https://www.qnamarkup.net/i/?source=https://mlursul.github.io/clio/QnA_markup(2).txt))
+-[Homepage](https://www.qnamarkup.net/i/?source=https://mlursul.github.io/clio/qnas/QnA_markup(2).txt) ([view code](https://www.qnamarkup.net/i/?source=https://mlursul.github.io/clio/qnas/QnA_markup(2).txt))
 
 These references are made using the `loadQnA()` function, defined in [loadQnA.js](https://suffolklitlab.org/clio/js_bin/loadQnA.js). This script is a work in progress and is still in beta. For security reasons: you must reference a QnA on the same domain as the one calling it. FWIW, the `A` calls are of the form: 
 `A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?`

@@ -116,3 +116,12 @@ A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab
 	A: Back to "What's going on?"
 		Q(7.1.2):GOTO:home
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Case_opening.txt',this.innerHTML,'end','home');]Opening a new case/matter
+
+
+Q(8): Do you need further assistance?
+A:Yes	
+	Q(8.1):GOTO:home
+A:No
+
+
+Q(bye):  <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>

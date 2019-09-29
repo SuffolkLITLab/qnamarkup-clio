@@ -42,17 +42,11 @@ body{
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
 
-Q(1): It should take about 10 minutes to walk through these steps (assuming you've kept up with data entry in Clio). To clarify, are you closing or transferring a case?
-A: Transferring
+Q(1): It should take about 10 minutes to walk through these steps (assuming you've kept up with data entry in Clio). Are you ready to start transferring your case?
+A: Yes, let's get started!
 	Q(1.1): First, you will want to make sure that all necessary court and administrative orders have been scanned into Clio as well as the physical paper file.
 	A: Done
 		Q(1.1.1):GOTO:2
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Scanning.txt',this.innerHTML,'end','home');] How do I scan docs?
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/document_template.txt',this.innerHTML,'end','home');] How do I upload docs?
-A: Closing
-	Q(1.2): First, you will want to make sure that all necessary court and administrative orders have been scanned into Clio as well as the physical paper file.
-	A: Done
-		Q(1.2.1):GOTO:3
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Scanning.txt',this.innerHTML,'end','home');] How do I scan docs?
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/document_template.txt',this.innerHTML,'end','home');] How do I upload docs?
 
@@ -77,29 +71,5 @@ A: Done
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/AddNote.txt',this.innerHTML,'end','home');] How do I add notes?
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/EditContact.txt',this.innerHTML,'end','home');] How do I add contacts?
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/shred.txt',this.innerHTML,'end','home');] How do I shred docs?
-
-
-Q(3): Send back any original documents you possess back to your client.
-<br><br>
-Make sure that original documents are properly preserved for the attorney you are transferring the case to.<br><br>
-Take any extra copies or extraneous materials that you have with client information and shred them. You may find these materials and documents in your client's folder.
-A: Done
-	Q(3.1):Preserve a copy of the closing memo in clio and in the cliet's paper file.
-	<br><br>
-	If applicable to your case or clinic, keep new and related laws, useful memos, research, and/or sample pleadings, and other documents redacted and saved on the shared drive or in Clio template matter.
-	<br><br>
-	Check that necessary contact information for all your relevant clients, opposing parties, attorneys, witnesses, experts, etc. is in Clio.
-	A: Done
-		Q(3.1.1): Make sure you have submitted all case notes and time entries into Clio.
-		A: Done
-			Q(3.1.1.1):  Write up a case closing letter and send it to your client to inform them of your departure.
-      <br><br> Have the case closing form signed by your supervisor. 
-			<br><br>
-			Finally, make certain that there is no confidential case-related information or documents in your non-clinic email, on personal devices, on laptops, or other personal computers that you possess.
-			GOTO:end
-		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/AddNote.txt',this.innerHTML,'end','home');] How do I add notes?
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/EditContact.txt',this.innerHTML,'end','home');] How do I add contacts?
-A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/shred.txt',this.innerHTML,'end','home');] How do I shred docs?
-
 
 Q(end): placeholder

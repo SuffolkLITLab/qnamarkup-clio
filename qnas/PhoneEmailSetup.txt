@@ -42,11 +42,14 @@ body{
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 Q(1): You can set up your clinic email on your mobile phone, would you like to configure this now?
 A: Yes
-	Q(1.1): Do you have an iPhone or Android?
-	A: iPhone
-		Q(1.1.1):GOTO:i2
-	A: Android
-		Q(1.1.2):GOTO:a2
+	Q(1.1): Please adhere to the Clinical Programs Policies Regarding Document Security and Use of Technology.<br> <br>
+	You may use your mobile phone to check your Clinical Programs email, but only if that device is pin or password protected and set to auto-lock. If you have set up your Clinical Programs email on your mobile phone, you must delete that email account from your phone at the end of the school year. If you have opened or viewed on your mobile device any documents attached to emails, there may be remnants of those documents on your phone that must be removed at the end of the school year. If you have questions about how to remove these remnants, please visit the IT Help Desk. 
+	A: I have completed the security protocol.
+		Q(1.1.1):Do you have an iPhone or Android?
+		A: iPhone
+			Q(1.1.1.1):GOTO:i2
+		A: Android
+			Q(1.1.1.2):GOTO:a2
 A: No
 	Q(1.2):GOTO:end
 Q(i2): You will need to download the Microsoft Outlook App on your phone, once downloaded, click "add account" in your settings, type in your clinic email and click "add account"

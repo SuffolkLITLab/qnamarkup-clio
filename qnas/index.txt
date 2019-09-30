@@ -46,22 +46,18 @@ body{
 Q(home): What can I help you with? 
 A: Communication
 	Q(1.1):GOTO:Comm
-A: Office Processes & VDI
+A: Office Process & VDI
 	Q(1.2):GOTO:Office
 A: Clio
 	Q(1.3):GOTO:Clio
-A: Case Management (Open, Close, Transfer)
+A: Case Lifecycle
 	Q(1.4):GOTO:Case
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','home')] I need cat videos
 
 Q(Comm):How can I help you with communication?
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/voicemail.txt',this.innerHTML,'end','voice');]Voice Mail 
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/mail.txt',this.innerHTML,'end','current');]Physical Mail
-A:Email
-	Q(email): How can I assist you with email?
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt',this.innerHTML,'end','current');]Email Encryption
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/OutlookDesktop.txt',this.innerHTML,'end','current');]Setup Outlook on Desktop
-	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/PhoneEmailSetup.txt',this.innerHTML,'end','current');]Setup Email on Phone
+A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt',this.innerHTML,'end','current');]Email Encryption
 A: Clio Messaging
 	Q(Msg): How can I assist you with messaging?
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/maildrop.txt',this.innerHTML,'end','current');]Getting a matter's Mail Drop address

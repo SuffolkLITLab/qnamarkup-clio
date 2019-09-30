@@ -50,7 +50,7 @@ A: Office Process & VDI
 	Q(1.2):GOTO:Office
 A: Clio
 	Q(1.3):GOTO:Clio
-A: Case Lifecycle
+A: Case Management (Open, Close, Transfer)
 	Q(1.4):GOTO:Case
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt',this.innerHTML,'end','home')] I need cat videos
 

@@ -41,7 +41,12 @@ body{
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 
-Q(1): This roughly 4 min video will cover logging phone calls and emails.<br><br><div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/vVvfxiNXYgA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>GOTO:end
+Q(1): This roughly 4 min video will cover logging phone calls and emails.<br><br><div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/vVvfxiNXYgA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(2.2):GOTO:end
 
 Q(end): placeholder
 A:placeholder

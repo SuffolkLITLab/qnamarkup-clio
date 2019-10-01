@@ -45,7 +45,7 @@ Q(1): It is very unlikely that you will need to edit a matter, as opposed to add
 A: Yes
 	Q(1.1):GOTO:2
 A: No
-	Q(1.2): Fair enough. GOTO:end
+	Q(1.2): Fair enough. GOTO:help
 
 Q(2): Editing a matter should only take a few minutes, depending on how much you need to add/change. Type the name of the matter into the Clio search bar at the top of the page, and hit enter. This should take you to the matter's dashboard, which will look something like this:
 <br><br><a href="https://suffolklitlab.org/clio/images/MatterDashboard.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/MatterDashboard.PNG"/></a><br><br>
@@ -53,7 +53,12 @@ Click the blue "Edit" button at the top right of the dashboard. A new page will 
 <br><br><a href="https://suffolklitlab.org/clio/images/EditMatter.PNG" target="_blank"><img src="https://suffolklitlab.org/clio/images/EditMatter.PNG"/></a><br><br>
 Here, you can edit the status of the case, the attorney responsible, add a brief case synopsis, change the supervisor, add a docket number, and much more.
 <br><br>Make sure you scroll down and expand each section to add any information relevant to your case.
-Once you're done adding information to your matter, click on the blue "Save matter" button at the bottom left of your screen. This will take you back to the matter dashboard where you can double check that all the information was entered correctly. GOTO:end
+Once you're done adding information to your matter, click on the blue "Save matter" button at the bottom left of your screen. This will take you back to the matter dashboard where you can double check that all the information was entered correctly. GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(3.2):GOTO:end
 
 Q(end): placeholder
 A:placeholder

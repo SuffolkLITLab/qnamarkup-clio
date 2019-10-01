@@ -48,10 +48,15 @@ A: No
 	Q(firstclass): Are you looking to send plain old first class mail?
 	A: Yes
 		Q(1.2.1): Drop the letter in the mailbox bin in clinic 150 located at the clinic's front desk. This mail bin is for all first class mail. Outgoing mail will be picked up in the morning during the mail drop. This will be before noon at Clinic 150 only.
-		GOTO:end
+		GOTO:help
 	A:No
 		Q(1.2.2): All mail that falls under special services (e.g., return receipt, overnight delivery, certified mail, registered mail) must have a completely filled out <a href="https://suffolklitlab.org/clio/docs/mail_request.pdf" target="_blank">mail request form</a> attached. <br><br>
 		You must also bring this type of mail to 73 Tremont Mail Services Office, located across the street on the 2nd Floor. The sender must be the one to bring the mail.
-		GOTO:end
+		GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(2.2):GOTO:end
 
 Q(end):placeholder

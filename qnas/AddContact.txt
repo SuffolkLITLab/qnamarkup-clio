@@ -63,6 +63,7 @@ A: From the contact's dashboard
 A: From the matter
 	Q(2.2): From the matter dashboard, click "Add related contact."<br><br><a href="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png"/></a><br><br>
 	Find the contact you created either by typing it in or finding them on the drop down bar underneath "Contact," then add their relationship to the matter. And don't forget to save your work. <br><br><a href="https://suffolklitlab.org/clio/images/CreatenewContact.4.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.4.png"/></a>
-	GOTO:end
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Still having trouble?
+	Q(2.3):GOTO:end
 
 Q(end): placeholder

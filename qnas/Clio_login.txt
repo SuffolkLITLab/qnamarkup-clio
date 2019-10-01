@@ -60,7 +60,8 @@ Q(signin):Click <i>Log In</i>. <br><br>
 <br><br>
 Sign into with your clinic email and Clio password.<br><br>
 <a href="https://suffolklitlab.org/clio/images/cliosign.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/cliosign.png" style="width:232px;height:171px;"/></a>
-GOTO:end
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Still having trouble?
+	Q:GOTO:end
 
 
 Q(end): placeholder

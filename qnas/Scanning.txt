@@ -47,9 +47,9 @@ A:Yes
         <a href="https://suffolklitlab.org/clio/images/scan.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/scan.png" style="width:232px;height:309px;"/></a><br><br>
         Select "scan" on the machine, and look for your name on the list of recipients. Can you find your name?
 	A: Yes
-		Q(1.1.1):Select it, and scan. The files should be sent straight to your clinic email. GOTO:end
+		Q(1.1.1):Select it, and scan. The files should be sent straight to your clinic email. GOTO:help
 	A: No
-		Q(1.1.2):Let your supervisor know. GOTO:end
+		Q(1.1.2):Let your supervisor know. GOTO:help
 A: No
 	Q(1.2): Should I wait?
 	A: Yes
@@ -57,6 +57,11 @@ A: No
 		A: I'm ready
 			Q(1.2.1.1):GOTO:haveit
 	A: No
-		Q(1.2.2):GOTO:end
+		Q(1.2.2):GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(2.2):GOTO:end
 
 Q(end): placeholder

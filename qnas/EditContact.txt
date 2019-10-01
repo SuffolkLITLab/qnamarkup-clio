@@ -56,7 +56,7 @@ A: Yes
 		A: Yes
 			Q(1.1.1.1):GOTO:Relatedcontacts
 		A: No
-			Q(1.1.1.2):GOTO:end
+			Q(1.1.1.2):GOTO:help
 	A: Change the related contacts
 		Q(Relatedcontacts): OK! You can attach an existing contact to your matter by going to the matter dashboard (accessible by searching for the matter) and clicking "Add related contact." See 
 		<br><br><a href="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/CreatenewContact.3.png" style="width:232px;height:207px;"/></a><br><br>
@@ -64,13 +64,18 @@ A: Yes
 		<br><br><a href="https://suffolklitlab.org/clio/images/Relatedcontacts.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/Relatedcontacts.png" style="width:232px;height:67px;"/></a><br><br>
 		You can delete a contact from the matter by clicking the blue "Remove" text to the right of the contact you want to delete. <br><br>
 		To add a contact, click on the blue "Add related contact" text at the bottom of the "Related contacts" section and more boxes will appear for you to add new contacts. When adding the contact, type the contact's relationship to the matter and then find the contact either by typing their name in or finding them in the drop down bar underneath "Contact."
-		<br><br>Once you've finished adding and/or removing the contacts to this matter, click the blue "Save matter" button at the bottom left of your screen and those contacts will be visible from your matter's dashboard. GOTO:end
+		<br><br>Once you've finished adding and/or removing the contacts to this matter, click the blue "Save matter" button at the bottom left of your screen and those contacts will be visible from your matter's dashboard. GOTO:help
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/AddContact.txt',this.innerHTML,'end','current');] No, let's add them
 A: I don't know
 	Q(1.3): You should start with a search. Do you need help with that?
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/search.txt',this.innerHTML,'end','current')] Yes
 	A: No
-		Q(1.3.2):GOTO:end
+		Q(1.3.2):GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(2.2):GOTO:end
 
 
 Q(end): placeholder

@@ -43,10 +43,15 @@ body{
 
 Q(start): Choose one.
 A: Video (~3 min) 
-	Q(1.1):<div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/cSy3XJGuJlA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>GOTO:end 
+	Q(1.1):<div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/cSy3XJGuJlA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>GOTO:help
 A: Text
 	Q(1.2): From within a matter, click on the blue "Add secure message" button in the upper right of the page. A new window will pop up. Complete the appropriate fields and click send. If you were in a matter, that matter should be selected, otherwise, be sure to assign a matter.<br><br>
 	Note, if you are sending to someone outside of the Clinic, they will be emailed a link to sign into the Clio portal. 
-	GOTO:end
+	GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(2.2):GOTO:end
 
 Q(end): placeholder

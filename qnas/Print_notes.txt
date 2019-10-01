@@ -46,7 +46,12 @@ At the bottom of the page you will find an 'Export' button. Click it.
 <br><br><a href="https://suffolklitlab.org/clio/images/print.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/print.png"/></a><br><br>
 You should see an option to export in 'PDF' or 'CSV' format. Select 'PDF.'
 <br><br><a href="https://suffolklitlab.org/clio/images/export_notes.png" target="_blank"><img src="https://suffolklitlab.org/clio/images/export_notes.png"/></a><br><br>
-Depending on your browser settings, you will be asked to save a PDF with all of your notes, or it will automatically download. GOTO:end
+Depending on your browser settings, you will be asked to save a PDF with all of your notes, or it will automatically download. GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(2.2):GOTO:end
 
 Q(end): placeholder
 A: placeholder

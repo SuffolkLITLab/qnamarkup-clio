@@ -50,5 +50,7 @@ A: I have it. Now what?
 			Q(1.1.1.1): If required, check off "receipt for merchandise" if you will need proof that the mail was received.
 			A: Great! Anything else?
 				Q(1.1.1.1.1): Keep record of the mailing by holding the receipt. After that, you are all clear.
-				A: Awesome. I get it!
-					Q(end): placeholder
+				A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Still having trouble?
+					Q(1.1.1.1.1.1):GOTO:end
+
+Q(end): placeholder

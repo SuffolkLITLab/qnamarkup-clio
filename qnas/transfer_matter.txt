@@ -67,9 +67,14 @@ A: Done
 			Q(2.1.1.1): You also want to write up a case transfer letter for your client to inform them of your departure and that a new attorney will take over their case.
 			<br><br>
 			Finally, make certain that there is no confidential case-related information or documents in your non-clinic email, on personal devices, on laptops, or other personal computers that you possess.
-			GOTO:end
+			GOTO:help
 		A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/AddNote.txt',this.innerHTML,'end','home');] How do I add notes?
 	A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/EditContact.txt',this.innerHTML,'end','home');] How do I add contacts?
 A:[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/shred.txt',this.innerHTML,'end','home');] How do I shred docs?
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(3.2):GOTO:end
 
 Q(end): placeholder

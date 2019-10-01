@@ -49,7 +49,7 @@ A: Yes
 		<img src="https://emaansyed.github.io/clio/images/OutlookImage1.png" style="width:232px;height:170px;"/>
 		GOTO:2
 A: No
-	Q(1.2):GOTO:end
+	Q(1.2):GOTO:help
 Q(2): Click the "New Account" option<br><br>
     <img src="https://emaansyed.github.io/clio/images/OutlookImage2.png" style="width:232px;height:170px;"/>
     GOTO:3
@@ -66,6 +66,12 @@ Q(5): Click "continue" to verify the certificate
     <img src="https://emaansyed.github.io/clio/images/OutlookImage5.png" style="width:320px;height:197px;"/>
     GOTO:6
 Q(6): Your email should load in a few minutes and you are all set! You will now have access to outlook on your computer desktop application.
-    GOTO:end
+    GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(7.2):GOTO:end
+
 Q(end): placeholder
 A:placeholder

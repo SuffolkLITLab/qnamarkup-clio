@@ -52,7 +52,7 @@ Can I help with anything else?
 A: Tell me more about Launcher
 	Q(1.1): Launcher should already be installed. So you can ignore that bit, but this video does show it in action.<br><br>
 	<div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/pkUzAQhX-DY?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>
-	GOTO:end
+	GOTO:help
 A: Tell me how to edit w/o Launcher
 	Q(1.2):GOTO:2
 
@@ -66,6 +66,11 @@ If you are searching for your document through the matter, click on the white do
 Click the document name to download the document. Once it is downloaded, you may edit and save any changes you make to the document. Please note that if the document is a PDF, you may need to have Adobe software to make changes.
 <br><br>
 To upload you changes, click "View Details" under the document title then "Add new version" in the popup. 
-GOTO:end
+GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(3.2):GOTO:end
 
 Q(end):placeholder

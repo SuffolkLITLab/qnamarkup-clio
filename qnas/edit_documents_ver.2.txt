@@ -47,4 +47,8 @@ A: Okay,I did that. Now what?
 	A: I have downloaded the document. What do I do now?
 		Q(1.1.1): Once it is downloaded, you may edit and save any changes you make to the document. Please note that if the document is a pdf, you may need to have adobe software to make changes.
 		A: Nice! I get it now.
-			Q(end): placeholder
+			Q(help):Still need help?
+			A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+			A:No
+				Q(1.1.1.1.2):GOTO:end
+Q(end): placeholder

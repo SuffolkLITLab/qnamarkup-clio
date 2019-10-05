@@ -21,6 +21,8 @@ A QnA stub is a modular block of QnA logic that is intended for use as part of a
 - [Editing secure message notifications](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/notifications.txt)  ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/notifications.txt))
 - [Encrypting emails](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Email_encryption.txt))
 - [Physical mail](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/mail.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/mail.txt))
+- [Setting up Outlook on computer](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/OutlookDesktopSetup.txt) ([view code] (https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/OutlookDesktopSetup.txt))
+- [Adding email to phone](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/PhoneEmailSetup.txt) ([view code] (https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/PhoneEmailSetup.txt))
 
 ### Office Processes
 - [Setting up VDI](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/VDI_setup.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/VDI_setup.txt))
@@ -45,8 +47,17 @@ A QnA stub is a modular block of QnA logic that is intended for use as part of a
 - [Uploading or downloading documents](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/document_template.txt) (includes video) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/document_template.txt))
 - [Editing a document](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/edit_documents.txt) (includes video) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/edit_documents.txt))
 - [Creating a document from a template](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/document_template_ver.2.txt) (includes video) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/document_template_ver.2.txt))
-- [Loging emails and phone calls](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt) (includes video) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt))
-- [Closing or transferring a case](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt))
+- [Logging emails and phone calls](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt) (includes video) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/SaveEmail.txt))
+
+### Case Management
+- [Opening a case](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/case_open.txt) ([view code] (https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/case_open.txt))
+- [Running a conflicts check](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Conflictsqna.txt) ([view code] (https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Conflictsqna.txt))
+- [Closing a case](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/close_matter.txt) ([view code] (https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/close_matter.txt))
+- [Transferring a case](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/transfer_matter.txt) ([view code] (https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/transfer_matter.txt))
+
+### Help
+- [General Help](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt) ([view code] (https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt))
+- [VDI Help](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_tech.txt) ([view code] (https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_tech.txt))
 
 ### Whimsy
 - [Goodbye w/ cats](https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/cats.txt) ([view code](https://www.qnamarkup.org/?source=https://suffolklitlab.org/clio/qnas/cats.txt))

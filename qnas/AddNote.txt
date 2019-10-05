@@ -53,9 +53,12 @@ The Date will always default to today's date, but can be changed by clicking on 
 <br><br>
 Once you've added a subject line, type the  body of your note.
 <br><br>
-Click the blue "Save note" button at the bottom of the popup. The popup will close, and your new note will show up on the "Notes" tab as a new entry. 
-A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Still having trouble?
-	Q(1.1):GOTO:end
+Click the blue "Save note" button at the bottom of the popup. The popup will close, and your new note will show up on the "Notes" tab as a new entry. GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(2.2):GOTO:end
 
 Q(end): placeholder
 A: placeholder

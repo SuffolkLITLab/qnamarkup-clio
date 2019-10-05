@@ -52,8 +52,11 @@ key parties/witnesses against the lists of their past and present clients from p
 		A: Great. Anything else?
 			Q(1.1.1.1): Look at your Conflicts of Interest form, and enter all the names within that form into Clio. Submit the results of in the Conflicts Log in Clio.
 			A: Then what?
-				Q(1.1.1.1.1): Once you have performed these checks and find that they show potential conflicts, you must take the information to your supervising attorney to discuss an appropriate resolution to the conflict.
-				A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Still having trouble?
-					Q(1.1.1.1.1.1):GOTO:end
+				Q(1.1.1.1.1): Once you have performed these checks and find that they show potential conflicts, you must take the information to your supervising attorney to discuss an appropriate resolution to the conflict.GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(2.2):GOTO:end
 
 Q(end):placeholder

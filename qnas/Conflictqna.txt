@@ -64,11 +64,13 @@ Do any of these searches reveal potential conflicts?
 A: Yes
 	Q(2.1): Share the results of your search with your supervising attorney to discuss an appropriate resolution to the conflict.GOTO:2.2
 A: No
-	Q(2.2): Remember that if you go on to represent this potential client, you have an ongoing obligation to conduct additional conflict checks when new parties to the matter become known. <br><br>Also, at least mid-year, and more frequently if deemed necessary, you should update your list of clients from outside employment in the Conflicts of Interest Form and check them against Clio. This should be documented in the Imputed Conflicts Log.
-	A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Still having trouble?
-		Q:GOTO:end
+	Q(2.2): Remember that if you go on to represent this potential client, you have an ongoing obligation to conduct additional conflict checks when new parties to the matter become known. <br><br>Also, at least mid-year, and more frequently if deemed necessary, you should update your list of clients from outside employment in the Conflicts of Interest Form and check them against Clio. This should be documented in the Imputed Conflicts Log.GOTO:help
 A: I don't know
 	Q(2.3): If in doubt, assume there's a potential conflict, and share the results of your search with your supervising attorney to discuss an appropriate resolution to the conflict.GOTO:2.2
- 
+
+Q(help):Still need help? 
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(3.2):GOTO:end
 
 Q(end): placeholder

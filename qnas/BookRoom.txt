@@ -44,9 +44,12 @@ body{
 
 Q(1): Booking a room take less than a minute! The are a total of 4 rooms available for client meetings. There are two small interview rooms just off the student work area in suite 150, a larger room in suite 160, and one small room in suite 165.
 <br><br>Sign up on the notebook just outside the room you plan to use - make sure to write your name and how long you plan to use the room for. <br><br>
-If you want to reserve the clinic library for any reason, speak to one of the front desk administrators.
-A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Still having trouble?
-	Q:GOTO:end
+If you want to reserve the clinic library for any reason, speak to one of the front desk administrators.GOTO:help
+
+Q(help):Still need help?
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/support_joan.txt',this.innerHTML,'end','current');]:Yes
+A:No
+	Q(2.2):GOTO:end
 
 Q(end): placeholder
 A: placeholder

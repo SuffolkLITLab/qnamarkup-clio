@@ -42,40 +42,47 @@ body{
 <p>This QnA is part of a set. It is properly viewed as such. See <a href="https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/index.txt" target="_top">Virtual Clinic Assistant</a>.</p>
 Q(1): You can set up your clinic email on your mobile phone, would you like to configure this now?
 A: Yes
-	Q(1.1): Please adhere to the Clinical Programs Policies Regarding Document Security and Use of Technology.<br> <br>
-	You may use your mobile phone to check your Clinical Programs email, but only if that device is pin or password protected and set to auto-lock. If you have set up your Clinical Programs email on your mobile phone, you must delete that email account from your phone at the end of the school year. If you have opened or viewed on your mobile device any documents attached to emails, there may be remnants of those documents on your phone that must be removed at the end of the school year. If you have questions about how to remove these remnants, please visit the IT Help Desk. 
-	A: I have completed the security protocol.
-		Q(1.1.1):Do you have an iPhone or Android?
-		A: iPhone
-			Q(1.1.1.1):GOTO:i2
-		A: Android
-			Q(1.1.1.2):GOTO:a2
+	Q(1.1): Have you read the Clinical Programs Policies Regarding Document Security and Use of Technology?
+	A: Yes
+		Q(1.1.1): Is your device pin or password protected and set to auto-lock?
+		A: Yes
+			Q(1.1.1.1): If you set up your Clinical Programs email on your phone, you must delete that email account from your phone at the end of the school year.
+			A: Next
+				Q(1.1.1.1.1): Remnants of any clinical documents attatched on email and viewed on your phone must be removed at the end of the school year.
+				A: Next
+					Q(1.1.1.1.1.1): If you have questions about how to remove these remnants, please visit the IT Help Desk. 
+					A: I have completed the security protocol.
+						Q(1.1.1.1.1.1.1):Do you have an iPhone or Android?
+						A: iPhone
+							Q(1.1.1.1.1.1.1.1):GOTO:i2
+						A: Android
+							Q(1.1.1.1.1.1.1.2):GOTO:a2
 A: No
-	Q(1.2):GOTO:help
+	Q(1.2):GOTO:end
 Q(i2): You will need to download the Microsoft Outlook App on your phone, once downloaded, click "add account" in your settings, type in your clinic email and click "add account"
-    <img src="https://emaansyed.github.io/clio/images/iphone1.png" style="width:190px;height:300px;"/>
+    <img src="https://emaansyed.github.io/clio/images/iphone1.png" style="width:190px;height:383px;"/>
     GOTO:i3
 Q(i3): Click on "Use Advanced Settings" <br><br>
-    <img src="https://emaansyed.github.io/clio/images/iphone2.png" style="width:190px;height:300px;"/>
+    <img src="https://emaansyed.github.io/clio/images/iphone2.png" style="width:190px;height:210px;"/>
     GOTO:i4
 Q(i4): Please fill out the following and click "add account" <br> <br>
     DOMAIN (do not forget to add "adm" before suffolk.edu)<br> <br>
     Password<br> <br>
     Server<br><br>
-    <img src="https://emaansyed.github.io/clio/images/iphone3.png" style="width:190px;height:300px;"/>
+    <img src="https://emaansyed.github.io/clio/images/iphone3.png" style="width:190px;height:303px;"/>
     GOTO:8
 
 Q(a2): You will need to download the Microsoft Outlook App on your phone, once downloaded, click "add account" in your settings. Click "choose account type" and choose "Exchange"
-	<img src="https://emaansyed.github.io/clio/images/android1.png" style="width:190px;height:300px;"/>
+	<img src="https://emaansyed.github.io/clio/images/android1.png" style="width:190px;height:391px;"/>
 	GOTO:a3
 Q(a3): Type in your email, remember to add "adm" in the email when inputting.
-	<img src="https://emaansyed.github.io/clio/images/android2.png" style="width:190px;height:300px;"/>
+	<img src="https://emaansyed.github.io/clio/images/android2.png" style="width:190px;height:399px;"/>
 	GOTO:a4
 Q(a4): Please fill out the following: <br> <br>
     DOMAIN (do not forget to add "adm" before suffolk.edu)<br> <br>
     Password<br> <br>
     Server<br><br>
-    <img src="https://emaansyed.github.io/clio/images/android3.png" style="width:190px;height:300px;"/>
+    <img src="https://emaansyed.github.io/clio/images/android3.png" style="width:190px;height:399px;"/>
     GOTO:8
 
 Q(8): Your email should load in a few minutes and you are all set! You will now have access to outlook on your computer desktop application.

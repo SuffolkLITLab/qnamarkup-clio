@@ -13,18 +13,18 @@ function loadQnA(url_point,button,find,replace) {
 
     var mydata = $(data).find('div[id=ondeck]');
     var placeholder = Date.now();
-    mydata  =  mydata.html(mydata.html().replace(/GOTO:(\d)/g,"GOTO:"+placeholder+".$1"));
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="Q-/gi, ' $1="Q-'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="A-(target-|href-|)/gi, ' $1="A-$2'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="X-/gi, ' $1="X-'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="Xi-/gi, ' $1="Xi-'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/var QVnames =/gi, 'QVnames_placeholder ='));
+    mydata = mydata.html(mydata.html().replace(/GOTO:(d)/g,"GOTO:"+placeholder+".$1"));
+    mydata = mydata.html(mydata.html().replace(/ (id|name)="Q-/gi, ' $1="Q-'+placeholder+'.'));
+    mydata = mydata.html(mydata.html().replace(/ (id|name)="A-(target-|href-|)/gi, ' $1="A-$2'+placeholder+'.'));
+    mydata = mydata.html(mydata.html().replace(/ (id|name)="X-/gi, ' $1="X-'+placeholder+'.'));
+    mydata = mydata.html(mydata.html().replace(/ (id|name)="Xi-/gi, ' $1="Xi-'+placeholder+'.'));
+    mydata = mydata.html(mydata.html().replace(/var QVnames =/gi, 'QVnames_placeholder ='));
 
-    mydate = mydata.html(mydata.html() + "<div id='A-"+placeholder+".1' name='A-"+placeholder+".1' style='display:none;'>"+$($.parseHTML(button)).html()+"</div>");
-    mydate = mydata.html(mydata.html() + "<div id='X-"+placeholder+".1' name='X-"+placeholder+".1' style='display:none;'>"+$($.parseHTML(button)).html()+"</div>");
+    mydata = mydata.html(mydata.html() + "<div id='A-"+placeholder+".1' name='A-"+placeholder+".1' style='display:none;'>"+button+"</div>");
+    mydata = mydata.html(mydata.html() + "<div id='X-"+placeholder+".1' name='X-"+placeholder+".1' style='display:none;'>"+button+"</div>");
 
     var QVNames_tmp = QVnames;
-    $('#ondeck').html($('#ondeck').html()+mydate.html());
+    $('#ondeck').html($('#ondeck').html()+mydata.html());
     QVnames = QVNames_tmp
     for (var i in QVnames_placeholder) {
       //check to see if [][1] is a custom name, if so leave it alone

@@ -9,7 +9,12 @@ After: <div style="float:left;margin-bottom:40px;"><font size=-1><sup>†</sup> 
 <script>
  function get_label(string){
     answers = getNClosestAnswer(1, vectorize(string))
-    return QLabels[answers[0][0]]
+    if (answers[0][1] > 0.25) {
+       return QLabels[answers[0][0]]
+    } else {
+       alert("No answer found. Please rephrase.")
+       return "https://www.qnamarkup.net/i//?source=https://raw.githubusercontent.com/SuffolkLITLab/clio/master/qnas/index.txt"
+    }
  }
 </script>
 Before:
